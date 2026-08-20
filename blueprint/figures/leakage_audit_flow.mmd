@@ -1,0 +1,25 @@
+flowchart LR
+    I["Canonical examples"]
+    L["Ligand relations\nidentity, scaffold,\nfingerprints, gMolAI"]
+    P["Protein relations\nsequence, domain,\nFoldseek/TM"]
+    S["Pocket relations\nlocal structure + chemistry"]
+    A["Assay/provenance relations\nexperiment, publication,\npatent, series, time"]
+    U["Union relation graph"]
+    C["Connected components\nor documented DataSAIL optimization"]
+    Q["Locked split manifests"]
+    N["Per-test nearest-neighbour table"]
+    B["Red-team baselines\nligand-only, protein-only,\nmetadata-only, two-sided KNN"]
+    G["Leakage gate report"]
+    R["Release allowed"]
+
+    I --> L --> U
+    I --> P --> U
+    I --> S --> U
+    I --> A --> U
+    U --> C --> Q
+    Q --> N
+    Q --> B
+    N --> G
+    B --> G
+    G -->|all literal-contamination gates pass| R
+    G -->|failure| X["Freeze, investigate,\nrebuild with new hashes"]

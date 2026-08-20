@@ -1,0 +1,27 @@
+threat_id	category	mechanism	severity	control	primary_audit_artifact	release_rule
+L-01	observation	same experiment imported through multiple databases	critical	source-lineage graph and experiment fingerprint	observation_lineage.parquet	zero cross-fold instances
+L-02	ligand identity	salts tautomers stereoisomers or canonicalization aliases cross folds	critical	multi-layer molecular identity table	identity_aliases.parquet	zero forbidden identity aliases
+L-03	ligand similarity	congeneric series or close analogues cross folds	high	multiple fingerprints scaffold network and publication series	ligand_similarity_edges.parquet	quantify tiers and enforce claim-specific threshold
+L-04	target identity	UniProt isoform construct or chain aliases cross folds	critical	normalized construct sequence and accession mapping	identity_aliases.parquet	zero forbidden exact target aliases
+L-05	protein homology	close homologues reveal target priors	high	multi-threshold global/domain sequence clustering	protein_similarity_edges.parquet	enforce split policy and report continuous identity
+L-06	pocket homology	local sites remain similar despite low global homology	critical	receptor-only pocket structure and chemistry comparison	pocket_similarity_edges.parquet	enforce claim-specific threshold
+L-07	target mirroring	shared-compound profiles correlate across nominally distinct targets	high	training-era cross-target profile correlation	target_mirroring_audit.parquet	report and connect/quarantine high-risk pairs
+L-08	structure repetition	alternate PDB entries assemblies or conformers duplicate a system	high	structure/ligand/provenance linkage	observation_lineage.parquet	zero forbidden repeated systems
+L-09	assay provenance	same assay publication patent or series crosses folds	critical	document/assay/patent components	assay_provenance_edges.parquet	whole component in one fold
+L-10	time	later measurements structures or curation influence earlier claim	high	earliest-public-date snapshots and time-aware assets	external_overlap_report.parquet	no post-cutoff supervised information
+L-11	benchmark overlap	CASF or external examples/neighbours occur in training	critical	benchmark-first quarantine and all-source overlap	external_overlap_report.parquet	zero overlap at frozen relation policy
+L-12	preprocessing	scaling PCA selection imputation or vocabulary sees held-out data	critical	fold-scoped fitted artifacts with parent split hash	leakage_gate_report.json	zero non-train fit dependencies
+L-13	label feature	target means thresholds rankings or aggregates include test labels	critical	feature lineage and fold-scoped aggregation	leakage_gate_report.json	zero held-out label dependency
+L-14	model selection	repeated test or leaderboard use tunes model	critical	access control and immutable first predictions	evaluation_run_registry.json	one frozen confirmatory run family
+L-15	pretraining entity	test molecule protein or pocket occurs in label-free pretraining	medium	exposure inventory and similarity sensitivity	pretraining_exposure.tsv	disclose and stratify
+L-16	pretraining label	same affinity assay or complex is used in supervised pretraining	critical	global observation-lineage deduplication	pretraining_exposure.tsv	zero confirmatory-label exposure
+L-17	pocket definition	query ligand coordinates define crop or site	critical	independent site manifest and producer trace	leakage_gate_report.json	zero query-ligand dependence
+L-18	pose information	ligand coordinates contacts or distances enter strict model	critical	strict types serialized artifact scan and call trace	leakage_gate_report.json	zero strict-track occurrences
+L-19	holo privilege	test ligand induces receptor conformation	high	matched holo apo predicted evaluation	conformation_audit.parquet	disclose and require non-holo result
+L-20	negative/decoy bias	active and inactive generators are chemically distinguishable	high	ligand-only/source models confirmed inactives and PU analysis	nuisance_baseline_report.parquet	no headline claim from biased decoys
+L-21	metadata shortcut	resolution year lab source or missingness predicts label	high	nuisance-only models and source-held-out evaluation	nuisance_baseline_report.parquet	report and mitigate material shortcut
+L-22	retrieval	inference searches mutable database containing test labels	critical	frozen train-only content-addressed indexes	leakage_gate_report.json	zero mutable/test retrieval
+L-23	transitive split	A-B chemical and B-C pocket edges allow A-C cross-fold leakage	critical	connected components of union relation graph	union_components.parquet	whole forbidden component in one fold
+L-24	post-split filtering	filtering or repairs after split reconnect/distort components	high	rebuild split after any identity-changing processing	split_distribution_report.json	regenerate and re-audit
+L-25	calibration	test labels set uncertainty or abstention thresholds	critical	component-held-out calibration artifacts	leakage_gate_report.json	zero test-fitted calibration
+L-26	human loop	manual test deletion or interpretation changes pipeline	critical	frozen exclusions all-failure reporting and incident log	evaluation_run_registry.json	zero unregistered post hoc change

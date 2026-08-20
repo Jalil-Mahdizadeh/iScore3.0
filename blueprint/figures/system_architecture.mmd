@@ -1,0 +1,51 @@
+flowchart LR
+    subgraph P["Receptor pathway — 3D allowed"]
+        P0["PDB / mmCIF receptor"]
+        P1["Structure normalization\nobserved/repaired/predicted masks"]
+        P2["Independent site manifest\nor receptor-only top-k detector"]
+        P3["Residue GVP graph\nframes, distances, chemistry"]
+        P4["Local heavy-atom graph\nreceptor atoms only"]
+        P5["Cached pocket tokens\nand global descriptors"]
+        P0 --> P1 --> P2
+        P2 --> P3 --> P5
+        P2 --> P4 --> P5
+    end
+
+    subgraph L["Ligand pathway — coordinate-free"]
+        L0["SMILES"]
+        L1["Deterministic 1D/2D standardization"]
+        L2["2D molecular graph"]
+        L3["gMolAI atom tokens\n+ calibrated global embedding"]
+        L4["Cached ligand artifact"]
+        L0 --> L1 --> L2 --> L3 --> L4
+    end
+
+    subgraph F["Pose-free compatibility"]
+        F0["Baseline ladder\nadditive → concat → bilinear"]
+        F1["Bidirectional cross-attention\nno protein–ligand distance"]
+        F2["Endpoint-conditioned pooled state"]
+        F0 --> F1 --> F2
+    end
+
+    subgraph O["Outputs"]
+        O0["pKd / pKi / pIC50 distribution"]
+        O1["Calibrated interval"]
+        O2["Applicability and nearest-train similarities"]
+        O3["Pocket/conformation warnings or abstention"]
+    end
+
+    P5 --> F0
+    L4 --> F0
+    E["Endpoint + permitted assay context"] --> F2
+    F2 --> O0
+    F2 --> O1
+    F2 --> O2
+    F2 --> O3
+
+    X1["Forbidden:\nligand conformer or pose"]
+    X2["Forbidden:\nquery ligand contacts/distances"]
+    X1 -. blocked .-> L2
+    X2 -. blocked .-> F1
+
+    classDef forbidden fill:#ffe6e6,stroke:#b30000,color:#660000;
+    class X1,X2 forbidden;

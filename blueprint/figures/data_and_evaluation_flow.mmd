@@ -1,0 +1,26 @@
+flowchart TD
+    A["Versioned sources\nPDBbind, BindingDB/ChEMBL,\nPLINDER/BioLiP2, benchmarks"]
+    B["Immutable raw snapshots\nrights + checksums"]
+    C["Canonical tables\nligand, target, assay,\nobservation, structure, site"]
+    D["Identity + provenance graph\ncross-source experiment deduplication"]
+    E["Similarity views\nligand, sequence, structure,\npocket, assay/publication"]
+    F["Union components + DataSAIL audit\nrandom / ligand / pocket /\ndual / temporal splits"]
+    G["Train-only fitted preprocessing\nstrict ligand and receptor artifacts"]
+    H["v0 baselines\nligand-only, protein-only,\nnearest-neighbour, BANANA"]
+    I["v1 strict model\npredeclared ablations"]
+    J["Validation components\nmodel selection + calibration"]
+    K["Frozen model bundle\nhashes + first-run protocol"]
+    L["Locked external evaluation\nCASP16, BayesBind,\napproved rebuilt series"]
+    M["Immutable predictions\ncluster statistics, calibration,\nfailures, leakage strata"]
+    N["Committee gate\nproceed / revise / stop"]
+
+    A --> B --> C --> D --> E --> F
+    F --> G
+    G --> H
+    G --> I
+    H --> J
+    I --> J
+    J --> K --> L --> M --> N
+
+    T["Test labels inaccessible\nduring G–K"] -. access control .-> L
+    R["Any identity-changing correction"] -. regenerate .-> C
