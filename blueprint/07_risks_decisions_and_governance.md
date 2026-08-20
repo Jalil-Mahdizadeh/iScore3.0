@@ -26,6 +26,7 @@ Statuses are proposals until the scientific committee records a decision.
 | D-014 | Reuse/release | no third-party code, weights, or derived data released without rights review | proposed | pending |
 | D-015 | External labels | access-controlled/frozen one-pass evaluation | proposed | pending |
 | D-016 | Project success | structural benefit must exceed predeclared practical effect on hard/external tests | proposed | pending |
+| D-017 | Gate-0/1 progression | do not start full architecture; authorize only bounded remediation | recommended | evidence complete; committee decision pending |
 
 For each pending item, the committee should record approve, modify, defer, or reject; date; responsible person; justification; and consequences.
 
@@ -68,7 +69,7 @@ Probability and impact are qualitative before WP1 pilots.
 
 ### 4.1 Novelty and prior art
 
-The strongest direct precedents are BANANA, CASTER-DTA, 3DProtDTA, HoloProt, Graph_RG, and PLANET. The project must not claim to invent the modality combination. The literature review should be refreshed:
+The strongest direct precedents include PSG-BAR, PLMCA, AttentionMGT-DTA, BANANA, CASTER-DTA, 3DProtDTA, HoloProt, Graph_RG, and PLANET. The project must not claim to invent the modality combination. The literature review should be refreshed:
 
 - before WP3 architecture freeze;
 - before external evaluation;

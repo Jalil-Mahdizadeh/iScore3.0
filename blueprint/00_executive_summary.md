@@ -3,15 +3,15 @@
 **Committee review draft:** 20 August 2026  
 **Proposed system:** pose-free prediction of protein–small-molecule affinity from a receptor binding site in 3D and a ligand represented only by its SMILES-derived 1D/2D information.
 
+**Gate-0/1 addendum:** the bounded feasibility study is complete and did not meet the predeclared geometry-value criterion. Full architecture training is not recommended yet; the evidence supports only a narrow remediation phase. See [`reports/gate01/GATE_0_1_REPORT.md`](../reports/gate01/GATE_0_1_REPORT.md).
+
 ## Decision requested
 
-Approve a staged feasibility programme, not yet a claim of a new state of the art. The first milestone is to establish whether explicit 3D pocket information adds reproducible value beyond strong ligand-only, sequence-only, and simple pocket baselines under genuinely out-of-distribution evaluation.
-
-Approval should be conditional on the six gates below.
+Do not approve full architecture training from the current evidence. Consider approval of a bounded remediation phase to expand the number of independent high-confidence components, add validated structural-similarity and apo/predicted views, resolve gMolAI provenance/rights, and reproduce direct and modern sequence baselines. Progress remains conditional on the six gates below.
 
 ## Scientific conclusion from the review
 
-The broad idea is feasible, useful, and no longer unprecedented. Several methods already combine receptor structure with a ligand graph without requiring a docked complex. The closest strict precedents are BANANA/BigBind, CASTER-DTA, 3DProtDTA, and parts of HoloProt; Graph_RG is a very recent pose-free pocket/ligand affinity system. PLANET is highly relevant but uses pose-derived supervision during training. GRIPHIN, T-ALPHA, TankBind, DrugCLIP, PocketDTA, and related methods inform the design but do not meet the strict “no ligand 3D anywhere in the core model” rule.
+The broad idea is feasible, useful, and no longer unprecedented. PSG-BAR, AttentionMGT-DTA, PLMCA, BANANA/BigBind, CASTER-DTA, 3DProtDTA, parts of HoloProt, and Graph_RG already combine receptor structure with a ligand graph without requiring a docked query complex. PLANET and BlendNet are highly relevant but use pose-derived or complex-interaction supervision during training. GRIPHIN, T-ALPHA, TankBind, DrugCLIP, PocketDTA, MMPD-DTA, AlignNet, LigUnity, and related methods inform the design but do not meet the strict “no ligand 3D anywhere in the core model” rule.
 
 Accordingly, iScore3.0 should not be presented as the first docking-free or first protein-3D/ligand-2D scoring function. A defensible contribution is the combination of:
 
@@ -117,4 +117,4 @@ The staged programme should yield:
 
 ## Bottom line
 
-The project merits approval as a rigorous research programme. Its strongest scientific opportunity is not the generic absence of docking; it is demonstrating, under hard leakage controls, when and why receptor-pocket geometry improves affinity prediction over molecular and sequence priors while the ligand remains entirely coordinate-free.
+The research question remains worthwhile, but the current pilot does not justify the full architecture. Its strongest opportunity is not the generic absence of docking; it is demonstrating, under hard leakage controls, when and why receptor-pocket geometry improves affinity prediction over molecular and sequence priors while the ligand remains entirely coordinate-free. That demonstration has not yet been achieved.

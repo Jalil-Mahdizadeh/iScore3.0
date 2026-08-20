@@ -18,7 +18,7 @@ A second, stricter classification asks whether ligand coordinates or pose-derive
 
 Source repositories were inspected, when public, for actual data interfaces, coordinate use, model modules, checkpoints, dependencies, and licence files. A repository URL alone was not counted as reproducibility. Detailed records are in [evidence/publications.tsv](evidence/publications.tsv) and [evidence/software.tsv](evidence/software.tsv).
 
-The publication registry contains 71 evaluated methods, studies, benchmarks, and scientific resources. The 16 infrastructure/resource papers added during the final dataset pass cover CrossDocked2020, APObind, scPDB, KLIFS, GPCRdb, AlphaFold DB, RCSB PDB, SIFTS, Guide to PHARMACOLOGY, PubChem BioAssay, Drug Target Commons, MUV, DEKOIS 2.0, PDBFlex, CATH, and the public FEP benchmark. Their record-level use decisions are synthesized in [03_dataset_strategy.md](03_dataset_strategy.md).
+The publication registry contains 82 evaluated methods, studies, benchmarks, and scientific resources. The Gate-0/1 update added PSG-BAR, PLMCA, AttentionMGT-DTA, BlendNet, AttentionSiteDTI, BindingSite-AugmentedDTA, PGraphDTA, MMPD-DTA, AlignNet, LigUnity, and CSCo-DTA. The infrastructure/resource papers cover CrossDocked2020, APObind, scPDB, KLIFS, GPCRdb, AlphaFold DB, RCSB PDB, SIFTS, Guide to PHARMACOLOGY, PubChem BioAssay, Drug Target Commons, MUV, DEKOIS 2.0, PDBFlex, CATH, and the public FEP benchmark. Their record-level use decisions are synthesized in [03_dataset_strategy.md](03_dataset_strategy.md).
 
 This is a deep, structured scoping review rather than a registered systematic review. It is designed for architecture and governance decisions; the search log preserves queries and unresolved items.
 
@@ -26,9 +26,9 @@ This is a deep, structured scoping review rather than a registered systematic re
 
 | Class | Protein input | Ligand input | Cross-complex geometry | Core examples | Relevance |
 |---|---|---|---|---|---|
-| strict pose-free structural affinity | receptor/pocket 3D | graph/SMILES only | none | BANANA, CASTER-DTA, 3DProtDTA, Graph_RG, HoloProt affinity branch | closest precedents |
-| pose-free inference with privileged 3D training | pocket 3D | graph/SMILES at inference | no query pose at inference; pose-derived targets in training | PLANET | strong architecture precedent, outside strict claim |
-| implicit pose/complex or ligand-3D models | pocket/complex 3D | ligand graph plus coordinates/conformer | present or reconstructed | GRIPHIN, T-ALPHA, TankBind, DrugCLIP, PLANTAIN, PocketDTA, DTBind, GEMS | design inspiration and non-core comparators |
+| strict pose-free structural affinity | receptor/pocket 3D | graph/SMILES only | none | PSG-BAR, BANANA, CASTER-DTA, 3DProtDTA, AttentionMGT-DTA, PLMCA, Graph_RG, HoloProt affinity branch | closest precedents |
+| pose-free inference with privileged 3D training | pocket 3D or sequence | graph/SMILES at inference | no query pose at inference; pose-derived targets or pretrained ligand geometry in training | PLANET, BlendNet | strong architecture precedents, outside strict claim |
+| implicit pose/complex or ligand-3D models | pocket/complex 3D | ligand graph plus coordinates/conformer | present or reconstructed | GRIPHIN, T-ALPHA, TankBind, DrugCLIP, PLANTAIN, PocketDTA, DTBind, GEMS, MMPD-DTA, AlignNet, LigUnity | design inspiration and non-core comparators |
 | sequence/2D affinity | protein sequence | graph/SMILES | none | DeepDTA, GraphDTA, PSICHIC | essential controls |
 | protein representation learning | protein 3D | none | not applicable | GVP, GearNet, ProNet, ProteinWorkshop, MaSIF, dMaSIF, ScanNet | pocket-encoder candidates |
 | receptor-only pocket finding | receptor 3D | none | not applicable | P2Rank, fpocket, DeepPocket, GRaSP | secondary Mode B pipeline |
@@ -38,13 +38,16 @@ This is a deep, structured scoping review rather than a registered systematic re
 The generic concept “protein 3D plus ligand 2D without docking” is prior art. In particular:
 
 - BANANA takes a pocket PDB and ligand SMILES and performs pocket–ligand activity prediction.
+- PSG-BAR explicitly combines a full-protein 3D residue graph and a 2D ligand graph for affinity regression.
 - CASTER-DTA explicitly combines an equivariant 3D protein graph with a standard 2D molecular graph and residue–atom cross-attention.
 - 3DProtDTA uses a residue-level protein structure graph with a ligand graph or fingerprint.
+- AttentionMGT-DTA combines a receptor pocket graph, ESM features, and a SMILES-derived molecular graph.
+- PLMCA combines protein language-model, 3D geometric, and physicochemical features with a ligand molecular graph and cross-attention.
 - HoloProt combines hierarchical structural protein representations with a molecular graph for affinity prediction.
 - Graph_RG separately encodes a protein pocket and ligand for pose-free affinity prediction.
 - PLANET combines a 3D pocket graph and 2D ligand graph, although its auxiliary training targets use complex geometry.
 
-The publishable research gap is therefore narrower: a rigorously strict coordinate-free ligand pathway; multi-scale pocket chemistry and geometry; gMolAI atom/global features; explicit receptor/pocket uncertainty; and leakage-resistant evaluation. These components may be individually precedented, so novelty should be framed as a validated system and evidence package rather than ownership of a broad input combination.
+The publishable research gap is therefore narrower: a machine-enforced coordinate-free ligand pathway, including pretraining; high-confidence assay-to-construct-to-site provenance; multi-scale pocket chemistry and geometry whose incremental value is demonstrated beyond ligand/sequence/nearest-neighbour controls; explicit receptor/pocket uncertainty; and leakage-resistant, conformation-stressed evaluation. These components may be individually precedented. Novelty must be framed as a validated scientific system and evidence package, never as ownership of the protein-3D plus ligand-2D modality.
 
 ## 4. Direct and near-direct methods
 
@@ -177,16 +180,53 @@ PLANET v2.0 introduces probabilistic contact/distance modelling and a distance-e
 
 **Consequence:** compare PLANET as a privileged-information upper or external comparator. Do not copy its pose-derived auxiliary losses into the strict core.
 
-### 4.7 Summary of direct methods
+### 4.7 PSG-BAR
+
+**Primary sources:** [Pandey et al., Molecules 2022](https://doi.org/10.3390/molecules27165114); [source repository](https://github.com/diamondspark/PSG-BAR).
+
+PSG-BAR is an unambiguous direct precedent. It encodes a protein’s folded structure as a residue graph, a ligand as a DeepChem two-dimensional molecular graph, and predicts continuous affinity through residual graph-attention branches and an interaction-scoring module. The paper reports PDBbind, BindingDB, KIBA, and Davis experiments under warm, cold-drug, cold-protein, and cold-both settings. The cold-both drop is scientifically more informative than its warm score: for example, the reported BindingDB MSE/Pearson moves from approximately 0.651/0.864 in the warm setting to 2.102/0.515 in cold both, and PDBbind from 1.660/0.762 to 2.100/0.599.
+
+The reviewed source was pinned at `6540ab8ccccdb543ada7bc8b51a01a171d5c3786`. It confirms a 2D ligand pathway but raises three reproducibility issues: the paper describes five nearest protein neighbours whereas `GraphProcessing.py` sets `k=3`; raw Cartesian coordinates are concatenated into node features processed by a conventional GAT, so rigid-motion invariance is not guaranteed; and no root licence was visible. These issues limit direct code reuse, not PSG-BAR’s status as prior art.
+
+**Consequence:** PSG-BAR must appear in every novelty comparison and should be reproduced only through a clean-room, invariant implementation if its protocol is used as a baseline.
+
+### 4.8 PLMCA and AttentionMGT-DTA
+
+**PLMCA:** [Journal of Medicinal Chemistry, 2026](https://doi.org/10.1021/acs.jmedchem.5c03431).
+
+PLMCA integrates two protein language models, three-dimensional geometric and physicochemical protein features, a ligand molecular graph, and cross-attention. It jointly addresses pocket identification and affinity and includes assay-condition variables for its ChEMBL experiments. The paper reports random, unseen-ligand, and unseen-protein PDBbind21 tests for Kd/Ki; ChEMBL_mini R-squared values of 0.531, 0.635, and 0.519 for IC50, Kd, and Ki; and pocket AUPR up to 0.655. Targeted title, author, DOI, and GitHub searches found no official public implementation by the cut-off. Because the accessible interface description does not expose the full preprocessing and pretrained-data lineage, its strict no-ligand-3D status remains provisional rather than assumed.
+
+**AttentionMGT-DTA:** [Neural Networks, 2024](https://doi.org/10.1016/j.neunet.2023.11.018); [source repository](https://github.com/JK-Liu7/AttentionMGT-DTA).
+
+AttentionMGT-DTA constructs receptor binding-pocket graphs from AlphaFold/PDB structures, combines residue geometry with ESM representations, represents the drug as a SMILES-derived graph, and learns protein/ligand interactions with attention. The pinned source (`e94a28dad3642abab82f353f799aa1246e7ab0dc`) confirms the strict query-ligand modality. It also reveals important evaluation limitations: the training loop evaluates the test set each epoch, uses test MSE for the learning-rate scheduler and best-epoch selection, and relies on conventional Davis/KIBA folds. In `protein_process.py`, multiple ConvexHull pockets are iterated but only the final bounding-box values are subsequently used. No root licence was visible.
+
+**Consequence:** both methods eliminate any residual broad architecture claim. Their assay-context and multimodal ideas are useful, but iScore3.0 must distinguish itself through verified lineage and leakage-controlled evidence.
+
+### 4.9 Adjacent methods that refine the boundary
+
+- [BlendNet](https://doi.org/10.1093/bib/bbae712) predicts affinity from pocket/protein sequences and a 2D compound graph at inference. Its teacher is trained on PLIP atom–residue interaction labels extracted from experimental complexes, so it is a privileged-training comparator, not strict evidence.
+- [AttentionSiteDTI](https://doi.org/10.1093/bib/bbac272) is a direct receptor-site-graph plus ligand-graph precedent for binary DTI. [BindingSite-AugmentedDTA](https://doi.org/10.1093/bib/bbad136) then uses such binding-site information to augment DTA predictors, but its reviewed repository is primarily data tables rather than a complete executable pipeline.
+- [PGraphDTA](https://arxiv.org/abs/2310.04017) and [CSCo-DTA](https://doi.org/10.1093/bib/bbad512) add protein contact-map structure proxies to 2D-ligand affinity models. They belong in structure/sequence-control discussions, but contact maps do not establish value from a chemically detailed experimental pocket.
+- [MMPD-DTA](https://doi.org/10.1021/acs.jcim.4c01528) includes a pocket–drug graph with intermolecular edges and therefore requires complex/pose geometry; its source consumes precomputed graphs without releasing their construction.
+- [AlignNet](https://doi.org/10.1093/bioinformatics/btag599) aligns ESM/GearNet and MolFormer/GraphMVP modalities, but the released pipeline reads ligand MOL2 coordinates and builds 5-Angstrom protein–ligand edges. “Structure-agnostic” in that work does not mean ligand-3D-free.
+- [LigUnity](https://doi.org/10.1016/j.patter.2025.101371) is a high-priority docking alternative and shared pocket–ligand foundation model, but its Uni-Mol pipeline generates or consumes ligand conformers and its case-study preparation uses bound ligand coordinates to define sites.
+
+These cases demonstrate why input classification must follow executable preprocessing, pretrained lineage, and auxiliary labels rather than titles such as “complex-free”, “structure-agnostic”, or “docking-free”.
+
+### 4.10 Summary of direct methods
 
 | Method | Protein 3D | Ligand coordinates needed by core claim? | Query complex distances? | Affinity or activity | Public source | Strict comparator |
 |---|---:|---:|---:|---|---:|---:|
+| PSG-BAR | whole protein | no | no | affinity | yes | yes, clean-room due source caveats |
 | BANANA | pocket | no | no | binary activity | yes | yes |
 | CASTER-DTA | whole protein | no | no | affinity | yes | yes |
 | 3DProtDTA | protein graph | no | no | affinity | yes | yes |
+| AttentionMGT-DTA | predicted/experimental pocket | no | no | affinity | yes | yes, with evaluation caveats |
+| PLMCA | protein multimodal 3D | described as graph-only ligand | no in stated interface | affinity and pocket | not found | provisional paper-level |
 | HoloProt | hierarchical protein | no for ligand graph branch | no | affinity/function | yes | yes, with preprocessing caveats |
 | Graph_RG | pocket | described as pose-free | no | affinity/ranking | not found | protocol-level |
 | PLANET | pocket | no at inference claim; 3D privileged training | learned contact/distance targets | affinity/activity | yes | no, privileged comparator |
+| BlendNet | pocket sequence | no at inference | PLIP-derived teacher targets | affinity | yes | no, privileged comparator |
 | PLANET v2.0 | pocket | inspect final implementation before classification | probabilistic geometry | affinity | site/preprint | surveillance |
 
 ## 5. Related methods that do not satisfy the strict boundary
@@ -340,16 +380,29 @@ Before integration, the project must:
 
 The 384-dimensional released vector and internal atom embeddings serve different roles and should not be conflated.
 
+The Gate-0/1 adapter audit completed these technical checks on the pinned revision and checkpoint. Across 80 unique pilot ligands and 1,971 atoms, the adapter verified canonical/input atom bijections, 48-dimensional atom and 15-dimensional bond inputs, 128-dimensional `node_z`, 256-dimensional raw graph states, and the released 384-dimensional molecule representation. Exact repeated and equivalent-SMILES CPU runs were bitwise identical; CPU/GPU maximum absolute deviation was at most `9.54e-06`, within the frozen tolerance. Labels were quarantined from the encoder path. The unresolved issues are upstream licensing and the absence of a pretraining identity ledger: the source documents 223,180,699 deduplicated ZINC/PubChem graphs, so exact pilot-entity exposure is unknown even though affinity-label pretraining was not detected. See [the Gate-0/1 audit](../reports/gate01/evidence/gmolai-adapter-audit-v1.json).
+
 ## 9. Source-code audit summary
 
 | Project | Interface finding | Licence finding at review | Reuse recommendation |
 |---|---|---|---|
+| PSG-BAR | full-protein 3D graph + 2D ligand; raw xyz in standard GAT | no clear root licence found | clean-room comparator; fix invariance and k discrepancy |
 | BANANA | pocket PDB + SMILES; strict ligand 2D | MIT | reproduce/pin |
 | BigBind | assay-to-pocket mapping and 3D pocket splits | MIT | adapt curation concepts |
 | CASTER-DTA | protein 3D + molecular graph, cross-attention | custom/restricted terms | clean-room baseline unless cleared |
 | 3DProtDTA | separate protein graph and ligand graph/fingerprint | no clear root licence found | reimplement concepts only |
 | HoloProt | hierarchical protein + molecular graph | MIT | reuse selectively |
 | PLANET | pocket EGNN + ligand GAT + pair module; pose-derived targets | no clear root licence found | conceptual comparator only |
+| PLMCA | 3D/PLM/physicochemical protein + ligand graph; implementation unavailable | not assessable | paper-level comparison; contact authors |
+| AttentionMGT-DTA | AlphaFold/PDB pocket + ESM + 2D ligand; test-selected training | no clear root licence found | clean-room concepts only |
+| BlendNet | 2D ligand/pocket sequence inference; PLIP complex teacher | no clear root licence found | privileged comparator only |
+| AttentionSiteDTI | 3D receptor-site graph + 2D ligand; binary endpoint | CC BY 4.0 file | diagnostic/clean-room baseline |
+| BindingSite-AugmentedDTA | site-augmented DTA tables; incomplete executable release | CC BY 4.0 file | mapping reference only |
+| PGraphDTA | PLM + contact-map structure proxy | repository unavailable at cut-off | paper-level surveillance |
+| MMPD-DTA | precomputed pose-dependent pocket–drug graph | no clear root licence found | non-strict comparator only |
+| AlignNet | ligand MOL2 coordinates and cross-complex edges in released pipeline | MIT | non-strict comparator only |
+| LigUnity | Uni-Mol ligand coordinates/conformers and ligand-defined sites | Apache-2.0 code; data terms separate | non-strict comparator only |
+| CSCo-DTA | protein contact maps and interaction-network graph + 2D ligand | no clear root licence found | adjacent proxy baseline |
 | GRIPHIN | ligand positions enter model/grid pathway | MIT | receptor-channel inspiration only |
 | T-ALPHA | protein, ligand, and complex 3D channels | MIT | censoring/uncertainty inspiration |
 | TankBind | ligand distance/conformer and pose optimization | MIT | pair-module inspiration |
@@ -384,6 +437,7 @@ The review supports the following choices:
 ## 11. Open literature questions
 
 - Obtain the exact Graph_RG implementation or sufficient author clarification for reproduction.
+- Obtain PLMCA code/preprocessing or author clarification before treating its strict information boundary as verified.
 - Reclassify PLANET v2.0 when final code and peer-reviewed details are available.
 - Confirm transitive licences for all surface/electrostatics executables and pretrained weights.
 - Audit whether any candidate ligand encoder was pretrained with coordinates, even if current inference accepts SMILES.

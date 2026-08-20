@@ -1,0 +1,2 @@
+# A trailing tab in TSV data represents an empty final field; preserve it.
+*.tsv whitespace=-trailing-space

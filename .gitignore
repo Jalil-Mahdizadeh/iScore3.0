@@ -1,0 +1,46 @@
+# Large local runtimes and source mirrors
+containers/*.sif
+third_party/source_cache/
+graphify-out/
+
+# Python/build caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+.venv/
+.gate01-wheelhouse/
+environments/local/
+
+# Raw and rebuildable data payloads (keep README/manifest metadata)
+data/raw/**
+!data/raw/.gitkeep
+data/external/**
+!data/external/.gitkeep
+data/interim/**
+!data/interim/.gitkeep
+data/features/**
+!data/features/.gitkeep
+
+# Large/rebuildable experiment payloads
+artifacts/checkpoints/**
+!artifacts/checkpoints/.gitkeep
+artifacts/logs/**
+!artifacts/logs/.gitkeep
+cluster/logs/**
+!cluster/logs/.gitkeep
+
+# Local secrets and editor/OS state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.DS_Store
+*~

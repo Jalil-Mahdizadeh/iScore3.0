@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "captured_date": "2026-08-20",
+  "host": {
+    "hostname": "n40",
+    "kernel": "Linux 5.14.0-687.38.1.el9_8.aarch64",
+    "architecture": "aarch64",
+    "scheduler": "Slurm 25.05.3"
+  },
+  "gpu": {
+    "model": "NVIDIA GH200 120GB",
+    "driver": "580.159.04",
+    "reported_memory_mib": 97871,
+    "uuid": "GPU-262cbc0b-cadb-8e9e-b0cf-0c0b8d9dea46"
+  },
+  "apptainer": {
+    "version": "1.5.3-1.el9",
+    "image_path_local_ignored": "containers/gmolai-pyg-25.09-arm64.sif",
+    "image_bytes": 11128963072,
+    "image_sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2"
+  },
+  "container_runtime": {
+    "python": "3.12.3",
+    "numpy": "1.26.4",
+    "torch": "2.8.0a0+34c6371d24.nv25.08",
+    "torch_geometric": "2.7.0",
+    "rdkit": "2025.09.3",
+    "pandas": "2.2.3",
+    "scipy": "1.15.3",
+    "scikit_learn": "1.5.0",
+    "gemmi_local_layer": "0.7.5",
+    "biopython_local_layer": "1.85"
+  },
+  "dependency_lock": "environments/lock/gate01-arm64-requirements.txt",
+  "note": "The SIF, wheel cache, raw data, source mirrors, and generated feature arrays are intentionally ignored; their identities are preserved by tracked hashes and manifests. No additional SIF was required."
+}

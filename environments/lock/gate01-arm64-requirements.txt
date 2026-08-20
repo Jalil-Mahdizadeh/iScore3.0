@@ -1,0 +1,5 @@
+# Wheel resolved for CPython 3.12 / Linux ARM64 in the pinned Arrhenius SIF.
+biopython==1.85 --hash=sha256:e54e495239e623660ad367498c2f7a1a294b1997ba603f2ceafb36fd18f0eba6
+# Downloaded from PyPI on 2026-08-20; install with --require-hashes.
+gemmi==0.7.5 \
+    --hash=sha256:255ca0b0a7f6fb0bf4322f2d69c5f94edf6e95fb801bc1d120ca8dd93b646065

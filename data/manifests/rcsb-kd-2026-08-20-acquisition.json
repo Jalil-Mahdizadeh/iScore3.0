@@ -1,0 +1,208 @@
+{
+  "acquired_utc": "2026-08-20T19:12:01.809167+00:00",
+  "batch_size": 100,
+  "endpoint": "Kd",
+  "entry_count": 2040,
+  "files": [
+    {
+      "bytes": 122528,
+      "kind": "search_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/search-kd.json",
+      "sha256": "0cd398c960a0806cd90f4c18839c838f783df24a6fa25ee25503206cf807108a"
+    },
+    {
+      "bytes": 645370,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0000.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "18d55f711b02f8c42c91c2fa38fc9de8b1c27ebe761117f364ef54912f710b74"
+    },
+    {
+      "bytes": 737282,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0001.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "deee4937ff5ff4fb1c2af4525f5bfcf822a9b919a2150a4d2e2414799f0a895a"
+    },
+    {
+      "bytes": 590881,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0002.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "d32c2eb284277df2c612c47ec5749eb782b21b1ccb5dae87547e7e985a595a3c"
+    },
+    {
+      "bytes": 657173,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0003.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "a33203a525ab149ff1a45d35a16c7765470e6af6d39300d3e3529eb848c0cff1"
+    },
+    {
+      "bytes": 671986,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0004.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "60174ee61f3411ca91dbd558cce21a7047d4b19a0241ebbf2f06b0862f160dda"
+    },
+    {
+      "bytes": 694591,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0005.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "a841214109ec9aee625f0d2e54b0d9537f2cdfc2d436c8c93568a270623ca058"
+    },
+    {
+      "bytes": 666608,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0006.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "7bf924cc91467c453635954f911b13fc5613d66ec1086b44031b567afcb30f83"
+    },
+    {
+      "bytes": 729094,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0007.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "c118b8240d8ec5adc58a90a18f48de29b22386cb8b5fe5a3eee1f3c2d3224c50"
+    },
+    {
+      "bytes": 625947,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0008.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "b494ce599f0a30982bc599248f85a8b62b1afefcb6769830bf74d69c408df009"
+    },
+    {
+      "bytes": 548362,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0009.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "8269137200821899099eb34493be60ff1c3ad5b59fa6bb1167441d2f63c4af5a"
+    },
+    {
+      "bytes": 576319,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0010.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "1dcfc2f948f6c0f16e5cff3d7db0b82da5ead51e3f8e5c17a5b006fa020b4e1d"
+    },
+    {
+      "bytes": 502816,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0011.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "7ab18b46834b42b152a9ce93374d6357c00cd1acbcfc7097a4f1d42616a63b12"
+    },
+    {
+      "bytes": 667611,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0012.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "17cfe46feceecefaeeb0b353d013a73392d30947c0b623c1d7b2feafd8a3ea07"
+    },
+    {
+      "bytes": 554760,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0013.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "1b7995ea1333dd4cc6c7190963a03bfb0b9254d8d14deaeaf59e004ae426408a"
+    },
+    {
+      "bytes": 661059,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0014.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "4758a0cd3480836e9672066c5f036a3c283e2f1504b197d0389e7ea9db673ea3"
+    },
+    {
+      "bytes": 571097,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0015.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "a668b4d8eeb8897baa472c0bbaa63d64a8f376fe67400b98c7db7614cb0a1444"
+    },
+    {
+      "bytes": 661016,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0016.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "c86a2479dffb9722fb0bf7fb37d0a5d9a3ee93dffeeb5958f3e0e2a5728e24ba"
+    },
+    {
+      "bytes": 707805,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0017.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "4066ad9a0e89fc920ed7574cfa51c653d98658208f9c15e552a1f4baddaf13bb"
+    },
+    {
+      "bytes": 756925,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0018.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "9f54791785281eec85f4ec3b1497c90077d5b9952f66672bd08822357897c515"
+    },
+    {
+      "bytes": 723277,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0019.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "2a8a4a278b3f469afd20cadfbd950068f3ad545f44e66baf555d86e755289a46"
+    },
+    {
+      "bytes": 279963,
+      "kind": "metadata_response",
+      "path": "/work/data/raw/rcsb/2026-08-20/metadata/entries-0020.json",
+      "requested_ids": 40,
+      "returned_entries": 40,
+      "sha256": "621e8bcc235b4fda626ee70fd0dba64e2bc642d416b07bc7f78577e081e0b815"
+    }
+  ],
+  "graphql_query_sha256": "5c114d456504584577ade8dbfbb3a5d46a5cc851a246f21a4b6555a661dcc9e4",
+  "schema_version": 1,
+  "search_request": {
+    "query": {
+      "parameters": {
+        "attribute": "rcsb_binding_affinity.type",
+        "operator": "exact_match",
+        "value": "Kd"
+      },
+      "service": "text",
+      "type": "terminal"
+    },
+    "request_options": {
+      "paginate": {
+        "rows": 10000,
+        "start": 0
+      }
+    },
+    "return_type": "entry"
+  },
+  "snapshot_semantics": "mutable_service_response_cached_immutably",
+  "source": "RCSB PDB Search API and Data API",
+  "source_urls": [
+    "https://search.rcsb.org/rcsbsearch/v2/query",
+    "https://data.rcsb.org/graphql"
+  ]
+}

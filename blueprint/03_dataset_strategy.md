@@ -375,6 +375,8 @@ Any failed gate blocks the corresponding experiment; it does not justify silentl
 
 Pin RCSB PDB, UniProtKB, SIFTS, and CATH snapshots; use a rights-cleared structural subset such as BioLiP2-Opt, plus Davis/KIBA only for architecture smoke tests. Build the schema, strict feature tests, split code, and ligand/protein-only baselines. Results are not publication claims.
 
+**Gate-0/1 result:** a provenance-first RCSB/BindingDB 202608 Kd pilot retained 61 exact uncensored measurements across five exact-construct components, plus five label-quarantined historical site references. BindingDB reconciliation removed 12 RCSB candidates whose omitted `>` qualifiers made censored lower bounds appear exact; a seven-row WDR5 group then failed the minimum group size. This incident makes source-level endpoint/relation reconciliation mandatory for every scaled ingestion. The strict-v2 pilot passed bounded data construction but is too small for external claims, lacks a validated local structure-similarity edge, and remains holo-privileged. See [the pilot data card](../reports/gate01/pilot_data_card.md).
+
 ### Stage D1 — licensed structural core
 
 After approval, acquire and pin PDBbind. Generate supplied-site pockets, CleanSplit, LP-PDBbind, union-component splits, and PLINDER/APObind/AlphaFold-linked holo/apo/predicted views. CrossDocked2020 may contribute only receptor/pocket artifacts. Freeze test labels and manifests before tuning the full model.

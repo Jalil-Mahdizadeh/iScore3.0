@@ -1,0 +1,180 @@
+{
+  "component_count": 6,
+  "component_sizes": [
+    19,
+    19,
+    15,
+    10,
+    9,
+    8
+  ],
+  "components": [
+    {
+      "component_id": "union-07900e144d6a",
+      "construct_groups": [
+        "construct-004-a02c0b37ee39"
+      ],
+      "observation_ids": [
+        "RCSB-4AGQ-P96-KD",
+        "RCSB-5AOJ-Y0V-KD",
+        "RCSB-5O1B-9H2-KD",
+        "RCSB-5O1C-9GZ-KD",
+        "RCSB-5O1D-9GW-KD",
+        "RCSB-5O1E-9GT-KD",
+        "RCSB-5O1G-9GK-KD",
+        "RCSB-5O1H-9GN-KD",
+        "RCSB-5O1I-9GH-KD",
+        "RCSB-8A92-LE9-KD"
+      ],
+      "size": 10
+    },
+    {
+      "component_id": "union-9c37703edc28",
+      "construct_groups": [
+        "construct-003-fbf3f5c695a3"
+      ],
+      "observation_ids": [
+        "RCSB-4O76-1M3-KD",
+        "RCSB-4PS5-2TA-KD",
+        "RCSB-5D26-L28-KD",
+        "RCSB-5D3L-57F-KD",
+        "RCSB-5D3T-56Y-KD",
+        "RCSB-5EGU-5NQ-KD",
+        "RCSB-5EIS-5OU-KD",
+        "RCSB-6FO5-DZH-KD",
+        "RCSB-6FSY-E5Q-KD",
+        "RCSB-6Q3Y-HG5-KD",
+        "RCSB-6Q3Z-HG8-KD",
+        "RCSB-6TPZ-NV2-KD",
+        "RCSB-7AXR-S7T-KD",
+        "RCSB-7MR9-ZMM-KD",
+        "RCSB-7MRA-ZMJ-KD"
+      ],
+      "size": 15
+    },
+    {
+      "component_id": "union-fd8f6064dd3f",
+      "construct_groups": [
+        "construct-001-c5158f5b655d"
+      ],
+      "observation_ids": [
+        "RCSB-4UG5-XFK-KD",
+        "RCSB-4UG6-XFJ-KD",
+        "RCSB-4UG7-1EV-KD",
+        "RCSB-4UG8-HW1-KD",
+        "RCSB-4UG9-1EW-KD",
+        "RCSB-4UGA-Q05-KD",
+        "RCSB-4UGB-QJ7-KD",
+        "RCSB-4UGC-1Q6-KD",
+        "RCSB-4UGD-Q14-KD",
+        "RCSB-4UGG-S5D-KD",
+        "RCSB-4UGH-4V4-KD",
+        "RCSB-4UGI-SKO-KD",
+        "RCSB-4UGL-S90-KD",
+        "RCSB-4UGM-1QE-KD",
+        "RCSB-4UGN-H49-KD",
+        "RCSB-4UGO-1QF-KD",
+        "RCSB-4UGR-6E5-KD",
+        "RCSB-4UGS-H36-KD",
+        "RCSB-4UGY-EXI-KD"
+      ],
+      "size": 19
+    },
+    {
+      "component_id": "union-5da9b036eb04",
+      "construct_groups": [
+        "construct-002-cb5cf2af5e4a"
+      ],
+      "observation_ids": [
+        "RCSB-5C85-4YO-KD",
+        "RCSB-5C87-4YS-KD",
+        "RCSB-5D7X-XZ8-KD",
+        "RCSB-5DY7-5GT-KD",
+        "RCSB-5DYA-5GV-KD",
+        "RCSB-5E3G-5JQ-KD",
+        "RCSB-5EM3-5Q0-KD",
+        "RCSB-5EPR-5QY-KD",
+        "RCSB-5EPS-5QX-KD",
+        "RCSB-5EVA-5S9-KD",
+        "RCSB-5EWD-5SH-KD",
+        "RCSB-5EWH-5SG-KD",
+        "RCSB-5MYG-LS8-KD",
+        "RCSB-5O4S-9KW-KD",
+        "RCSB-5O55-9L5-KD",
+        "RCSB-5O5A-9LN-KD",
+        "RCSB-5O5F-9LT-KD",
+        "RCSB-5O5H-9LK-KD",
+        "RCSB-5OV8-AXN-KD"
+      ],
+      "size": 19
+    },
+    {
+      "component_id": "union-233117c8ad60",
+      "construct_groups": [
+        "construct-005-6f4aa0a92e90"
+      ],
+      "observation_ids": [
+        "RCSB-6RQ0-KE2-KD",
+        "RCSB-6RQ1-KE5-KD",
+        "RCSB-6RQ3-OUC-KD",
+        "RCSB-6RQ5-KEB-KD",
+        "RCSB-6RQ6-R2H-KD",
+        "RCSB-6RQ8-KEH-KD",
+        "RCSB-6RQ9-KEQ-KD",
+        "RCSB-6RQB-Q47-KD",
+        "RCSB-6RQD-KEW-KD"
+      ],
+      "size": 9
+    },
+    {
+      "component_id": "union-6352373e144e",
+      "construct_groups": [
+        "construct-006-4c5802bc11cc"
+      ],
+      "observation_ids": [
+        "RCSB-6U5M-Q0S-KD",
+        "RCSB-6U8L-Q1P-KD",
+        "RCSB-6U8O-Q1G-KD",
+        "RCSB-6UHY-Q8G-KD",
+        "RCSB-6UIF-Q8P-KD",
+        "RCSB-6UIK-Q8M-KD",
+        "RCSB-6UJ4-Q8S-KD",
+        "RCSB-6UOZ-QF1-KD"
+      ],
+      "size": 8
+    }
+  ],
+  "construct_count": 6,
+  "created_utc": "2026-08-20T19:32:53.383230+00:00",
+  "cross_construct_edge_counts": {},
+  "edge_counts": {
+    "exact_construct": 556,
+    "exact_scaffold": 68,
+    "full_sequence": 556,
+    "ligand_tanimoto": 147,
+    "local_site_sequence": 556,
+    "shared_publication": 318
+  },
+  "known_unresolved": [
+    "validated Foldseek/TM-align pocket-structure edge unavailable in bounded pilot",
+    "RCSB affinity experimental-source lineage is partial",
+    "gMolAI exact pretraining entity ledger unavailable",
+    "S0 query-holo receptor conformation may encode induced-fit information"
+  ],
+  "maximum_cross_construct_ecfp_tanimoto": 0.2716049382716049,
+  "maximum_cross_construct_full_sequence_identity": 0.29545454545454547,
+  "maximum_cross_construct_site_sequence_identity": 0.3333333333333333,
+  "observation_count": 80,
+  "schema_version": 1,
+  "structure_similarity_edge_status": "unavailable_gate01_limitation",
+  "thresholds": {
+    "exact_bemis_murcko_scaffold": true,
+    "exact_construct": true,
+    "full_sequence_global_identity_at_least": 0.3,
+    "local_site_sequence_identity_at_least": 0.5,
+    "morgan_radius2_tanimoto_at_least": 0.35,
+    "shared_primary_doi_or_pubmed": true,
+    "validated_pocket_structure_edge": "unavailable_gate01_limitation"
+  },
+  "zero_component_overlap_by_construction": true
+}

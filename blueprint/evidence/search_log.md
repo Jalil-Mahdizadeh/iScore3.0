@@ -352,4 +352,44 @@ Primary-page findings added to the registries:
 - OpenFE/public FEP series are scientifically useful but heavily reused and subject to the current target-mirroring debate.
 - SIFTS, UniProtKB, and CATH are required mapping/OOD infrastructure; none alone proves pocket novelty.
 
-No bulk resource was downloaded and no third-party coordinate, ligand, or checkpoint file was copied into the repository. The final evidence package contains 71 publication/resource assessments and 46 dataset/infrastructure records; these counts refer to reviewed registry rows, not a claim that future or private data sources do not exist.
+No bulk resource was downloaded during that blueprint expansion and no third-party coordinate, ligand, or checkpoint file was copied into the tracked repository. After the Gate-0/1 update below, the evidence package contains 82 publication/resource assessments and 47 dataset/infrastructure records; these counts refer to reviewed registry rows, not a claim that future or private data sources do not exist.
+
+## Gate-0/1 direct-competitor update — 20 August 2026
+
+The feasibility phase reopened the novelty search specifically for protein-structure plus coordinate-free-ligand affinity methods. Query families included exact method names, DOI/title/author searches, “protein 3D ligand 2D affinity”, “pocket graph SMILES affinity”, “complex-free affinity”, “structure-agnostic protein ligand affinity”, “contact map drug target affinity”, and site-restricted GitHub searches. Primary journal/PubMed/PMC records were preferred; source conclusions were drawn from pinned repositories rather than search snippets.
+
+### Newly classified publications
+
+- **Strict or provisional direct precedents:** PSG-BAR, AttentionMGT-DTA, PLMCA, plus binary AttentionSiteDTI and site-augmented BindingSite-AugmentedDTA.
+- **Privileged-training:** BlendNet, because its complex-free student inherits PLIP interaction supervision extracted from experimental complexes.
+- **Structure proxies:** PGraphDTA and CSCo-DTA, because protein contact maps encode structural adjacency but not detailed receptor-pocket chemistry.
+- **Non-strict despite adjacent terminology:** MMPD-DTA uses a pose-dependent pocket–drug graph; AlignNet reads ligand coordinates and cross-complex edges; LigUnity generates/reads ligand conformers and uses ligand-defined pockets.
+
+The novelty consequence is decisive: receptor 3D plus ligand 2D/no-pose affinity prediction is established prior art. Any future iScore3.0 claim must concern an enforced end-to-end ligand-information boundary, assay/construct/site provenance, uncertainty and receptor-conformation handling, and statistically demonstrated geometry value under similarity-component and external evaluation.
+
+### Pinned source inspections
+
+| Project | Revision | Key result |
+|---|---|---|
+| PSG-BAR | `6540ab8ccccdb543ada7bc8b51a01a171d5c3786` | 2D DeepChem ligand graph confirmed; paper/source k-neighbour discrepancy; raw xyz in non-invariant GAT; no root licence found |
+| AttentionMGT-DTA | `e94a28dad3642abab82f353f799aa1246e7ab0dc` | 2D ligand graph confirmed; final ConvexHull pocket selected; test MSE controls schedule/model selection; no root licence found |
+| BlendNet | `80961efb55910044e9ea20e34eeddcd23caee84e` | inference input is pocket/protein sequence plus 2D graph; PLIP complex labels train teacher; external assets on Dropbox; no root licence found |
+| AttentionSiteDTI | `18ccacb779c90ba449d5bcc66abb80318e65c225` | structural site graph plus ligand graph confirmed; binary DTI; CC BY 4.0 file present |
+| BindingSite-AugmentedDTA | `af23b19fee602993746120362478dc15f50c0660` | released repository contains mapping tables and README but no complete pipeline; CC BY 4.0 file present |
+| MMPD-DTA | `69926361c8155fdd40ea2aef7df0aa3fd7de1353` | precomputed complex graph consumed, construction absent; no root licence found |
+| AlignNet | `c5528d8c557ecd318e1b998f109131e1bc2e9dcc` | MOL2 ligand coordinates and 5-Angstrom protein–ligand graph edges confirmed; MIT |
+| LigUnity | `8ae35edba5481aa13de8a5bac6b03c1c1860ef3c` | ligand conformer coordinates and ligand-centred pocket preparation confirmed; Apache-2.0 code with separate data terms |
+| CSCo-DTA | `ba1aa7feebb926457c830acdf081f057d6033528` | external Pconsc4 contact maps and interaction-network graph confirmed; no root licence found |
+
+Exact inspected-file hashes are in `third_party/reviewed_sources.tsv`; source trees remain ignored under `third_party/source_cache/`.
+
+### Negative and incomplete searches
+
+- No official PLMCA repository was found through DOI, exact title, authors, GitHub, journal availability, or general web searches. Its full preprocessing and ligand-pretraining boundary therefore remain unverified.
+- The PGraphDTA repository named by the preprint was unavailable/private at the cut-off, so no revision or licence could be pinned.
+- Graph_RG source remains unfound after the earlier search wave.
+- “No code found” records search outcome only. They must be revisited before architecture freeze and publication.
+
+### Search limitations and stopping rule
+
+This update was considered saturated when repeated protein-3D/ligand-2D and named-method searches returned already classified records, and every newly discovered high-relevance source was assigned strict, privileged, proxy, or non-strict status from its effective data path. It is not a registered systematic review. AlignNet’s very recent publication illustrates why surveillance must be rerun immediately before any novelty statement.
