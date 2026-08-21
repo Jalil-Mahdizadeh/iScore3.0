@@ -25,3 +25,12 @@ pocket-unoccupied experimental views are sensitivity subsets, not substitutes fo
 the complete S1 primary view. `splits/gate02/prefit-union-components-v3.tsv` was
 created before outcome fitting and must be used for any comparison to the reported
 Gate-2 result. See `reports/gate02/reproducibility.md` for canonical hashes.
+
+The terminal Gate-3 cohort is `processed/gate03/gate03-strict-kd-v3.tsv`; its
+immutable component/scaffold assignments are
+`splits/gate03/gate03-component-scaffold-splits-v3.tsv`. The final evaluation
+fold ledger is `splits/gate03/gate03-evaluation-folds-v1.tsv`, governed by
+`configs/gate03/evaluation-effective-v1.yaml` and amendments 04--05. Final output
+hashes and the exact container command are in
+`reports/gate03/reproducibility.md`. These results are a terminal hypothesis
+no-go and must not be reused as a tuning set for the same architecture proposal.

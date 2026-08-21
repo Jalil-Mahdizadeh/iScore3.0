@@ -17,6 +17,13 @@ The audit trail intentionally retains every dated decision:
 - `primary-source-verification-v4.yaml` is the final stratified audit registry.
 - `primary-source-quarantine-v1.yaml` excludes the one confirmed BindingDB versus
   primary-publication label discrepancy before any efficacy fit.
+- `protocol-amendment-03.yaml` makes gMolAI a complete-case corroborating
+  sensitivity after four disconnected ion-pair inputs fail unchanged encoding.
+- `protocol-amendment-04.yaml` replaces an invalid component-grouped scaffold
+  inner split with training-only within-series scaffold centring.
+- `protocol-amendment-05.yaml` transparently excludes only a view/encoder-specific
+  scaffold sensitivity fold when no independent inner fold exists. Two aborted
+  runs wrote no result artifacts and exposed no model outcomes.
 
 The canonical pre-fit cohort is `data/processed/gate03/gate03-strict-kd-v3.tsv`.
 Its component/scaffold assignments are frozen in
@@ -35,3 +42,8 @@ Gate-3 has three terminal states:
 
 No cross-attention, atom--residue message passing, docking, ligand conformer, or
 ligand-coordinate model is permitted in this phase.
+
+Gate-3 completed as `HYPOTHESIS-NO-GO`. The current no-pose ligand--pocket
+interaction architecture hypothesis is terminated. See
+`reports/gate03/GATE_3_REPORT.md` and `reports/gate03/reproducibility.md`; no
+larger architecture was trained.

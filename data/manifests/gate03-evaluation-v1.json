@@ -1,0 +1,151 @@
+{
+  "counts": {
+    "hyperparameter_fits": 3550,
+    "observations": 661,
+    "predictions": 50870,
+    "series": 34
+  },
+  "created_utc": "2026-08-21T13:16:23.604028+00:00",
+  "experiment_id": "gate03-evaluation-effective-v1",
+  "git_prefit_contract_commit": "e919fe3ec348df406df925e5b86a225e36cf8bee",
+  "git_prefit_evaluator_commit": "9b16414a59db4a56d38bb67c616dded02dd490af",
+  "information_boundary": {
+    "docking_or_pose_used": false,
+    "full_cross_attention_fit": false,
+    "ligand_coordinates_used": false,
+    "maximum_interaction_parameters": 50000
+  },
+  "inputs": [
+    {
+      "bytes": 1077817,
+      "path": "data/processed/gate03/gate03-strict-kd-v3.tsv",
+      "sha256": "785a304e88197da725e891c4701a2fc7ad1ae4ea14413bf7fec7e98fe23415c7"
+    },
+    {
+      "bytes": 64516,
+      "path": "data/splits/gate03/gate03-component-scaffold-splits-v3.tsv",
+      "sha256": "cdc6a29984ad276b0c2c1cacc7b7af68925fe9bd125a7a73a616ca32d0a088d8"
+    },
+    {
+      "bytes": 137907,
+      "path": "data/processed/gate03/receptor-pocket-v2-features-v1.tsv",
+      "sha256": "0c6607c86cc0424f69ecd6360b2d15b418d756f5fc3540a74958624dd4e68470"
+    },
+    {
+      "bytes": 16163,
+      "path": "data/processed/gate03/receptor-pocket-v2-features-s3-v1.tsv",
+      "sha256": "fb2c4301ed16ffc3fe22cc337b7efbc534412b01251ad989ac5d49815ed09a9e"
+    },
+    {
+      "bytes": 19793,
+      "path": "data/manifests/gate03-esm2-v1.json",
+      "sha256": "291142c46c347459d798631e5cf7cbb69679bb0690142220f0f45f9321dd7842"
+    },
+    {
+      "bytes": 55237,
+      "path": "data/manifests/gate03-esm-if1-v2.json",
+      "sha256": "920db6101b552d092670762a4fd7f2e82b7f1e792ea1f361c585de25eec07408"
+    },
+    {
+      "bytes": 1407139,
+      "path": "data/manifests/gate03-gmolai-v2-v1.json",
+      "sha256": "acb4fd21448c09afcd9aaf31aa90b6bcd804dc33ce3065087e3f24323aeb48d1"
+    },
+    {
+      "bytes": 1373167,
+      "path": "data/processed/gate03/structural-similarity-allpairs-v2.tsv",
+      "sha256": "05c84ba3ee21d7873036e24f201b9a0b7e10e538ede65f723e1c43bd3835eaa4"
+    },
+    {
+      "bytes": 5944,
+      "path": "configs/gate03/evaluation-effective-v1.yaml",
+      "sha256": "d964894bd15368220fb69876c4dacc7d5f2aaa93b00856c7c9a929010917bedb"
+    },
+    {
+      "bytes": 1170,
+      "path": "configs/gate03/protocol-amendment-04.yaml",
+      "sha256": "a4cc425964ae9de7b257f1d8e87a9c7191b275f0797cce2f420d7d2cb8f30ea1"
+    },
+    {
+      "bytes": 1430,
+      "path": "configs/gate03/protocol-amendment-05.yaml",
+      "sha256": "fb981d6a7e48e42f53262596c0c20266b7f8a414e1fadcf0e00cbc8312196ff5"
+    },
+    {
+      "bytes": 10076,
+      "path": "reports/gate03/evidence/dataset-gate-audit-v3.json",
+      "sha256": "8e4a18cc33917e9d4de546c3528b23db574355bf273ac7da33915818dfd4fe72"
+    },
+    {
+      "bytes": 1020,
+      "path": "reports/gate03/evidence/primary-source-verification-v4.json",
+      "sha256": "98d480d3b3bebf6cd500d97f7eaacaf42da5a2486c659428667e96bf41ee6d9e"
+    },
+    {
+      "bytes": 642,
+      "path": "reports/gate03/evidence/receptor-view-audit-v1.json",
+      "sha256": "b8bf1786028042f1b544df43508606c82005764a9a21c65d7a910419ddb7b831"
+    },
+    {
+      "bytes": 482,
+      "path": "reports/gate03/evidence/apo-view-audit-v1.json",
+      "sha256": "53cdacf9f5e65022697879ce98e2f4db2946a4eb4b52d50a2959f1c96f15682a"
+    },
+    {
+      "bytes": 1016,
+      "path": "reports/gate03/evidence/esm2-adapter-audit-v1.json",
+      "sha256": "69f177c82c26b0bc713afae3becf11900a71d274770fb1f904f27eeecc854e67"
+    },
+    {
+      "bytes": 805,
+      "path": "reports/gate03/evidence/esm-if1-adapter-audit-v2.json",
+      "sha256": "159b97cb176d60c53fec71ad04bf585b7026c325771563ea87f3dc90af39126e"
+    },
+    {
+      "bytes": 16107,
+      "path": "reports/gate03/evidence/gmolai-adapter-audit-v1.json",
+      "sha256": "9f7c7eb8e24e5489dd62e42872f46099a352d5470e30ae2750e1cba968bdd54a"
+    },
+    {
+      "bytes": 1688,
+      "path": "reports/gate03/evidence/structural-similarity-audit-v2.json",
+      "sha256": "eddfb5f2534df2d1d80c53b0057577a751379be465c43c87aa9ac1226516ac4e"
+    }
+  ],
+  "outputs": [
+    {
+      "bytes": 224338,
+      "path": "data/splits/gate03/gate03-evaluation-folds-v1.tsv",
+      "sha256": "3e1bc568fc6e3854c1325825072536c4170575e8c8393145e3b52454a5c6458a"
+    },
+    {
+      "bytes": 10683176,
+      "path": "reports/gate03/evidence/evaluation-predictions-v1.tsv",
+      "sha256": "17444d41e69982192535bc96239c6e682113adbcd01fbbeec21387077fa77180"
+    },
+    {
+      "bytes": 1084962,
+      "path": "reports/gate03/evidence/evaluation-hyperparameters-v1.tsv",
+      "sha256": "34ad668c102041b7fe35a1e9cbe802a483198a3b19da8be989740aa270ea6593"
+    },
+    {
+      "bytes": 55346,
+      "path": "reports/gate03/evidence/leakage-diagnostics-v1.json",
+      "sha256": "5b61f39c1186aa291cf8c9a57f2576178c022caee2b4e18da3a9a6aada78a224"
+    },
+    {
+      "bytes": 316610,
+      "path": "reports/gate03/evidence/evaluation-metrics-v1.json",
+      "sha256": "9700a3e4cb0b1d85058ee92739c929bc5aa48fcee688735bcd48f5c6858001a5"
+    }
+  ],
+  "runtime": {
+    "numpy": "1.26.4",
+    "python": "3.12.3",
+    "rdkit": "2025.09.3",
+    "scipy": "1.15.3",
+    "sklearn": "1.5.0",
+    "torch": "2.8.0a0+34c6371d24.nv25.08"
+  },
+  "schema_version": 1
+}

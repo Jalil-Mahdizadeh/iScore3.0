@@ -2,18 +2,20 @@
 
 iScore3.0 is a research programme for predicting protein–small-molecule binding affinity from a receptor structure and a ligand SMILES string, without using or generating query-ligand 3D coordinates or a docking pose.
 
-The repository contains completed **Gate-0/1 and bounded Gate-2 feasibility
-phases**. Gate-2 expanded the strict provenance-first dataset, added structural
-leakage edges and predicted/unoccupied receptor views, and tested a low-capacity
-ligand–pocket interaction control. It did not train the proposed full architecture.
+The repository contains completed **Gate-0/1, Gate-2, and bounded Gate-3
+feasibility phases**. Gate-3 tested interaction identifiability on a deeper,
+strictly disconnected exact-Kd cohort using absolute component-OOD and centred
+scaffold-OOD evaluation. It did not train the proposed full architecture.
 
 ## Start here
 
 - [`blueprint/`](blueprint/) — committee blueprint and literature/data/leakage evidence.
 - [`reports/gate01/`](reports/gate01/) — Gate-0/1 report and reproducibility record.
 - [`reports/gate02/`](reports/gate02/) — Gate-2 no-go decision, component/OOD results, and reproducibility record.
+- [`reports/gate03/`](reports/gate03/) — terminal Gate-3 interaction-identifiability report, evidence, and reproduction command.
 - [`configs/gate01/`](configs/gate01/) — frozen pilot and baseline configurations.
 - [`configs/gate02/`](configs/gate02/) — frozen interaction-feasibility protocol and amendments.
+- [`configs/gate03/`](configs/gate03/) — frozen Gate-3 data, representation, evaluation, and outcome-blind amendment contracts.
 - [`src/iscore3/`](src/iscore3/) — tested implementation.
 - [`data/README.md`](data/README.md) — data contracts and local rebuild instructions.
 
@@ -29,8 +31,11 @@ Use [`reports/gate01/reproducibility.md`](reports/gate01/reproducibility.md). Th
 
 ## Status
 
-Gate-0/1 and Gate-2 are complete. Gate-2 is **no-go for full architecture
-training**: the predeclared low-capacity interaction term did not add reproducible
-signal beyond matched additive fusion under strict component/OOD evaluation. See
-the [`Gate-2 report`](reports/gate02/GATE_2_REPORT.md). No model is suitable for
+Gate-0/1, Gate-2, and Gate-3 are complete. Gate-3 is **HYPOTHESIS-NO-GO**:
+low-capacity ligand--pocket interaction did not provide statistically supported,
+practically meaningful, and replicated gains across absolute component-OOD,
+within-target scaffold-OOD, two receptor encodings, non-holo views, permutation,
+and gMolAI corroboration. The current no-pose interaction-architecture hypothesis
+is terminated; no full cross-attention model was trained. See the
+[`Gate-3 report`](reports/gate03/GATE_3_REPORT.md). No model is suitable for
 clinical, regulatory, or prospective drug-discovery decisions.
