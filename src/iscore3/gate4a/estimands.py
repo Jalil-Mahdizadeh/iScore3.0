@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
+from iscore3.gate4a.admission import ProjectionBudget
+
 
 @dataclass(frozen=True)
 class ModelSpec:
@@ -87,3 +89,12 @@ def validate_registry() -> None:
         raise ValueError("primary interaction comparison is not capacity-matched")
     if set(reference.main_terms) != set(augmented.main_terms):
         raise ValueError("primary interaction comparison has unequal main effects")
+    budget = ProjectionBudget()
+    budget.validate()
+    if reference.interaction_ranks != (("ligand_2d_x_pocket", budget.control_rank_2d),):
+        raise ValueError("MI2 ranks disagree with the frozen parameter budget")
+    if augmented.interaction_ranks != (
+        ("ligand_2d_x_pocket", budget.augmented_rank_2d),
+        ("ligand_3d_x_pocket", budget.augmented_rank_3d),
+    ):
+        raise ValueError("MI23 ranks disagree with the frozen parameter budget")

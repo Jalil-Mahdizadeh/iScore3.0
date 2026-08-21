@@ -29,6 +29,8 @@ criteria.
   censoring, split, and test-access policy.
 - [`configs/gate4a/protocol-v1.yaml`](configs/gate4a/protocol-v1.yaml) — machine-readable
   frozen settings.
+- [`reports/gate4a/GATE4A_DATASET_ADMISSION_REPORT.md`](reports/gate4a/GATE4A_DATASET_ADMISSION_REPORT.md)
+  — committee-facing PASS/BLOCKED decision and evidence.
 - [`data/README.md`](data/README.md) — lifecycle and provenance contract.
 - [`reports/history/GATE3_CLOSURE.md`](reports/history/GATE3_CLOSURE.md) — why the
   former hypothesis was closed and how its full history can be recovered.
@@ -47,17 +49,19 @@ commands.
 
 ## Status
 
-Gate-4A initiation is complete through the initial source audit and a
-candidate-only conformer technical preflight. Davis contains 9,424 exact and 22,400
-right-censored tested pairs; none of the censored cells are exact 10,000 nM
-labels. Of 72 named compounds, 71 have unaccepted PubChem candidates and one is
-quarantined as an unspecified derivative. Deterministic conformer generation
-succeeded for 69 candidates; two salt/multicomponent records were correctly
-rejected pending a frozen standardization policy.
+The bounded dataset-admission phase is complete. All 72 Davis compounds have an
+explicit disposition: 69 standardized parents are admitted, two unresolved-stereo
+records and one unnamed derivative are quarantined. The standardized wild-type
+reference-domain estimand admits 338/442 assay rows and retains 6,581 exact plus
+16,741 right-censored observations across 69 ligands.
 
-Exact assay-construct boundaries/sequences are not supplied by the source, all
-71 compound mappings still require manual verification, and a locked external
-panel has not been selected. Therefore dataset materialization and model fitting
-remain forbidden. See [`reports/gate4a/GATE4A_INITIATION_REPORT.md`](reports/gate4a/GATE4A_INITIATION_REPORT.md).
-There are no Gate-4A performance results and no model suitable for prospective,
-clinical, or regulatory use.
+Free-ligand 3D is non-degenerate and may proceed to a later ligand-only experiment
+after committee chemical QA. Receptor interaction fitting remains blocked: exact
+Davis assay constructs are unavailable, predicted/apo pocket coordinates and
+structure-leakage edges are not qualified, external eligible-pair ledgers are not
+custodian-locked, and public repeat data cannot support a numeric practical-
+equivalence region. OKL 2026 and KIRHub 2026 are conditional complementary
+confirmation candidates, not development data.
+
+No predictive model was trained. There are no Gate-4A performance results and no
+model suitable for prospective, clinical, or regulatory use.

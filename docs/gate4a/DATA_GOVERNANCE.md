@@ -1,85 +1,94 @@
 # Gate-4A data and test governance
 
-## Dataset roles
+## Frozen dataset roles
 
-- **Davis 2011:** development source for dense kinase-panel censor-aware methods.
-- **Karaman 2008:** technical replication of source semantics; not an independent
-  final test because of shared assay technology, targets, and compounds.
-- **Locked confirmatory panel:** must be selected and approved before development
-  outcomes are reviewed. Prefer a prospective matrix or a distinct protein
-  family with non-overlapping scaffolds and receptor structural components.
-- **Gate-3:** permanently quarantined for selection.
+- **Davis 2011:** development source for censor-aware dense kinase-panel work.
+- **Karaman 2008:** related technical evidence only; not an independent final test.
+- **OKL 2026:** conditional affinity-like confirmation candidate. Use raw dose data
+  with interval/censor-aware endpoints, never all reported posterior estimates as
+  exact Kd. Davis-overlapping compounds and leakage-connected components are
+  ineligible.
+- **KIRHub 2026:** conditional orthogonal functional ranking/classification
+  candidate, not an absolute-pKd panel.
+- **Gate-3:** permanently quarantined for architecture or threshold selection.
 
-## Required source audit
+Confirmation labels remain unavailable to model development. Eligible-pair
+ledgers must be chemically and structurally adjudicated, hash-frozen, and held by
+an independent custodian before either external source can be released once.
 
-For every matrix cell preserve the original publication, table, row/column,
-assay technology, construct, relation, value, unit, censor limit, and whether the
-cell was assayed. Derivative ML matrices are comparison aids only and cannot be
-the source of truth.
+## Source and label contract
 
-Davis Supplementary Table 4 states that blanks are tested pairs with Kd above
-10 micromolar or no detection in a 10 micromolar screen. Karaman Supplementary
-Table 2 uses the same convention. Both are encoded as `right_censored_kd`.
+For every matrix cell preserve publication, table, source row/column, assay,
+construct annotation, relation, value, unit, censor limit, and whether the pair
+was assayed. Derivative ML matrices are comparison aids, never the source of
+truth.
 
-The initial Davis audit found 31,824 tested pairs: 9,424 exact numeric Kd values
-and 22,400 right-censored cells. No numeric source cell equals 10,000 nM; the
-largest exact value is 9,900 nM. These counts are frozen in
-`reports/gate4a/evidence/davis-source-audit-v1.json`.
+Davis Supplementary Table 4 has 31,824 tested pairs: 9,424 numeric Kd values and
+22,400 blanks. A blank means Kd above 10 micromolar or no detection in the
+10-micromolar screen and is encoded as `right_censored_kd`. No numeric source
+cell equals 10,000 nM. After chemical and receptor admission, the provisional
+matrix is 69 ligands by 338 receptors, with 6,581 exact and 16,741 censored
+cells.
 
-## Qualification before feature generation
+## Chemical identity outcome
 
-Freeze and report:
+All 72 Davis compounds have explicit dispositions in
+`data/processed/gate4a/davis-compound-adjudication-v1.tsv`. Sixty-nine parent
+structures are admitted. `BIBF-1120 (derivative)` is unidentifiable; Ki-20227
+has unspecified carbon stereochemistry; and SB-203580 has unspecified sulfoxide
+stereochemistry. Those three are quarantined. Two hydrochloride registry records
+are converted to the publication parent. The INCB018424/INCB18424 ruxolitinib
+alias inconsistency is explicitly resolved, never silently normalized.
 
-- exact/censored/missing cell counts and matrix completeness;
-- unique standardized ligands, Bemis-Murcko scaffolds, stereochemical ambiguity,
-  salts, protomers, and tautomers;
-- exact protein sequence/construct and mutation mapping;
-- binding-site sequence and structural components;
-- rotatable-bond, stereocentre, macrocycle, shape, and conformer-diversity
-  distributions;
-- assay batches, publications, duplicate measurements, and disagreement;
-- effective scaffold and target-component sample sizes and a power analysis.
+The review was label-blind and checked publication drawings, PubChem records,
+ChEMBL exact-synonym evidence, and an independent NCATS record where needed.
+Committee secondary review is required before any label-bearing fit.
 
-A kinase panel with insufficient ligand-3D or pocket diversity is non-diagnostic
-for a general free-conformer hypothesis.
+## Standardized receptor estimand
 
-## Current qualification blockers
+The exact KINOMEscan recombinant constructs are not reported and cannot be
+reconstructed. The primary estimand is therefore deliberately different:
 
-The Davis metadata provide 442 assay labels linked to 384 RefSeq accessions, but
-not the actual recombinant construct sequences or residue boundaries. There are
-54 mutant rows and separate phosphorylation-state labels. A full-length RefSeq
-sequence is therefore only a candidate reference, not exact assay-construct
-provenance.
+> reviewed human canonical UniProt wild-type core kinase domain, represented at
+> fixed KLIFS alignment positions 1--85 on the canonical AlphaFold structure.
 
-The publication provides compound names and drawn structures, not machine-readable
-SMILES, InChI, or CIDs. PubChem name resolution yielded 71 candidates; all remain
-pending manual comparison to the published structure and independent identity
-evidence. `BIBF-1120 (derivative)` is quarantined because the derivative is not
-identified. BMS-345541 and JNJ-28312141 resolve to multicomponent records and
-require a preregistered salt/parent policy.
+Rows with mutations, phosphorylation-state qualifiers, partners, atypical or
+incomplete sites, non-human proteins, or non-unique mappings are excluded.
+This admits 338/442 Davis assay labels. It must never be described as an exact
+assay-construct analysis.
 
-Davis Table 3 names ruxolitinib's development code `INCB018424`, whereas the
-corresponding Table 4 affinity column is `INCB18424`. The row/column position and
-alternative name strongly suggest a typographical alias, but the pipeline does
-not silently equate them; the manual review ledger flags the discrepancy.
+## Ligand-independent structure boundary
 
-No target structure, pocket, ligand feature, split, or model may be materialized
-until these identity decisions and the locked-confirmation governance are frozen.
+The pocket is the ordered set of KLIFS positions 1--85. Selection may not use a
+query ligand, affinity label, ligand contact, holo template, pharmacophore, or
+complex-derived exclusion volume. The canonical predicted view is primary; a
+strict apo X-ray view is replication. Holo structures are sensitivity-only and
+cannot define a pocket.
 
-## Structure boundary
+Metadata coverage alone does not admit coordinates. Each predicted or apo view
+must have a unique KLIFS-to-UniProt-to-coordinate residue mapping, complete
+required coordinates, exact sequence agreement at the 85 positions, structure
+file hash, and chain/model provenance. Strict apo candidates additionally require
+zero non-polymer entities and preregistered resolution/completeness checks.
 
-Primary receptor views are true apo structures or sequence-predicted structures
-for the exact construct/state. Pockets are defined by family alignment or a
-query-independent reference-site policy. Query-ligand coordinates, query-ligand
-contact radii, ligand-derived pharmacophores, and complex-derived exclusion
-volumes are forbidden.
+Leakage components are the union of ligand scaffold/similarity edges and receptor
+family, pocket-sequence, and pocket-structure edges. Once coordinate edges are
+added, components may merge but never split. Interaction testing is blocked until
+all eligible receptor views and structure edges are frozen.
 
-Holo receptors may appear only in a separately labelled sensitivity analysis and
-must never define the pocket used by the primary model.
+## Noise, equivalence, and access control
 
-## Access control
+The public repeat evidence does not identify a representative paired Kd error
+distribution, so no numeric practical-equivalence margin is admitted. The future
+margin is metric-specific: within exact ligand--construct independent repeats,
+swap replicate A/B assignments, rerun the final multiway component bootstrap,
+and set the half-width to the 95th percentile of the absolute metric contrast
+caused by replicate choice. A universal pKd threshold is forbidden.
 
-Development and test manifests are separate. The locked test labels should be
-held by an independent custodian or encrypted/unavailable to the modeling
-process. Test access is one-shot after signed hashes for code, config, features,
-splits, checkpoints, and the analysis plan are recorded.
+Development and confirmation manifests remain separate. Confirmation access is
+one-shot after signed hashes for code, configuration, chemical/receptor ledgers,
+features, splits, checkpoints, and analysis plan are recorded. Gate-4A currently
+permits a later `Delta3D-ligand` experiment after committee chemical QA. It blocks
+all `Delta3D x pocket` fitting until coordinate admission, structural leakage
+closure, external eligible-pair adjudication/custody, and replicate-derived
+equivalence all pass.

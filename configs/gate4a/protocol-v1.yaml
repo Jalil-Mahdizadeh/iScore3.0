@@ -1,5 +1,5 @@
 phase: gate4a
-status: source_audit_and_representation_preregistration
+status: dataset_admission_complete_interaction_blocked
 created_utc: "2026-08-21T14:47:07Z"
 terminal_history:
   commit: 3b814c6
@@ -9,7 +9,9 @@ terminal_history:
 sources:
   development: davis2011
   technical_replication: karaman2008
-  locked_confirmation: pending_committee_approval
+  affinity_confirmation_candidate: mills_hug_okl2026
+  orthogonal_confirmation_candidate: saifudeen_kirhub2026
+  confirmation_release: blocked_pending_eligibility_ledgers_and_custodian
 
 labels:
   primary_scale: pkd
@@ -46,6 +48,31 @@ ligand_3d_representations:
     checkpoint_sha256: pending_freeze
     enabled: false
 
+frozen_projections:
+  common_width: 32
+  method: training_fold_only_standardize_then_pca
+  pca_whiten: false
+  deterministic_sign_rule: largest_absolute_loading_positive
+  fit_uses_labels: false
+  rank_below_common_width: block_fold
+  modalities: [gmolai_2d, free_ligand_3d, pocket]
+
+matched_interaction_budget:
+  common_width: 32
+  reference:
+    model: MI2_rank8
+    ligand_2d_rank: 8
+    trainable_factor_parameters: 512
+  augmented:
+    model: MI23_rank4_plus_rank4
+    ligand_2d_rank: 4
+    ligand_3d_rank: 4
+    trainable_factor_parameters: 512
+  factor_biases: false
+  projection_parameters: 0
+  additive_heads_shared: true
+  tuning_budget_identical: true
+
 model_registry:
   additive_factorial: [M2D, M3D, M2D_P, MA]
   interaction_primary:
@@ -64,7 +91,8 @@ estimands:
 evaluation:
   primary_split: double_cold_scaffold_and_target_structure_component
   random_pair_split: forbidden
-  primary_receptor_views: [apo, predicted_exact_construct]
+  primary_receptor_views: [predicted_standardized_wild_type_reference_domain]
+  replication_receptor_views: [strict_apo]
   holo_use: sensitivity_only
   uncertainty: paired_multiway_scaffold_target_component_bootstrap
   ranking_axes: [within_target_ligands, within_ligand_targets]
@@ -78,3 +106,12 @@ forbidden:
   - query_ligand_defined_pockets
   - test_guided_conformer_or_checkpoint_selection
   - trainable_e3_ligand_encoder_in_gate4a
+
+admission:
+  delta_3d_ligand: PASS_FOR_FUTURE_FITTING_AFTER_COMMITTEE_COMPOUND_REVIEW
+  delta_3d_x_pocket: BLOCKED
+  blockers:
+    - coordinate_qualified_predicted_and_apo_pockets_not_materialized
+    - structural_similarity_edges_not_frozen
+    - external_eligible_pair_ledgers_not_adjudicated_or_custodian_locked
+    - numeric_practical_equivalence_region_lacks_raw_repeat_data

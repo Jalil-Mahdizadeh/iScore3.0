@@ -1,0 +1,44 @@
+{
+  "assay_evidence": [
+    {
+      "finding": "A vendor validation example reports less than four-fold Kd variation for one compound-kinase pair over six months and three compound lots.",
+      "limitation": "One pair is not a repeat-error distribution; 0.60206 log10 units is contextual span only and is forbidden as a model-gain threshold.",
+      "url": "https://www.chayon.co.kr/document/About%20Kinomescan_Customer%20version%20_2015.pdf"
+    },
+    {
+      "finding": "KIRHub reports R-squared 0.99 for duplicate one-micromolar residual-activity screens.",
+      "limitation": "The public matrix contains averages, not paired repeats; correlation does not identify paired error magnitude.",
+      "url": "https://www.nature.com/articles/s41587-026-03090-8"
+    },
+    {
+      "finding": "OKL repeated selected problematic batches and retained raw multi-dose measurements.",
+      "limitation": "QC-triggered repeats are not an unbiased technical-repeat sample for Davis exact Kd metrics.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13015435/"
+    }
+  ],
+  "frozen_estimation_procedure": {
+    "absolute_metrics": [
+      "censor-aware negative log likelihood",
+      "exact-cell MAE",
+      "exact-cell RMSE"
+    ],
+    "classification_metrics": [
+      "AUROC",
+      "AUPRC",
+      "Brier score"
+    ],
+    "minimum_repeat_design": "Same standardized ligand parent and exact assay construct, independent assay preparation/batch, raw unaveraged results, stratified across potency/censor regions and both leakage-component axes.",
+    "ranking_metrics": [
+      "within-target Spearman",
+      "within-target NDCG",
+      "within-ligand Spearman"
+    ],
+    "rule": "At the final admitted panel size, repeatedly swap replicate A/B labels within the same assayed pair and apply the frozen paired multiway scaffold-target-component bootstrap. For each metric, the practical-equivalence half-width is the 95th percentile of the absolute metric contrast attributable only to replicate choice. Estimate and freeze these metric-specific regions before any model outcomes are inspected.",
+    "single_shared_pkd_threshold_forbidden": true
+  },
+  "numeric_practical_equivalence_region": null,
+  "phase": "gate4a_dataset_admission",
+  "reason_numeric_region_blocked": "No public source provides a representative raw paired-repeat distribution for the Davis KINOMEscan exact-Kd estimand.",
+  "schema_version": 1,
+  "status": "BLOCKED_PENDING_RAW_PAIRED_REPEATS_OR_PROSPECTIVE_REPEAT_PANEL"
+}

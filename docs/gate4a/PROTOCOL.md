@@ -63,7 +63,10 @@ themselves. A gain confined to exact-value regression is not progression-grade.
 
 - Double-cold ligand-scaffold and target structural/family components.
 - Multiway paired bootstrap over scaffold and receptor components.
-- Apo or exact-construct predicted receptors as primary views.
+- Canonical AlphaFold structures for the admitted standardized wild-type reference
+  domain are the primary view after residue-level coordinate qualification.
+- Strict global-zero-nonpolymer X-ray structures are the non-holo replication view;
+  candidate availability alone does not qualify a coordinate view.
 - Same folds, preprocessing, tuning budget, and seeds for every paired contrast.
 - No test-label access until dataset, representations, model ranks, metrics,
   equivalence regions, and exclusions are frozen.
@@ -96,3 +99,23 @@ hypothesis. Pocket-additive gain alone is target calibration, not interaction.
 If the available data lack assay semantics, crossed coverage, conformational
 diversity, or statistical power, stop as non-identifiable rather than increasing
 model capacity or shopping for favourable datasets.
+
+## Dataset-admission result
+
+The admission phase does not authorize interaction fitting. Davis admits 69 parent
+ligands and 338 standardized wild-type reference-domain receptor rows, but exact
+KINOMEscan constructs remain unavailable. Fixed KLIFS positions 1–85 define the
+site without a ligand; predicted and apo coordinates still require a unique
+residue-level mapping and coordinate hashes. Current KLIFS family/sequence leakage
+components are provisional until coordinate structure edges are unioned.
+
+OKL 2026 is the conditional affinity-like external panel and KIRHub 2026 the
+conditional orthogonal ranking/classification panel. Their eligible pair ledgers
+must be chemically/receptor adjudicated, made disjoint from development leakage
+components, and held by a custodian. Public data do not contain representative raw
+paired Kd repeats, so the frozen metric-specific equivalence procedure exists but
+numeric regions remain blocked.
+
+`delta_3d_ligand` may proceed separately after committee compound QA.
+`delta_pocket_additive` and `delta_3d_x_pocket` remain blocked until the coordinate,
+structural-edge, external-ledger, and noise requirements pass.

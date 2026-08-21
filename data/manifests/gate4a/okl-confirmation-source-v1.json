@@ -1,0 +1,21 @@
+{
+  "files": [
+    {
+      "acquired_utc": "2026-08-21T17:55:15+00:00",
+      "article_doi": "10.64898/2026.03.17.711623",
+      "article_version": "bioRxiv v2, 2026-04-30",
+      "bytes": 48096872,
+      "license": "CC BY 4.0",
+      "official_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13015435/",
+        "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13015435/supplementaryFiles"
+      ],
+      "path": "data/raw/gate4a/confirmation/okl-supplementary-files-v2.zip",
+      "role": "candidate locked external confirmation panel; not development data",
+      "sha256": "61392788c285ac857c99b090be3d3d7b76bc13ca6a931abe907b0e54f2bea0b9",
+      "source_id": "mills-hug-okl-2026-supplement-v2"
+    }
+  ],
+  "phase": "gate4a_dataset_admission",
+  "schema_version": 1
+}

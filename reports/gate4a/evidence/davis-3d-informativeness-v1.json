@@ -1,0 +1,61 @@
+{
+  "admission_decision": "PASS",
+  "admitted_parent_count": 69,
+  "feature_count": 228,
+  "feature_file": {
+    "bytes": 444737,
+    "path": "data/features/gate4a/davis-admitted-conformer-audit-v1.json",
+    "sha256": "63ae8d5fe260eac293aec98e4e3848ac69616a5668a48214e7870b5c518ec22b"
+  },
+  "feature_group_counts": {
+    "conformer_diversity": 3,
+    "conformer_energy": 8,
+    "pharmacophore2d_presence": 27,
+    "pharmacophore3d": 168,
+    "shape3d": 22
+  },
+  "feature_schema_sha256": "0eae47d606547313b98c3a6d435eb5e8d0cabc85c94d95c044cdbfdd1b9369d8",
+  "generation_success_count": 69,
+  "geometry_feature_count": 201,
+  "heavy_atom_conformer_rmsd_mean_angstrom": {
+    "maximum": 2.90903567043641,
+    "median": 1.736316194614486,
+    "minimum": 0.44321222227605067
+  },
+  "heavy_atom_count": {
+    "maximum": 46.0,
+    "median": 32.0,
+    "minimum": 19.0
+  },
+  "information_boundary": {
+    "affinity_labels_accessed": false,
+    "crystallographic_or_docked_ligand_coordinates_accessed": false,
+    "predictive_model_fit": false,
+    "protein_or_pocket_data_accessed": false
+  },
+  "interpretation": "PASS means free-conformer descriptors are non-degenerate enough to test delta-3D; it is not evidence that 3D predicts affinity or interacts with a pocket.",
+  "ligands_with_at_least_two_retained_conformers": 69,
+  "ligands_with_rmsd_mean_above_0_5_angstrom": 68,
+  "macrocycle_ligand_count": 1,
+  "nonconstant_geometry_feature_count": 185,
+  "phase": "gate4a_dataset_admission",
+  "predeclared_nondegeneracy_criteria": {
+    "fraction_with_at_least_two_conformers_ge_0_25": true,
+    "fraction_with_rmsd_mean_above_0_5A_ge_0_25": true,
+    "generation_success_fraction_eq_1": true,
+    "nonconstant_geometry_feature_fraction_ge_0_50": true,
+    "unresolved_stereocentre_count_eq_0": true
+  },
+  "retained_conformer_count": {
+    "maximum": 31.0,
+    "median": 18.0,
+    "minimum": 2.0
+  },
+  "rotatable_bond_count": {
+    "maximum": 13.0,
+    "median": 6.0,
+    "minimum": 1.0
+  },
+  "schema_version": 1,
+  "unique_geometry_hash_count": 69
+}

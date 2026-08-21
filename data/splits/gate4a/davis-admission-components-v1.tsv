@@ -1,0 +1,408 @@
+entity_type	entity_id	display_name	component_id	component_size	family_or_scaffold	edge_policy
+ligand	BPNUQXPIQBZCMR-IBGZPJMESA-N	A-674563	LSC007	1	c1ccc(CCCOc2cncc(-c3ccc4n[nH]cc4c3)c2)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	WJEOLQLKVOPQFV-UHFFFAOYSA-N	AB-1010	LSC026	2	O=C(Nc1cccc(Nc2nc(-c3cccnc3)cs2)c1)c1ccc(CN2CCNCC2)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	MPVGZUGXCQEXTM-UHFFFAOYSA-N	ABT-869	LSC030	1	O=C(Nc1ccccc1)Nc1ccc(-c2cccc3[nH]ncc23)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	CVWXJKQAOSCOAB-UHFFFAOYSA-N	AC220	LSC010	1	O=C(Nc1ccc(-c2cn3c(n2)sc2cc(OCCN4CCOCC4)ccc23)cc1)Nc1ccon1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	RITAVMQDGBJQJZ-FMIVXFBMSA-N	AG-013736	LSC044	1	C(=C/c1n[nH]c2cc(Sc3ccccc3)ccc12)\c1ccccn1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	RAHBGWKEPAQNFF-UHFFFAOYSA-N	AMG-706	LSC043	1	O=C(Nc1ccc2c(c1)NCC2)c1cccnc1NCc1ccncc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	ODPGGGTTYSGTGO-UHFFFAOYSA-N	AST-487	LSC034	1	O=C(Nc1ccc(CN2CCNCC2)cc1)Nc1ccc(Oc2ccncn2)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	OVPNQJVDAFNBDN-UHFFFAOYSA-N	AT-7519	LSC037	1	O=C(Nc1cn[nH]c1C(=O)NC1CCNCC1)c1ccccc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	QYZOGCMHVIGURT-UHFFFAOYSA-N	AZD-1152HQPA	LSC042	1	O=C(Cc1cc(Nc2ncnc3ccccc23)n[nH]1)Nc1ccccc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	XXJWYDDUDKYVKI-UHFFFAOYSA-N	AZD-2171	LSC058	1	c1nc(Oc2ccc3[nH]ccc3c2)c2ccc(OCCCN3CCCC3)cc2n1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	CYOHGALHFOKKQC-UHFFFAOYSA-N	AZD-6244/ARRY-886	LSC012	1	c1ccc(Nc2ccc3[nH]cnc3c2)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	XQVVPGYIWAGRNI-JOCHJYFZSA-N	BI-2536	LSC057	1	O=C1CN(C2CCCC2)c2nc(Nc3ccc(C(=O)NC4CCNCC4)cc3)ncc2N1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	ULXXDDBFHOBEHA-CWDCEQMOSA-N	BIBW-2992	LSC051	1	c1ccc(Nc2ncnc3cc(O[C@H]4CCOC4)ccc23)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	MVCOAUNKQVWQHZ-UHFFFAOYSA-N	BIRB-796	LSC031	1	O=C(Nc1ccc(OCCN2CCOCC2)c2ccccc12)Nc1ccnn1-c1ccccc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	PSPFQEBFYXJZEV-UHFFFAOYSA-N	BMS-345541	LSC040	1	c1ccc2c(c1)ncc1nccn12	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	OUSFTKFNBAZUKL-UHFFFAOYSA-N	BMS-387032/SNS-032	LSC036	1	O=C(Nc1ncc(SCc2ncco2)s1)C1CCNCC1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	WCWUXEGQKLTGDX-LLVKDONJSA-N	BMS-540215	LSC055	1	c1cc2c(Oc3ccc4[nH]ccc4c3)ncnn2c1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	UIARLYUEJFELEN-LROUJFHJSA-N	CEP-701	LSC048	1	O=C1NCc2c1c1c3ccccc3n3c1c1c2c2ccccc2n1C1CC[C@H]3O1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	PIQCTGMSNWUMAF-UHFFFAOYSA-N	CHIR-258/TKI-258	LSC039	1	O=c1[nH]c2ccccc2cc1-c1nc2ccc(N3CCNCC3)cc2[nH]1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	YABJJWZLRMPFSI-UHFFFAOYSA-N	CHIR-265/RAF-265	LSC059	1	c1ccc(Nc2nc3cc(Oc4ccnc(-c5ncc[nH]5)c4)ccc3[nH]2)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	OMZCMEYTWSXEPZ-UHFFFAOYSA-N	CI-1033	LSC035	2	c1ccc(Nc2ncnc3cc(OCCCN4CCOCC4)ccc23)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	GFMMXOIFOQCCGU-UHFFFAOYSA-N	CI-1040	LSC016	1	O=C(NOCC1CC1)c1ccccc1Nc1ccccc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	UJLAWZDWDVHWOW-YPMHNXCESA-N	CP-690550	LSC050	1	c1nc(N[C@@H]2CCCNC2)c2cc[nH]c2n1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	KTEIFNKAUNYNJU-GFCCVEGCSA-N	Crizotinib	LSC025	1	c1ccc(COc2cncc(-c3cnn(C4CCNCC4)c3)c2)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	ZBNZXTGUTAYRHI-UHFFFAOYSA-N	Dasatinib	LSC063	1	O=C(Nc1ccccc1)c1cnc(Nc2cc(N3CCNCC3)ncn2)s1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	AAKJLRGGTJKAMG-UHFFFAOYSA-N	Erlotinib	LSC001	1	c1ccc(Nc2ncnc3ccccc23)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	CXQHYVUVSFXTMY-UHFFFAOYSA-N	EXEL-2880/GSK-1363089	LSC011	1	O=C(Nc1ccccc1)C1(C(=O)Nc2ccc(Oc3ccnc4cc(OCCCN5CCOCC5)ccc34)cc2)CC1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	BIIVYFLTOXDAOV-YVEFUNNKSA-N	Flavopiridol	LSC005	1	O=c1cc(-c2ccccc2)oc2c(C3CCNCC3)cccc12	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	DEZZLWQELQORIU-RELWKKBWSA-N	GDC-0879	LSC014	1	N=C1CCc2cc(-c3c[nH]nc3-c3ccncc3)ccc21	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	LHNIIDJUOCFXAP-UHFFFAOYSA-N	GDC-0941	LSC027	1	c1cc(-c2nc(N3CCOCC3)c3sc(CN4CCNCC4)cc3n2)c2cn[nH]c2c1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	XGALLCVXEZPNRQ-UHFFFAOYSA-N	Gefitinib	LSC035	2	c1ccc(Nc2ncnc3ccc(OCCCN4CCOCC4)cc23)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	DESOLSKAHZZIGK-UHFFFAOYSA-N	GSK-1838705A	LSC013	1	c1ccc(Nc2nc(Nc3ccc4cc[nH]c4c3)nc3[nH]ccc23)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	ZHJGWYRLJUCMRT-QGZVFWFLSA-N	GSK-461364A	LSC065	1	c1ccc(COc2csc(-n3cnc4ccc(CN5CCNCC5)cc43)c2)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	KGPGFQWBCSZGEL-ZDUSSCGKSA-N	GSK-690693	LSC024	1	c1nonc1-c1nc2cncc(OC[C@H]3CCCNC3)c2[nH]1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	MYQAUKPBNJWPIE-UHFFFAOYSA-N	GW-2580	LSC032	1	c1ccc(COc2ccc(Cc3cncnc3)cc2)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	JWNPDZNEKVCWMY-VQHVLOKHSA-N	HKI-272	LSC023	1	c1ccc(COc2ccc(Nc3ccnc4ccccc34)cc2)nc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	KTUFNOKKBVMGRW-UHFFFAOYSA-N	Imatinib	LSC026	2	O=C(Nc1cccc(Nc2nccc(-c3cccnc3)n2)c1)c1ccc(CN2CCNCC2)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	HFNKQEVNSGCOJV-OAHLLOKOSA-N	INCB018424	LSC018	1	c1nc(-c2cnn(CC3CCCC3)c2)c2cc[nH]c2n1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	GUBJNPWVIUFSTR-UHFFFAOYSA-N	JNJ-28312141	LSC017	1	O=C(Nc1ccc(C2CCNCC2)cc1C1=CCCCC1)c1ncc[nH]1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	YYLKKYCXAOBSRM-JXMROGBWSA-N	KW-2449	LSC061	1	O=C(c1ccc(/C=C/c2n[nH]c3ccccc23)cc1)N1CCNCC1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	BCFGMOOMADDAQU-UHFFFAOYSA-N	Lapatinib	LSC003	1	c1ccc(COc2ccc(Nc3ncnc4ccc(-c5ccco5)cc34)cc2)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	AXRCEOKUDYDWLF-UHFFFAOYSA-N	LY-317615	LSC002	1	O=C1NC(=O)C(c2cn(C3CCN(Cc4ccccn4)CC3)c3ccccc23)=C1c1c[nH]c2ccccc12	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	ZCBUQCWBWNUWSU-SFHVURJKSA-N	LY-333531	LSC064	1	O=C1NC(=O)C2=C1c1cn(c3ccccc13)CCCOCCn1cc2c2ccccc21	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	ZNOLRTPMNMPLHY-UHFFFAOYSA-N	MLN-120B	LSC066	1	O=C(Nc1cccc2c1[nH]c1cnccc12)c1cccnc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	UXXQOJXBIDBUAC-UHFFFAOYSA-N	MLN-518	LSC052	1	O=C(Nc1ccccc1)N1CCN(c2ncnc3cc(OCCCN4CCCCC4)ccc23)CC1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	HHFBDROWDBDFBR-UHFFFAOYSA-N	MLN-8054	LSC019	1	c1ccc(Nc2ncc3c(n2)-c2ccccc2C(c2ccccc2)=NC3)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	HHZIURLSWUIHRB-UHFFFAOYSA-N	Nilotinib	LSC020	1	O=C(Nc1cccc(-n2ccnc2)c1)c1cccc(Nc2nccc(-c3cccnc3)n2)c1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	CUIHSIWYWATEQL-UHFFFAOYSA-N	Pazopanib	LSC009	1	c1ccc(Nc2nccc(Nc3ccc4c[nH]nc4c3)n2)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	VAARYSWULJUGST-UHFFFAOYSA-N	PD-173955	LSC053	1	O=c1[nH]c2nc(Nc3ccccc3)ncc2cc1-c1ccccc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	OYONTEXKYJZFHA-SSHUPFPWSA-N	PHA-665752	LSC038	1	O=C1Nc2ccc(S(=O)(=O)Cc3ccccc3)cc2/C1=C/c1cc(C(=O)N2CCC[C@@H]2CN2CCCC2)c[nH]1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	TUVCWJQQGGETHL-UHFFFAOYSA-N	PI-103	LSC045	1	c1ccc(-c2nc(N3CCOCC3)c3oc4ncccc4c3n2)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	BMGQWWVMWDBQGC-IIFHNQTCSA-N	PKC-412	LSC006	2	O=C(N[C@H]1CC2O[C@H](C1)n1c3ccccc3c3c4c(c5c6ccccc6n2c5c31)CNC4=O)c1ccccc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	YZDJQTHVDDOVHR-UHFFFAOYSA-N	PLX-4720	LSC062	1	O=C(c1ccccc1)c1c[nH]c2ncccc12	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	MFAQYJIYDMLAIM-UHFFFAOYSA-N	PP-242	LSC028	1	c1ccc2[nH]c(-c3n[nH]c4ncncc34)cc2c1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	YCOYDOIWSSHVCK-UHFFFAOYSA-N	PTK-787	LSC060	1	c1ccc(Nc2nnc(Cc3ccncc3)c3ccccc23)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	NHHQJBCNYHBUSI-UHFFFAOYSA-N	R406	LSC033	1	O=C1COc2ccc(Nc3ccnc(Nc4ccccc4)n3)nc2N1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	JRNJNYBQQYBCLE-UHFFFAOYSA-N	R547	LSC022	1	O=C(c1ccccc1)c1cnc(NC2CCNCC2)nc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	BCZUAADEACICHN-UHFFFAOYSA-N	SGX-523	LSC004	1	c1cnc2ccc(Sc3nnc4ccc(-c5cn[nH]c5)nn34)cc2c1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	UBPYILGKFZZVDX-UHFFFAOYSA-N	SKI-606	LSC046	1	c1ccc(Nc2ccnc3cc(OCCCN4CCNCC4)ccc23)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	MLDQJTXFUGDVEO-UHFFFAOYSA-N	Sorafenib	LSC029	1	O=C(Nc1ccccc1)Nc1ccc(Oc2ccncc2)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	HKSZLNNOFSGOKW-FYTWVXJKSA-N	Staurosporine	LSC006	2	O=C1NCc2c1c1c3ccccc3n3c1c1c2c2ccccc2n1C1CCC[C@H]3O1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	CTNPALGJUAXMMC-PMFHANACSA-N	SU-14813	LSC008	1	O=C1Nc2ccccc2/C1=C/c1cc(C(=O)NCCCN2CCOCC2)c[nH]1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	WINHZLLDWRZWRT-ATVHPVEESA-N	Sunitinib	LSC056	1	O=C1Nc2ccccc2/C1=C/c1ccc[nH]1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	QQWUGDVOUVUTOY-UHFFFAOYSA-N	TAE-684	LSC041	1	c1ccc(Nc2ccnc(Nc3ccc(N4CCC(N5CCNCC5)CC4)cc3)n2)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	UJIAQDJKSXQLIT-UHFFFAOYSA-N	TG-100-115	LSC049	1	c1ccc(-c2nc3cncnc3nc2-c2ccccc2)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	JOOXLOJCABQBSG-UHFFFAOYSA-N	TG-101348	LSC021	1	c1ccc(Nc2ccnc(Nc3ccc(OCCN4CCCC4)cc3)n2)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	UHTHHESEBZOYNR-UHFFFAOYSA-N	Vandetanib	LSC047	1	c1ccc(Nc2ncnc3cc(OCC4CCNCC4)ccc23)cc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	GCIKSSRWRFVXBI-UHFFFAOYSA-N	VX-680/MK-0457	LSC015	1	O=C(Nc1ccc(Sc2nc(Nc3cc[nH]n3)cc(N3CCNCC3)n2)cc1)C1CC1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+ligand	VEPKQEUBKLEPRA-UHFFFAOYSA-N	VX-745	LSC054	1	O=c1ncn2nc(Sc3ccccc3)ccc2c1-c1ccccc1	Murcko equality OR Morgan2 Tanimoto >=0.60; transitive closure
+receptor	UniProt:Q2M2I8:46-315|KLIFS:277:positions1-85	AAK1	PTC010	4	NAK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P42684:288-539|KLIFS:393:positions1-85	ABL2	PTC055	1	Abl	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q04771:208-502|KLIFS:516:positions1-85	ACVR1	PTC001	10	STKR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P36896:207-497|KLIFS:517:positions1-85	ACVR1B	PTC001	10	STKR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P27037:192-485|KLIFS:523:positions1-85	ACVR2A	PTC001	10	STKR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13705:190-480|KLIFS:524:positions1-85	ACVR2B	PTC001	10	STKR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P37023:202-492|KLIFS:518:positions1-85	ACVRL1	PTC001	10	STKR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P31749:150-408|KLIFS:1:positions1-85	AKT1	PTC049	3	Akt	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P31751:152-409|KLIFS:2:positions1-85	AKT2	PTC049	3	Akt	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9Y243:148-405|KLIFS:3:positions1-85	AKT3	PTC049	3	Akt	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9UM73:1116-1392|KLIFS:396:positions1-85	ALK	PTC037	3	ALK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13131:27-279|KLIFS:117:positions1-85	AMPK-alpha1	PTC006	17	CAMKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P54646:16-268|KLIFS:118:positions1-85	AMPK-alpha2	PTC006	17	CAMKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8NFD2:22-289|KLIFS:515:positions1-85	ANKK1	PTC018	4	RIPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O60285:55-306|KLIFS:130:positions1-85	ARK5	PTC006	17	CAMKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q99683:680-938|KLIFS:345:positions1-85	ASK1	PTC025	7	STE11	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O95382:648-906|KLIFS:346:positions1-85	ASK2	PTC025	7	STE11	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O14965:133-383|KLIFS:259:positions1-85	AURKA	PTC009	3	Aur	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q96GD4:77-327|KLIFS:261:positions1-85	AURKB	PTC009	3	Aur	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9UQB9:43-293|KLIFS:260:positions1-85	AURKC	PTC009	3	Aur	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P30530:536-807|KLIFS:398:positions1-85	AXL	PTC048	3	Axl	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9NSY1:51-316|KLIFS:278:positions1-85	BIKE	PTC010	4	NAK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P51451:241-494|KLIFS:464:positions1-85	BLK	PTC032	11	Src	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P36894:234-525|KLIFS:519:positions1-85	BMPR1A	PTC001	10	STKR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O00238:204-494|KLIFS:520:positions1-85	BMPR1B	PTC001	10	STKR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13873:203-504|KLIFS:526:positions1-85	BMPR2	PTC001	10	STKR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P51813:417-675|KLIFS:472:positions1-85	BMX	PTC054	5	Tec	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P15056:457-717|KLIFS:509:positions1-85	BRAF	PTC029	2	RAF	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13882:191-445|KLIFS:468:positions1-85	BRK	PTC032	11	Src	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8TDC3:34-285|KLIFS:120:positions1-85	BRSK1	PTC006	17	CAMKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8IWQ3:19-270|KLIFS:119:positions1-85	BRSK2	PTC006	17	CAMKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q06187:402-655|KLIFS:473:positions1-85	BTK	PTC054	5	Tec	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q14012:20-276|KLIFS:109:positions1-85	CAMK1	PTC071	4	CAMK1	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8IU85:23-279|KLIFS:110:positions1-85	CAMK1D	PTC071	4	CAMK1	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q96NX5:23-277|KLIFS:111:positions1-85	CAMK1G	PTC071	4	CAMK1	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9UQM7:13-271|KLIFS:113:positions1-85	CAMK2A	PTC070	4	CAMK2	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13554:14-272|KLIFS:114:positions1-85	CAMK2B	PTC070	4	CAMK2	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13557:14-272|KLIFS:115:positions1-85	CAMK2D	PTC070	4	CAMK2	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13555:14-272|KLIFS:116:positions1-85	CAMK2G	PTC070	4	CAMK2	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q16566:46-300|KLIFS:108:positions1-85	CAMK4	PTC071	4	CAMK1	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8N5S9:128-409|KLIFS:266:positions1-85	CAMKK1	PTC079	2	CAMKK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q96RR4:165-446|KLIFS:265:positions1-85	CAMKK2	PTC079	2	CAMKK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O14936:12-276|KLIFS:139:positions1-85	CASK	PTC008	1	CASK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P24941:4-286|KLIFS:198:positions1-85	CDK2	PTC047	6	CDK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q00526:4-286|KLIFS:199:positions1-85	CDK3	PTC047	6	CDK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q00535:4-286|KLIFS:203:positions1-85	CDK5	PTC047	6	CDK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P50613:12-295|KLIFS:204:positions1-85	CDK7	PTC047	6	CDK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P49336:21-335|KLIFS:205:positions1-85	CDK8	PTC047	6	CDK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P50750:19-315|KLIFS:207:positions1-85	CDK9	PTC047	6	CDK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q00532:4-287|KLIFS:217:positions1-85	CDKL1	PTC023	4	CDKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q92772:4-287|KLIFS:218:positions1-85	CDKL2	PTC023	4	CDKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8IVW4:4-286|KLIFS:219:positions1-85	CDKL3	PTC023	4	CDKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O76039:13-297|KLIFS:216:positions1-85	CDKL5	PTC023	4	CDKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O14757:9-265|KLIFS:121:positions1-85	CHEK1	PTC006	17	CAMKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O96017:220-486|KLIFS:168:positions1-85	CHEK2	PTC027	1	RAD53	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O14578:97-360|KLIFS:4:positions1-85	CIT	PTC004	7	DMPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P49759:161-477|KLIFS:223:positions1-85	CLK1	PTC059	4	CLK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P49760:163-479|KLIFS:224:positions1-85	CLK2	PTC059	4	CLK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P49761:156-472|KLIFS:225:positions1-85	CLK3	PTC059	4	CLK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9HAZ1:159-475|KLIFS:226:positions1-85	CLK4	PTC059	4	CLK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P07333:582-910|KLIFS:449:positions1-85	CSF1R	PTC034	8	PDGFR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P41240:195-449|KLIFS:402:positions1-85	CSK	PTC053	2	Csk	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P48729:17-285|KLIFS:184:positions1-85	CSNK1A1	PTC057	7	CK1	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8N752:17-285|KLIFS:185:positions1-85	CSNK1A1L	PTC057	7	CK1	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P48730:9-277|KLIFS:186:positions1-85	CSNK1D	PTC057	7	CK1	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P49674:9-277|KLIFS:187:positions1-85	CSNK1E	PTC057	7	CK1	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9HCP0:44-315|KLIFS:190:positions1-85	CSNK1G1	PTC057	7	CK1	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P78368:46-316|KLIFS:188:positions1-85	CSNK1G2	PTC057	7	CK1	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9Y6M4:43-313|KLIFS:189:positions1-85	CSNK1G3	PTC057	7	CK1	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P68400:39-324|KLIFS:221:positions1-85	CSNK2A1	PTC044	2	CK2	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P19784:40-325|KLIFS:222:positions1-85	CSNK2A2	PTC044	2	CK2	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P42679:235-482|KLIFS:403:positions1-85	CTK	PTC053	2	Csk	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P53355:13-275|KLIFS:140:positions1-85	DAPK1	PTC017	5	DAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9UIK4:23-285|KLIFS:142:positions1-85	DAPK2	PTC017	5	DAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O43293:13-275|KLIFS:141:positions1-85	DAPK3	PTC017	5	DAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O15075:390-647|KLIFS:145:positions1-85	DCAMKL1	PTC011	3	DCAMKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8N568:394-651|KLIFS:147:positions1-85	DCAMKL2	PTC011	3	DCAMKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9C098:356-613|KLIFS:146:positions1-85	DCAMKL3	PTC011	3	DCAMKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q08345:610-905|KLIFS:404:positions1-85	DDR1	PTC067	2	DDR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q16832:563-849|KLIFS:405:positions1-85	DDR2	PTC067	2	DDR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q12852:125-366|KLIFS:498:positions1-85	DLK	PTC016	7	MLK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q09013:71-339|KLIFS:5:positions1-85	DMPK	PTC004	7	DMPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q6DT37:71-337|KLIFS:8:positions1-85	DMPK2	PTC004	7	DMPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9UEE5:61-321|KLIFS:144:positions1-85	DRAK1	PTC017	5	DAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O94768:33-293|KLIFS:143:positions1-85	DRAK2	PTC017	5	DAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13627:159-479|KLIFS:227:positions1-85	DYRK1A	PTC069	8	DYRK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9Y463:111-431|KLIFS:228:positions1-85	DYRK1B	PTC069	8	DYRK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q92630:222-535|KLIFS:230:positions1-85	DYRK2	PTC069	8	DYRK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P00533:712-979|KLIFS:406:positions1-85	EGFR	PTC028	4	EGFR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9BQI3:167-583|KLIFS:308:positions1-85	EIF2AK1	PTC043	2	PEK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P21709:624-884|KLIFS:411:positions1-85	EPHA1	PTC013	13	Eph	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P29317:613-875|KLIFS:410:positions1-85	EPHA2	PTC013	13	Eph	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P29320:621-882|KLIFS:412:positions1-85	EPHA3	PTC013	13	Eph	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P54764:621-882|KLIFS:413:positions1-85	EPHA4	PTC013	13	Eph	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P54756:675-936|KLIFS:414:positions1-85	EPHA5	PTC013	13	Eph	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9UF33:631-944|KLIFS:423:positions1-85	EPHA6	PTC013	13	Eph	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q15375:633-894|KLIFS:415:positions1-85	EPHA7	PTC013	13	Eph	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P29322:635-896|KLIFS:416:positions1-85	EPHA8	PTC013	13	Eph	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P54762:619-882|KLIFS:417:positions1-85	EPHB1	PTC013	13	Eph	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P29323:621-884|KLIFS:418:positions1-85	EPHB2	PTC013	13	Eph	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P54753:633-896|KLIFS:419:positions1-85	EPHB3	PTC013	13	Eph	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P54760:615-899|KLIFS:420:positions1-85	EPHB4	PTC013	13	Eph	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O15197:670-919|KLIFS:421:positions1-85	EPHB6	PTC013	13	Eph	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P04626:720-987|KLIFS:407:positions1-85	ERBB2	PTC028	4	EGFR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P21860:709-966|KLIFS:408:positions1-85	ERBB3	PTC028	4	EGFR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q15303:718-985|KLIFS:409:positions1-85	ERBB4	PTC028	4	EGFR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P27361:42-330|KLIFS:240:positions1-85	ERK1	PTC014	14	MAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P28482:25-313|KLIFS:239:positions1-85	ERK2	PTC014	14	MAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q16659:20-316|KLIFS:242:positions1-85	ERK3	PTC014	14	MAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P31152:20-312|KLIFS:241:positions1-85	ERK4	PTC014	14	MAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13164:55-347|KLIFS:243:positions1-85	ERK5	PTC014	14	MAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8TD08:13-304|KLIFS:244:positions1-85	ERK8	PTC014	14	MAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O75460:571-832|KLIFS:273:positions1-85	ERN1	PTC021	1	IRE	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q05397:422-680|KLIFS:425:positions1-85	FAK	PTC065	2	FAK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P16591:563-816|KLIFS:426:positions1-85	FER	PTC033	2	Fer	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P07332:561-822|KLIFS:427:positions1-85	FES	PTC033	2	Fer	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P11362:478-767|KLIFS:428:positions1-85	FGFR1	PTC040	4	FGFR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P21802:481-770|KLIFS:430:positions1-85	FGFR2	PTC040	4	FGFR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P22607:472-761|KLIFS:429:positions1-85	FGFR3	PTC040	4	FGFR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P22455:467-755|KLIFS:431:positions1-85	FGFR4	PTC040	4	FGFR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P09769:263-516|KLIFS:460:positions1-85	FGR	PTC032	11	Src	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P17948:827-1158|KLIFS:483:positions1-85	FLT1	PTC034	8	VEGFR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P36888:610-943|KLIFS:450:positions1-85	FLT3	PTC034	8	PDGFR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P35916:845-1173|KLIFS:484:positions1-85	FLT4	PTC034	8	VEGFR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P42685:234-491|KLIFS:459:positions1-85	FRK	PTC032	11	Src	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P06241:271-524|KLIFS:461:positions1-85	FYN	PTC032	11	Src	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O14976:40-314|KLIFS:279:positions1-85	GAK	PTC010	4	NAK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q15835:190-455|KLIFS:16:positions1-85	GRK1	PTC050	3	GRK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P32298:187-449|KLIFS:13:positions1-85	GRK4	PTC050	3	GRK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8WTQ7:191-454|KLIFS:17:positions1-85	GRK7	PTC050	3	GRK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P49840:119-403|KLIFS:237:positions1-85	GSK3A	PTC060	2	GSK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P49841:56-340|KLIFS:238:positions1-85	GSK3B	PTC060	2	GSK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P08631:262-515|KLIFS:465:positions1-85	HCK	PTC032	11	Src	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q86Z02:190-518|KLIFS:235:positions1-85	HIPK1	PTC069	8	DYRK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9H2X6:199-527|KLIFS:233:positions1-85	HIPK2	PTC069	8	DYRK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9H422:197-525|KLIFS:232:positions1-85	HIPK3	PTC069	8	DYRK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8NE63:11-347|KLIFS:234:positions1-85	HIPK4	PTC069	8	DYRK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q92918:17-274|KLIFS:358:positions1-85	HPK1	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P57058:62-320|KLIFS:122:positions1-85	HUNK	PTC006	17	CAMKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9UPZ9:4-284|KLIFS:255:positions1-85	ICK	PTC045	2	RCK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P08069:999-1274|KLIFS:432:positions1-85	IGF1R	PTC031	3	InsR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O15111:15-302|KLIFS:269:positions1-85	IKK-alpha	PTC007	4	IKK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O14920:15-300|KLIFS:270:positions1-85	IKK-beta	PTC007	4	IKK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q14164:9-315|KLIFS:271:positions1-85	IKK-epsilon	PTC007	4	IKK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P06213:1023-1298|KLIFS:433:positions1-85	INSR	PTC031	3	InsR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P14616:979-1254|KLIFS:434:positions1-85	INSRR	PTC031	3	InsR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P51617:212-521|KLIFS:486:positions1-85	IRAK1	PTC061	3	IRAK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9Y616:165-452|KLIFS:488:positions1-85	IRAK3	PTC061	3	IRAK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9NWZ3:186-454|KLIFS:489:positions1-85	IRAK4	PTC061	3	IRAK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q08881:363-615|KLIFS:474:positions1-85	ITK	PTC054	5	Tec	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P23458:875-1153|KLIFS:435:positions1-85	JAK1(JH1domain-catalytic)	PTC019	4	JakA	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O60674:849-1124|KLIFS:436:positions1-85	JAK2(JH1domain-catalytic)	PTC019	4	JakA	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P52333:822-1111|KLIFS:437:positions1-85	JAK3(JH1domain-catalytic)	PTC019	4	JakA	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P45983:26-321|KLIFS:245:positions1-85	JNK1	PTC014	14	MAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P45984:26-321|KLIFS:246:positions1-85	JNK2	PTC014	14	MAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P53779:64-359|KLIFS:247:positions1-85	JNK3	PTC014	14	MAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P10721:589-937|KLIFS:451:positions1-85	KIT	PTC034	8	PDGFR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O95835:705-1010|KLIFS:23:positions1-85	LATS1	PTC026	4	NDR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9NRM7:668-973|KLIFS:26:positions1-85	LATS2	PTC026	4	NDR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P06239:245-498|KLIFS:466:positions1-85	LCK	PTC032	11	Src	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P53667:339-604|KLIFS:490:positions1-85	LIMK1	PTC063	3	LISK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P53671:331-608|KLIFS:491:positions1-85	LIMK2	PTC063	3	LISK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q15831:49-309|KLIFS:123:positions1-85	LKB1	PTC006	17	CAMKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O94804:36-294|KLIFS:373:positions1-85	LOK	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q5S007:1879-2138|KLIFS:495:positions1-85	LRRK2	PTC075	1	LRRK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P29376:510-786|KLIFS:397:positions1-85	LTK	PTC037	3	ALK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P07948:247-501|KLIFS:467:positions1-85	LYN	PTC032	11	Src	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O43283:168-409|KLIFS:499:positions1-85	LZK	PTC016	7	MLK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P20794:4-284|KLIFS:253:positions1-85	MAK	PTC045	2	RCK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13233:1243-1508|KLIFS:348:positions1-85	MAP3K1	PTC025	7	STE11	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q6ZN16:652-908|KLIFS:347:positions1-85	MAP3K15	PTC025	7	STE11	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9Y2U5:357-617|KLIFS:351:positions1-85	MAP3K2	PTC025	7	STE11	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q99759:362-622|KLIFS:350:positions1-85	MAP3K3	PTC025	7	STE11	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9Y6R4:1343-1601|KLIFS:352:positions1-85	MAP3K4	PTC025	7	STE11	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q12851:16-273|KLIFS:1105:positions1-85	MAP4K2	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8IVH8:16-273|KLIFS:356:positions1-85	MAP4K3	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O95819:25-289|KLIFS:359:positions1-85	MAP4K4	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9Y4K4:20-277|KLIFS:357:positions1-85	MAP4K5	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P49137:64-325|KLIFS:150:positions1-85	MAPKAPK2	PTC058	4	MAPKAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8IW41:22-304|KLIFS:149:positions1-85	MAPKAPK5	PTC058	4	MAPKAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9P0L2:60-311|KLIFS:125:positions1-85	MARK1	PTC006	17	CAMKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q7KZI7:53-304|KLIFS:124:positions1-85	MARK2	PTC006	17	CAMKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P27448:56-307|KLIFS:126:positions1-85	MARK3	PTC006	17	CAMKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q96L34:59-310|KLIFS:127:positions1-85	MARK4	PTC006	17	CAMKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9Y2H9:374-647|KLIFS:18:positions1-85	MAST1	PTC084	1	MAST	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q02750:68-361|KLIFS:383:positions1-85	MEK1	PTC005	7	STE7	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P36507:72-369|KLIFS:384:positions1-85	MEK2	PTC005	7	STE7	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P46734:64-325|KLIFS:385:positions1-85	MEK3	PTC005	7	STE7	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P45985:102-367|KLIFS:387:positions1-85	MEK4	PTC005	7	STE7	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13163:166-409|KLIFS:388:positions1-85	MEK5	PTC005	7	STE7	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P52564:53-314|KLIFS:386:positions1-85	MEK6	PTC005	7	STE7	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q14680:11-263|KLIFS:128:positions1-85	MELK	PTC006	17	CAMKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q12866:587-858|KLIFS:400:positions1-85	MERTK	PTC048	3	Axl	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P08581:1078-1345|KLIFS:446:positions1-85	MET	PTC036	2	Met	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8N4C8:25-289|KLIFS:362:positions1-85	MINK	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O14733:120-380|KLIFS:389:positions1-85	MKK7	PTC005	7	STE7	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9BUB5:49-374|KLIFS:152:positions1-85	MKNK1	PTC058	4	MAPKAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9HBH9:84-388|KLIFS:151:positions1-85	MKNK2	PTC058	4	MAPKAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q32MK0:515-770|KLIFS:156:positions1-85	MLCK	PTC072	4	MLCK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P80192:144-412|KLIFS:500:positions1-85	MLK1	PTC016	7	MLK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q02779:98-360|KLIFS:501:positions1-85	MLK2	PTC016	7	MLK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q16584:117-379|KLIFS:502:positions1-85	MLK3	PTC016	7	MLK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q5VT25:77-343|KLIFS:6:positions1-85	MRCKA	PTC004	7	DMPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9Y5S2:76-342|KLIFS:7:positions1-85	MRCKB	PTC004	7	DMPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13043:30-281|KLIFS:364:positions1-85	MST1	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q04912:1082-1345|KLIFS:447:positions1-85	MST1R	PTC036	2	Met	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13188:27-278|KLIFS:363:positions1-85	MST2	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9Y6E0:36-286|KLIFS:380:positions1-85	MST3	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O15146:575-856|KLIFS:448:positions1-85	MUSK	PTC012	1	Musk	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q15746:1464-1719|KLIFS:153:positions1-85	MYLK	PTC072	4	MLCK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9H1R3:285-540|KLIFS:155:positions1-85	MYLK2	PTC072	4	MLCK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q86YV6:106-361|KLIFS:157:positions1-85	MYLK4	PTC072	4	MLCK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8NEV4:21-287|KLIFS:365:positions1-85	MYO3A	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8WXR4:27-293|KLIFS:366:positions1-85	MYO3B	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q15208:89-382|KLIFS:24:positions1-85	NDR1	PTC026	4	NDR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9Y2H1:90-383|KLIFS:25:positions1-85	NDR2	PTC026	4	NDR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q96PY6:4-258|KLIFS:281:positions1-85	NEK1	PTC062	9	NEK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8NG66:29-287|KLIFS:285:positions1-85	NEK11	PTC062	9	NEK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P51955:8-271|KLIFS:286:positions1-85	NEK2	PTC062	9	NEK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P51956:4-257|KLIFS:282:positions1-85	NEK3	PTC062	9	NEK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P51957:6-261|KLIFS:287:positions1-85	NEK4	PTC062	9	NEK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q6P3R8:4-259|KLIFS:283:positions1-85	NEK5	PTC062	9	NEK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9HC98:45-310|KLIFS:288:positions1-85	NEK6	PTC062	9	NEK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8TDX7:34-299|KLIFS:289:positions1-85	NEK7	PTC062	9	NEK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8TD19:52-308|KLIFS:290:positions1-85	NEK9	PTC062	9	NEK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9UBE8:138-427|KLIFS:248:positions1-85	NLK	PTC014	14	MAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O95747:17-291|KLIFS:353:positions1-85	OSR1	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q16539:24-308|KLIFS:249:positions1-85	p38-alpha	PTC014	14	MAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q15759:24-308|KLIFS:250:positions1-85	p38-beta	PTC014	14	MAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O15264:25-308|KLIFS:251:positions1-85	p38-delta	PTC014	14	MAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P53778:27-311|KLIFS:252:positions1-85	p38-gamma	PTC014	14	MAPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13153:270-521|KLIFS:367:positions1-85	PAK1	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13177:249-499|KLIFS:368:positions1-85	PAK2	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O75914:283-534|KLIFS:369:positions1-85	PAK3	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O96013:321-572|KLIFS:370:positions1-85	PAK4	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9NQU5:407-658|KLIFS:371:positions1-85	PAK6	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P16234:593-954|KLIFS:452:positions1-85	PDGFRA	PTC034	8	PDGFR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P09619:600-962|KLIFS:453:positions1-85	PDGFRB	PTC034	8	PDGFR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O15530:82-342|KLIFS:27:positions1-85	PDPK1	PTC015	1	PDK1	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q16816:20-288|KLIFS:158:positions1-85	PHKG1	PTC041	2	PHK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P15735:24-291|KLIFS:159:positions1-85	PHKG2	PTC041	2	PHK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P11309:38-290|KLIFS:160:positions1-85	PIM1	PTC039	3	PIM	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9P1W9:32-286|KLIFS:161:positions1-85	PIM2	PTC039	3	PIM	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q86V86:40-293|KLIFS:162:positions1-85	PIM3	PTC039	3	PIM	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P17612:44-298|KLIFS:28:positions1-85	PKAC-alpha	PTC042	3	PKA	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P22694:44-298|KLIFS:29:positions1-85	PKAC-beta	PTC042	3	PKA	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q99640:110-359|KLIFS:334:positions1-85	PKMYT1	PTC038	3	WEE	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q16512:615-874|KLIFS:44:positions1-85	PKN1	PTC073	2	PKN	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q16513:657-916|KLIFS:45:positions1-85	PKN2	PTC073	2	PKN	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P53350:53-305|KLIFS:311:positions1-85	PLK1	PTC002	4	PLK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9NYY3:82-334|KLIFS:313:positions1-85	PLK2	PTC002	4	PLK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9H4B4:62-314|KLIFS:312:positions1-85	PLK3	PTC002	4	PLK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O00444:12-265|KLIFS:314:positions1-85	PLK4	PTC002	4	PLK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q05655:349-603|KLIFS:36:positions1-85	PRKCD	PTC046	5	PKC	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q02156:408-668|KLIFS:38:positions1-85	PRKCE	PTC046	5	PKC	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P24723:355-614|KLIFS:39:positions1-85	PRKCH	PTC046	5	PKC	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P41743:254-522|KLIFS:40:positions1-85	PRKCI	PTC046	5	PKC	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q04759:380-634|KLIFS:37:positions1-85	PRKCQ	PTC046	5	PKC	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q15139:583-839|KLIFS:163:positions1-85	PRKD1	PTC024	3	PKD	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9BZL6:551-807|KLIFS:165:positions1-85	PRKD2	PTC024	3	PKD	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O94806:576-832|KLIFS:164:positions1-85	PRKD3	PTC024	3	PKD	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13976:360-619|KLIFS:42:positions1-85	PRKG1	PTC068	2	PKG	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13237:453-711|KLIFS:43:positions1-85	PRKG2	PTC068	2	PKG	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P19525:267-538|KLIFS:310:positions1-85	PRKR	PTC043	2	PEK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P51817:49-303|KLIFS:31:positions1-85	PRKX	PTC042	3	PKA	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13523:687-1006|KLIFS:236:positions1-85	PRP4	PTC069	8	DYRK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q14289:425-683|KLIFS:424:positions1-85	PYK2	PTC065	2	FAK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P04049:349-609|KLIFS:510:positions1-85	RAF1	PTC029	2	RAF	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P07949:724-1016|KLIFS:454:positions1-85	RET	PTC035	1	Ret	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13546:17-289|KLIFS:511:positions1-85	RIPK1	PTC018	4	RIPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O43353:18-294|KLIFS:512:positions1-85	RIPK2	PTC018	4	RIPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P57078:22-286|KLIFS:514:positions1-85	RIPK4	PTC018	4	RIPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13464:76-338|KLIFS:9:positions1-85	ROCK1	PTC004	7	DMPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O75116:92-354|KLIFS:10:positions1-85	ROCK2	PTC004	7	DMPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P08922:1945-2222|KLIFS:458:positions1-85	ROS1	PTC037	3	Sev	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O75676:33-301|KLIFS:47:positions1-85	RPS6KA4(Kin.Dom.1-N-terminal)	PTC022	7	RSK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O75582:49-318|KLIFS:49:positions1-85	RPS6KA5(Kin.Dom.1-N-terminal)	PTC022	7	RSK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q15418:62-321|KLIFS:54:positions1-85	RSK1(Kin.Dom.1-N-terminal)	PTC022	7	RSK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P51812:68-327|KLIFS:55:positions1-85	RSK2(Kin.Dom.1-N-terminal)	PTC022	7	RSK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q15349:59-318|KLIFS:53:positions1-85	RSK3(Kin.Dom.1-N-terminal)	PTC022	7	RSK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9UK32:73-330|KLIFS:56:positions1-85	RSK4(Kin.Dom.1-N-terminal)	PTC022	7	RSK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P23443:91-352|KLIFS:51:positions1-85	S6K1	PTC022	7	RSK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q52WX2:53-318|KLIFS:292:positions1-85	SBK1	PTC074	1	NKF1	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q96BR1:162-419|KLIFS:66:positions1-85	SGK3	PTC081	1	SGK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P57059:27-278|KLIFS:135:positions1-85	SIK	PTC006	17	CAMKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9H0K1:20-271|KLIFS:133:positions1-85	SIK2	PTC006	17	CAMKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9H2G2:34-292|KLIFS:374:positions1-85	SLK	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9H093:53-303|KLIFS:131:positions1-85	SNARK	PTC006	17	CAMKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9NRH2:16-269|KLIFS:136:positions1-85	SNRK	PTC006	17	CAMKL	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P12931:270-523|KLIFS:462:positions1-85	SRC	PTC032	11	Src	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9H3Y6:230-488|KLIFS:469:positions1-85	SRMS	PTC032	11	Src	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q96SB4:80-653|KLIFS:256:positions1-85	SRPK1	PTC064	3	SRPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P78362:81-684|KLIFS:257:positions1-85	SRPK2	PTC064	3	SRPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9UPE1:79-565|KLIFS:258:positions1-85	SRPK3	PTC064	3	SRPK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O75716:20-293|KLIFS:280:positions1-85	STK16	PTC010	4	NAK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9BYT3:116-381|KLIFS:137:positions1-85	STK33	PTC083	1	CAMK-Unique	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8TDR2:202-530|KLIFS:298:positions1-85	STK35	PTC080	1	NKF4	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9NRP7:4-254|KLIFS:327:positions1-85	STK36	PTC020	4	ULK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9UEW8:63-337|KLIFS:354:positions1-85	STK39	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P43405:371-631|KLIFS:470:positions1-85	SYK	PTC056	2	Syk	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O43318:36-291|KLIFS:504:positions1-85	TAK1	PTC016	7	MLK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q7L7X3:28-281|KLIFS:379:positions1-85	TAOK1	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9UL54:28-281|KLIFS:377:positions1-85	TAOK2	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9H2K8:24-277|KLIFS:378:positions1-85	TAOK3	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9UHD2:9-310|KLIFS:272:positions1-85	TBK1	PTC007	4	IKK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P42680:370-623|KLIFS:475:positions1-85	TEC	PTC054	5	Tec	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q15569:57-314|KLIFS:492:positions1-85	TESK1	PTC063	3	LISK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P36897:205-495|KLIFS:521:positions1-85	TGFBR1	PTC001	10	STKR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P37173:244-544|KLIFS:527:positions1-85	TGFBR2	PTC001	10	STKR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P35590:839-1118|KLIFS:478:positions1-85	TIE1	PTC052	2	Tie	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q02763:824-1096|KLIFS:477:positions1-85	TIE2	PTC052	2	Tie	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9UKI8:456-734|KLIFS:323:positions1-85	TLK1	PTC076	2	TLK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q86UE8:462-741|KLIFS:324:positions1-85	TLK2	PTC076	2	TLK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9UKE5:25-289|KLIFS:360:positions1-85	TNIK	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q13470:116-377|KLIFS:395:positions1-85	TNK1	PTC066	2	Ack	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q07912:126-385|KLIFS:394:positions1-85	TNK2	PTC066	2	Ack	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q59H18:463-723|KLIFS:496:positions1-85	TNNI3K	PTC016	7	MLK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P04629:510-781|KLIFS:480:positions1-85	TRKA	PTC030	3	Trk	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q16620:538-807|KLIFS:481:positions1-85	TRKB	PTC030	3	Trk	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q16288:538-839|KLIFS:482:positions1-85	TRKC	PTC030	3	Trk	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9BXA7:12-272|KLIFS:181:positions1-85	TSSK1B	PTC082	1	TSSK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P33981:525-791|KLIFS:326:positions1-85	TTK	PTC051	1	TTK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P42681:271-527|KLIFS:476:positions1-85	TXK	PTC054	5	Tec	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P29597:897-1176|KLIFS:441:positions1-85	TYK2(JH1domain-catalytic)	PTC019	4	JakA	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q06418:518-790|KLIFS:399:positions1-85	TYRO3	PTC048	3	Axl	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O75385:16-278|KLIFS:328:positions1-85	ULK1	PTC020	4	ULK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8IYT8:9-271|KLIFS:329:positions1-85	ULK2	PTC020	4	ULK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q6PHR2:14-270|KLIFS:330:positions1-85	ULK3	PTC020	4	ULK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P35968:834-1162|KLIFS:485:positions1-85	VEGFR2	PTC034	8	VEGFR	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q86Y07:29-319|KLIFS:194:positions1-85	VRK2	PTC078	1	VRK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P30291:299-569|KLIFS:333:positions1-85	WEE1	PTC038	3	WEE	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P0C1S8:212-486|KLIFS:335:positions1-85	WEE2	PTC038	3	WEE	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q8WU08:23-281|KLIFS:68:positions1-85	YANK1	PTC077	3	YANK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q9NY57:23-283|KLIFS:67:positions1-85	YANK2	PTC077	3	YANK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:Q86UX6:93-353|KLIFS:69:positions1-85	YANK3	PTC077	3	YANK	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P07947:277-530|KLIFS:463:positions1-85	YES	PTC032	11	Src	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:O00506:20-270|KLIFS:381:positions1-85	YSK1	PTC003	25	STE20	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending
+receptor	UniProt:P43403:338-600|KLIFS:471:positions1-85	ZAP70	PTC056	2	Syk	KLIFS family equality OR aligned KLIFS85 identity >=0.70; transitive closure; structure edge pending

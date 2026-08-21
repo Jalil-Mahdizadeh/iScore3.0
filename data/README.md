@@ -16,11 +16,12 @@ No acquisition or processing command may overwrite an existing snapshot. A
 source is unusable until its official URL, release identifier, byte size,
 SHA-256, acquisition time, terms, and processing command have been recorded.
 
-The current PubChem name-resolution snapshot is explicitly candidate-only. Its
-tracked review ledger is `processed/gate4a/davis-compound-mapping-review-v1.tsv`;
-blank review fields are intentional. A PubChem hit cannot enter a modeling
-manifest until publication-structure identity and stereochemistry have been
-independently verified. Multicomponent records are not silently desalted.
+The PubChem name-resolution snapshot remains immutable candidate evidence. The
+final tracked disposition ledger is
+`processed/gate4a/davis-compound-adjudication-v1.tsv`: 69 parent structures are
+admitted and three records are quarantined. BMS-345541 and JNJ-28312141 follow the
+explicit publication-parent/counterion-removal rule; no other multicomponent record
+is silently desalted. Committee secondary review is required before label release.
 
 ## Affinity observations
 
@@ -42,3 +43,6 @@ Davis and Karaman are development/technical-replication resources. They cannot
 serve as the sole confirmatory test because of target, chemotype, and assay
 overlap. A distinct locked panel is required for a progression decision. The
 terminal Gate-3 cohort is quarantined by policy and absent from the active tree.
+The OKL and KIRHub raw workbooks are confirmation-candidate evidence only;
+aggregate audits are tracked, but no external cell-level label is copied into Git
+or released to a modeling process.

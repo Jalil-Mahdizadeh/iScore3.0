@@ -12,3 +12,9 @@ together.
 Random-pair splits are forbidden. Fold construction, exclusion reasons, source
 publication edges, ligand similarity edges, sequence edges, and pocket-structure
 edges must be frozen before outcome-model fitting.
+
+`gate4a/davis-admission-components-v1.tsv` freezes provisional components from
+Murcko/Morgan ligand edges and KLIFS family/aligned-pocket sequence edges. These are
+not final folds. Coordinate-derived pocket structure edges may merge these receptor
+components but may never split them; interaction fitting is blocked until that
+closure is versioned.

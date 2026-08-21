@@ -1,0 +1,37 @@
+{
+  "candidates": [
+    {
+      "decision": "REJECT_AS_INDEPENDENT",
+      "name": "Karaman 2008",
+      "reason": "Same KINOMEscan lineage with major target/compound overlap and apparently reused values; technical semantics check only.",
+      "role": "technical replication"
+    },
+    {
+      "decision": "REJECT_AS_SOLE_CONFIRMATION",
+      "name": "IDG-DREAM 2021",
+      "reason": "Sparse, hit-preselected KINOMEscan Kd subset; valuable prospective challenge precedent but unsuitable as a dense crossed final test.",
+      "role": "supportive benchmark"
+    },
+    {
+      "decision": "REJECT_AS_AFFINITY_CONFIRMATION",
+      "name": "Anastassiadis 2011 / PKIS / PKIS2",
+      "reason": "Dense single-concentration functional inhibition is not an absolute Kd endpoint and the releases are older and broadly reused.",
+      "role": "supportive orthogonal classification"
+    },
+    {
+      "decision": "PASS_CONDITIONAL",
+      "name": "Mills and Hug Optimal Kinase Library 2026",
+      "reason": "Dense independent four-dose KINOMEscan experiment with raw measurements, but 61 of 192 compounds exactly overlap admitted Davis parents and reported KSKd values are Bayesian interval estimates with extensive extrapolation.",
+      "role": "primary external affinity-like confirmation after disjoint-ledger adjudication"
+    },
+    {
+      "decision": "PASS_CONDITIONAL",
+      "name": "Saifudeen KIRHub 2026",
+      "reason": "Orthogonal duplicate HotSpot functional panel with detailed construct metadata; not pKd, structures are absent, replicate pairs are unpublished, and Reaction Biology reuse terms require review.",
+      "role": "orthogonal ranking/classification confirmation"
+    }
+  ],
+  "final_policy": "Use complementary, custodian-locked eligible ledgers: OKL for affinity-like replication and KIRHub for orthogonal ranking/classification. Neither panel may tune representations, hyperparameters, exclusions, or thresholds.",
+  "phase": "gate4a_dataset_admission",
+  "schema_version": 1
+}

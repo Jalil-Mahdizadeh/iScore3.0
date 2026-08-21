@@ -1,0 +1,21 @@
+{
+  "files": [
+    {
+      "acquired_utc": "2026-08-21T17:01:31+00:00",
+      "bytes": 2096192,
+      "media_type": "application/json",
+      "official_urls": [
+        "https://klifs.net/api_v2/kinase_names?species=Human",
+        "https://klifs.net/api_v2/kinase_information",
+        "https://www.ebi.ac.uk/proteins/api/proteins",
+        "https://alphafold.ebi.ac.uk/api/prediction"
+      ],
+      "path": "data/raw/gate4a/receptors/reference-evidence-v1.json",
+      "role": "WT canonical domain, fixed pocket, and predicted-view provenance",
+      "sha256": "fd380ef15eeadcaea305ea48c38935266899b097466ef86ae9d870e16e8c9700",
+      "source_id": "gate4a-receptor-reference-evidence-v1"
+    }
+  ],
+  "phase": "gate4a",
+  "schema_version": 1
+}

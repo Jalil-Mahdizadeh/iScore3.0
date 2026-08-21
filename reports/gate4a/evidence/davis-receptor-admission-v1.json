@@ -1,0 +1,35 @@
+{
+  "accepted_assay_row_count": 338,
+  "accepted_pocket_alignment_minimum": 0.964706,
+  "accepted_unique_estimand_count": 338,
+  "accepted_unique_klifs_pocket_count": 338,
+  "accepted_unique_uniprot_count": 338,
+  "apo_view_status": "CANDIDATE_AUDIT_PENDING_STRICT_ATOM_LEVEL_POCKET_OCCUPANCY; predicted view is the primary non-holo view",
+  "assay_row_count": 442,
+  "exact_kinomescan_construct_estimand_status": "BLOCKED_NOT_REPORTED_BY_SOURCE",
+  "excluded_assay_row_count": 104,
+  "exclusion_reason_counts_nonexclusive": {
+    "canonical_domain_unresolved": 45,
+    "explicit_binding_partner_state": 2,
+    "explicit_phosphorylation_state": 15,
+    "incomplete_fixed_klifs_pocket": 28,
+    "klifs_mapping_not_unique": 23,
+    "klifs_pocket_to_selected_domain_alignment_low_confidence": 7,
+    "mutant_or_mutation_label": 54,
+    "outside_standard_epk_estimand": 30,
+    "predicted_reference_view_unavailable": 23
+  },
+  "fixed_pocket_position_count": 85,
+  "leakage_controls": {
+    "affinity_labels_used_for_mapping_or_exclusion": false,
+    "holo_coordinates_used_for_primary_view": false,
+    "mutants_or_state_specific_rows_collapsed_into_WT": false,
+    "query_ligand_used_to_define_pocket": false
+  },
+  "phase": "gate4a_dataset_admission",
+  "pocket_mapping_minimum_ordered_identity": 0.95,
+  "predicted_view_coverage_accepted": 338,
+  "reference_estimand": "reviewed human UniProt canonical WT core kinase domain; fixed KLIFS 85-position pocket; AlphaFold DB canonical-sequence prediction",
+  "schema_version": 1,
+  "standardized_reference_domain_estimand_status": "PASS_FOR_ADMITTED_ROWS"
+}
