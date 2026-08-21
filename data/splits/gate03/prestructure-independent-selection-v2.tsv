@@ -1,0 +1,51 @@
+series_id	prestructure_component_id	component_series_count	retained_ligand_count	retained_nonempty_scaffold_count	retained_pKd_range	scaffold_cluster_count	eligible_scaffold_cluster_count	target_names	publication_id	pdb_id	alignment_identity	resolution_angstrom	selected	selection_rank	candidate_graph_degree
+G3S-ff4e5bfc253b96ea	G3C-001	211	86	37	5.3399317	11	5	Sex hormone-binding globulin	doi:10.1021/jm7011485	1F5F	1	1.7	true	1	44
+G3S-da8fc773cdc768de	G3C-001	211	20	10	3.30103	5	4	Gamma-aminobutyric acid receptor subunit alpha-1	doi:10.1021/jm701433b	6HUP	1	3.58	true	2	8
+G3S-237de531113c65a9	G3C-001	211	11	8	1.40201588	4	3	Albumin	doi:10.1016/j.bmcl.2015.05.099	3B9M	1	2.7	true	3	3
+G3S-441b618a57261680	G3C-005	1	21	19	2.72153583	2	2	Nitric oxide synthase oxygenase	doi:10.1021/acs.biochem.5b00431	4UG7	0.991735537	1.76	true	4	0
+G3S-de0a2a7c1887af78	G3C-001	211	14	14	1.25527251	4	2	Peregrin	doi:10.1016/j.ejmech.2018.05.037	5MWH	1	1.65	true	5	3
+G3S-c6c69878bad91dca	G3C-001	211	18	18	4.71284146	16	1	Serine/threonine-protein kinase B-raf	doi:10.1038/nbt.1990	1UWH	0.996376812	2.95	true	6	53
+G3S-a0eeacac2c679281	G3C-001	211	12	9	2.62838893	2	1	PA-I galactophilic lectin	doi:10.1016/j.ejmech.2022.115025	7Z63	1	1.75	true	7	6
+G3S-3bfb2092ea669ef8	G3C-001	211	12	9	1.71688159	2	1	Histone-lysine N-methyltransferase NSD2	doi:10.1021/acs.jmedchem.0c01768	6UE6	1	2.4	true	8	2
+G3S-3021d6a688e870ed	G3C-001	211	11	8	4.34985778	10	1	Gag-Pol polyprotein [489-587]	doi:10.1021/jm0105833	1HVI	0.98989899	1.8	true	9	3
+G3S-95eff58067253a12	G3C-010	1	9	6	2.86530143	2	1	Glucokinase regulatory protein	doi:10.1021/acs.jmedchem.5b01367	4PX3	1	2.43	true	10	0
+G3S-1d6a948c781cf9b6	G3C-001	211	9	6	2.86530143	3	1	Pantothenate synthetase	doi:10.1021/jm101121s	3LE8	0.993333333	1.7	true	11	18
+G3S-7258bf496c1f8d25	G3C-001	211	33	22	4.50664997	3	0	Poly [ADP-ribose] polymerase 2	doi:10.1021/acs.jmedchem.5b00680	4ZZY	1	2.2	true	12	4
+G3S-cf9073a054dd1e8c	G3C-001	211	31	23	4.31386722	1	0	Nuclear receptor ROR-gamma	doi:10.1016/j.bmcl.2019.04.021	6NAD	1	2.90197077	true	13	1
+G3S-1f6e9ae98fcbd583	G3C-004	1	22	22	4.1383027	1	0	Caspase-6	doi:10.1021/acs.jmedchem.3c00590	4NBL	0.996296296	1.756	true	14	0
+G3S-0d6ea790d633fb5e	G3C-001	211	32	19	4.15842417	1	0	Kelch-like ECH-associated protein 1	doi:10.1021/acs.jmedchem.1c01975	7Q6Q	0.993079585	2.55	true	15	4
+G3S-57f29a986d5123ab	G3C-001	211	29	22	2.5797836	1	0	WD repeat-containing protein 5	doi:10.1021/acs.jmedchem.0c00224	6UJ4	1	1.53	true	16	4
+G3S-82d2cb1cb942342d	G3C-001	211	37	10	2.48012676	1	0	Heat shock protein HSP 90-alpha	doi:10.1021/acs.jmedchem.6b00085	5VYY	1	1.792	true	17	3
+G3S-0c2b41bb223d8483	G3C-001	211	31	16	2.06694679	1	0	Son of sevenless homolog 1	doi:10.1021/acs.jmedchem.8b01108	6D55	1	1.68	true	18	2
+G3S-014e4407ee50fa22	G3C-001	211	36	8	4.56507643	1	0	Endothelial PAS domain-containing protein 1	doi:10.1021/acs.jmedchem.3c00332	8CK4	0.991071429	2.29	true	19	2
+G3S-8468ef8a559bdade	G3C-001	211	42	5	2.74472749	3	0	Carbonic anhydrase 12	doi:10.3109/14756366.2012.757223	5LL5	1	1.42	true	20	34
+G3S-c1bf0bf4ec7b8cf8	G3C-001	211	19	11	5.54406804	2	0	Non-receptor tyrosine-protein kinase TYK2	pmid:37427891	8S98	1	1.87	true	21	7
+G3S-e36179cfc1b7610c	G3C-013	1	19	12	1.84677162	1	0	Tyrosine-protein phosphatase non-receptor type 11	pmid:39110625	8WX7	1	2.02	true	22	0
+G3S-7441d96b81b94068	G3C-008	1	18	8	3.95424251	1	0	Transcription activator BRG1	doi:10.1021/acs.jmedchem.3c01149	7TAB	1	1.16	true	23	0
+G3S-3c840aaf07c196c4	G3C-001	211	17	12	5.88169184	3	0	Fibroblast growth factor 1	doi:10.1021/jm030447t	1RML	1	nan	true	24	5
+G3S-fb6cb3a33814d85e	G3C-001	211	17	9	2.56066731	1	0	Receptor-interacting serine/threonine-protein kinase 2	pmid:36058467	6RN8	1	2.69	true	25	23
+G3S-7b63d80d43bd8871	G3C-001	211	16	9	2	2	0	UDP-3-O-acyl-N-acetylglucosamine deacetylase	doi:10.1021/acs.jmedchem.8b01287	6MAE	1	1.8	true	26	2
+G3S-61544361ce31eac2	G3C-001	211	15	14	1.77815125	2	0	Sterol 14-alpha demethylase	doi:10.1016/j.chembiol.2007.10.011	2WX2	1	2.27	true	27	3
+G3S-e9de90d69aed4dc3	G3C-001	211	15	6	2.67778071	1	0	Beta-secretase 1	doi:10.1021/jm200544q	3RU1	0.99513382	2.3	true	28	7
+G3S-e2e78f6cb47c8e4c	G3C-012	1	14	9	4.2787536	3	0	Polycomb protein EED	doi:10.1021/acs.jmedchem.7b00576	5U69	1	1.28	true	29	0
+G3S-ab8ecdc323a69568	G3C-001	211	14	7	2.74527002	1	0	Casein kinase II subunit alpha	doi:10.1016/j.bmc.2017.02.055	3PE1	1	1.6	true	30	7
+G3S-8afbd56096fe1b47	G3C-001	211	13	12	1.4000595	2	0	ATPase family AAA domain-containing protein 2	doi:10.1021/acs.jmedchem.9b00673	6S57	1	1.82	true	31	6
+G3S-532f119ff68b2182	G3C-006	1	13	8	2.04575749	1	0	S-methyl-5'-thioadenosine phosphorylase	doi:10.1021/acs.jmedchem.8b01642	6DYZ	1	1.62	true	32	0
+G3S-2a143dedddd90694	G3C-001	211	13	7	1.56987531	3	0	2-amino-4-hydroxy-6-hydroxymethyldihydropteridine pyrophosphokinase	doi:10.1016/j.bmc.2014.02.022	4M5I	1	1.08	true	33	17
+G3S-ba437efd56c85d19	G3C-001	211	13	3	1.30845401	3	0	Cyclin-G-associated kinase	doi:10.1021/acs.jmedchem.8b01213	5Y7Z	1	2.804	true	34	36
+G3S-5fea584126042c2e	G3C-007	1	11	3	4.46922412	1	0	Programmed cell death 1 ligand 1	pmid:35429911	5J89	1	2.2	true	35	0
+G3S-03ecbf7361b64421	G3C-001	211	10	10	2.01360318	3	0	Retinal rod rhodopsin-sensitive cGMP 3',5'-cyclic phosphodiesterase subunit delta	doi:10.1021/acs.jmedchem.7b01243	5X74	0.993333333	2.25	true	36	2
+G3S-fe0860941e1bd481	G3C-001	211	10	10	1.48811664	10	0	Gastrotropin	doi:10.1021/acs.jmedchem.6b00869	5L8N	1	2.12	true	37	4
+G3S-9838f6e0d45906f5	G3C-001	211	10	7	1.82865038	2	0	Bromodomain-containing protein 4	pmid:38295759	4QB3	0.992125984	0.94	true	38	5
+G3S-43586287a9be2906	G3C-001	211	9	6	1.1903317	1	0	Tyrosine-protein phosphatase non-receptor type 1 [1-298]	doi:10.1021/jm0205696	1NO6	1	2.4	true	39	5
+G3S-7e32e8326784c5b1	G3C-009	1	9	4	2.13469857	1	0	E3 ubiquitin-protein ligase CBL-B	pmid:38894924	8VW5	0.990322581	1.76	true	40	0
+G3S-6454ff7a6533168a	G3C-001	211	9	3	5.8573325	3	0	Transthyretin	doi:10.1021/jm0700159	4ABV	1	1.8	true	41	11
+G3S-0adfbd2895adde2d	G3C-003	1	9	3	2.66118144	1	0	Alpha-tocopherol transfer protein	doi:10.1016/j.bmc.2009.10.046	1R5L	1	1.5	true	42	0
+G3S-7ad16b5be174b17e	G3C-001	211	9	3	1.36172784	2	0	Aurora kinase A	doi:10.1021/cb200508b	3UOD	0.996415771	2.5002	true	43	36
+G3S-3046f9edaa2c72bf	G3C-001	211	8	8	3.51410482	1	0	von Hippel-Lindau disease tumor suppressor	doi:10.1021/ml400296c	4BKT	1	2.35	true	44	1
+G3S-83ba16a2ad335359	G3C-001	211	8	8	2.04139269	1	0	Lethal(3)malignant brain tumor-like protein 3	doi:10.1039/c3md00197k	4L59	1	2.29	true	45	3
+G3S-b6b157cccce7111a	G3C-001	211	8	8	1.25527251	3	0	Lysine-specific demethylase 5A	doi:10.1021/acs.jmedchem.8b00261	5V9T	1	3.05	true	46	1
+G3S-e1d12f0e7fc3ce7f	G3C-001	211	8	7	2.07496476	1	0	Protein-tyrosine kinase 2-beta	pmid:33497606	8XOX	1	1.9	true	47	6
+G3S-b9a14ea86c9556ea	G3C-011	1	8	7	1.462398	1	0	Peroxisome proliferator-activated receptor gamma	doi:10.1016/j.bmcl.2014.06.023	3VSP	1	2.4	true	48	0
+G3S-fd168e6ca4c62f5c	G3C-001	211	8	6	2.30343607	1	0	Retinoic acid receptor RXR-alpha	doi:10.1021/acs.jmedchem.5b00829	3H0A	1	2.1	true	49	3
+G3S-3a4ac119455247b0	G3C-002	2	8	4	2.37358066	2	0	Peptidyl-prolyl cis-trans isomerase A	doi:10.1021/acs.jmedchem.6b01329	5T9Z	1	1.4	true	50	1

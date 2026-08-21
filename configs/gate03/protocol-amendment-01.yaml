@@ -1,0 +1,51 @@
+schema_version: 1
+phase_id: gate03-bounded-interaction-identifiability-v1
+amendment_id: gate03-amendment-01-independent-series-selection
+status: frozen_before_first_gate03_fit
+frozen_utc: 2026-08-21T08:58:50Z
+model_outcomes_inspected_before_freeze: false
+reason: >
+  The strict mapped candidate universe contains transitive bridge series: a union
+  graph over every candidate has one large component, although a subset can be
+  pairwise disconnected. Gate-3 requires 30--50 disconnected evaluation units,
+  so selection must operate on an independent set of the pre-fit leakage graph
+  rather than retaining bridge series and accepting a giant component.
+selection:
+  candidate_requirements:
+    minimum_ligands_after_reference_ligand_quarantine: 8
+    minimum_nonempty_murcko_scaffolds: 2
+    minimum_pKd_range: 1.0
+    strict_sequence_structure_site_mapping_required: true
+  prestructure_graph_relations:
+    - exact_target_sequence
+    - full_sequence_identity_at_least_0.30
+    - local_site_identity_at_least_0.50
+    - exact_nonempty_murcko_scaffold
+    - maximum_cross_series_ECFP4_tanimoto_at_least_0.35
+    - shared_measurement_publication
+    - shared_reference_structure_publication
+  deterministic_search:
+    method: repeated_hash_ordered_greedy_maximal_independent_set
+    trials: 2048
+    seed: 20260821
+    choose_solution_by:
+      - largest_independent_set_size
+      - highest_aggregate_mapping_and_assay_quality
+      - lexical_series_ids
+    maximum_selected_series_before_structural_edges: 50
+  quality_tiebreakers_in_order:
+    - at_least_10_ligands
+    - more_ligands_capped_at_20
+    - more_nonempty_scaffolds_capped_at_10
+    - larger_pKd_range_capped_at_3
+    - higher_sequence_mapping_identity
+    - lower_structure_resolution
+    - lexical_series_id
+  labels_may_only_be_used_for_declared_depth_and_spread_curation: true
+  model_predictions_or_residuals_may_not_be_used: true
+structural_followup:
+  run_USalign_global_and_pocket_allpairs_before_final_freeze: true
+  add_validated_structural_edges_to_graph: true
+  rerun_same_independent_set_search_after_structural_edges: true
+  minimum_final_series: 30
+  failure_action: DATA-NO-GO_without_model_efficacy_fit

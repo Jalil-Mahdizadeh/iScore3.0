@@ -1,0 +1,19 @@
+schema_version: 1
+phase_id: gate03-bounded-interaction-identifiability-v1
+status: frozen_before_first_gate03_fit
+frozen_utc: 2026-08-21T12:41:00Z
+source_audit: configs/gate03/manual-primary-source-audit-v4.yaml
+excluded_observations:
+  - observation_id: G3S-61544361ce31eac2-L0016
+    series_id: G3S-61544361ce31eac2
+    bindingdb_reactant_set_id: "153428"
+    bindingdb_value: 20 nM
+    primary_value: 0.2 micromolar
+    primary_location: Figure 2A, ketoconazole, T. cruzi CYP51
+    primary_source: https://pmc.ncbi.nlm.nih.gov/articles/PMC2324070/
+    action: quarantine_without_value_correction
+    reason: exact_numeric_value_disagrees_by_ten_fold
+policy: >
+  Never silently correct a secondary-database label from a manual comparison.
+  Exclude the original consensus observation and retain both values in the
+  audit trail. Component and scaffold assignments are recomputed before fit.

@@ -1,0 +1,203 @@
+schema_version: 1
+audit_config: configs/gate03/manual-primary-source-audit-v4.yaml
+candidate_table: reports/gate03/evidence/primary-source-audit-candidates-v4.tsv
+source_manifest: data/manifests/gate03-primary-sources-v4.json
+reviewed_utc: 2026-08-21T12:55:00Z
+review_policy: >
+  Values, compound identifiers, target/construct and assay method were checked
+  against publisher supplements or NIH-hosted primary manuscripts. BindingDB
+  and ChEMBL were used only to trace records and names, never as verification.
+series:
+  G3S-0c2b41bb223d8483:
+    target_construct: SOS1 catalytic domain in the RAS-SOS1 exchange complex
+    assay: fluorescence-polarization binding assay; Kd in micromolar
+    source_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8314423/
+    reference_structure_relation: 6D55 is from the measurement publication
+    measurements:
+      G3S-0c2b41bb223d8483-L0019:
+        status: verified
+        compound: "37"
+        primary_value: 1.05 micromolar
+        location: Table 4
+      G3S-0c2b41bb223d8483-L0028:
+        status: verified
+        compound: "65"
+        primary_value: 0.009 micromolar
+        location: Tables 5 and 6
+  G3S-0d6ea790d633fb5e:
+    target_construct: human KEAP1 Kelch domain binding the Nrf2 ETGE site
+    assay: SPR inhibition-in-solution and ITC/DBA corroboration
+    source_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8883477/
+    reference_structure_relation: 7Q6Q is from the measurement publication
+    measurements:
+      G3S-0d6ea790d633fb5e-L0011:
+        status: verified
+        compound: "65"
+        primary_value: 403000 nM
+        location: Figure 10B
+      G3S-0d6ea790d633fb5e-L0015:
+        status: verified
+        compound: "78"
+        primary_value: 27 and 29 nM
+        location: Figure 10C and Table 1
+  G3S-1f6e9ae98fcbd583:
+    target_construct: procaspase-6 allosteric site construct used for SPR
+    assay: surface plasmon resonance; Kd in micromolar
+    source_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC10388292/
+    reference_structure_relation: 4NBL is a historical same-site procaspase-6 structure
+    measurements:
+      G3S-1f6e9ae98fcbd583-L0013:
+        status: verified
+        compound: "26"
+        primary_value: 1100 micromolar
+        location: Table 1
+      G3S-1f6e9ae98fcbd583-L0014:
+        status: verified
+        compound: "25"
+        primary_value: 0.080 micromolar
+        location: Table 1
+  G3S-2a143dedddd90694:
+    target_construct: E. coli HPPK catalytic-domain construct
+    assay: SPR equilibrium/kinetic binding
+    source_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4269157/
+    reference_structure_relation: 4M5I is from the measurement publication
+    measurements:
+      G3S-2a143dedddd90694-L0001:
+        status: verified
+        compound: "6"
+        primary_value: 39 micromolar
+        location: Table 1
+      G3S-2a143dedddd90694-L0009:
+        status: verified
+        compound: DHP
+        primary_value: 1.05 micromolar kinetic Kd
+        location: DHP SPR paragraph and Figure S2
+  G3S-3bfb2092ea669ef8:
+    target_construct: human NSD2 PWWP1 domain
+    assay: surface plasmon resonance
+    source_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC8130708/
+    reference_structure_relation: 6UE6 is from the measurement publication
+    measurements:
+      G3S-3bfb2092ea669ef8-L0006:
+        status: verified
+        compound: "2g"
+        primary_value: 297 micromolar
+        location: Table 1
+      G3S-3bfb2092ea669ef8-L0005:
+        status: verified
+        compound: "3g"
+        primary_value: 5.7 micromolar
+        location: Table 2
+  G3S-532f119ff68b2182:
+    target_construct: human MTAP
+    assay: tight-binding inhibition-derived Kd
+    source_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6635953/
+    reference_structure_relation: 6DYZ is from the measurement publication
+    measurements:
+      G3S-532f119ff68b2182-L0010:
+        status: verified
+        compound: "27"
+        primary_value: 70 nM
+        location: Figure 2
+      G3S-532f119ff68b2182-L0007:
+        status: verified
+        compound: "15"
+        primary_value: 0.63 nM
+        location: Figure 2 and Structure-Inhibition Relationship paragraph
+  G3S-61544361ce31eac2:
+    target_construct: T. cruzi CYP51
+    assay: optical spectral-binding apparent Kd
+    source_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC2324070/
+    reference_structure_relation: 2WX2 is a later same-ortholog historical holo structure
+    measurements:
+      G3S-61544361ce31eac2-L0007:
+        status: verified
+        compound: "azole 5"
+        primary_value: 1.2 micromolar
+        location: Figure 2A
+      G3S-61544361ce31eac2-L0016:
+        status: failed_numeric_mismatch_quarantined
+        compound: ketoconazole
+        primary_value: 0.2 micromolar
+        bindingdb_value: 20 nM
+        location: Figure 2A
+  G3S-7e32e8326784c5b1:
+    target_construct: human CBL-B TKB/SH2 domain, residues 40-426
+    assay: Biacore SPR at 20 C in HEPES/NaCl/TCEP buffer
+    source_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC11181488/
+    reference_structure_relation: 8VW5 is from the measurement publication
+    measurements:
+      G3S-7e32e8326784c5b1-L0004:
+        status: unresolved_exact_value
+        compound: unresolved publication compound identifier
+        primary_value: not directly displayed
+        location: assay method verified in supplement; exact 6 micromolar value unresolved
+      G3S-7e32e8326784c5b1-L0007:
+        status: verified
+        compound: "27"
+        primary_value: 0.044 micromolar
+        location: Table 4
+  G3S-82d2cb1cb942342d:
+    target_construct: human HSP90alpha ligand-binding domain
+    assay: fluorescence-polarization apparent Kd
+    source_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC4979570/
+    reference_structure_relation: 5VYY is a later same-pocket structure
+    measurements:
+      G3S-82d2cb1cb942342d-L0012:
+        status: verified
+        compound: "44"
+        primary_value: 72.5 micromolar
+        location: Table 1
+      G3S-82d2cb1cb942342d-L0007:
+        status: verified
+        compound: "41"
+        primary_value: 0.24 micromolar
+        location: Table 1
+  G3S-83ba16a2ad335359:
+    target_construct: human L3MBTL3 three-MBT-repeat construct
+    assay: isothermal titration calorimetry
+    source_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC3897169/
+    reference_structure_relation: 4L59 is from the measurement publication
+    measurements:
+      G3S-83ba16a2ad335359-L0004:
+        status: verified
+        compound: "11"
+        primary_value: 44 micromolar
+        location: Table 2
+      G3S-83ba16a2ad335359-L0007:
+        status: verified
+        compound: "16"
+        primary_value: 0.40 micromolar
+        location: Table 3
+  G3S-b6b157cccce7111a:
+    target_construct: human KDM5A catalytic-domain construct
+    assay: direct binding Kd assay reported with enzyme inhibition
+    source_url: https://pmc.ncbi.nlm.nih.gov/articles/PMC6322411/
+    reference_structure_relation: 5V9T is a historical same-catalytic-pocket structure
+    measurements:
+      G3S-b6b157cccce7111a-L0006:
+        status: verified
+        compound: KDOAM-25
+        primary_value: 2.7 micromolar
+        location: KDOAM-25 structural paragraph
+      G3S-b6b157cccce7111a-L0002:
+        status: verified
+        compound: N46
+        primary_value: 0.15 micromolar
+        location: N40/N41/N46/N48 binding-affinity paragraph
+  G3S-e36179cfc1b7610c:
+    target_construct: full-length human SHP2
+    assay: Biacore SPR kinetic Kd
+    source_url: https://acs.figshare.com/articles/journal_contribution/26511130
+    reference_structure_relation: 8WX7 is from the measurement publication
+    measurements:
+      G3S-e36179cfc1b7610c-L0007:
+        status: verified
+        compound: "19"
+        primary_value: 26 nM
+        location: Supporting Information Table S1
+      G3S-e36179cfc1b7610c-L0003:
+        status: verified
+        compound: 1 (JAB-3312)
+        primary_value: 0.37 nM
+        location: Supporting Information Table S1

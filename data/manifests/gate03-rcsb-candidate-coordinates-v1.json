@@ -1,0 +1,2426 @@
+{
+  "coordinate_count": 345,
+  "coordinate_format": "PDBx/mmCIF gzip",
+  "created_utc": "2026-08-21T08:53:37.434803+00:00",
+  "records": [
+    {
+      "bytes": 69576,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1AZM.cif.gz",
+      "pdb_id": "1AZM",
+      "sha256": "69d2ae3be2aaf73cb5578cdad38defa9fe2acbabe4b03b86b160b043ac579864",
+      "url": "https://files.rcsb.org/download/1AZM.cif.gz"
+    },
+    {
+      "bytes": 69217,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1CIL.cif.gz",
+      "pdb_id": "1CIL",
+      "sha256": "b0afa2a562f1397d18cd519dba2521e4adf03037571830c54137b45b8292cb28",
+      "url": "https://files.rcsb.org/download/1CIL.cif.gz"
+    },
+    {
+      "bytes": 43141,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1CTR.cif.gz",
+      "pdb_id": "1CTR",
+      "sha256": "7ff60e0d958ee6dd814274ad5879f1440fe281e13756c3bd0381b1b7f617fd75",
+      "url": "https://files.rcsb.org/download/1CTR.cif.gz"
+    },
+    {
+      "bytes": 110815,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1EA1.cif.gz",
+      "pdb_id": "1EA1",
+      "sha256": "974b52c835f0c3ebee4787ab46548815794e9171db969611bfb99da96f12d3f2",
+      "url": "https://files.rcsb.org/download/1EA1.cif.gz"
+    },
+    {
+      "bytes": 54402,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1F5F.cif.gz",
+      "pdb_id": "1F5F",
+      "sha256": "5f019a1489ad9188a1a39694d99f4074c6ffe8d5fdccce1843b964521ba80d6e",
+      "url": "https://files.rcsb.org/download/1F5F.cif.gz"
+    },
+    {
+      "bytes": 73864,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1FCX.cif.gz",
+      "pdb_id": "1FCX",
+      "sha256": "0deb56f307046844664ecd523f21b1b777a3aa2d92cfb2b716cb4a33dc97a5fd",
+      "url": "https://files.rcsb.org/download/1FCX.cif.gz"
+    },
+    {
+      "bytes": 75208,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1FCY.cif.gz",
+      "pdb_id": "1FCY",
+      "sha256": "12689e9cb7dfbf85a2c093c554ec36dd6daa97c9abd0efb8525ccabe3314ef6b",
+      "url": "https://files.rcsb.org/download/1FCY.cif.gz"
+    },
+    {
+      "bytes": 171889,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1H9U.cif.gz",
+      "pdb_id": "1H9U",
+      "sha256": "5d8d2e2ed9512c4bb9dd3c3611518f0a2dd3c7d6f8b24922cfabd64f55f746ab",
+      "url": "https://files.rcsb.org/download/1H9U.cif.gz"
+    },
+    {
+      "bytes": 59947,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1HVI.cif.gz",
+      "pdb_id": "1HVI",
+      "sha256": "84fcdf10828e45920e512970028a8e643af56f98cf563a4c35deef9dab1f38ab",
+      "url": "https://files.rcsb.org/download/1HVI.cif.gz"
+    },
+    {
+      "bytes": 59983,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1HVK.cif.gz",
+      "pdb_id": "1HVK",
+      "sha256": "bcbc0f84ac193eabb0902f0f6861ffdbd5fa7bc628cabf17445d8feb0ac0428a",
+      "url": "https://files.rcsb.org/download/1HVK.cif.gz"
+    },
+    {
+      "bytes": 131058,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1JD0.cif.gz",
+      "pdb_id": "1JD0",
+      "sha256": "1dbca8cb3911a889ad1cf66f81f2071b803e34055f8ec31c381cfe15d2fac7f0",
+      "url": "https://files.rcsb.org/download/1JD0.cif.gz"
+    },
+    {
+      "bytes": 52020,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1KDK.cif.gz",
+      "pdb_id": "1KDK",
+      "sha256": "a8d3d8a69c2ac1111ee892f25b3d768eb055f6962e5ea7b099ae0c2d5d6900c2",
+      "url": "https://files.rcsb.org/download/1KDK.cif.gz"
+    },
+    {
+      "bytes": 47685,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1LIN.cif.gz",
+      "pdb_id": "1LIN",
+      "sha256": "7863400b338c8756ebd1a45700f444b8dd93ef3e5f0733f2cd0c3258ccd700aa",
+      "url": "https://files.rcsb.org/download/1LIN.cif.gz"
+    },
+    {
+      "bytes": 77794,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1LJT.cif.gz",
+      "pdb_id": "1LJT",
+      "sha256": "a6c698831b68231139fb59f3a304d47c7db0a6be5757a7152c0a45a7e2a98141",
+      "url": "https://files.rcsb.org/download/1LJT.cif.gz"
+    },
+    {
+      "bytes": 79159,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1NO6.cif.gz",
+      "pdb_id": "1NO6",
+      "sha256": "6a9568eef1f05a64f79a4b1384305548b55ebf946f19f8f7bd84f132093da6a7",
+      "url": "https://files.rcsb.org/download/1NO6.cif.gz"
+    },
+    {
+      "bytes": 69014,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1OIP.cif.gz",
+      "pdb_id": "1OIP",
+      "sha256": "c7c0a532fe26a0c452f689cae6045e84a1e6329663bac544a5d84c6fff4f4056",
+      "url": "https://files.rcsb.org/download/1OIP.cif.gz"
+    },
+    {
+      "bytes": 80152,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1ONZ.cif.gz",
+      "pdb_id": "1ONZ",
+      "sha256": "7bfa3f365b38ac3b1c5c25948f7e947bbb51d3aaff55706371e67aef60197f33",
+      "url": "https://files.rcsb.org/download/1ONZ.cif.gz"
+    },
+    {
+      "bytes": 78493,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1QPC.cif.gz",
+      "pdb_id": "1QPC",
+      "sha256": "57cfe79b86f54578f84e0cfaa23d56fbf6a399e826151ebe3522b0b784b25724",
+      "url": "https://files.rcsb.org/download/1QPC.cif.gz"
+    },
+    {
+      "bytes": 75836,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1R5L.cif.gz",
+      "pdb_id": "1R5L",
+      "sha256": "4acc8d51cccc12cf0794238c1b5b6ed0286ceb463ab0ab5ba03c768b4548d90c",
+      "url": "https://files.rcsb.org/download/1R5L.cif.gz"
+    },
+    {
+      "bytes": 1089327,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1RML.cif.gz",
+      "pdb_id": "1RML",
+      "sha256": "73a064df1a66ff38502546b9e99658d157c7d888e9c15735679322a8a0d9cb2f",
+      "url": "https://files.rcsb.org/download/1RML.cif.gz"
+    },
+    {
+      "bytes": 120797,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1UWH.cif.gz",
+      "pdb_id": "1UWH",
+      "sha256": "3db0ec6c19b3686cb2842b0893be62505d82e251d4f64f42ee4a4a2170898982",
+      "url": "https://files.rcsb.org/download/1UWH.cif.gz"
+    },
+    {
+      "bytes": 106672,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1UWJ.cif.gz",
+      "pdb_id": "1UWJ",
+      "sha256": "b892a2ff6a0d4e06abb2cf41e92150ce52bf83fcaac2414adcc8f5556b7fd7d3",
+      "url": "https://files.rcsb.org/download/1UWJ.cif.gz"
+    },
+    {
+      "bytes": 397820,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1Z11.cif.gz",
+      "pdb_id": "1Z11",
+      "sha256": "ff92724712aa9e2c669e4c8ad71f7a7b85a3829ee8037eca73ef2814d72a658a",
+      "url": "https://files.rcsb.org/download/1Z11.cif.gz"
+    },
+    {
+      "bytes": 325656,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/1ZZ1.cif.gz",
+      "pdb_id": "1ZZ1",
+      "sha256": "22bafb692f44e19459f376fb24f540573303151960779b0b6f61a7aace188642",
+      "url": "https://files.rcsb.org/download/1ZZ1.cif.gz"
+    },
+    {
+      "bytes": 231244,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/2BXF.cif.gz",
+      "pdb_id": "2BXF",
+      "sha256": "8acc3279a60976865a0dfb67ce8a9caf41940b83f388a548f733067597e27b19",
+      "url": "https://files.rcsb.org/download/2BXF.cif.gz"
+    },
+    {
+      "bytes": 131928,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/2BXK.cif.gz",
+      "pdb_id": "2BXK",
+      "sha256": "b0b1ac70ea788c5b0fb0c493402aa9813987d2275364e149cdc1c42f1f11c483",
+      "url": "https://files.rcsb.org/download/2BXK.cif.gz"
+    },
+    {
+      "bytes": 172530,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/2F2U.cif.gz",
+      "pdb_id": "2F2U",
+      "sha256": "23ec193ee2c2d567a57316282be558b937eb41384e10c2265ab5293990f3fced",
+      "url": "https://files.rcsb.org/download/2F2U.cif.gz"
+    },
+    {
+      "bytes": 75630,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/2FVD.cif.gz",
+      "pdb_id": "2FVD",
+      "sha256": "d13a38e826e75e09f53012ea6093163fbb693203fe604d1e536995f831c78232",
+      "url": "https://files.rcsb.org/download/2FVD.cif.gz"
+    },
+    {
+      "bytes": 75545,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/2IVU.cif.gz",
+      "pdb_id": "2IVU",
+      "sha256": "75ce724c69eb29c29906ac1d3aa1fbd3197095fb231bb9e3858f9c9c3f35a2b6",
+      "url": "https://files.rcsb.org/download/2IVU.cif.gz"
+    },
+    {
+      "bytes": 602294,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/2N0W.cif.gz",
+      "pdb_id": "2N0W",
+      "sha256": "74675a481cedf572ae7b9e7d64598a80b6f6a4c09a8578b7e5b9691a66c09a2a",
+      "url": "https://files.rcsb.org/download/2N0W.cif.gz"
+    },
+    {
+      "bytes": 74333,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/2O3P.cif.gz",
+      "pdb_id": "2O3P",
+      "sha256": "176d174a6f21968b107dc55fed192e11c5581a2647c2e24becaa7b1ef2fe6c8d",
+      "url": "https://files.rcsb.org/download/2O3P.cif.gz"
+    },
+    {
+      "bytes": 94837,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/2OHL.cif.gz",
+      "pdb_id": "2OHL",
+      "sha256": "f394761e1a104bea1df5823fdb3fedd05e70094e0e8fac03cebfb616db7d0f02",
+      "url": "https://files.rcsb.org/download/2OHL.cif.gz"
+    },
+    {
+      "bytes": 122202,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/2VKU.cif.gz",
+      "pdb_id": "2VKU",
+      "sha256": "0336bbe588f6cb8b8a494140d398131f3df87621779fa9a24c93180cd5fbaf34",
+      "url": "https://files.rcsb.org/download/2VKU.cif.gz"
+    },
+    {
+      "bytes": 366147,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/2WUZ.cif.gz",
+      "pdb_id": "2WUZ",
+      "sha256": "4a85b6fceadb82e8989a74528e583ff3b8e3686136be28174a840df6ed1b6d34",
+      "url": "https://files.rcsb.org/download/2WUZ.cif.gz"
+    },
+    {
+      "bytes": 105052,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/2WV2.cif.gz",
+      "pdb_id": "2WV2",
+      "sha256": "5ed1effcc292d06db6e7f603ace6f43eebaa656ba36e2ee3f222e1b58d92785a",
+      "url": "https://files.rcsb.org/download/2WV2.cif.gz"
+    },
+    {
+      "bytes": 375761,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/2WX2.cif.gz",
+      "pdb_id": "2WX2",
+      "sha256": "c31227e49f7d2bb51ab9d44f9e4220611ceeb1723d98467d05dae2b56634a1e5",
+      "url": "https://files.rcsb.org/download/2WX2.cif.gz"
+    },
+    {
+      "bytes": 73473,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/2XB7.cif.gz",
+      "pdb_id": "2XB7",
+      "sha256": "f2faeeb6e50d3e30b79a23e0fb999b24f19122878074e0a4ff18f385767c8a81",
+      "url": "https://files.rcsb.org/download/2XB7.cif.gz"
+    },
+    {
+      "bytes": 79433,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/2Y6O.cif.gz",
+      "pdb_id": "2Y6O",
+      "sha256": "41eeb5ba2ab0da548bf35798e6b0bfa69b8ce8c3bca87d5cb63fcfc1c9bac7f4",
+      "url": "https://files.rcsb.org/download/2Y6O.cif.gz"
+    },
+    {
+      "bytes": 65782,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3B27.cif.gz",
+      "pdb_id": "3B27",
+      "sha256": "f619b107e5376f8022222765915691cc06d442e78f706b1cf3fb0afb98ab1dec",
+      "url": "https://files.rcsb.org/download/3B27.cif.gz"
+    },
+    {
+      "bytes": 122308,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3B28.cif.gz",
+      "pdb_id": "3B28",
+      "sha256": "8693e883ae095382776b5d8d3bbad5efe3b1620fb63a7a64f96f6596d0709e1e",
+      "url": "https://files.rcsb.org/download/3B28.cif.gz"
+    },
+    {
+      "bytes": 135017,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3B9L.cif.gz",
+      "pdb_id": "3B9L",
+      "sha256": "706ffa4b778a1bb2808791e95c6bced19071247f01c840ce13302ee5956f988a",
+      "url": "https://files.rcsb.org/download/3B9L.cif.gz"
+    },
+    {
+      "bytes": 134797,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3B9M.cif.gz",
+      "pdb_id": "3B9M",
+      "sha256": "041818ff7f1a05d4c4c443998615f3f40caa9c673d1107a81b024b09d5a2f73c",
+      "url": "https://files.rcsb.org/download/3B9M.cif.gz"
+    },
+    {
+      "bytes": 70576,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3BL1.cif.gz",
+      "pdb_id": "3BL1",
+      "sha256": "4551f5c6b0746c0d2f4dee9cc1fd84e556c8573f15540b75b7eccd43e6c95d13",
+      "url": "https://files.rcsb.org/download/3BL1.cif.gz"
+    },
+    {
+      "bytes": 235133,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3C0Z.cif.gz",
+      "pdb_id": "3C0Z",
+      "sha256": "092a42b0cb0e54fcedcd7bff47d7dcaafe26ad4739ee19ae5d05395f3575166a",
+      "url": "https://files.rcsb.org/download/3C0Z.cif.gz"
+    },
+    {
+      "bytes": 127351,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3CZV.cif.gz",
+      "pdb_id": "3CZV",
+      "sha256": "ca0949256c19b2934a2ee685a90bfe1fe6023153c1c325041f30ba10962306dd",
+      "url": "https://files.rcsb.org/download/3CZV.cif.gz"
+    },
+    {
+      "bytes": 73119,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3FQS.cif.gz",
+      "pdb_id": "3FQS",
+      "sha256": "857566c0a7f81b94a9c4e78ac83aad32702c6eff404af311e9950b0322861b04",
+      "url": "https://files.rcsb.org/download/3FQS.cif.gz"
+    },
+    {
+      "bytes": 126323,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3G5D.cif.gz",
+      "pdb_id": "3G5D",
+      "sha256": "ef796aede00e2fd16f2ff5694458521fc1dfa6a68dbea62f2769d398589f79ce",
+      "url": "https://files.rcsb.org/download/3G5D.cif.gz"
+    },
+    {
+      "bytes": 89504,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3GCS.cif.gz",
+      "pdb_id": "3GCS",
+      "sha256": "f13d9e85f43990191662472320e508c70745f089d316da6c1ef652e25f2c7ec1",
+      "url": "https://files.rcsb.org/download/3GCS.cif.gz"
+    },
+    {
+      "bytes": 120659,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3H0A.cif.gz",
+      "pdb_id": "3H0A",
+      "sha256": "b91b9a636b7c1bb627a34480e5f9e292c2b8f101ff1322ce80f0d55c82362c1d",
+      "url": "https://files.rcsb.org/download/3H0A.cif.gz"
+    },
+    {
+      "bytes": 88489,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3HLL.cif.gz",
+      "pdb_id": "3HLL",
+      "sha256": "fb205d5aba6829b0bb210314342a5e192a5975b2a21a521a95b9c4c1ae77835b",
+      "url": "https://files.rcsb.org/download/3HLL.cif.gz"
+    },
+    {
+      "bytes": 78907,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3HMM.cif.gz",
+      "pdb_id": "3HMM",
+      "sha256": "23bd49cbd9f4b422da7859cebd47ff0e6d9bf213f19be500e4a10aa73f674094",
+      "url": "https://files.rcsb.org/download/3HMM.cif.gz"
+    },
+    {
+      "bytes": 138517,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3HS4.cif.gz",
+      "pdb_id": "3HS4",
+      "sha256": "95af65d2db770d87bfabbc148bfc8562f8e06b135011748a149a26dbea097f6e",
+      "url": "https://files.rcsb.org/download/3HS4.cif.gz"
+    },
+    {
+      "bytes": 141886,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3IK3.cif.gz",
+      "pdb_id": "3IK3",
+      "sha256": "02ed40ce503ab0584b75f2deed5138d57d6e2f854e7ec879b22f9653e98d3a60",
+      "url": "https://files.rcsb.org/download/3IK3.cif.gz"
+    },
+    {
+      "bytes": 128697,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3IMG.cif.gz",
+      "pdb_id": "3IMG",
+      "sha256": "4edaa4815a5b6f3f238e21dba15f40d2ddcb04fd22086c83888430e67d5fabb2",
+      "url": "https://files.rcsb.org/download/3IMG.cif.gz"
+    },
+    {
+      "bytes": 164767,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3IX2.cif.gz",
+      "pdb_id": "3IX2",
+      "sha256": "b09deb66dc617c1a4b1d697ac4f5ce65789bc5ca94b0749ab9e68113c8bf07da",
+      "url": "https://files.rcsb.org/download/3IX2.cif.gz"
+    },
+    {
+      "bytes": 72439,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3K54.cif.gz",
+      "pdb_id": "3K54",
+      "sha256": "d54fd370f6374f6bce6531dd3803bb2c01b914630d717dc073f2cc95d6c44d00",
+      "url": "https://files.rcsb.org/download/3K54.cif.gz"
+    },
+    {
+      "bytes": 166813,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3LDP.cif.gz",
+      "pdb_id": "3LDP",
+      "sha256": "e2e587119a4d4f3c08b0f1409987f443ee2ed10ff9784fe9882bb5e027ef2a2e",
+      "url": "https://files.rcsb.org/download/3LDP.cif.gz"
+    },
+    {
+      "bytes": 140097,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3LE8.cif.gz",
+      "pdb_id": "3LE8",
+      "sha256": "9b44904ffa01efce4607ee168dd886f45ee0d617f5ae1cca8a450376324839ef",
+      "url": "https://files.rcsb.org/download/3LE8.cif.gz"
+    },
+    {
+      "bytes": 132509,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3M98.cif.gz",
+      "pdb_id": "3M98",
+      "sha256": "e06f29252053dfb00045a3be6673b85ab07350c7bd3bfb81afe7c512edb8ec28",
+      "url": "https://files.rcsb.org/download/3M98.cif.gz"
+    },
+    {
+      "bytes": 122627,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3MDZ.cif.gz",
+      "pdb_id": "3MDZ",
+      "sha256": "69ac6cc43a1ac288e25cd680ce01d4290af98d6c08eb3601f984cfef797df3d6",
+      "url": "https://files.rcsb.org/download/3MDZ.cif.gz"
+    },
+    {
+      "bytes": 131619,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3MHO.cif.gz",
+      "pdb_id": "3MHO",
+      "sha256": "98b16c00ac1e8f079eec1bf4f8cc55d1ca0d56c29725c883f1255a8e868dfb89",
+      "url": "https://files.rcsb.org/download/3MHO.cif.gz"
+    },
+    {
+      "bytes": 74097,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3ML5.cif.gz",
+      "pdb_id": "3ML5",
+      "sha256": "250d7a13f37c686f02486aa6ee7bd74dd4bd1b097ef0ea0501839056813f34f2",
+      "url": "https://files.rcsb.org/download/3ML5.cif.gz"
+    },
+    {
+      "bytes": 92584,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3O8P.cif.gz",
+      "pdb_id": "3O8P",
+      "sha256": "e9dbe0992334fc6a0231f08057d9d22b9ce7e68dbb56b47ca07a9510d492db8b",
+      "url": "https://files.rcsb.org/download/3O8P.cif.gz"
+    },
+    {
+      "bytes": 88071,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3O8T.cif.gz",
+      "pdb_id": "3O8T",
+      "sha256": "a370ffcf8b2155bebca1d441791936f60f3cf0ed5bc0cda4a3d05a00053420b5",
+      "url": "https://files.rcsb.org/download/3O8T.cif.gz"
+    },
+    {
+      "bytes": 118696,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3OCT.cif.gz",
+      "pdb_id": "3OCT",
+      "sha256": "5e08d23013998a791e1e1d23bb0078a691a64f89bfa4c8001f8a7ba0ab86eabf",
+      "url": "https://files.rcsb.org/download/3OCT.cif.gz"
+    },
+    {
+      "bytes": 72396,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3OXZ.cif.gz",
+      "pdb_id": "3OXZ",
+      "sha256": "1a1a57ef33e282b480e60fa2e3650cb5aa20baeb24adf64c7676990e679353fd",
+      "url": "https://files.rcsb.org/download/3OXZ.cif.gz"
+    },
+    {
+      "bytes": 176064,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3PE1.cif.gz",
+      "pdb_id": "3PE1",
+      "sha256": "014970b25f2e3f072d458e21c50c944598615a1ac14bbed7c075f5bb8c8df80a",
+      "url": "https://files.rcsb.org/download/3PE1.cif.gz"
+    },
+    {
+      "bytes": 229084,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3QLG.cif.gz",
+      "pdb_id": "3QLG",
+      "sha256": "9437509b3e0124a84c2fef4c260519333fd7080f6fca73762f94ff6c998fcc2f",
+      "url": "https://files.rcsb.org/download/3QLG.cif.gz"
+    },
+    {
+      "bytes": 270061,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3RGF.cif.gz",
+      "pdb_id": "3RGF",
+      "sha256": "9cee882b9e103f8a2263d60b3bb1e71a1beba114f54dd7e9fb50b7c903b1a4c4",
+      "url": "https://files.rcsb.org/download/3RGF.cif.gz"
+    },
+    {
+      "bytes": 97188,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3RU1.cif.gz",
+      "pdb_id": "3RU1",
+      "sha256": "47da04381e12cff35f062a97ee0a1b3b3505f1ad1b71cb316c83105683f835a6",
+      "url": "https://files.rcsb.org/download/3RU1.cif.gz"
+    },
+    {
+      "bytes": 136600,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3S8X.cif.gz",
+      "pdb_id": "3S8X",
+      "sha256": "087bc85f7c00236c676addf69dfe1d7594f40b649f6bb19392cd005c620013cc",
+      "url": "https://files.rcsb.org/download/3S8X.cif.gz"
+    },
+    {
+      "bytes": 168130,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3SAX.cif.gz",
+      "pdb_id": "3SAX",
+      "sha256": "2421b3c424bcdd1e4c08d8d9e0d5f774907160aeadf93bc3d65c3b478310b841",
+      "url": "https://files.rcsb.org/download/3SAX.cif.gz"
+    },
+    {
+      "bytes": 520926,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3SMR.cif.gz",
+      "pdb_id": "3SMR",
+      "sha256": "e08d812e5e9d4a983d4120ea51ed0b61449ae10593e3bf41900cd318239caa9d",
+      "url": "https://files.rcsb.org/download/3SMR.cif.gz"
+    },
+    {
+      "bytes": 396253,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3T3Q.cif.gz",
+      "pdb_id": "3T3Q",
+      "sha256": "4351f5a536ff0cce09aaae8dfedeab915017bbcbf643e1e8d572a5d8bb00c81e",
+      "url": "https://files.rcsb.org/download/3T3Q.cif.gz"
+    },
+    {
+      "bytes": 747901,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3T3S.cif.gz",
+      "pdb_id": "3T3S",
+      "sha256": "079565a2b74fe0644fc3561cda8839de13a8b0191d5564a3c1c4e1ca03e0a796",
+      "url": "https://files.rcsb.org/download/3T3S.cif.gz"
+    },
+    {
+      "bytes": 72891,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3UOD.cif.gz",
+      "pdb_id": "3UOD",
+      "sha256": "bf72d016ce7751ae69df5ee558852036f4edeb2ffd70b12c209c5d42fcd06f28",
+      "url": "https://files.rcsb.org/download/3UOD.cif.gz"
+    },
+    {
+      "bytes": 74058,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3UP2.cif.gz",
+      "pdb_id": "3UP2",
+      "sha256": "11d81780c2842c95629f8ad5cee694318b848cc538229075a63f660be457d420",
+      "url": "https://files.rcsb.org/download/3UP2.cif.gz"
+    },
+    {
+      "bytes": 164972,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3V2M.cif.gz",
+      "pdb_id": "3V2M",
+      "sha256": "187b5a94f4958ceb7a65574052beac1bb459072403f6e754bcef3afd6897a6a1",
+      "url": "https://files.rcsb.org/download/3V2M.cif.gz"
+    },
+    {
+      "bytes": 97624,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3VQH.cif.gz",
+      "pdb_id": "3VQH",
+      "sha256": "026f53229fada8015a7933af576792f8646095695da9ac21057617174253746c",
+      "url": "https://files.rcsb.org/download/3VQH.cif.gz"
+    },
+    {
+      "bytes": 119041,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3VSP.cif.gz",
+      "pdb_id": "3VSP",
+      "sha256": "4424388e9ba3860fe9c4b327af98ea144d6234ec1e4a62e6c5686fe044fde651",
+      "url": "https://files.rcsb.org/download/3VSP.cif.gz"
+    },
+    {
+      "bytes": 115762,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/3W6H.cif.gz",
+      "pdb_id": "3W6H",
+      "sha256": "b746b4a95fb28dc246454c52cdd21fa55c478eedb4cdf5712063fd67a9a9d56a",
+      "url": "https://files.rcsb.org/download/3W6H.cif.gz"
+    },
+    {
+      "bytes": 203321,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4A6S.cif.gz",
+      "pdb_id": "4A6S",
+      "sha256": "bebac54d74b37a72d0e702303a0debe74b77a4d2a57131fe9232b02d1eed640a",
+      "url": "https://files.rcsb.org/download/4A6S.cif.gz"
+    },
+    {
+      "bytes": 63919,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4ABU.cif.gz",
+      "pdb_id": "4ABU",
+      "sha256": "fce48caf7b4eeeb699d6783328ba938814c481cd867a24ca107fe1c57c7e428f",
+      "url": "https://files.rcsb.org/download/4ABU.cif.gz"
+    },
+    {
+      "bytes": 63840,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4ABV.cif.gz",
+      "pdb_id": "4ABV",
+      "sha256": "045f6fc622afee8b0497a49b1e95dfd70dfba224c0047ac8d22a3386eb360755",
+      "url": "https://files.rcsb.org/download/4ABV.cif.gz"
+    },
+    {
+      "bytes": 527969,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4AJ1.cif.gz",
+      "pdb_id": "4AJ1",
+      "sha256": "1fbd7dcd88bfac6b9685a984520e16850687e0021e2ff85b40ac1a1354587417",
+      "url": "https://files.rcsb.org/download/4AJ1.cif.gz"
+    },
+    {
+      "bytes": 531010,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4AJH.cif.gz",
+      "pdb_id": "4AJH",
+      "sha256": "f1977091b4cdc910e8beb193302a157cc1e2b87f94ffc4fa6323f1f8170e50ba",
+      "url": "https://files.rcsb.org/download/4AJH.cif.gz"
+    },
+    {
+      "bytes": 537499,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4AJJ.cif.gz",
+      "pdb_id": "4AJJ",
+      "sha256": "7c3ba7ceea08d2797eacbd20313989cc73638b3b8c6fe2f2b9bdf3743231284a",
+      "url": "https://files.rcsb.org/download/4AJJ.cif.gz"
+    },
+    {
+      "bytes": 85374,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4AT5.cif.gz",
+      "pdb_id": "4AT5",
+      "sha256": "4045df65ebd058ab355f967d71cfe2b3b71b418e30fd3e91432241ff49e1e11b",
+      "url": "https://files.rcsb.org/download/4AT5.cif.gz"
+    },
+    {
+      "bytes": 534321,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4AWJ.cif.gz",
+      "pdb_id": "4AWJ",
+      "sha256": "0baafd181113e9511b9a590a1c4cb3b569408c07a3eb059fb3e16d5d51d0ee6e",
+      "url": "https://files.rcsb.org/download/4AWJ.cif.gz"
+    },
+    {
+      "bytes": 557323,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4BKT.cif.gz",
+      "pdb_id": "4BKT",
+      "sha256": "297bc9ea0565d8b43a78e6d07306f0dfd7831f3554e41e68f653be89e3a13138",
+      "url": "https://files.rcsb.org/download/4BKT.cif.gz"
+    },
+    {
+      "bytes": 93056,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4BLJ.cif.gz",
+      "pdb_id": "4BLJ",
+      "sha256": "5af63768e34bbd743b4dce5de5418379d314760bea6b90b6811d5d3a4e2ac5a6",
+      "url": "https://files.rcsb.org/download/4BLJ.cif.gz"
+    },
+    {
+      "bytes": 168465,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4CG8.cif.gz",
+      "pdb_id": "4CG8",
+      "sha256": "f02b8cedf9426f182b1ea6dfe027ee96fb0dd927ff1c1f013fd55a8f93e21395",
+      "url": "https://files.rcsb.org/download/4CG8.cif.gz"
+    },
+    {
+      "bytes": 120836,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4D7B.cif.gz",
+      "pdb_id": "4D7B",
+      "sha256": "5452b2c6c6b29fca36653d875405d6174af6b4c1fc0ca160eb9d8b4530a0afdb",
+      "url": "https://files.rcsb.org/download/4D7B.cif.gz"
+    },
+    {
+      "bytes": 168919,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4E93.cif.gz",
+      "pdb_id": "4E93",
+      "sha256": "1ba64f3ca7db63c050a8ea8a17888eb96e3904ba1a7a57385a83d3f91c50cb38",
+      "url": "https://files.rcsb.org/download/4E93.cif.gz"
+    },
+    {
+      "bytes": 160786,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4GHI.cif.gz",
+      "pdb_id": "4GHI",
+      "sha256": "8dbeeea5677e0328b621936a27f02694184137e03d209a17a3c008366223cf7d",
+      "url": "https://files.rcsb.org/download/4GHI.cif.gz"
+    },
+    {
+      "bytes": 160330,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4GS9.cif.gz",
+      "pdb_id": "4GS9",
+      "sha256": "49ec90aa0906050d9100b9cdbfe228009b714cc533b3f78bd21dbc45ad07c73f",
+      "url": "https://files.rcsb.org/download/4GS9.cif.gz"
+    },
+    {
+      "bytes": 237848,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4GU6.cif.gz",
+      "pdb_id": "4GU6",
+      "sha256": "d4ae8e6c82ac40e0463592c6856e7c3f751947503326fca4fe774c40c6138344",
+      "url": "https://files.rcsb.org/download/4GU6.cif.gz"
+    },
+    {
+      "bytes": 135839,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4HU1.cif.gz",
+      "pdb_id": "4HU1",
+      "sha256": "5a59308cd8f595191b19a6c50c00d9faa97ced2ee12ac86d26ca8215fc5ab6a2",
+      "url": "https://files.rcsb.org/download/4HU1.cif.gz"
+    },
+    {
+      "bytes": 80481,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4I22.cif.gz",
+      "pdb_id": "4I22",
+      "sha256": "6385498dc3701c8d8e55ee3815c56d0404fc815d20973325f4cc1cf96cd8abc4",
+      "url": "https://files.rcsb.org/download/4I22.cif.gz"
+    },
+    {
+      "bytes": 83189,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4IA9.cif.gz",
+      "pdb_id": "4IA9",
+      "sha256": "45d23b999b0e7e59ad865f9ae5a522915a05c329d710c489f2cbec408879b528",
+      "url": "https://files.rcsb.org/download/4IA9.cif.gz"
+    },
+    {
+      "bytes": 74066,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4IQK.cif.gz",
+      "pdb_id": "4IQK",
+      "sha256": "8b7997928c13a7be44b4715e72c711493be04da3bc159dbd394a40a2af0ef1bc",
+      "url": "https://files.rcsb.org/download/4IQK.cif.gz"
+    },
+    {
+      "bytes": 77242,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4K13.cif.gz",
+      "pdb_id": "4K13",
+      "sha256": "a46f5efdf03b1b34194165c681a2163dedea78592a172aa0275372d5f1a80b21",
+      "url": "https://files.rcsb.org/download/4K13.cif.gz"
+    },
+    {
+      "bytes": 62433,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4K6I.cif.gz",
+      "pdb_id": "4K6I",
+      "sha256": "7513e6150d7280e4b29163275c16a1cffe5e6471fc849326d5e9481d31c4abbb",
+      "url": "https://files.rcsb.org/download/4K6I.cif.gz"
+    },
+    {
+      "bytes": 141995,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4KNN.cif.gz",
+      "pdb_id": "4KNN",
+      "sha256": "d551d4f3b2a210d10d901debe86f48e7688d31b65fbae3595947d292156ceafd",
+      "url": "https://files.rcsb.org/download/4KNN.cif.gz"
+    },
+    {
+      "bytes": 262075,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4KP5.cif.gz",
+      "pdb_id": "4KP5",
+      "sha256": "b671a4201aef5d6f5b87ac8f3ceac1dbd4602ee4e42cff7552ad286b9d021d1b",
+      "url": "https://files.rcsb.org/download/4KP5.cif.gz"
+    },
+    {
+      "bytes": 81749,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4L59.cif.gz",
+      "pdb_id": "4L59",
+      "sha256": "d02ecebdcea683ffa27e170086f696648d8bd3cd08c553c8a62ef7e3ed8972cf",
+      "url": "https://files.rcsb.org/download/4L59.cif.gz"
+    },
+    {
+      "bytes": 133012,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4L7B.cif.gz",
+      "pdb_id": "4L7B",
+      "sha256": "4bf0c269a056342f6dda0e9edd1cd3f682a019e725e357ef34634fd5d124f1bd",
+      "url": "https://files.rcsb.org/download/4L7B.cif.gz"
+    },
+    {
+      "bytes": 130120,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4LMU.cif.gz",
+      "pdb_id": "4LMU",
+      "sha256": "d8be0972ced217b8d975598aa02f01c65bad954260046bf0dcae590b9dce8fe3",
+      "url": "https://files.rcsb.org/download/4LMU.cif.gz"
+    },
+    {
+      "bytes": 72246,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4LYW.cif.gz",
+      "pdb_id": "4LYW",
+      "sha256": "335f6c3cbe83db51585305f84357fa52ad06a1611a573d5d25a5453f39c21f2d",
+      "url": "https://files.rcsb.org/download/4LYW.cif.gz"
+    },
+    {
+      "bytes": 88310,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4M5I.cif.gz",
+      "pdb_id": "4M5I",
+      "sha256": "b5195c8ecf90ea20872435e1e91f5bb4e4f58603484e85fa27c2fbcfa9abc190",
+      "url": "https://files.rcsb.org/download/4M5I.cif.gz"
+    },
+    {
+      "bytes": 89814,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4M5L.cif.gz",
+      "pdb_id": "4M5L",
+      "sha256": "cf298dd957c15c78c5a45e06862bbcfc5d1c0ef5f638d62f9a2acb51ea8ea4a3",
+      "url": "https://files.rcsb.org/download/4M5L.cif.gz"
+    },
+    {
+      "bytes": 48464,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4MRF.cif.gz",
+      "pdb_id": "4MRF",
+      "sha256": "242f0bad826f57d09009ae1b0c010937a59f1b8aa32d9f66ab23ba54a8df23c3",
+      "url": "https://files.rcsb.org/download/4MRF.cif.gz"
+    },
+    {
+      "bytes": 48700,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4MRH.cif.gz",
+      "pdb_id": "4MRH",
+      "sha256": "386d9b65d434e385cb472c2cf3a40b94c76791c97fbde37b12c9a9c41efaabc5",
+      "url": "https://files.rcsb.org/download/4MRH.cif.gz"
+    },
+    {
+      "bytes": 129567,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4MXO.cif.gz",
+      "pdb_id": "4MXO",
+      "sha256": "b1db144d0981bb94aca66b41d5f5c12e43e235a859bc224c716bfaa11a046b08",
+      "url": "https://files.rcsb.org/download/4MXO.cif.gz"
+    },
+    {
+      "bytes": 384401,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4N9B.cif.gz",
+      "pdb_id": "4N9B",
+      "sha256": "36321457e4d20b0d9a0a18c3e72964d8fe006b08d30d4eae405777ba4fab2c6a",
+      "url": "https://files.rcsb.org/download/4N9B.cif.gz"
+    },
+    {
+      "bytes": 225564,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4NBL.cif.gz",
+      "pdb_id": "4NBL",
+      "sha256": "2d2a1823509facac86b3c10eb7ced1e90450b0ee09367986de1f361c00e946c2",
+      "url": "https://files.rcsb.org/download/4NBL.cif.gz"
+    },
+    {
+      "bytes": 576492,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4NCT.cif.gz",
+      "pdb_id": "4NCT",
+      "sha256": "a7c9a67ed52923cb35706199d1452a992bdf0fc338f10e7ceebb77c670bea19b",
+      "url": "https://files.rcsb.org/download/4NCT.cif.gz"
+    },
+    {
+      "bytes": 70857,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4NRA.cif.gz",
+      "pdb_id": "4NRA",
+      "sha256": "5cddcf96d98818856219239c77aebdeb85dd889509d9be4dd991d3eb03e55f0e",
+      "url": "https://files.rcsb.org/download/4NRA.cif.gz"
+    },
+    {
+      "bytes": 145809,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4OTG.cif.gz",
+      "pdb_id": "4OTG",
+      "sha256": "35e4255ac9f51e156b6f2a05e38c1c615d4f877e2fc88a76fd096c0a54f2abf5",
+      "url": "https://files.rcsb.org/download/4OTG.cif.gz"
+    },
+    {
+      "bytes": 247825,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4PX3.cif.gz",
+      "pdb_id": "4PX3",
+      "sha256": "577e4c36688e9a0978ce0527cdf07fd554a414040c84f0d1ac378a2987ea00e0",
+      "url": "https://files.rcsb.org/download/4PX3.cif.gz"
+    },
+    {
+      "bytes": 170727,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4QA0.cif.gz",
+      "pdb_id": "4QA0",
+      "sha256": "1ab1cb28d49a12b4146d1e7885c5cb5977b8f4f82815a8080b7f403616e16818",
+      "url": "https://files.rcsb.org/download/4QA0.cif.gz"
+    },
+    {
+      "bytes": 83341,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4QB3.cif.gz",
+      "pdb_id": "4QB3",
+      "sha256": "cc1a2ec038526b59a4b45b9b6674c8b8d64d29403da26538a3c33718672690ac",
+      "url": "https://files.rcsb.org/download/4QB3.cif.gz"
+    },
+    {
+      "bytes": 139282,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4QSJ.cif.gz",
+      "pdb_id": "4QSJ",
+      "sha256": "ec21419651c94f6572bc3d6d3051223feaa3aebe2f6391b15e6a147a4b2c4aa3",
+      "url": "https://files.rcsb.org/download/4QSJ.cif.gz"
+    },
+    {
+      "bytes": 175892,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4QXV.cif.gz",
+      "pdb_id": "4QXV",
+      "sha256": "d6fc5cc7a0743bbd7762f5119fb2d8f0c2541dd35bc14e01b16715ed3e7fad8b",
+      "url": "https://files.rcsb.org/download/4QXV.cif.gz"
+    },
+    {
+      "bytes": 41619,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4TQN.cif.gz",
+      "pdb_id": "4TQN",
+      "sha256": "a8b9d27ccb9865def2d245b6cb1857fb257525d7e180f1f9f916372832771115",
+      "url": "https://files.rcsb.org/download/4TQN.cif.gz"
+    },
+    {
+      "bytes": 139817,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4U43.cif.gz",
+      "pdb_id": "4U43",
+      "sha256": "3d837eb089e22a3ab096a15007e8b88404daa8f8a3ab3ef665f9957bb991089b",
+      "url": "https://files.rcsb.org/download/4U43.cif.gz"
+    },
+    {
+      "bytes": 139855,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4U7Z.cif.gz",
+      "pdb_id": "4U7Z",
+      "sha256": "4b80c2e46b96310eb2f3171ce60966dc6f71cd20b7a5008e497cd2621f5f4ceb",
+      "url": "https://files.rcsb.org/download/4U7Z.cif.gz"
+    },
+    {
+      "bytes": 176142,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4UG7.cif.gz",
+      "pdb_id": "4UG7",
+      "sha256": "08f019adc8f8e502f00ecad6c4a82e6a0705b7c46df033058bc6bbefc74989ac",
+      "url": "https://files.rcsb.org/download/4UG7.cif.gz"
+    },
+    {
+      "bytes": 184325,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4UGK.cif.gz",
+      "pdb_id": "4UGK",
+      "sha256": "af615401a6f202a7ed5c757dfb8a0c327890e05b460e0f1d3bb0cb52e4bd06c9",
+      "url": "https://files.rcsb.org/download/4UGK.cif.gz"
+    },
+    {
+      "bytes": 141348,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4WKQ.cif.gz",
+      "pdb_id": "4WKQ",
+      "sha256": "20899c42230c6605ced3ef2b0b4fba0e010c85392e44bf82cefccef553c907c4",
+      "url": "https://files.rcsb.org/download/4WKQ.cif.gz"
+    },
+    {
+      "bytes": 111565,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4WO0.cif.gz",
+      "pdb_id": "4WO0",
+      "sha256": "bf592b42f9a9ec77c71a7028840f2466d6c264964e9a17f7db6af1cc0596930f",
+      "url": "https://files.rcsb.org/download/4WO0.cif.gz"
+    },
+    {
+      "bytes": 133955,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4WR7.cif.gz",
+      "pdb_id": "4WR7",
+      "sha256": "4a2073a16893d09a1e9b00c52bc3790b08ec62ad989404200180fe94a6a5a7f8",
+      "url": "https://files.rcsb.org/download/4WR7.cif.gz"
+    },
+    {
+      "bytes": 401699,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4WR8.cif.gz",
+      "pdb_id": "4WR8",
+      "sha256": "d4caa35722fd848f66cbaf116452763b601104980ff56e38026e5603a42e8d79",
+      "url": "https://files.rcsb.org/download/4WR8.cif.gz"
+    },
+    {
+      "bytes": 127722,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4WUQ.cif.gz",
+      "pdb_id": "4WUQ",
+      "sha256": "6dca8bfce42c852eec01b2a18fff360b7651d2222827c52174628bcf6dbd37d6",
+      "url": "https://files.rcsb.org/download/4WUQ.cif.gz"
+    },
+    {
+      "bytes": 143588,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4WW6.cif.gz",
+      "pdb_id": "4WW6",
+      "sha256": "085ccb48f92650d30018da3c2f46cd8034edb160e3a986beb46a0e0cd7d2f97f",
+      "url": "https://files.rcsb.org/download/4WW6.cif.gz"
+    },
+    {
+      "bytes": 232706,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4XLI.cif.gz",
+      "pdb_id": "4XLI",
+      "sha256": "02df056e22f943fdc3312fd8dbe4016f999fb4560f2255641e26c39cd9d63ac6",
+      "url": "https://files.rcsb.org/download/4XLI.cif.gz"
+    },
+    {
+      "bytes": 76771,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4XMB.cif.gz",
+      "pdb_id": "4XMB",
+      "sha256": "95f78d92ca7a22f871f51eaa5c05e82967a972989edb78de8e28f9e120d4b49d",
+      "url": "https://files.rcsb.org/download/4XMB.cif.gz"
+    },
+    {
+      "bytes": 295678,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4XT2.cif.gz",
+      "pdb_id": "4XT2",
+      "sha256": "08079c62561a2a9c09a82f2eb266d9f121229dc73902e0c6ce0ca00ab7dbd714",
+      "url": "https://files.rcsb.org/download/4XT2.cif.gz"
+    },
+    {
+      "bytes": 206919,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4XX9.cif.gz",
+      "pdb_id": "4XX9",
+      "sha256": "2779aff1fc57b88464c71584c0ab654ed328c7216fcd2d3e57d9fa4ecb90475b",
+      "url": "https://files.rcsb.org/download/4XX9.cif.gz"
+    },
+    {
+      "bytes": 337828,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4Y8D.cif.gz",
+      "pdb_id": "4Y8D",
+      "sha256": "a49ef10638a1141864dee505ece0d56b86f25ce36f380c348329dd288a56b2a2",
+      "url": "https://files.rcsb.org/download/4Y8D.cif.gz"
+    },
+    {
+      "bytes": 135333,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4YX4.cif.gz",
+      "pdb_id": "4YX4",
+      "sha256": "e661ad2bffb018750ec46ae39b4eb6069d293b6d509f95bd9729b380c04844d2",
+      "url": "https://files.rcsb.org/download/4YX4.cif.gz"
+    },
+    {
+      "bytes": 199517,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4Z1F.cif.gz",
+      "pdb_id": "4Z1F",
+      "sha256": "b68ac6e91d3844698feb483aba4958fe18eec3ee1a2327f90dc505474650b07e",
+      "url": "https://files.rcsb.org/download/4Z1F.cif.gz"
+    },
+    {
+      "bytes": 467634,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4Z69.cif.gz",
+      "pdb_id": "4Z69",
+      "sha256": "8bb15d8f2e42540e4f5a56f39e0345c46be38c93289be799225fac3d70d22b53",
+      "url": "https://files.rcsb.org/download/4Z69.cif.gz"
+    },
+    {
+      "bytes": 158966,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4ZZX.cif.gz",
+      "pdb_id": "4ZZX",
+      "sha256": "ab410812d43acbf521fa1a4cb823357dd51ed9021a18eb718b9afff6acb67f90",
+      "url": "https://files.rcsb.org/download/4ZZX.cif.gz"
+    },
+    {
+      "bytes": 86915,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4ZZY.cif.gz",
+      "pdb_id": "4ZZY",
+      "sha256": "e1f3cce4e6ff09e4ada677690eaa8678f848dcc4f60aeb90d8d2353171e39380",
+      "url": "https://files.rcsb.org/download/4ZZY.cif.gz"
+    },
+    {
+      "bytes": 153909,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/4ZZZ.cif.gz",
+      "pdb_id": "4ZZZ",
+      "sha256": "2da95ba5570c1506d24b0058722e915eeff864d15c0543ed6804f30cb3d4e93b",
+      "url": "https://files.rcsb.org/download/4ZZZ.cif.gz"
+    },
+    {
+      "bytes": 300167,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5ACW.cif.gz",
+      "pdb_id": "5ACW",
+      "sha256": "c3ed3a07c71c4c5874e6bae3a9a99684756ab1ded7b3cc5ac0fc3eff2e6b448d",
+      "url": "https://files.rcsb.org/download/5ACW.cif.gz"
+    },
+    {
+      "bytes": 298080,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5ACX.cif.gz",
+      "pdb_id": "5ACX",
+      "sha256": "3184c6139fe33350fd86292c6ddc75b141a6b1153980e62354df4f43b5528823",
+      "url": "https://files.rcsb.org/download/5ACX.cif.gz"
+    },
+    {
+      "bytes": 125119,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5AJQ.cif.gz",
+      "pdb_id": "5AJQ",
+      "sha256": "97de67c1ab76bdbf560fe1de0916c34015f016f92036faf2087c37001667cfd9",
+      "url": "https://files.rcsb.org/download/5AJQ.cif.gz"
+    },
+    {
+      "bytes": 77952,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5ANU.cif.gz",
+      "pdb_id": "5ANU",
+      "sha256": "58f2bb862c918808bb00f97cf5eb1feef3a1952bb00193d71d661cc91f520759",
+      "url": "https://files.rcsb.org/download/5ANU.cif.gz"
+    },
+    {
+      "bytes": 81585,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5ANV.cif.gz",
+      "pdb_id": "5ANV",
+      "sha256": "c330b7988cc98563ea0673773f39dd0ce247df6d592a3aad2989ac791e70bc33",
+      "url": "https://files.rcsb.org/download/5ANV.cif.gz"
+    },
+    {
+      "bytes": 138436,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5BVW.cif.gz",
+      "pdb_id": "5BVW",
+      "sha256": "1be62ba2893fd3aa4d1835a17f902935cf8ebeca43890b8cc0e7ec55170a0a96",
+      "url": "https://files.rcsb.org/download/5BVW.cif.gz"
+    },
+    {
+      "bytes": 138247,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5C5A.cif.gz",
+      "pdb_id": "5C5A",
+      "sha256": "d065741b7e5933d10636ca47b98daf9e177ed31652ae81c5b10aa489c68350f0",
+      "url": "https://files.rcsb.org/download/5C5A.cif.gz"
+    },
+    {
+      "bytes": 200408,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5CGB.cif.gz",
+      "pdb_id": "5CGB",
+      "sha256": "af4f8ba60260f4698d24d27af201008bf705b599fd8e6cc927ae1cfbdea41feb",
+      "url": "https://files.rcsb.org/download/5CGB.cif.gz"
+    },
+    {
+      "bytes": 309231,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5CU2.cif.gz",
+      "pdb_id": "5CU2",
+      "sha256": "79222e40b9f4525ad0f0c1cee02108808c7e87a94330ca76ca925ab43998e631",
+      "url": "https://files.rcsb.org/download/5CU2.cif.gz"
+    },
+    {
+      "bytes": 72594,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5D1J.cif.gz",
+      "pdb_id": "5D1J",
+      "sha256": "7bd9a7bfee842807036d5097ff47723448457fab7767bbf726a9716359365e44",
+      "url": "https://files.rcsb.org/download/5D1J.cif.gz"
+    },
+    {
+      "bytes": 74644,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5D24.cif.gz",
+      "pdb_id": "5D24",
+      "sha256": "98f5ff29874df090581cd92699a4155d18efce46ac6cac96baff162c85b7eaba",
+      "url": "https://files.rcsb.org/download/5D24.cif.gz"
+    },
+    {
+      "bytes": 75947,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5D3L.cif.gz",
+      "pdb_id": "5D3L",
+      "sha256": "628445096da95e3fa48122e3f97c9e739444a8aa73977659ae2eb9bee5132c2f",
+      "url": "https://files.rcsb.org/download/5D3L.cif.gz"
+    },
+    {
+      "bytes": 72735,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5D7X.cif.gz",
+      "pdb_id": "5D7X",
+      "sha256": "e0284f9075d8f2c486760d3842d54c11fbefb6f6cfbc590de0bdccaf676212ca",
+      "url": "https://files.rcsb.org/download/5D7X.cif.gz"
+    },
+    {
+      "bytes": 72780,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5DPV.cif.gz",
+      "pdb_id": "5DPV",
+      "sha256": "9ecf235111fad907fbe4ee0aa058108a6030b96c4746da8c8af35764831f181d",
+      "url": "https://files.rcsb.org/download/5DPV.cif.gz"
+    },
+    {
+      "bytes": 129403,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5DT0.cif.gz",
+      "pdb_id": "5DT0",
+      "sha256": "05c47f29445f593d41fe984fb66d23369088ab8bd4173339779811afcdb3157d",
+      "url": "https://files.rcsb.org/download/5DT0.cif.gz"
+    },
+    {
+      "bytes": 44012,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5DX4.cif.gz",
+      "pdb_id": "5DX4",
+      "sha256": "c65896257416951b89ddf2763831ec8991c029b431f4053376c1a81f37576bfc",
+      "url": "https://files.rcsb.org/download/5DX4.cif.gz"
+    },
+    {
+      "bytes": 82772,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5E88.cif.gz",
+      "pdb_id": "5E88",
+      "sha256": "bb2c680c7335d434a1b9fdd5287bcc26dd59052a553dfc1cec33bb82f2b76dc4",
+      "url": "https://files.rcsb.org/download/5E88.cif.gz"
+    },
+    {
+      "bytes": 72429,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5EP7.cif.gz",
+      "pdb_id": "5EP7",
+      "sha256": "7812b96265e1fa63da74025be1f31a39d14a1045f3fcb5296583306be52b1ca6",
+      "url": "https://files.rcsb.org/download/5EP7.cif.gz"
+    },
+    {
+      "bytes": 162124,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5EQE.cif.gz",
+      "pdb_id": "5EQE",
+      "sha256": "ace6453bff6f608cfc517eda9664604bb4db71effd6a257677942bc39fa16019",
+      "url": "https://files.rcsb.org/download/5EQE.cif.gz"
+    },
+    {
+      "bytes": 162447,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5EQP.cif.gz",
+      "pdb_id": "5EQP",
+      "sha256": "5037e15d1ce0013c9e1ea22e9329d7312a36491f92676c694126ab3641c0dd4c",
+      "url": "https://files.rcsb.org/download/5EQP.cif.gz"
+    },
+    {
+      "bytes": 71954,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5ETB.cif.gz",
+      "pdb_id": "5ETB",
+      "sha256": "5d7376a3d2bfee40234d6380156f171c8de9de50f546105e3cbe547384d2c9f7",
+      "url": "https://files.rcsb.org/download/5ETB.cif.gz"
+    },
+    {
+      "bytes": 93986,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5ETO.cif.gz",
+      "pdb_id": "5ETO",
+      "sha256": "31bb93c06b7072ea1defac282f5b0d45046c99371ab953693fdcae161f7e54e1",
+      "url": "https://files.rcsb.org/download/5ETO.cif.gz"
+    },
+    {
+      "bytes": 102383,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5ETP.cif.gz",
+      "pdb_id": "5ETP",
+      "sha256": "1e338fa53c23ec32a2bb90238940526a13f9225680436a9942b67581f7049de7",
+      "url": "https://files.rcsb.org/download/5ETP.cif.gz"
+    },
+    {
+      "bytes": 92800,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5ETT.cif.gz",
+      "pdb_id": "5ETT",
+      "sha256": "cecddcd6c3bfdf9a2f4d0b2d82360e5173d5d81774877c1488318b741e3ad740",
+      "url": "https://files.rcsb.org/download/5ETT.cif.gz"
+    },
+    {
+      "bytes": 54406,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5ETV.cif.gz",
+      "pdb_id": "5ETV",
+      "sha256": "00158618fe9f15d02225ddb9dbde114b8f054dbf6e6fb0027bc9a3c8151a0a1e",
+      "url": "https://files.rcsb.org/download/5ETV.cif.gz"
+    },
+    {
+      "bytes": 65189,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5FBI.cif.gz",
+      "pdb_id": "5FBI",
+      "sha256": "f54c8857401beaddba24f1d00d7a3d1926e5c0b20cbf8f064b15bb0989cec040",
+      "url": "https://files.rcsb.org/download/5FBI.cif.gz"
+    },
+    {
+      "bytes": 342949,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5G1A.cif.gz",
+      "pdb_id": "5G1A",
+      "sha256": "c784f5950bded2997b8b744bd4850e6f65a8f901358abaf7aec9b3fa92dd462d",
+      "url": "https://files.rcsb.org/download/5G1A.cif.gz"
+    },
+    {
+      "bytes": 246791,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5H2U.cif.gz",
+      "pdb_id": "5H2U",
+      "sha256": "6a0f0584669df20ec549a642ccac891746a13116b3cd01b206de9565b598095f",
+      "url": "https://files.rcsb.org/download/5H2U.cif.gz"
+    },
+    {
+      "bytes": 422694,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5I6X.cif.gz",
+      "pdb_id": "5I6X",
+      "sha256": "ff026d88851d33472f725cfd4dd084e08ef563ccacc07821dfeacf33be80a7c6",
+      "url": "https://files.rcsb.org/download/5I6X.cif.gz"
+    },
+    {
+      "bytes": 82664,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5I9X.cif.gz",
+      "pdb_id": "5I9X",
+      "sha256": "05ae90a543227d664a5dbcfd7ba32864c397ec158ec9e48f2e152f950e68d701",
+      "url": "https://files.rcsb.org/download/5I9X.cif.gz"
+    },
+    {
+      "bytes": 86896,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5I9Y.cif.gz",
+      "pdb_id": "5I9Y",
+      "sha256": "feb7101271e6463a49ec2d9064e9ac27e723a393a0295b54bb79dc26f96138c1",
+      "url": "https://files.rcsb.org/download/5I9Y.cif.gz"
+    },
+    {
+      "bytes": 114867,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5II2.cif.gz",
+      "pdb_id": "5II2",
+      "sha256": "2efa8a2af00b0b1f9a384d2c2d45317d7f9a9518fb2622c4e149b259d47e7a15",
+      "url": "https://files.rcsb.org/download/5II2.cif.gz"
+    },
+    {
+      "bytes": 225052,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5J89.cif.gz",
+      "pdb_id": "5J89",
+      "sha256": "a004721d59d1bd155834a1e727064417fda0bc9deddca1d5ce56ff4d3c48f189",
+      "url": "https://files.rcsb.org/download/5J89.cif.gz"
+    },
+    {
+      "bytes": 123185,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5JZN.cif.gz",
+      "pdb_id": "5JZN",
+      "sha256": "432b0533afc73eec8de23d239ef38c53a4ff0bc6344bcdc59e98f0e31f33fbf1",
+      "url": "https://files.rcsb.org/download/5JZN.cif.gz"
+    },
+    {
+      "bytes": 187693,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5L3E.cif.gz",
+      "pdb_id": "5L3E",
+      "sha256": "7c0d25d93e00b6c7c73b8f6fcebb6911c417f34367460517c580678870d902cb",
+      "url": "https://files.rcsb.org/download/5L3E.cif.gz"
+    },
+    {
+      "bytes": 352436,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5L4Q.cif.gz",
+      "pdb_id": "5L4Q",
+      "sha256": "167e64dc1bca08e25910105111659f373ec40ce0c4498c3a3a642f9e3ffd8b0d",
+      "url": "https://files.rcsb.org/download/5L4Q.cif.gz"
+    },
+    {
+      "bytes": 88457,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5L8N.cif.gz",
+      "pdb_id": "5L8N",
+      "sha256": "2750ab1fdb2e18eb71215407ab47c723b5a1041d386b18084c8f5cd6d1195924",
+      "url": "https://files.rcsb.org/download/5L8N.cif.gz"
+    },
+    {
+      "bytes": 270342,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5LL4.cif.gz",
+      "pdb_id": "5LL4",
+      "sha256": "2e13c0045ea476e4ef905fbe3fd9a1a4785039ea5bfbc636c1463a26463fc2d2",
+      "url": "https://files.rcsb.org/download/5LL4.cif.gz"
+    },
+    {
+      "bytes": 262594,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5LL5.cif.gz",
+      "pdb_id": "5LL5",
+      "sha256": "24fc261b66566b655a2cef62073418249190cfc29afd40fdf1bdceba0ed581ed",
+      "url": "https://files.rcsb.org/download/5LL5.cif.gz"
+    },
+    {
+      "bytes": 261653,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5LL9.cif.gz",
+      "pdb_id": "5LL9",
+      "sha256": "d36497c37836a7c29765dbef390028431d6d5cc5884fa5819f507bfd2728b4cc",
+      "url": "https://files.rcsb.org/download/5LL9.cif.gz"
+    },
+    {
+      "bytes": 136468,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5LLA.cif.gz",
+      "pdb_id": "5LLA",
+      "sha256": "e2346b001435d8cfafab2c5b4343830faf3fe595ba6abe8258f747725e50fef3",
+      "url": "https://files.rcsb.org/download/5LLA.cif.gz"
+    },
+    {
+      "bytes": 142943,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5LLC.cif.gz",
+      "pdb_id": "5LLC",
+      "sha256": "6a2d889a8247fe5534f286d5add039b705dd2dd4f83dbd8c5a1d3800aca60c9e",
+      "url": "https://files.rcsb.org/download/5LLC.cif.gz"
+    },
+    {
+      "bytes": 137411,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5LLN.cif.gz",
+      "pdb_id": "5LLN",
+      "sha256": "fc0ec15a0fb891a472e9e9e392f81d35d927ba0ce04d72e8f32cb0346ed5e871",
+      "url": "https://files.rcsb.org/download/5LLN.cif.gz"
+    },
+    {
+      "bytes": 52949,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5ML3.cif.gz",
+      "pdb_id": "5ML3",
+      "sha256": "0a0bdce10289962d3a0de9aa96dd0b744cf192ea73a1f870be4da053d83d41b7",
+      "url": "https://files.rcsb.org/download/5ML3.cif.gz"
+    },
+    {
+      "bytes": 124958,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5MME.cif.gz",
+      "pdb_id": "5MME",
+      "sha256": "67c22ae552473318d86b2167c743211d6d16ceeb9e94e55f8f7f691ce47c99cc",
+      "url": "https://files.rcsb.org/download/5MME.cif.gz"
+    },
+    {
+      "bytes": 51381,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5MQ1.cif.gz",
+      "pdb_id": "5MQ1",
+      "sha256": "bb81fa0382457fea2cdbc9e7d25e3071fe26c29b491036d1e385ae814a2a9cb5",
+      "url": "https://files.rcsb.org/download/5MQ1.cif.gz"
+    },
+    {
+      "bytes": 528906,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5MSA.cif.gz",
+      "pdb_id": "5MSA",
+      "sha256": "5e5bf6d775db69babae80edc6bde4c1969a42918b03c6c04869f51e79dbf936c",
+      "url": "https://files.rcsb.org/download/5MSA.cif.gz"
+    },
+    {
+      "bytes": 496901,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5MSB.cif.gz",
+      "pdb_id": "5MSB",
+      "sha256": "6aaa1dac386cbe44c50c9699c9cd535fd2cf7dfb471f5faf356c0ca447695279",
+      "url": "https://files.rcsb.org/download/5MSB.cif.gz"
+    },
+    {
+      "bytes": 89627,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5MTX.cif.gz",
+      "pdb_id": "5MTX",
+      "sha256": "c769a65931d1b72d9ba75930aa18ac9c477f75f06de9a174c92c9492d8e99fc6",
+      "url": "https://files.rcsb.org/download/5MTX.cif.gz"
+    },
+    {
+      "bytes": 122428,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5MWH.cif.gz",
+      "pdb_id": "5MWH",
+      "sha256": "45c315db1b902a49ad11c9853b90f4933ee87dfdfc95b94c4acab7984db33224",
+      "url": "https://files.rcsb.org/download/5MWH.cif.gz"
+    },
+    {
+      "bytes": 180898,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5N53.cif.gz",
+      "pdb_id": "5N53",
+      "sha256": "82d96d5dd1c8c950e4d39866e63e885a392462c44726dc50b65520739d2814be",
+      "url": "https://files.rcsb.org/download/5N53.cif.gz"
+    },
+    {
+      "bytes": 181574,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5NZO.cif.gz",
+      "pdb_id": "5NZO",
+      "sha256": "f855556571e803438e6614993e068ba6ffb594f0f2e568ca4934ab3990046ece",
+      "url": "https://files.rcsb.org/download/5NZO.cif.gz"
+    },
+    {
+      "bytes": 175437,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5NZP.cif.gz",
+      "pdb_id": "5NZP",
+      "sha256": "c0a552f71976871cef1cfba70615461ac34094839cc7bfcc2d2145e34cec3bc9",
+      "url": "https://files.rcsb.org/download/5NZP.cif.gz"
+    },
+    {
+      "bytes": 70783,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5O5A.cif.gz",
+      "pdb_id": "5O5A",
+      "sha256": "b70f1fdeee919658f59a83047f36136852839e724355dd4af0c8bffc17214a80",
+      "url": "https://files.rcsb.org/download/5O5A.cif.gz"
+    },
+    {
+      "bytes": 271400,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5OGJ.cif.gz",
+      "pdb_id": "5OGJ",
+      "sha256": "fb735d9b817ee5b0f7fea7b637b74a9d18bb1be7e58b6a9b41ded7ffe8d48cc4",
+      "url": "https://files.rcsb.org/download/5OGJ.cif.gz"
+    },
+    {
+      "bytes": 75122,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5OWR.cif.gz",
+      "pdb_id": "5OWR",
+      "sha256": "061bdb50526fd07a5425a3a9f816f9b0f095d2cc84ce024d9e4103cd4e6bad79",
+      "url": "https://files.rcsb.org/download/5OWR.cif.gz"
+    },
+    {
+      "bytes": 54226,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5T9Z.cif.gz",
+      "pdb_id": "5T9Z",
+      "sha256": "f533d475d13b3c5561d26626e04ea5c8cfef2f3eccea1a64eb823cd0f40b066a",
+      "url": "https://files.rcsb.org/download/5T9Z.cif.gz"
+    },
+    {
+      "bytes": 54803,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5TA2.cif.gz",
+      "pdb_id": "5TA2",
+      "sha256": "9eae49871d24f5aa1ebd38bbb515c441bffd53529f302eec4031d6e690116edd",
+      "url": "https://files.rcsb.org/download/5TA2.cif.gz"
+    },
+    {
+      "bytes": 68299,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5TOB.cif.gz",
+      "pdb_id": "5TOB",
+      "sha256": "a93f55de2659726b7de49c1d4aed7eb71a07dc6c9e646acb184c96cee5561bf4",
+      "url": "https://files.rcsb.org/download/5TOB.cif.gz"
+    },
+    {
+      "bytes": 123858,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5U12.cif.gz",
+      "pdb_id": "5U12",
+      "sha256": "2b3d86640f2172a0e1ba2c3eadf9b4b2d84d5b0f5dd5291231d5b5ce873042e9",
+      "url": "https://files.rcsb.org/download/5U12.cif.gz"
+    },
+    {
+      "bytes": 185928,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5U69.cif.gz",
+      "pdb_id": "5U69",
+      "sha256": "f91d8a49d74c4da88aee82dfd272e4297df77e905bcfc729719866ed2eb5f32d",
+      "url": "https://files.rcsb.org/download/5U69.cif.gz"
+    },
+    {
+      "bytes": 172665,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5U8F.cif.gz",
+      "pdb_id": "5U8F",
+      "sha256": "aab5c244ccc08818d2b865aaaec1db173b39a0e9d78ac51bf65ba009f226883a",
+      "url": "https://files.rcsb.org/download/5U8F.cif.gz"
+    },
+    {
+      "bytes": 271519,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5USY.cif.gz",
+      "pdb_id": "5USY",
+      "sha256": "7b519fc8f1733b9e9149abd2997ac188cc7ce029ee07f56c0000d7eaca130590",
+      "url": "https://files.rcsb.org/download/5USY.cif.gz"
+    },
+    {
+      "bytes": 135735,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5UT6.cif.gz",
+      "pdb_id": "5UT6",
+      "sha256": "edc6bac4e2d6a4027c0093e6ef36cbba3c13cfaabb374199efba874ed816092a",
+      "url": "https://files.rcsb.org/download/5UT6.cif.gz"
+    },
+    {
+      "bytes": 706669,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5V9T.cif.gz",
+      "pdb_id": "5V9T",
+      "sha256": "88079036fa5ab6345d0cccf1d4d751910344b2b4c2530bf7bb03ecee13922960",
+      "url": "https://files.rcsb.org/download/5V9T.cif.gz"
+    },
+    {
+      "bytes": 174967,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5VC3.cif.gz",
+      "pdb_id": "5VC3",
+      "sha256": "db339c915fdf283479006e6331d75d0b1dcb7e026d3bdf1e08701560134abad3",
+      "url": "https://files.rcsb.org/download/5VC3.cif.gz"
+    },
+    {
+      "bytes": 141359,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5VGY.cif.gz",
+      "pdb_id": "5VGY",
+      "sha256": "c965dc05482dd9d8037d4a39dbb964a9096cd8835427e2b7860197f661591df4",
+      "url": "https://files.rcsb.org/download/5VGY.cif.gz"
+    },
+    {
+      "bytes": 99786,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5VYY.cif.gz",
+      "pdb_id": "5VYY",
+      "sha256": "816193b1c397153eb9a6cfd232f6e39de35a8bfede1f2babcc88fdfd492761de",
+      "url": "https://files.rcsb.org/download/5VYY.cif.gz"
+    },
+    {
+      "bytes": 49501,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5X74.cif.gz",
+      "pdb_id": "5X74",
+      "sha256": "64572158e539175206a974ce669a9f3f5c5255bc783f4181e98d9148a90eb1c6",
+      "url": "https://files.rcsb.org/download/5X74.cif.gz"
+    },
+    {
+      "bytes": 188774,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5Y7Z.cif.gz",
+      "pdb_id": "5Y7Z",
+      "sha256": "dcaf97bcd8a38387b1596d50f576e4e5d6ea0684a463bfe433a4f842affa6b47",
+      "url": "https://files.rcsb.org/download/5Y7Z.cif.gz"
+    },
+    {
+      "bytes": 106295,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5Y80.cif.gz",
+      "pdb_id": "5Y80",
+      "sha256": "581fb824451e7430649e1d9557f4e23713b07d59c3e2b248fd54b2433387efd6",
+      "url": "https://files.rcsb.org/download/5Y80.cif.gz"
+    },
+    {
+      "bytes": 34489,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/5ZXF.cif.gz",
+      "pdb_id": "5ZXF",
+      "sha256": "ae1f976e0527a6fcc09d9f433b46e703cb58d270ee3a13cd7cf1c1bb296e3e80",
+      "url": "https://files.rcsb.org/download/5ZXF.cif.gz"
+    },
+    {
+      "bytes": 77707,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6BSD.cif.gz",
+      "pdb_id": "6BSD",
+      "sha256": "a72a96d7d75394fc6303a511786f428e2b97659ecb58b499375488c59004414e",
+      "url": "https://files.rcsb.org/download/6BSD.cif.gz"
+    },
+    {
+      "bytes": 391969,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6D55.cif.gz",
+      "pdb_id": "6D55",
+      "sha256": "98cdb3298e72b7ee0f9e35ef0786c803f64bc8b74d687e4e47e193939d57e266",
+      "url": "https://files.rcsb.org/download/6D55.cif.gz"
+    },
+    {
+      "bytes": 389730,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6D5J.cif.gz",
+      "pdb_id": "6D5J",
+      "sha256": "b4805718100da7563ea23fd0de67a2b26072328744ebc0a183f8e9a40ce871eb",
+      "url": "https://files.rcsb.org/download/6D5J.cif.gz"
+    },
+    {
+      "bytes": 41585,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6DXH.cif.gz",
+      "pdb_id": "6DXH",
+      "sha256": "ea0ecda1da9dc0137b260740761f3ee055aafdbcf08d2de4fcfb4e70b88b6310",
+      "url": "https://files.rcsb.org/download/6DXH.cif.gz"
+    },
+    {
+      "bytes": 79927,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6DYZ.cif.gz",
+      "pdb_id": "6DYZ",
+      "sha256": "0eb7184229695cb822a7bb75b885cda945916185c601a88fdea97177489fac7c",
+      "url": "https://files.rcsb.org/download/6DYZ.cif.gz"
+    },
+    {
+      "bytes": 79357,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6DZ0.cif.gz",
+      "pdb_id": "6DZ0",
+      "sha256": "bdcf8126ecc9230a920c8894b49d11a9db930a1b3e7855cd27d7bd558e560719",
+      "url": "https://files.rcsb.org/download/6DZ0.cif.gz"
+    },
+    {
+      "bytes": 84459,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6E4A.cif.gz",
+      "pdb_id": "6E4A",
+      "sha256": "448511d044ff2f8ca124cb6a6141ae0bcc8273e2205151ff2e58f1e52d07d06c",
+      "url": "https://files.rcsb.org/download/6E4A.cif.gz"
+    },
+    {
+      "bytes": 93577,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6EHK.cif.gz",
+      "pdb_id": "6EHK",
+      "sha256": "89a8eddb6bdaf7d5dbfbbfdb268689ace1880ef3284904061869ca2a9c7ef0af",
+      "url": "https://files.rcsb.org/download/6EHK.cif.gz"
+    },
+    {
+      "bytes": 106556,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6F7G.cif.gz",
+      "pdb_id": "6F7G",
+      "sha256": "74fa99eda2fde01d3e192579da8a60ab5085c65ba19b374122c6ceabed5cbb7a",
+      "url": "https://files.rcsb.org/download/6F7G.cif.gz"
+    },
+    {
+      "bytes": 72956,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6FDY.cif.gz",
+      "pdb_id": "6FDY",
+      "sha256": "decdfcfb893d5c8275a31fc3b92c6a9e70db43a4e66820d90400cf95fc2f2308",
+      "url": "https://files.rcsb.org/download/6FDY.cif.gz"
+    },
+    {
+      "bytes": 224712,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6FE0.cif.gz",
+      "pdb_id": "6FE0",
+      "sha256": "5d9ee828bee0aba23320b37ce624ef4ef94eae218bccbdb30946f8d4b2acfecd",
+      "url": "https://files.rcsb.org/download/6FE0.cif.gz"
+    },
+    {
+      "bytes": 230894,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6FE1.cif.gz",
+      "pdb_id": "6FE1",
+      "sha256": "023dc93c7ba6d6ed6079a3eef6ca503433ee0a394775d97ca4b4dcf7ef0b7519",
+      "url": "https://files.rcsb.org/download/6FE1.cif.gz"
+    },
+    {
+      "bytes": 83827,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6FNM.cif.gz",
+      "pdb_id": "6FNM",
+      "sha256": "86732a4050f640cfb1d0ebf9b8d687db64d7f9672a3ff03ad85e44aefe9f361a",
+      "url": "https://files.rcsb.org/download/6FNM.cif.gz"
+    },
+    {
+      "bytes": 65949,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6FTZ.cif.gz",
+      "pdb_id": "6FTZ",
+      "sha256": "eb1112c2c586068eeccfb70c1bc03ab48eb6701c08be0863a9692efcf71f8706",
+      "url": "https://files.rcsb.org/download/6FTZ.cif.gz"
+    },
+    {
+      "bytes": 93021,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6FVF.cif.gz",
+      "pdb_id": "6FVF",
+      "sha256": "e827a9be3c59d42e5bae0a249c3ad510b690050f92f41a8f8e6aec709f557da1",
+      "url": "https://files.rcsb.org/download/6FVF.cif.gz"
+    },
+    {
+      "bytes": 140565,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6H1I.cif.gz",
+      "pdb_id": "6H1I",
+      "sha256": "e15c059d5dc4093d29d3532fd48cbc784df3b2b14a5178e8b24f1288ed4e6714",
+      "url": "https://files.rcsb.org/download/6H1I.cif.gz"
+    },
+    {
+      "bytes": 380237,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6HUP.cif.gz",
+      "pdb_id": "6HUP",
+      "sha256": "4f4b5930e823407f183d68b375abd4d980ee8c8d5aadae1eddee6dfae220b844",
+      "url": "https://files.rcsb.org/download/6HUP.cif.gz"
+    },
+    {
+      "bytes": 89677,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6HWS.cif.gz",
+      "pdb_id": "6HWS",
+      "sha256": "2bd73a3e774915fced36a798218a816351dd51752c4eb993e9060b01d3ea2b5f",
+      "url": "https://files.rcsb.org/download/6HWS.cif.gz"
+    },
+    {
+      "bytes": 223160,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6I12.cif.gz",
+      "pdb_id": "6I12",
+      "sha256": "3828829d61cf1a3aa1ead3c34878c0a24fe33bd78daf2344a43d8822195b9e79",
+      "url": "https://files.rcsb.org/download/6I12.cif.gz"
+    },
+    {
+      "bytes": 226498,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6I18.cif.gz",
+      "pdb_id": "6I18",
+      "sha256": "b74963481293bfb541274fc5d2dae4337dadf5baef80a403de98a5b496720910",
+      "url": "https://files.rcsb.org/download/6I18.cif.gz"
+    },
+    {
+      "bytes": 216866,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6KHD.cif.gz",
+      "pdb_id": "6KHD",
+      "sha256": "1969ef9d03e67b7e2bf12e2e117f41f1e5c019012300b1e6ea9bd2def7e69dd8",
+      "url": "https://files.rcsb.org/download/6KHD.cif.gz"
+    },
+    {
+      "bytes": 140157,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6MAE.cif.gz",
+      "pdb_id": "6MAE",
+      "sha256": "2f44371b354e97c00065d11ff87d04962a9d1101923bea8c254b23735aef72a5",
+      "url": "https://files.rcsb.org/download/6MAE.cif.gz"
+    },
+    {
+      "bytes": 239605,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6NAD.cif.gz",
+      "pdb_id": "6NAD",
+      "sha256": "cec1d3073d24620e49d03157f75b0cc360b7522adad29ac8c25157a08e1e31ed",
+      "url": "https://files.rcsb.org/download/6NAD.cif.gz"
+    },
+    {
+      "bytes": 70867,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6NFT.cif.gz",
+      "pdb_id": "6NFT",
+      "sha256": "6cba6a8f69ee5c2c3fcf38ee84e51d5a589245108b8f5662ef660336449dd379",
+      "url": "https://files.rcsb.org/download/6NFT.cif.gz"
+    },
+    {
+      "bytes": 73531,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6OBB.cif.gz",
+      "pdb_id": "6OBB",
+      "sha256": "f5904cedd30dbec55469f58a60cc3d81eb6ab793004c9de5c4acc84d9af54147",
+      "url": "https://files.rcsb.org/download/6OBB.cif.gz"
+    },
+    {
+      "bytes": 71203,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6OBL.cif.gz",
+      "pdb_id": "6OBL",
+      "sha256": "9a5b43ecd7bf7db3713562fd66eb88bc114c713ecdcf8619a919fda9ba658f8b",
+      "url": "https://files.rcsb.org/download/6OBL.cif.gz"
+    },
+    {
+      "bytes": 73781,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6OP9.cif.gz",
+      "pdb_id": "6OP9",
+      "sha256": "e09f7bb23cd13c4a488b2ea7088365267621202ba9a11be1c33bdcc03a6e14b3",
+      "url": "https://files.rcsb.org/download/6OP9.cif.gz"
+    },
+    {
+      "bytes": 206921,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6PBI.cif.gz",
+      "pdb_id": "6PBI",
+      "sha256": "4bf5b0ea10f317025901fa484ba527f6a58a5cc07bfe8ae36a72b222c435b391",
+      "url": "https://files.rcsb.org/download/6PBI.cif.gz"
+    },
+    {
+      "bytes": 138923,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6PDJ.cif.gz",
+      "pdb_id": "6PDJ",
+      "sha256": "74221099b3da8dae7c7d0823d389b43d1d39717f67fde61ec542c46ff7b347b9",
+      "url": "https://files.rcsb.org/download/6PDJ.cif.gz"
+    },
+    {
+      "bytes": 207003,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6PG2.cif.gz",
+      "pdb_id": "6PG2",
+      "sha256": "5b845aabe17b8f304c48132456e2fb3be81075c70e3581f34eb0da383edf83c4",
+      "url": "https://files.rcsb.org/download/6PG2.cif.gz"
+    },
+    {
+      "bytes": 141616,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6QL3.cif.gz",
+      "pdb_id": "6QL3",
+      "sha256": "30da87a10e0c57ebac1262535e90c9e475ff695a140c3350c807b7f458a7d9e6",
+      "url": "https://files.rcsb.org/download/6QL3.cif.gz"
+    },
+    {
+      "bytes": 114677,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6QLN.cif.gz",
+      "pdb_id": "6QLN",
+      "sha256": "53b3ebff3849a9e06be72e43230f5e1f2cd1f981888804420774025643bf372b",
+      "url": "https://files.rcsb.org/download/6QLN.cif.gz"
+    },
+    {
+      "bytes": 114865,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6QLR.cif.gz",
+      "pdb_id": "6QLR",
+      "sha256": "10026e11c2277d5b1745642e55c10bc1c1d101fc60b3d5492bba78b8ab907d66",
+      "url": "https://files.rcsb.org/download/6QLR.cif.gz"
+    },
+    {
+      "bytes": 258127,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6RN8.cif.gz",
+      "pdb_id": "6RN8",
+      "sha256": "0ef63ed30773c6c1e0561a4111dc169feb2fdd4dccc1461ecc4a7956f7864331",
+      "url": "https://files.rcsb.org/download/6RN8.cif.gz"
+    },
+    {
+      "bytes": 87797,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6RWJ.cif.gz",
+      "pdb_id": "6RWJ",
+      "sha256": "c9036288599f2117fdbb6b75f6043021036f13277c5d0f1351ffb4b2e097914d",
+      "url": "https://files.rcsb.org/download/6RWJ.cif.gz"
+    },
+    {
+      "bytes": 239909,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6S17.cif.gz",
+      "pdb_id": "6S17",
+      "sha256": "5fece7b1f1deee76bd6a2da735f5014d6407a12f551ffe4c9b699387c361429d",
+      "url": "https://files.rcsb.org/download/6S17.cif.gz"
+    },
+    {
+      "bytes": 77314,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6S57.cif.gz",
+      "pdb_id": "6S57",
+      "sha256": "2107425ca4953f91181349ae44361a1a364b1bb6f649c4111757a9bfffa2fcf9",
+      "url": "https://files.rcsb.org/download/6S57.cif.gz"
+    },
+    {
+      "bytes": 85184,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6S6K.cif.gz",
+      "pdb_id": "6S6K",
+      "sha256": "cdda0e2fc8795c72ada3a72f22b5a18b5ac200eb4425c2103f124ac9b45c4101",
+      "url": "https://files.rcsb.org/download/6S6K.cif.gz"
+    },
+    {
+      "bytes": 316332,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6SCM.cif.gz",
+      "pdb_id": "6SCM",
+      "sha256": "961f414261be8cf7cbde20820ee2c1973edf94409aa60223f75977fb2e0e5f9e",
+      "url": "https://files.rcsb.org/download/6SCM.cif.gz"
+    },
+    {
+      "bytes": 225109,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6SD7.cif.gz",
+      "pdb_id": "6SD7",
+      "sha256": "c06ad89c6c0cd99b63571db25e8f7a1ea04ab5e28b588cb07587c6f954cc3509",
+      "url": "https://files.rcsb.org/download/6SD7.cif.gz"
+    },
+    {
+      "bytes": 197533,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6TUY.cif.gz",
+      "pdb_id": "6TUY",
+      "sha256": "28ca4896c2bbecaae65cf483c37cade15949fe8e147e0bbf012e4cdde01b15c9",
+      "url": "https://files.rcsb.org/download/6TUY.cif.gz"
+    },
+    {
+      "bytes": 120358,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6TXW.cif.gz",
+      "pdb_id": "6TXW",
+      "sha256": "88a955502b622fd6b3421ac463013183f7c3be0d189bbc0f830febf2cd0a9c05",
+      "url": "https://files.rcsb.org/download/6TXW.cif.gz"
+    },
+    {
+      "bytes": 136123,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6TYM.cif.gz",
+      "pdb_id": "6TYM",
+      "sha256": "46d771f4b6d2342b1688d05bec68432540ca5a20a7d6086beeeba443e388b102",
+      "url": "https://files.rcsb.org/download/6TYM.cif.gz"
+    },
+    {
+      "bytes": 270924,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6U6W.cif.gz",
+      "pdb_id": "6U6W",
+      "sha256": "34380030aca54b98ac6820cd0cc3722fc25ce930832cd08a4cbda08b0e9598b0",
+      "url": "https://files.rcsb.org/download/6U6W.cif.gz"
+    },
+    {
+      "bytes": 276542,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6U8B.cif.gz",
+      "pdb_id": "6U8B",
+      "sha256": "79e3fce979056f104e1592fdf8994d333757eaa4c7b3843217ad4222eacde4cc",
+      "url": "https://files.rcsb.org/download/6U8B.cif.gz"
+    },
+    {
+      "bytes": 383819,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6UE6.cif.gz",
+      "pdb_id": "6UE6",
+      "sha256": "b8850b511ed8aed7e6234d0ae5c5baf1f7509d5af7f10fb8fd911eb6e689d205",
+      "url": "https://files.rcsb.org/download/6UE6.cif.gz"
+    },
+    {
+      "bytes": 254206,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6UJ4.cif.gz",
+      "pdb_id": "6UJ4",
+      "sha256": "d9b712da4d75856ff87dc6ca7abac01f98ce8218073b7f7106e240c283f2fccc",
+      "url": "https://files.rcsb.org/download/6UJ4.cif.gz"
+    },
+    {
+      "bytes": 260279,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6UOZ.cif.gz",
+      "pdb_id": "6UOZ",
+      "sha256": "e3be6a405027d4199c419209c9d6572486febddfebb10c901c302f4aba49c10f",
+      "url": "https://files.rcsb.org/download/6UOZ.cif.gz"
+    },
+    {
+      "bytes": 67251,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6V1F.cif.gz",
+      "pdb_id": "6V1F",
+      "sha256": "570cecf9b63dd22d343915b2473cf46295ade32376a931fcd25fce2bcd7f4fe9",
+      "url": "https://files.rcsb.org/download/6V1F.cif.gz"
+    },
+    {
+      "bytes": 275276,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6V6Z.cif.gz",
+      "pdb_id": "6V6Z",
+      "sha256": "8a9abd7d0104681ca2a1f013b435b6f039ea552b9f48ac1b50bde4bd3580a782",
+      "url": "https://files.rcsb.org/download/6V6Z.cif.gz"
+    },
+    {
+      "bytes": 386036,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6V9L.cif.gz",
+      "pdb_id": "6V9L",
+      "sha256": "00231a29f8e7b1d637a8e4d28a36be0e0a68fa7c4f54c3b953f1d9b0f52f58ed",
+      "url": "https://files.rcsb.org/download/6V9L.cif.gz"
+    },
+    {
+      "bytes": 386896,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6V9N.cif.gz",
+      "pdb_id": "6V9N",
+      "sha256": "fcbbc1a4c9bd3da0d87f929706e05971799ae4596158669d0a56d586803b23f5",
+      "url": "https://files.rcsb.org/download/6V9N.cif.gz"
+    },
+    {
+      "bytes": 140029,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6VNE.cif.gz",
+      "pdb_id": "6VNE",
+      "sha256": "d22e11eb65217b7152f7f81f780541a4285e184bfb4bfadbcc23cb05041ea38d",
+      "url": "https://files.rcsb.org/download/6VNE.cif.gz"
+    },
+    {
+      "bytes": 161759,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6VRH.cif.gz",
+      "pdb_id": "6VRH",
+      "sha256": "112f74706642a72997b6c4e5215e2ceda1bd27bef9df7573b9743aba2b11afa1",
+      "url": "https://files.rcsb.org/download/6VRH.cif.gz"
+    },
+    {
+      "bytes": 85903,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6W4Z.cif.gz",
+      "pdb_id": "6W4Z",
+      "sha256": "7c72d291d621743bc6a8f98f43ef6c4aae06bba49b8c867a564699c1e9c13d41",
+      "url": "https://files.rcsb.org/download/6W4Z.cif.gz"
+    },
+    {
+      "bytes": 63156,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6X4O.cif.gz",
+      "pdb_id": "6X4O",
+      "sha256": "a35b5d7613b4391b9f6d0c6b5a4eadc54b670cece242fe05827d4ed2a98555c8",
+      "url": "https://files.rcsb.org/download/6X4O.cif.gz"
+    },
+    {
+      "bytes": 63381,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6X4P.cif.gz",
+      "pdb_id": "6X4P",
+      "sha256": "0aab4c6d94237bcd13bf2c0eb92baa2aa22c383084dfdeaf60d078bbcf99e0c2",
+      "url": "https://files.rcsb.org/download/6X4P.cif.gz"
+    },
+    {
+      "bytes": 176977,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6X83.cif.gz",
+      "pdb_id": "6X83",
+      "sha256": "9c4469392d0fb233bc3fa28979d042172578c5c1c1dc456e3135b0cbda2e0612",
+      "url": "https://files.rcsb.org/download/6X83.cif.gz"
+    },
+    {
+      "bytes": 178455,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/6X85.cif.gz",
+      "pdb_id": "6X85",
+      "sha256": "3dac2b3118a8852a9a41f8d7e3b2a944e322d6e317b6ddd32a69f3198b4356d7",
+      "url": "https://files.rcsb.org/download/6X85.cif.gz"
+    },
+    {
+      "bytes": 155426,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7AEN.cif.gz",
+      "pdb_id": "7AEN",
+      "sha256": "8639dac8198e20ab43d029972786f33ed1c09d7bcceafd00f31ffbb9f61e88ea",
+      "url": "https://files.rcsb.org/download/7AEN.cif.gz"
+    },
+    {
+      "bytes": 592905,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7AVL.cif.gz",
+      "pdb_id": "7AVL",
+      "sha256": "ba6829428fead5f58fc9ecd53d8d754d8ec2b4fa7d858d93df8add409b5e4ce1",
+      "url": "https://files.rcsb.org/download/7AVL.cif.gz"
+    },
+    {
+      "bytes": 50749,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7AXR.cif.gz",
+      "pdb_id": "7AXR",
+      "sha256": "181fd31e805a4163aa73f6e999adc3502cf6b5187f84d0aa1ecb4d7cc638c210",
+      "url": "https://files.rcsb.org/download/7AXR.cif.gz"
+    },
+    {
+      "bytes": 270460,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7CKZ.cif.gz",
+      "pdb_id": "7CKZ",
+      "sha256": "fad6afe14e4b2dfa3d1bc2798cec910dfb20ffecba379d8d66f99f865de34223",
+      "url": "https://files.rcsb.org/download/7CKZ.cif.gz"
+    },
+    {
+      "bytes": 220963,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7ER7.cif.gz",
+      "pdb_id": "7ER7",
+      "sha256": "4daffaf793e6f6a13322d23b4ac1b2abd260d773c7cc3cea3c8c67e15db52fe2",
+      "url": "https://files.rcsb.org/download/7ER7.cif.gz"
+    },
+    {
+      "bytes": 228448,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7ER8.cif.gz",
+      "pdb_id": "7ER8",
+      "sha256": "4331537d0bc5e0707022d3128c6b05f9dc99af0cb4fb75a69273c7190323bb55",
+      "url": "https://files.rcsb.org/download/7ER8.cif.gz"
+    },
+    {
+      "bytes": 127473,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7F3G.cif.gz",
+      "pdb_id": "7F3G",
+      "sha256": "15c09823032e77c8c3f945db8018841843efd5c73ef8851c943573f25e776ead",
+      "url": "https://files.rcsb.org/download/7F3G.cif.gz"
+    },
+    {
+      "bytes": 79714,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7GUD.cif.gz",
+      "pdb_id": "7GUD",
+      "sha256": "b86df4796b630359751cad9fe6efc7f3712bfb2e267e8da2c630a1cec476d41f",
+      "url": "https://files.rcsb.org/download/7GUD.cif.gz"
+    },
+    {
+      "bytes": 79552,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7GUE.cif.gz",
+      "pdb_id": "7GUE",
+      "sha256": "8edf70b61e92230f7fc0bb619e8a6522fe52818961ca6ba1b2767f0f8d265c5f",
+      "url": "https://files.rcsb.org/download/7GUE.cif.gz"
+    },
+    {
+      "bytes": 50639,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7JKY.cif.gz",
+      "pdb_id": "7JKY",
+      "sha256": "765be5d97f8535c4a61f62d2c66e896e134b067e0909d9f2ec167815e43c0fd6",
+      "url": "https://files.rcsb.org/download/7JKY.cif.gz"
+    },
+    {
+      "bytes": 214559,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7JVU.cif.gz",
+      "pdb_id": "7JVU",
+      "sha256": "1a2e84eada27de0c938c66b614846b64423cc746097e52784b28d84d0244c192",
+      "url": "https://files.rcsb.org/download/7JVU.cif.gz"
+    },
+    {
+      "bytes": 155375,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7KK4.cif.gz",
+      "pdb_id": "7KK4",
+      "sha256": "f11ca564e8fb62af10c80230e117ca796feb163543bbd6e0674059909b3071f9",
+      "url": "https://files.rcsb.org/download/7KK4.cif.gz"
+    },
+    {
+      "bytes": 92159,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7L3C.cif.gz",
+      "pdb_id": "7L3C",
+      "sha256": "dbd6c4fb4143e20439a0a657c76e0debdef76c02d75a63bac0e721717e511f9e",
+      "url": "https://files.rcsb.org/download/7L3C.cif.gz"
+    },
+    {
+      "bytes": 123255,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7LPK.cif.gz",
+      "pdb_id": "7LPK",
+      "sha256": "bff4a0b82f8f58d8854dfc23d0196b207dd94a22437019725c589f226cf32b7e",
+      "url": "https://files.rcsb.org/download/7LPK.cif.gz"
+    },
+    {
+      "bytes": 140372,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7M0T.cif.gz",
+      "pdb_id": "7M0T",
+      "sha256": "563e95eb4fd12836ff27622726e7ee1f0f66683d7a15a00b45be5d5e8d066081",
+      "url": "https://files.rcsb.org/download/7M0T.cif.gz"
+    },
+    {
+      "bytes": 45296,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7MS6.cif.gz",
+      "pdb_id": "7MS6",
+      "sha256": "232b284d7fbdba11d76c613fcb0cdf9a4b9f882422fcf4d8b2d393126cd0a1ff",
+      "url": "https://files.rcsb.org/download/7MS6.cif.gz"
+    },
+    {
+      "bytes": 72379,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7MS7.cif.gz",
+      "pdb_id": "7MS7",
+      "sha256": "df7d12afdec6d5036474e4f580e1f633afa9b0183389acf0a894804ec1664026",
+      "url": "https://files.rcsb.org/download/7MS7.cif.gz"
+    },
+    {
+      "bytes": 1205217,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7NM2.cif.gz",
+      "pdb_id": "7NM2",
+      "sha256": "058e961881080d814e92f124a537b74d2c281dcc7182201ab8f113329e79c755",
+      "url": "https://files.rcsb.org/download/7NM2.cif.gz"
+    },
+    {
+      "bytes": 1198706,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7NM4.cif.gz",
+      "pdb_id": "7NM4",
+      "sha256": "cfb1533ab5fda027d838e88cd0a31dc8887f1e1f17f71e57a3d7d2af791b899b",
+      "url": "https://files.rcsb.org/download/7NM4.cif.gz"
+    },
+    {
+      "bytes": 337492,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7O7K.cif.gz",
+      "pdb_id": "7O7K",
+      "sha256": "a0350aff971c6b6930143e4e1d4097148f3335729151c553847faef7e04ad1f2",
+      "url": "https://files.rcsb.org/download/7O7K.cif.gz"
+    },
+    {
+      "bytes": 128926,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7PDQ.cif.gz",
+      "pdb_id": "7PDQ",
+      "sha256": "34cae9b29115ab6691557911ab707648a8aad86c5fc06739f622e84d5916b274",
+      "url": "https://files.rcsb.org/download/7PDQ.cif.gz"
+    },
+    {
+      "bytes": 242290,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7Q6Q.cif.gz",
+      "pdb_id": "7Q6Q",
+      "sha256": "11c660899712701a12dc8359e1fd047736be0ef2c2bf5c9e1a2da3e52a78249e",
+      "url": "https://files.rcsb.org/download/7Q6Q.cif.gz"
+    },
+    {
+      "bytes": 45848,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7TAB.cif.gz",
+      "pdb_id": "7TAB",
+      "sha256": "b83a4194c246dfa35e8d69cb6bbf8bc29fe8754d8167da2a6edbfeff488d7900",
+      "url": "https://files.rcsb.org/download/7TAB.cif.gz"
+    },
+    {
+      "bytes": 237544,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7X2F.cif.gz",
+      "pdb_id": "7X2F",
+      "sha256": "50654298a5d9e0231db5d77f025f60ff1261634f63ccb328a1f25afefa39a481",
+      "url": "https://files.rcsb.org/download/7X2F.cif.gz"
+    },
+    {
+      "bytes": 92451,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7XM2.cif.gz",
+      "pdb_id": "7XM2",
+      "sha256": "d911bb54175240bdc790600608f466955e6a235e2ca4c649867c09062185a6af",
+      "url": "https://files.rcsb.org/download/7XM2.cif.gz"
+    },
+    {
+      "bytes": 287919,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7Z1F.cif.gz",
+      "pdb_id": "7Z1F",
+      "sha256": "1b063c7ea88d02d19034be9b9ec90b9e329cdff2f25f1d2d6a22c5006fec3bb7",
+      "url": "https://files.rcsb.org/download/7Z1F.cif.gz"
+    },
+    {
+      "bytes": 164259,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7Z1G.cif.gz",
+      "pdb_id": "7Z1G",
+      "sha256": "70ce6ec3bfaf7983e45cf60f0056475dcbda7740ede062df7dd76c9c936d23d7",
+      "url": "https://files.rcsb.org/download/7Z1G.cif.gz"
+    },
+    {
+      "bytes": 77898,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7Z62.cif.gz",
+      "pdb_id": "7Z62",
+      "sha256": "50e6cf3c2f2c8d1d7c51f35e300c879bcbae6b1d0d6f98a90e44ec7ced7f2500",
+      "url": "https://files.rcsb.org/download/7Z62.cif.gz"
+    },
+    {
+      "bytes": 136238,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/7Z63.cif.gz",
+      "pdb_id": "7Z63",
+      "sha256": "1fdf12b22d18218a50923ed29d49a0eb9b48504f11a4670259603e6ba4aca463",
+      "url": "https://files.rcsb.org/download/7Z63.cif.gz"
+    },
+    {
+      "bytes": 156419,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8B99.cif.gz",
+      "pdb_id": "8B99",
+      "sha256": "5580ed5e3ae5d1675ded7563f778259cca51ce8776f2ad8bd8599ed0612328b9",
+      "url": "https://files.rcsb.org/download/8B99.cif.gz"
+    },
+    {
+      "bytes": 327034,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8BM2.cif.gz",
+      "pdb_id": "8BM2",
+      "sha256": "0cfd2f0b68fd29e0e315269bedda11ebe06f20fd9ca808c6ca3e97f7c25f751c",
+      "url": "https://files.rcsb.org/download/8BM2.cif.gz"
+    },
+    {
+      "bytes": 323883,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8BPW.cif.gz",
+      "pdb_id": "8BPW",
+      "sha256": "41634bfacb33394e0dc4c76af1d5a8ca6578d30b1b4d691cfc839596266bf89a",
+      "url": "https://files.rcsb.org/download/8BPW.cif.gz"
+    },
+    {
+      "bytes": 171508,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8BX6.cif.gz",
+      "pdb_id": "8BX6",
+      "sha256": "af0810a38127823a629772ce999202a27af927de311cc5d43d846b3eacd23ddf",
+      "url": "https://files.rcsb.org/download/8BX6.cif.gz"
+    },
+    {
+      "bytes": 108529,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8CK4.cif.gz",
+      "pdb_id": "8CK4",
+      "sha256": "b11adcc382853bb102df944de93856012bb65608e2a1601800f9de40ba321e83",
+      "url": "https://files.rcsb.org/download/8CK4.cif.gz"
+    },
+    {
+      "bytes": 108126,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8CK8.cif.gz",
+      "pdb_id": "8CK8",
+      "sha256": "f58405cc9bddc0555d9cec27e9803bc4e8a384c919be1b8932b24dd2a2ac88aa",
+      "url": "https://files.rcsb.org/download/8CK8.cif.gz"
+    },
+    {
+      "bytes": 280993,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8CQK.cif.gz",
+      "pdb_id": "8CQK",
+      "sha256": "14e31cfa4e4ee74ad446a1e91fb24ae3e8b8894dd0ef7486418bf4e0bfecac9c",
+      "url": "https://files.rcsb.org/download/8CQK.cif.gz"
+    },
+    {
+      "bytes": 285570,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8CQL.cif.gz",
+      "pdb_id": "8CQL",
+      "sha256": "648602308ff5a36ecd86da8c39699a5bdd4ae2082d5f1c2d8f6b2a3f10e83796",
+      "url": "https://files.rcsb.org/download/8CQL.cif.gz"
+    },
+    {
+      "bytes": 228769,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8F97.cif.gz",
+      "pdb_id": "8F97",
+      "sha256": "6e337348b33c603f55e7471d201857fcad23c3b172ca78930c61e7b6086d4473",
+      "url": "https://files.rcsb.org/download/8F97.cif.gz"
+    },
+    {
+      "bytes": 41139,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8G43.cif.gz",
+      "pdb_id": "8G43",
+      "sha256": "da42c77c4dbc2ac3834b9dbda942f0a8ecbe8d38e26686c8a8317de34790073a",
+      "url": "https://files.rcsb.org/download/8G43.cif.gz"
+    },
+    {
+      "bytes": 41565,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8G44.cif.gz",
+      "pdb_id": "8G44",
+      "sha256": "b02a749ed2c3bc398339c6c249a1a871e5481750ab7fedfdcdfdeb329568f8b3",
+      "url": "https://files.rcsb.org/download/8G44.cif.gz"
+    },
+    {
+      "bytes": 126907,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8GXP.cif.gz",
+      "pdb_id": "8GXP",
+      "sha256": "6e0fdc6dcaea3cdd78db86155e59e47c37f176944b13f279878d34fda900be82",
+      "url": "https://files.rcsb.org/download/8GXP.cif.gz"
+    },
+    {
+      "bytes": 59569,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8IA5.cif.gz",
+      "pdb_id": "8IA5",
+      "sha256": "5898dfc48ea3aec2a11b4aa89803de7ed64dee0c3b60e4e7a26c7b1ffa241f82",
+      "url": "https://files.rcsb.org/download/8IA5.cif.gz"
+    },
+    {
+      "bytes": 77584,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8OU2.cif.gz",
+      "pdb_id": "8OU2",
+      "sha256": "034e6b574da61c290292e701b08e3d4c60d8fc8a57e7ea2cf7e51714bcf454d6",
+      "url": "https://files.rcsb.org/download/8OU2.cif.gz"
+    },
+    {
+      "bytes": 1341138,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8R4Q.cif.gz",
+      "pdb_id": "8R4Q",
+      "sha256": "b83708b0ef972e160b47757b62d0709e2a29b72b7f7c1ef3c51ba6461fa9de5a",
+      "url": "https://files.rcsb.org/download/8R4Q.cif.gz"
+    },
+    {
+      "bytes": 338701,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8S98.cif.gz",
+      "pdb_id": "8S98",
+      "sha256": "461acd26633a5d15f0a6540c87c2bf0734d676a9a0dbde76b9868fd6567126fa",
+      "url": "https://files.rcsb.org/download/8S98.cif.gz"
+    },
+    {
+      "bytes": 352184,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8S99.cif.gz",
+      "pdb_id": "8S99",
+      "sha256": "29ac311cc02602e579bad82fb77b4602d427e43df531e4a47b7956b7d8ade9b1",
+      "url": "https://files.rcsb.org/download/8S99.cif.gz"
+    },
+    {
+      "bytes": 285197,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8VW4.cif.gz",
+      "pdb_id": "8VW4",
+      "sha256": "07455426b1bd2a3ae47b297558d3e1a284fd1df87a0c234bf552f1ea23cdc4fd",
+      "url": "https://files.rcsb.org/download/8VW4.cif.gz"
+    },
+    {
+      "bytes": 306304,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8VW5.cif.gz",
+      "pdb_id": "8VW5",
+      "sha256": "a4a6a77c87fd798d0425ebef2db6128aa49bfe563c93d06b0d85a6e400d1e68a",
+      "url": "https://files.rcsb.org/download/8VW5.cif.gz"
+    },
+    {
+      "bytes": 223429,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8WX7.cif.gz",
+      "pdb_id": "8WX7",
+      "sha256": "13cacbc09ca9cd0e2303183cf40226614333108722844aba64f41486a612cd62",
+      "url": "https://files.rcsb.org/download/8WX7.cif.gz"
+    },
+    {
+      "bytes": 78855,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8XOX.cif.gz",
+      "pdb_id": "8XOX",
+      "sha256": "8b7c4aa704ea6f6a5959923f8449b3e685747d348d88ead339f10c9167e69cfb",
+      "url": "https://files.rcsb.org/download/8XOX.cif.gz"
+    },
+    {
+      "bytes": 211984,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8Y92.cif.gz",
+      "pdb_id": "8Y92",
+      "sha256": "244283038f0116895df04c04df609bfa9c52adbc055e090373e6eab974a82309",
+      "url": "https://files.rcsb.org/download/8Y92.cif.gz"
+    },
+    {
+      "bytes": 255180,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8YG7.cif.gz",
+      "pdb_id": "8YG7",
+      "sha256": "c088b3b070eb33c3834cee800185832ec6aab935fbd5f5dfebc06e57595d88af",
+      "url": "https://files.rcsb.org/download/8YG7.cif.gz"
+    },
+    {
+      "bytes": 274584,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/8ZP2.cif.gz",
+      "pdb_id": "8ZP2",
+      "sha256": "7874eaec6a9f64d59b0bfcf0dab9a607f91eb10876b1f5f3230db0d4d8e066be",
+      "url": "https://files.rcsb.org/download/8ZP2.cif.gz"
+    },
+    {
+      "bytes": 114764,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/9DRK.cif.gz",
+      "pdb_id": "9DRK",
+      "sha256": "0c2fd563a8c48b8088b829a7e7b5d4a189b034c0ce81fd6eb5b3e252fb5fcbf8",
+      "url": "https://files.rcsb.org/download/9DRK.cif.gz"
+    },
+    {
+      "bytes": 115149,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/9DRN.cif.gz",
+      "pdb_id": "9DRN",
+      "sha256": "ebe24223cc2c1ce51bff9c01d5c1156da00ddd8cb35bb2442659d54ba5956163",
+      "url": "https://files.rcsb.org/download/9DRN.cif.gz"
+    },
+    {
+      "bytes": 231481,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/9FA3.cif.gz",
+      "pdb_id": "9FA3",
+      "sha256": "888a3e2f426b1794a308f41dc93f960b40ae350dbd777a69e56cbe38e92571c1",
+      "url": "https://files.rcsb.org/download/9FA3.cif.gz"
+    },
+    {
+      "bytes": 232284,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/9FDI.cif.gz",
+      "pdb_id": "9FDI",
+      "sha256": "100850ecbde5003e3c7e3be57cbc82efe46f2ae36891a8d0ea1c9e03406b4161",
+      "url": "https://files.rcsb.org/download/9FDI.cif.gz"
+    },
+    {
+      "bytes": 97200,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/9GGT.cif.gz",
+      "pdb_id": "9GGT",
+      "sha256": "2a2d01173c74dc187340907276623193d5e6a570100c488168ab86a73e761999",
+      "url": "https://files.rcsb.org/download/9GGT.cif.gz"
+    },
+    {
+      "bytes": 95716,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/9GGU.cif.gz",
+      "pdb_id": "9GGU",
+      "sha256": "f1747e60226410db7e86d9a9a102ed6ca1f88814e4568ac752a3b7cbf3b83de0",
+      "url": "https://files.rcsb.org/download/9GGU.cif.gz"
+    },
+    {
+      "bytes": 373395,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/9HYH.cif.gz",
+      "pdb_id": "9HYH",
+      "sha256": "8a22fbbc4132a3724706616f0ac01564212e211332abd41ff5dd1d93f6f2c08f",
+      "url": "https://files.rcsb.org/download/9HYH.cif.gz"
+    },
+    {
+      "bytes": 110423,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/9J6V.cif.gz",
+      "pdb_id": "9J6V",
+      "sha256": "227c7ef49cc96f4c27529f5cedd4707676b0b68bb72d6c6d9df68462a0319d73",
+      "url": "https://files.rcsb.org/download/9J6V.cif.gz"
+    },
+    {
+      "bytes": 299962,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/9J71.cif.gz",
+      "pdb_id": "9J71",
+      "sha256": "d0cc28d04fcc215d7a24c76e3bbbe07edbed812e2683e63634edfc60c7add278",
+      "url": "https://files.rcsb.org/download/9J71.cif.gz"
+    },
+    {
+      "bytes": 116956,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/9JIR.cif.gz",
+      "pdb_id": "9JIR",
+      "sha256": "f759e1c10746639d89d33ac8a3212c9f8c7c0eb05071c5707f9ede3b56399010",
+      "url": "https://files.rcsb.org/download/9JIR.cif.gz"
+    },
+    {
+      "bytes": 118207,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/9JIS.cif.gz",
+      "pdb_id": "9JIS",
+      "sha256": "b6ce1b7c098a01e138d727102a745be3756bd14b4f2d07d8ddd4f06fdbb96228",
+      "url": "https://files.rcsb.org/download/9JIS.cif.gz"
+    },
+    {
+      "bytes": 263125,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/9LW5.cif.gz",
+      "pdb_id": "9LW5",
+      "sha256": "b8d09a219a9c657169d2ab216b6dd0af40b7dcca54f484d71adecc8bd61de6fd",
+      "url": "https://files.rcsb.org/download/9LW5.cif.gz"
+    },
+    {
+      "bytes": 81769,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/9OS6.cif.gz",
+      "pdb_id": "9OS6",
+      "sha256": "f7aa31b550c79a2446455bcf85e20d3f34ed54c11950b89cbd50ec2bab12ac14",
+      "url": "https://files.rcsb.org/download/9OS6.cif.gz"
+    },
+    {
+      "bytes": 189417,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/9R25.cif.gz",
+      "pdb_id": "9R25",
+      "sha256": "45de457ae9a548518333230cbfa53f43bf2c8fd8aaa58e7664b88f726c1b7e46",
+      "url": "https://files.rcsb.org/download/9R25.cif.gz"
+    },
+    {
+      "bytes": 472551,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/structures/9SQT.cif.gz",
+      "pdb_id": "9SQT",
+      "sha256": "b94d24c64d6a8dab92639aa31a52918e73e0d801d6b9631c2d9c714eca9736a4",
+      "url": "https://files.rcsb.org/download/9SQT.cif.gz"
+    }
+  ],
+  "schema_version": 1,
+  "selection_sha256": "90c4c4bf5195f530300ff5af1d225ef19f0a3579c4c5daa131ec32674c8c1242",
+  "selection_tsv": "/workspace/data/processed/gate03/metadata-sequence-mappings-v1.tsv",
+  "source": "RCSB PDB coordinate download service"
+}

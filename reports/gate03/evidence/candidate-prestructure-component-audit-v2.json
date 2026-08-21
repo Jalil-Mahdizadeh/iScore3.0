@@ -1,0 +1,43 @@
+{
+  "census": {
+    "component_series_sizes": [
+      211,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "edge_pairs": 3408,
+    "edge_relation_counts": {
+      "exact_nonempty_scaffold": 2638,
+      "exact_target_sequence": 213,
+      "full_sequence_identity": 537,
+      "ligand_tanimoto": 2329,
+      "local_site_identity": 795,
+      "shared_measurement_publication": 520,
+      "shared_reference_structure_publication": 73
+    },
+    "eligible_after_reference_ligand_quarantine": 224,
+    "exclusions": {
+      "fewer_than_8_after_reference_ligand_quarantine": 25,
+      "pKd_range_below_1_after_quarantine": 3
+    },
+    "prestructure_union_components": 13,
+    "strict_mapped_series": 252
+  },
+  "schema_version": 1,
+  "scope": "upper_bound_before_USalign_structural_edges",
+  "thresholds": {
+    "full_sequence_identity": 0.3,
+    "ligand_tanimoto": 0.35,
+    "local_site_identity": 0.5
+  }
+}

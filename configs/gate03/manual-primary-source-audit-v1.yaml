@@ -1,0 +1,70 @@
+schema_version: 1
+phase_id: gate03-bounded-interaction-identifiability-v1
+audit_id: gate03-primary-publication-audit-v1
+status: frozen_before_first_gate03_fit
+frozen_utc: 2026-08-21T10:18:00Z
+selection_rule: >
+  Twelve final-series publications were selected before model fitting to span
+  publication eras, receptor classes, assay-series depths, and affinity ranges.
+  For each series, the retained observations with the lowest and highest pKd
+  are audited. Ties are resolved by lexical observation_id. A paper is counted
+  as verified only from the primary article or its publisher-hosted supplement.
+minimum_publications: 12
+minimum_consensus_measurements: 24
+minimum_verified_fraction: 0.90
+selected_series:
+  - series_id: G3S-3c840aaf07c196c4
+    doi: 10.1021/jm030447t
+    target_class: extracellular_growth_factor
+    publication_era: 2000-2009
+  - series_id: G3S-6454ff7a6533168a
+    doi: 10.1021/jm0700159
+    target_class: soluble_transport_protein
+    publication_era: 2000-2009
+  - series_id: G3S-ff4e5bfc253b96ea
+    doi: 10.1021/jm7011485
+    target_class: soluble_transport_protein
+    publication_era: 2000-2009
+  - series_id: G3S-da8fc773cdc768de
+    doi: 10.1021/jm701433b
+    target_class: ligand_gated_ion_channel
+    publication_era: 2000-2009
+  - series_id: G3S-1d6a948c781cf9b6
+    doi: 10.1021/jm101121s
+    target_class: metabolic_enzyme
+    publication_era: 2010-2016
+  - series_id: G3S-441b618a57261680
+    doi: 10.1021/acs.biochem.5b00431
+    target_class: oxidoreductase_enzyme
+    publication_era: 2010-2016
+  - series_id: G3S-7258bf496c1f8d25
+    doi: 10.1021/acs.jmedchem.5b00680
+    target_class: nucleotide_processing_enzyme
+    publication_era: 2010-2016
+  - series_id: G3S-82d2cb1cb942342d
+    doi: 10.1021/acs.jmedchem.6b00085
+    target_class: molecular_chaperone
+    publication_era: 2010-2016
+  - series_id: G3S-0c2b41bb223d8483
+    doi: 10.1021/acs.jmedchem.8b01108
+    target_class: protein_protein_interaction_regulator
+    publication_era: 2017-2023
+  - series_id: G3S-0d6ea790d633fb5e
+    doi: 10.1021/acs.jmedchem.1c01975
+    target_class: protein_protein_interaction_regulator
+    publication_era: 2017-2023
+  - series_id: G3S-014e4407ee50fa22
+    doi: 10.1021/acs.jmedchem.3c00332
+    target_class: transcription_factor_domain
+    publication_era: 2017-2023
+  - series_id: G3S-1f6e9ae98fcbd583
+    doi: 10.1021/acs.jmedchem.3c00590
+    target_class: protease
+    publication_era: 2017-2023
+verification_fields:
+  - target_identity_and_construct_or_domain
+  - exact_Kd_value_and_units
+  - assay_method_and_conditions_when_reported
+  - ligand_identity_or_table_identifier
+  - relationship_of_reference_structure_to_assay_series
+replacement_rule: inaccessible_or_unresolved_publications_are_replaced_before_fit

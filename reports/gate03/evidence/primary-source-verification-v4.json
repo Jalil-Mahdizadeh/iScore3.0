@@ -1,0 +1,28 @@
+{
+  "candidates": {
+    "path": "/workspace/reports/gate03/evidence/primary-source-audit-candidates-v4.tsv",
+    "sha256": "4c062a0d92c2de23b4edc178e53c1e78dd98611e04aeac25c2e48353ab033440"
+  },
+  "checks": {
+    "all_publications_have_at_least_one_verified_measurement": true,
+    "minimum_consensus_measurements_24": true,
+    "minimum_publications_12": true,
+    "minimum_verified_fraction_0p90": true,
+    "source_manifest_exists": true
+  },
+  "consensus_measurements": 24,
+  "failed_or_unresolved_measurements": 2,
+  "publications": 12,
+  "registry": {
+    "path": "/workspace/configs/gate03/primary-source-verification-v4.yaml",
+    "sha256": "27be786b8b86fe3d1383fcae63453b2fb67f179e7424bdb913b00f29243854f5"
+  },
+  "schema_version": 1,
+  "source_manifest": {
+    "path": "/workspace/data/manifests/gate03-primary-sources-v4.json",
+    "sha256": "f8e4f1b0578658b332935179fae0bc1194f408510caa485e823b49cdce56c798"
+  },
+  "status": "PASS",
+  "verified_fraction": 0.9166666666666666,
+  "verified_measurements": 22
+}

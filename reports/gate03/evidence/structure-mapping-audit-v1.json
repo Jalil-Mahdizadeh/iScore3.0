@@ -1,0 +1,35 @@
+{
+  "census": {
+    "assessment_rows": 820,
+    "deep_series_with_local_holo_and_chemistry_spread": 455,
+    "failure_reasons": {
+      "no_mappable_druglike_contact_site": 4,
+      "sequence_mapping_threshold": 655
+    },
+    "passing_series_with_reference_ligand_in_assay_series": 44,
+    "series_with_strict_structure_site_mapping": 56
+  },
+  "inputs": {
+    "observations": {
+      "path": "/workspace/data/interim/gate03/bindingdb-deep-series-observations-v1.tsv",
+      "sha256": "39166e6600eab7b3d3c13ff816c685655186c8d26971657d07bd24679b55b129"
+    },
+    "summaries": {
+      "path": "/workspace/data/processed/gate03/bindingdb-deep-series-candidates-v1.tsv",
+      "sha256": "7330f544a70dacc953bf7a6ae33ac00c3a30cfe7d57fee55c2ec4ea030afac5b"
+    }
+  },
+  "outputs": {
+    "assessments": "/workspace/data/processed/gate03/structure-mapping-assessments-v1.tsv",
+    "audit": "/workspace/reports/gate03/evidence/structure-mapping-audit-v1.json",
+    "selected": "/workspace/data/processed/gate03/strict-structure-site-mappings-v1.tsv",
+    "sites": "/workspace/data/manifests/gate03-reference-sites-v1.json"
+  },
+  "schema_version": 1,
+  "thresholds": {
+    "minimum_aligned_residues": 70,
+    "minimum_entity_coverage": 0.9,
+    "minimum_identity": 0.98,
+    "minimum_site_residues": 8
+  }
+}

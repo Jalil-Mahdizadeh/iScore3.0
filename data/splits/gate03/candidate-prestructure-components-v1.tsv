@@ -1,0 +1,50 @@
+series_id	prestructure_component_id	component_series_count	retained_ligand_count	retained_nonempty_scaffold_count	retained_pKd_range	target_names	publication_id	pdb_id	alignment_identity	resolution_angstrom
+G3S-0ea60d28ec9de0d1	G3C-001	38	30	17	3.21146035	Carbonic anhydrase 2	doi:10.1016/j.bmc.2013.01.008	5LLH	1	1.9
+G3S-133873650167b89b	G3C-001	38	52	25	1.91994346	Ubiquitin carboxyl-terminal hydrolase 5	pmid:34648286	7MS6	1	1.55
+G3S-197e79eddc015708	G3C-001	38	18	7	2.71745341	Albumin	doi:10.1021/acs.jmedchem.1c01791	2BXG	1	2.7
+G3S-202cfb8f48e8667e	G3C-001	38	13	4	3.80843605	Son of sevenless homolog 1	doi:10.1021/acs.jmedchem.0c01949	7AVU	1	2.1
+G3S-202ee41d5bfc94ab	G3C-001	38	10	9	2.84009487	Albumin	doi:10.1021/jm7012826	4Z69	1	2.187
+G3S-237de531113c65a9	G3C-001	38	11	8	1.40201588	Albumin	doi:10.1016/j.bmcl.2015.05.099	3B9L	1	2.6
+G3S-2a143dedddd90694	G3C-001	38	13	7	1.56987531	2-amino-4-hydroxy-6-hydroxymethyldihydropteridine pyrophosphokinase	doi:10.1016/j.bmc.2014.02.022	4M5I	1	1.08
+G3S-2b9565c8dc248e0b	G3C-001	38	70	9	3.38886035	WD repeat-containing protein 5	doi:10.1021/acs.jmedchem.9b01411	6U5Y	1	1.532
+G3S-3aac8f4c8810a918	G3C-001	38	47	6	2.58357659	2-amino-4-hydroxy-6-hydroxymethyldihydropteridine diphosphokinase	doi:10.1021/acs.jmedchem.6b00002	5ETT	0.993670886	1.55
+G3S-43586287a9be2906	G3C-001	38	9	6	1.1903317	Tyrosine-protein phosphatase non-receptor type 1 [1-298]	doi:10.1021/jm0205696	1NO6	1	2.4
+G3S-449b0375368ffc0f	G3C-001	38	19	10	4.79934055	Choline kinase alpha	doi:10.1021/acs.jmedchem.5b01552	5EQP	0.98714653	2.35
+G3S-4c1b91d17d81423a	G3C-001	38	10	10	3.09442121	Cyclin-dependent kinase 2	doi:10.1038/nbt.1990	2FVD	1	1.85
+G3S-51759ead81a2003d	G3C-001	38	8	5	1.07918125	Transthyretin	doi:10.1021/acs.jmedchem.5b00544	4QXV	1	1.12
+G3S-57758481291b0ab8	G3C-001	38	10	9	3.46797788	Macrophage migration inhibitory factor	doi:10.1021/acs.jmedchem.0c01160	1LJT	1	2
+G3S-57f29a986d5123ab	G3C-001	38	29	22	2.5797836	WD repeat-containing protein 5	doi:10.1021/acs.jmedchem.0c00224	6UJ4	1	1.53
+G3S-6fbd681c38d3a2a2	G3C-001	38	22	13	3.13718157	Fascin	doi:10.1016/j.bmcl.2019.01.035	6I11	1	1.67
+G3S-72740991b3279a1e	G3C-001	38	11	10	2.84422333	Nucleosome-remodeling factor subunit BPTF	doi:10.1021/acs.jmedchem.1c00721	7LPK	1	1.39
+G3S-743b25bd8ed06539	G3C-001	38	10	5	2.38550113	Bromodomain-containing protein 4	doi:10.1021/acs.jmedchem.1c01119	7AXR	0.992125984	1.5
+G3S-7ad16b5be174b17e	G3C-001	38	9	3	1.36172784	Aurora kinase A	doi:10.1021/cb200508b	3UNZ	0.996415771	2.8
+G3S-7ad1fcb7cf793248	G3C-001	38	9	4	2.56427143	Macrophage migration inhibitory factor	doi:10.1021/acsmedchemlett.7b00384	4WR8	1	2.6
+G3S-7d63354277860a98	G3C-001	38	19	14	3.85387196	Heat shock protein HSP 90-alpha	doi:10.1016/j.bmcl.2011.08.001	3B28	1	1.35
+G3S-8337edc867d47bcc	G3C-001	38	8	6	2.79908516	Peregrin	doi:10.1021/acs.jmedchem.6b00215	5D7X	1	1.35
+G3S-8afbd56096fe1b47	G3C-001	38	13	12	1.4000595	ATPase family AAA domain-containing protein 2	doi:10.1021/acs.jmedchem.9b00673	6S57	1	1.82
+G3S-8fb4021f4421ad5b	G3C-001	38	21	8	2.25655945	Histone deacetylase 6	doi:10.1021/acs.jmedchem.3c00314	8G44	1	1.55
+G3S-9236ab9d73532a9d	G3C-001	38	25	12	1.2524796	Ubiquitin carboxyl-terminal hydrolase 5	doi:10.1021/acs.jmedchem.9b00988	6NFT	1	1.65
+G3S-a0b462ec59730874	G3C-001	38	14	11	3.2364577	D-3-phosphoglycerate dehydrogenase	pmid:33756126	5NZQ	1	1.5
+G3S-b47e17893c82aca6	G3C-001	38	9	9	1.92038424	Metallo-beta-lactamase VIM-2	doi:10.1021/acs.jmedchem.5b01289	5ACX	1	1.8
+G3S-b4e4bb5af0b8b2c1	G3C-001	38	17	7	5.57403127	L-lactate dehydrogenase A chain	doi:10.1021/jm201734r	4AL4	1	1.78
+G3S-be927832aa68b7af	G3C-001	38	44	4	2.22639638	2-amino-4-hydroxy-6-hydroxymethyldihydropteridine pyrophosphokinase	doi:10.1021/acs.jmedchem.6b00002	5ETP	1	1.05
+G3S-c3ad4039ad41a0e6	G3C-001	38	9	6	3.29350067	Casein kinase II subunit alpha	doi:10.1016/j.bmc.2017.04.037	5CU2	0.99695122	1.705
+G3S-dd8aacb779840031	G3C-001	38	26	25	2.53556536	Ephrin type-A receptor 2 [596-900]	doi:10.1021/acschembio.6b00709	5IA5	1	1.776
+G3S-de0a2a7c1887af78	G3C-001	38	14	13	1.30989438	Peregrin	doi:10.1016/j.ejmech.2018.05.037	5O5A	1	1.6
+G3S-e7f816aed727534b	G3C-001	38	42	6	3.19406463	Carbonic anhydrase 2	doi:10.1016/j.bmc.2013.09.029	4QSB	1	1.4
+G3S-e9de90d69aed4dc3	G3C-001	38	15	6	2.67778071	Beta-secretase 1	doi:10.1021/jm200544q	3RU1	0.99513382	2.3
+G3S-eb73c8235716ab91	G3C-001	38	28	18	5.15472821	Carbonic anhydrase 1	doi:10.1016/j.bmc.2013.01.008	4WR7	1	1.5
+G3S-eea0596469e3b875	G3C-001	38	11	7	5.49664339	Carbonic anhydrase 1	doi:10.1021/acs.jmedchem.5b01723	4WR7	1	1.5
+G3S-fb6b9c4b9d6641a2	G3C-001	38	14	6	1.69897	Bromodomain-containing protein 4	doi:10.1021/acs.jmedchem.5b01267	5D3L	0.992125984	1.5
+G3S-fb7593ab116f7278	G3C-001	38	11	10	1.66005194	Complement factor D	doi:10.1021/acsmedchemlett.8b00104	6FUG	1	2.21
+G3S-31c5deaefd112d8c	G3C-002	3	22	8	5.10983249	Galectin-3	doi:10.1021/acs.jmedchem.7b01626	6QLR	1	0.97
+G3S-a0eeacac2c679281	G3C-002	3	12	9	2.62838893	PA-I galactophilic lectin	doi:10.1016/j.ejmech.2022.115025	7Z63	1	1.75
+G3S-fffc85fa1583cd07	G3C-002	3	17	11	3.0281942	PA-I galactophilic lectin	pmid:26804741	4A6S	1	2.15
+G3S-2dbb6ecb3aae7915	G3C-003	2	18	12	1.62911822	Kelch-like ECH-associated protein 1	pmid:35687391	7XM2	1	2.3
+G3S-c2777118d038eb0b	G3C-003	2	8	2	2.85387196	Kelch-like ECH-associated protein 1	doi:10.1016/j.bmcl.2019.126852	6TYM	1	1.422
+G3S-3a4ac119455247b0	G3C-004	2	8	4	2.37358066	Peptidyl-prolyl cis-trans isomerase A	doi:10.1021/acs.jmedchem.6b01329	5T9Z	1	1.4
+G3S-a496fe9cc69b5d9f	G3C-004	2	23	17	2.15358392	Peptidyl-prolyl cis-trans isomerase A	doi:10.1021/acs.jmedchem.8b00802	6X4O	1	1.5
+G3S-3021d6a688e870ed	G3C-005	1	11	8	4.34985778	Gag-Pol polyprotein [489-587]	doi:10.1021/jm0105833	1HVI	0.98989899	1.8
+G3S-441b618a57261680	G3C-006	1	21	19	2.72153583	Nitric oxide synthase oxygenase	doi:10.1021/acs.biochem.5b00431	4UGY	0.991735537	1.801
+G3S-532f119ff68b2182	G3C-007	1	13	8	2.04575749	S-methyl-5'-thioadenosine phosphorylase	doi:10.1021/acs.jmedchem.8b01642	6DZ2	1	1.99
+G3S-e2e78f6cb47c8e4c	G3C-008	1	14	9	4.2787536	Polycomb protein EED	doi:10.1021/acs.jmedchem.7b00576	5U69	1	1.28

@@ -1,0 +1,48 @@
+{
+  "contract": {
+    "maximum_replicate_range_pKd": 0.5,
+    "minimum_ligands": 8,
+    "publication_is_required": true,
+    "series_key": [
+      "target_sequence_sha256",
+      "publication_id",
+      "normalized_pH",
+      "normalized_temperature_C"
+    ]
+  },
+  "outputs": {
+    "observations": "/workspace/data/interim/gate03/bindingdb-deep-series-observations-v1.tsv",
+    "summaries": "/workspace/data/processed/gate03/bindingdb-deep-series-candidates-v1.tsv"
+  },
+  "row_census": {
+    "base_eligible_rows": 56333,
+    "exact_positive_Kd_rows": 82308,
+    "excluded_invalid_smiles": 84,
+    "excluded_missing_stable_publication": 23734,
+    "excluded_nonexact_or_nonpositive_Kd": 3152191,
+    "excluded_not_single_chain": 2157,
+    "source_rows": 3234499
+  },
+  "schema_version": 1,
+  "series_census": {
+    "all_series": 10723,
+    "quarantined_conflicting_ligand_units": 4188,
+    "retained_deep_series": 1403,
+    "retained_deep_series_with_holo_candidate": 851,
+    "retained_deep_series_with_local_holo_candidate": 472,
+    "retained_observations": 24659,
+    "series_at_least_10_ligands": 1113,
+    "series_at_least_12_ligands": 933,
+    "series_at_least_15_ligands": 690,
+    "series_at_least_20_ligands": 430,
+    "series_at_least_30_ligands": 153,
+    "series_at_least_3_ligands": 3323,
+    "series_at_least_5_ligands": 2120,
+    "series_at_least_8_ligands": 1403
+  },
+  "source": {
+    "bytes": 8978755790,
+    "path": "/workspace/data/raw/bindingdb/202608/BindingDB_All.tsv",
+    "sha256": "4e9ce5470c71a040ba2bb49f85abe49c58df71f7802164b4caa1ef5a2412b7b9"
+  }
+}

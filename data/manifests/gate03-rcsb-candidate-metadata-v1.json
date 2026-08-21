@@ -1,0 +1,347 @@
+{
+  "acquired_utc": "2026-08-21T08:47:59.935776+00:00",
+  "files": [
+    {
+      "bytes": 445916,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0000.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "17b081d5df27872d1085a75cdadef5eabae48c0d74b46e038a63529e04db649a"
+    },
+    {
+      "bytes": 561100,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0001.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "819d8a241376f2c5c381228289830770d4ff2dc29d599336e528899649cccac8"
+    },
+    {
+      "bytes": 521802,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0002.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "7238357df2884c8b4f115842f9ffda01f0d9590710811fd18267afc4f629e595"
+    },
+    {
+      "bytes": 548256,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0003.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "727482a65aec740f03d97019ef983ba247a78dfa574770c8d7af0ea5f34f0fab"
+    },
+    {
+      "bytes": 584484,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0004.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "cd195ae1aeeda8b4c07a2972ccf22f56fa207042d2ec68c0fcda373ff53c771a"
+    },
+    {
+      "bytes": 471239,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0005.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "f3921c3c3284b8f1308980abf66e1a7d8dc02717e3761cfaa1c8fed69ec5f96d"
+    },
+    {
+      "bytes": 489562,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0006.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "2587a4f5cdd1084c92ac4d4faefda84175347cc837a470278837c84c49a3ddf6"
+    },
+    {
+      "bytes": 532236,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0007.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "e2298dc4ffc79ff7daaddb759b7171279a61fce5065ae034e409778fe59bc33b"
+    },
+    {
+      "bytes": 560283,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0008.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "deba69f2958d65e1ebb1f469752c1f3ad2ae03f6545d2dbafa7d1113fe25a8ab"
+    },
+    {
+      "bytes": 518854,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0009.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "29fd2ad3ea780e81f343d6abd713b1806798dae679f58dffff758ffc68ad6ad2"
+    },
+    {
+      "bytes": 481656,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0010.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "a825c74fdfe41fe7d2e69cb030f68f748512250ce9cf9e6fe0592e89777d5eda"
+    },
+    {
+      "bytes": 561617,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0011.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "8d2ab88402c62ff659a172a3897cfcf91dd0cf587faabda9802a27bf73263bc2"
+    },
+    {
+      "bytes": 734980,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0012.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "93c627e0be576cb0b498a562af647d19d5937c114f0539c31cba253454e14de7"
+    },
+    {
+      "bytes": 576822,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0013.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "b04e2b621d6e4164bd555c17ff80793e7d4fa4b5adc179673360d75a71319d64"
+    },
+    {
+      "bytes": 512904,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0014.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "9be50832e8bd0f6c0fe13a2a9cdf51b829c594c8d096d4cae69165dd18178d8f"
+    },
+    {
+      "bytes": 619177,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0015.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "81c8eab55c567a56fdd9f7d141c383b6e816eefbef61187e6a011304ff9d7dfa"
+    },
+    {
+      "bytes": 533078,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0016.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "39417b84ea7ef747276e839f6f50005d0493fc60011a0b4a394835eb5e9c2fd5"
+    },
+    {
+      "bytes": 583894,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0017.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "20a839724dc4ead638ed5cb5cf1a3165f5ffdcfbe0fc6f1854458710b467f0d0"
+    },
+    {
+      "bytes": 569036,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0018.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "9583a25d95f1c0d390fa8cf3478e050dae9b5e7bc098bc740fa42fe86f69de27"
+    },
+    {
+      "bytes": 626878,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0019.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "a1bafcee9eb418679a4cf1d0cf0f74e0f2e72b9edb9b5251740a399c0d32eb34"
+    },
+    {
+      "bytes": 609890,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0020.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "485f59a91294b5305e99d10c514a3e323c4f95aa91eaefc26f6bdff117af6a62"
+    },
+    {
+      "bytes": 674684,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0021.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "edb30e995f69471a7cd4dd7f50a1d46f8a11f405c60a56d24a672f66c342a318"
+    },
+    {
+      "bytes": 633748,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0022.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "d93a19048edf72f6c75c6acfb6969121064a4fadd537712ae38d4baeba18726f"
+    },
+    {
+      "bytes": 2388040,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0023.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "06e4f52db05ece9dbf91c60e3531ceb86b6a3374fc307c0d50b21a9b5152b5eb"
+    },
+    {
+      "bytes": 767163,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0024.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "a7fb5464d059a314179c133fbf760fe72fe3461d7bfa0b628809a541c8e5e52a"
+    },
+    {
+      "bytes": 584291,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0025.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "e41a2ff69f0a775cf0d7513631042d19aae4e35f99c180f1da7c6b7962ddcfee"
+    },
+    {
+      "bytes": 527876,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0026.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "b2fe7f4df0e93cd61e57c4816a861434d6318e7d3c3098c398a1a9f09b1c15d2"
+    },
+    {
+      "bytes": 567448,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0027.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "236674607d2ab85cd0bd95b756941711cd00aa3aab6aec6ddda7f7480df09dcf"
+    },
+    {
+      "bytes": 506545,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0028.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "9eea4dcb5f053bb806afbdc3fc5d8108dbbeaef43312c921301fdd136e0542c4"
+    },
+    {
+      "bytes": 629218,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0029.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "ccd6087ab0061d2c9896a6c9fb348302f543f3f2e269af45e016d6f6b541efbe"
+    },
+    {
+      "bytes": 579704,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0030.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "f3ba35df3cf9797a92d0a6a2e60f55301a927e38ddd8e6f38df0b7b4206abf12"
+    },
+    {
+      "bytes": 577543,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0031.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "6dbd762a0a2bad8bd0d40e6e955f985671879c4b43eae848df2406a3bda81986"
+    },
+    {
+      "bytes": 594636,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0032.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "057b761bfadfccf98a106cc4658cbb4becc191a3fab412a8b8baa0d6d5653eee"
+    },
+    {
+      "bytes": 499408,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0033.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "e6c975497fba39fb0d737ea2d9e1667b4e6d9084e219e000394802b5ecf88b69"
+    },
+    {
+      "bytes": 555022,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0034.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "2bf74ad6d4d96cf3d53c877765d36647fa95622d99d1ec84ac20d36d0547a30d"
+    },
+    {
+      "bytes": 617376,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0035.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "af85e2cd076bffd123551eb2f04f1b3ae1cd95fe00c257224b497c0b1030256a"
+    },
+    {
+      "bytes": 514371,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0036.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "3c5b320cb1ccabff3544033e4a73b9ac7eead945c6ecbdbe7d2ae6b36f56bcab"
+    },
+    {
+      "bytes": 542504,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0037.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "cb1efb32a44a68957be938beea55fc8f75f8bdaeff6e2be8e0e1a470d4c82b97"
+    },
+    {
+      "bytes": 624001,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0038.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "cc21126bcbebcd3a7feac3397bf285441adc5539a8cabd04abc907f2e76204f4"
+    },
+    {
+      "bytes": 625221,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0039.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "deae8638603558539547c8207ef9d9c5cf37e2caad2999d5fa2a6b771da5a7b3"
+    },
+    {
+      "bytes": 825799,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0040.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "7a178ef71d476d7530c76c202c88c1d9f7a67e449d6cca26335137c394a30bd2"
+    },
+    {
+      "bytes": 733754,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0041.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "ece0f3fb582208d239b7fbe0ca01cf1332cd0b2243be7750b20a514aea69e839"
+    },
+    {
+      "bytes": 804091,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0042.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "343510cf4efb279db5999ae941595872349188b43393554eb76e3704693dd2a8"
+    },
+    {
+      "bytes": 767318,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0043.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "dd4fde0cce1d995c251cc6d51be90c5cf4b4f9e6094f0c984574dbf796486e38"
+    },
+    {
+      "bytes": 675387,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0044.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "e2860637150652f719d81e4f51b94279dadb17b96e472216a2e6c041f00a7fc9"
+    },
+    {
+      "bytes": 724023,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0045.json",
+      "requested_ids": 100,
+      "returned_entries": 100,
+      "sha256": "c9ae60da66e751f2c549d37465b4983b15c5c32e9082ce4f304cb3a124820c0d"
+    },
+    {
+      "bytes": 91638,
+      "path": "/workspace/data/raw/rcsb/gate03-2026-08-21/metadata/entries-0046.json",
+      "requested_ids": 20,
+      "returned_entries": 20,
+      "sha256": "6d983043e180a5d12bb1592a3a9da176dca8966b6193a5e40bb9e546fbcc17b3"
+    }
+  ],
+  "graphql_query": "query Gate01Entries($ids: [String!]!) {\n  entries(entry_ids: $ids) {\n    rcsb_id\n    rcsb_accession_info { deposit_date initial_release_date revision_date }\n    rcsb_binding_affinity { comp_id type value unit }\n    exptl { method }\n    rcsb_entry_info { resolution_combined }\n    rcsb_primary_citation { title pdbx_database_id_DOI pdbx_database_id_PubMed }\n    polymer_entities {\n      rcsb_id\n      entity_poly { pdbx_seq_one_letter_code_can rcsb_entity_polymer_type }\n      rcsb_polymer_entity { pdbx_description pdbx_mutation pdbx_fragment }\n      rcsb_polymer_entity_container_identifiers {\n        entity_id asym_ids auth_asym_ids\n        reference_sequence_identifiers { database_accession database_name }\n      }\n      rcsb_entity_source_organism { ncbi_scientific_name ncbi_taxonomy_id }\n    }\n    nonpolymer_entities {\n      rcsb_id\n      rcsb_nonpolymer_entity_container_identifiers {\n        entity_id asym_ids auth_asym_ids nonpolymer_comp_id\n      }\n      nonpolymer_comp {\n        chem_comp { id type formula_weight formula }\n        rcsb_chem_comp_descriptor { SMILES SMILES_stereo InChI InChIKey }\n      }\n    }\n  }\n}",
+  "missing_or_obsolete_ids": [],
+  "requested_ids": 4620,
+  "returned_ids": 4620,
+  "schema_version": 1,
+  "selection_source": {
+    "eligible_series": 813,
+    "path": "/workspace/data/processed/gate03/bindingdb-deep-series-candidates-v1.tsv",
+    "sha256": "7330f544a70dacc953bf7a6ae33ac00c3a30cfe7d57fee55c2ec4ea030afac5b"
+  },
+  "snapshot_semantics": "mutable_service_response_cached_immutably",
+  "source": "RCSB PDB GraphQL Data API",
+  "source_url": "https://data.rcsb.org/graphql"
+}

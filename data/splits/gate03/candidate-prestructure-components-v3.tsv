@@ -1,0 +1,225 @@
+series_id	prestructure_component_id	component_series_count	retained_ligand_count	retained_nonempty_scaffold_count	retained_pKd_range	scaffold_cluster_count	eligible_scaffold_cluster_count	target_names	publication_id	pdb_id	alignment_identity	resolution_angstrom
+G3S-014e4407ee50fa22	G3C-001	211	36	8	4.56507643	1	0	Endothelial PAS domain-containing protein 1	doi:10.1021/acs.jmedchem.3c00332	8CK4	0.991071429	2.29
+G3S-03ecbf7361b64421	G3C-001	211	10	10	2.01360318	3	0	Retinal rod rhodopsin-sensitive cGMP 3',5'-cyclic phosphodiesterase subunit delta	doi:10.1021/acs.jmedchem.7b01243	5X74	0.993333333	2.25
+G3S-05e5316778a15c3d	G3C-001	211	43	43	4.5563025	34	6	Epithelial discoidin domain-containing receptor 1	doi:10.1038/nbt.1990	5BVW	1	1.94
+G3S-0b24543ec45bef8f	G3C-001	211	15	13	1.60296383	3	0	Nicotinamide phosphoribosyltransferase	doi:10.1016/j.bmcl.2013.12.062	4N9B	1	2.859
+G3S-0bab6c6bc8b2a701	G3C-001	211	27	27	3.16350213	23	3	Dual specificity mitogen-activated protein kinase kinase 1	doi:10.1038/nbt.1990	4U7Z	1	2.805
+G3S-0c2b41bb223d8483	G3C-001	211	31	16	2.06694679	1	0	Son of sevenless homolog 1	doi:10.1021/acs.jmedchem.8b01108	6D55	1	1.68
+G3S-0c3aa3eea1cd9401	G3C-001	211	13	8	3.05695257	3	3	GTPase KRas	pmid:40162713	9GGT	0.99408284	1.71
+G3S-0d24eaa6dbc2665b	G3C-001	211	23	15	2.84509804	1	0	Carbonic anhydrase 2	doi:10.1021/jm00039a023	3V2M	1	1.471
+G3S-0d3a03dece105f57	G3C-001	211	13	9	2.9015136	1	0	Galectin-3	doi:10.1021/jm801077j	4BLJ	1	1.2
+G3S-0d5679149226e010	G3C-001	211	14	4	1.99270076	2	0	Tyrosine-protein kinase Lck	doi:10.1016/s0960-894x(99)00403-5	6PDJ	1	1.81
+G3S-0d6ea790d633fb5e	G3C-001	211	32	19	4.15842417	1	0	Kelch-like ECH-associated protein 1	doi:10.1021/acs.jmedchem.1c01975	7Q6Q	0.993079585	2.55
+G3S-0db14b95f9edbd42	G3C-001	211	21	14	4.81023252	5	4	Protein Mdm4	pmid:39185935	8IA5	1	1.93
+G3S-0e7a45fa2fa81e87	G3C-001	211	47	47	5.40952188	33	4	Serine/threonine-protein kinase 10	doi:10.1038/nbt.1990	5AJQ	1	2.2
+G3S-0ea60d28ec9de0d1	G3C-001	211	30	18	3.21146035	3	0	Carbonic anhydrase 2	doi:10.1016/j.bmc.2013.01.008	4WW6	1	1.06
+G3S-0f56c3503b93c6f6	G3C-001	211	9	8	2.69291468	3	0	Bromodomain-containing protein 4	doi:10.1021/acs.jmedchem.0c00478	6S6K	0.992125984	1.4
+G3S-123baf453e4557f4	G3C-001	211	11	7	1.67783499	2	0	Dihydropteroate synthase	doi:10.1021/jm501417f	5U12	1	1.839
+G3S-133873650167b89b	G3C-001	211	52	25	1.91994346	1	0	Ubiquitin carboxyl-terminal hydrolase 5	pmid:34648286	7MS6	1	1.55
+G3S-16762270570b655a	G3C-001	211	42	4	3.82260651	2	0	Carbonic anhydrase 1	doi:10.3109/14756366.2012.757223	1AZM	1	2
+G3S-17044cfb391f4718	G3C-001	211	22	5	5.29534715	2	0	cAMP-dependent protein kinase catalytic subunit alpha	doi:10.1021/jm800797n	3VQH	0.98005698	1.95
+G3S-197e79eddc015708	G3C-001	211	17	6	2.67966485	1	0	Albumin	doi:10.1021/acs.jmedchem.1c01791	8YG7	1	2.09
+G3S-1a63362a8e320bf6	G3C-001	211	13	13	3.92830678	11	1	Serine/threonine-protein kinase SIK3 [59-1321]	doi:10.1038/nbt.1990	8R4Q	0.990825688	2.838
+G3S-1b71410cb988afba	G3C-001	211	8	7	2.83958895	7	1	Cytochrome P450 2A6	doi:10.1124/dmd.112.045161	1Z11	1	2.05
+G3S-1c0e277b223f8a0b	G3C-001	211	9	9	3.14612804	7	2	Tyrosine-protein kinase JAK2	doi:10.1038/nbt1358	5USY	1	2
+G3S-1d6a948c781cf9b6	G3C-001	211	9	6	2.86530143	3	1	Pantothenate synthetase	doi:10.1021/jm101121s	3LE8	0.993333333	1.7
+G3S-1da601ed70459098	G3C-001	211	14	8	3.21427308	3	2	Carbonic anhydrase 13	doi:10.1021/acs.jmedchem.5b01723	5LLA	1	1.5
+G3S-1da6d0a5126035e0	G3C-001	211	8	5	2.21441664	2	0	CREB-binding protein	doi:10.1021/acs.jmedchem.5b00172	4TQN	1	1.7
+G3S-1eca1a7c2461b4f9	G3C-001	211	14	8	3.34678749	2	2	Carbonic anhydrase 12	doi:10.1021/acs.jmedchem.7b01408	5LL5	1	1.42
+G3S-202cfb8f48e8667e	G3C-001	211	13	4	3.80843605	2	0	Son of sevenless homolog 1	doi:10.1021/acs.jmedchem.0c01949	6SCM	1	1.866
+G3S-202ee41d5bfc94ab	G3C-001	211	10	10	2.84009487	10	0	Albumin	doi:10.1021/jm7012826	2BXF	1	2.95
+G3S-226cff22b3a4602b	G3C-001	211	18	10	3.22530928	5	1	Sodium-dependent dopamine transporter	doi:10.1016/s0960-894x(98)00062-6	9J6V	1	3.5
+G3S-2354cf7fdafa877f	G3C-001	211	13	10	1.38021124	1	0	WD repeat-containing protein 5	doi:10.1021/acs.jmedchem.5b01630	4IA9	1	1.66
+G3S-237de531113c65a9	G3C-001	211	11	8	1.40201588	4	3	Albumin	doi:10.1016/j.bmcl.2015.05.099	3B9M	1	2.7
+G3S-23caf31f263f2dc4	G3C-001	211	9	7	2.56863624	1	0	Carbonic anhydrase 2	doi:10.1021/acs.jmedchem.7b00606	5VGY	1	1.39
+G3S-250da33ec2756fd5	G3C-001	211	42	5	4.37145812	3	0	Carbonic anhydrase 2	doi:10.3109/14756366.2012.757223	3M98	1	1.5
+G3S-26ebb6597af3437e	G3C-001	211	17	17	1.89526465	11	3	Proto-oncogene tyrosine-protein kinase Src	doi:10.1038/nbt1358	3QLG	0.989399293	2.75
+G3S-2a143dedddd90694	G3C-001	211	13	7	1.56987531	3	0	2-amino-4-hydroxy-6-hydroxymethyldihydropteridine pyrophosphokinase	doi:10.1016/j.bmc.2014.02.022	4M5I	1	1.08
+G3S-2b9565c8dc248e0b	G3C-001	211	70	9	3.38886035	1	0	WD repeat-containing protein 5	doi:10.1021/acs.jmedchem.9b01411	6U6W	1	1.2
+G3S-2c433f19c7979794	G3C-001	211	23	22	4.01848341	20	3	Epithelial discoidin domain-containing receptor 1	doi:10.1038/nbt1358	5BVW	1	1.94
+G3S-2dbb6ecb3aae7915	G3C-001	211	18	12	1.62911822	1	0	Kelch-like ECH-associated protein 1	pmid:35687391	9J71	1	2.993
+G3S-3021d6a688e870ed	G3C-001	211	11	8	4.34985778	10	1	Gag-Pol polyprotein [489-587]	doi:10.1021/jm0105833	1HVI	0.98989899	1.8
+G3S-3046f9edaa2c72bf	G3C-001	211	8	8	3.51410482	1	0	von Hippel-Lindau disease tumor suppressor	doi:10.1021/ml400296c	4BKT	1	2.35
+G3S-31c5deaefd112d8c	G3C-001	211	22	8	5.10983249	1	0	Galectin-3	doi:10.1021/acs.jmedchem.7b01626	6QLR	1	0.97
+G3S-320a13ed3c3022cf	G3C-001	211	11	6	5.33099322	2	0	Rho-associated protein kinase 2	doi:10.1016/j.bmcl.2012.03.101	2F2U	0.982543641	2.4
+G3S-32c08173ec26bea9	G3C-001	211	13	7	1.30103	3	3	Carbonic anhydrase 9	doi:10.1021/acs.jmedchem.7b01408	6FE1	0.992217899	1.95
+G3S-34388e65af3203f8	G3C-001	211	19	11	5.12410275	6	2	Sodium-dependent serotonin transporter	doi:10.1016/s0960-894x(98)00062-6	5I6X	0.987179487	3.14
+G3S-36aa31d3bfd96971	G3C-001	211	8	2	1.37161107	1	0	Carbonic anhydrase 2	doi:10.1021/acs.jmedchem.5b00043	4K13	0.980544747	1.6
+G3S-376e479668e27e8e	G3C-001	211	8	4	2.25181197	3	0	Serine/threonine-protein kinase pim-1	doi:10.1021/jm0504858	4LMU	1	2.38
+G3S-38a11588e38c3bdc	G3C-001	211	12	12	2.41497335	9	2	Lanosterol 14-alpha demethylase	doi:10.1128/aac.00311-07	1EA1	1	2.21
+G3S-3a221f3683b786e1	G3C-001	211	10	8	3.24303805	4	2	CD44 antigen	doi:10.1021/jm5000276	4MRH	1	1.12
+G3S-3aac8f4c8810a918	G3C-001	211	47	6	2.58357659	1	0	2-amino-4-hydroxy-6-hydroxymethyldihydropteridine diphosphokinase	doi:10.1021/acs.jmedchem.6b00002	5ETT	0.993670886	1.55
+G3S-3bfb2092ea669ef8	G3C-001	211	12	9	1.71688159	2	1	Histone-lysine N-methyltransferase NSD2	doi:10.1021/acs.jmedchem.0c01768	6UE6	1	2.4
+G3S-3c0a0829e923c91d	G3C-001	211	32	28	3.61008784	23	6	Dual specificity tyrosine-phosphorylation-regulated kinase 1A	pmid:36876904	7O7K	1	1.82
+G3S-3c840aaf07c196c4	G3C-001	211	17	12	5.88169184	3	0	Fibroblast growth factor 1	doi:10.1021/jm030447t	1RML	1	nan
+G3S-3e5852180ea6848b	G3C-001	211	9	8	1.62838893	8	1	Protein-tyrosine kinase 6	doi:10.1038/nbt1358	5H2U	0.996183206	2.24
+G3S-40a467bbafdc73d8	G3C-001	211	42	6	2.3643425	3	0	Carbonic anhydrase 12	doi:10.1016/j.bmc.2013.09.029	4KP5	1	1.45
+G3S-40aaf3872e7ba482	G3C-001	211	25	3	2.00432137	1	0	Heat shock protein 75 kDa, mitochondrial	pmid:37307624	4Z1F	1	2.703
+G3S-4273fdd1b3b53cb7	G3C-001	211	15	15	1.99383969	12	2	Wee1-like protein kinase	doi:10.1038/nbt.1990	5VC3	1	1.97
+G3S-430a406ff1fdb9e6	G3C-001	211	8	7	7.25527251	6	2	AP2-associated protein kinase 1	pmid:33970631	5L4Q	1	1.97
+G3S-43586287a9be2906	G3C-001	211	9	6	1.1903317	1	0	Tyrosine-protein phosphatase non-receptor type 1 [1-298]	doi:10.1021/jm0205696	1NO6	1	2.4
+G3S-449b0375368ffc0f	G3C-001	211	19	10	4.79934055	4	0	Choline kinase alpha	doi:10.1021/acs.jmedchem.5b01552	5EQP	0.98714653	2.35
+G3S-45df1c88b560ec4f	G3C-001	211	12	11	3.38021124	10	2	Cyclin-G-associated kinase	doi:10.1038/nbt1068	5Y7Z	1	2.804
+G3S-46586ac6273ff065	G3C-001	211	19	19	2.50750388	18	1	Tyrosine-protein kinase Fes/Fps	doi:10.1038/nbt.1990	4E93	1	1.84
+G3S-471c43af0ba04cbb	G3C-001	211	54	31	2.51188336	2	0	Bromodomain-containing protein 4	doi:10.1016/j.bmcl.2018.08.039	6E4A	0.992248062	1.26
+G3S-496a96ccb09a0048	G3C-001	211	19	11	4.37930552	6	2	Sodium-dependent noradrenaline transporter	doi:10.1016/s0960-894x(98)00062-6	8ZP2	1	2.4
+G3S-49ed2ea8183b105c	G3C-001	211	14	8	3.79588002	3	0	Carbonic anhydrase 2	doi:10.1016/j.bmc.2010.09.011	3MHO	1	1.15
+G3S-4be267e9de455895	G3C-001	211	9	7	4.82487599	7	2	Kelch-like ECH-associated protein 1	doi:10.1021/acs.jmedchem.9b00723	4XMB	1	2.428
+G3S-4c1b91d17d81423a	G3C-001	211	10	10	3.09442121	8	2	Cyclin-dependent kinase 2	doi:10.1038/nbt.1990	2FVD	1	1.85
+G3S-4e6759c45d9a6b9b	G3C-001	211	10	10	3.25644786	9	1	Aurora kinase A	doi:10.1038/nbt1358	5DPV	0.996226415	2.285
+G3S-4f4f25ce439afb73	G3C-001	211	14	6	2.14612804	1	0	Carbonic anhydrase 2	doi:10.1016/j.bmc.2010.09.016	3M98	1	1.5
+G3S-502e01631feedf35	G3C-001	211	20	20	3.06550155	18	2	Protein-tyrosine kinase 6	doi:10.1038/nbt.1990	5H2U	0.996183206	2.24
+G3S-517155e5e2356899	G3C-001	211	11	4	2.1931246	3	0	Beta-secretase 1	doi:10.1021/jm201441k	2OHL	0.995024876	2.65
+G3S-51759ead81a2003d	G3C-001	211	8	5	1.07918125	5	0	Transthyretin	doi:10.1021/acs.jmedchem.5b00544	4QXV	1	1.12
+G3S-55930eb8673c0eee	G3C-001	211	23	23	3.21085337	20	3	Tyrosine-protein kinase BTK	doi:10.1038/nbt.1990	3OCT	0.996212121	1.95
+G3S-57758481291b0ab8	G3C-001	211	10	9	3.46797788	7	3	Macrophage migration inhibitory factor	doi:10.1021/acs.jmedchem.0c01160	1LJT	1	2
+G3S-57f29a986d5123ab	G3C-001	211	29	22	2.5797836	1	0	WD repeat-containing protein 5	doi:10.1021/acs.jmedchem.0c00224	6UJ4	1	1.53
+G3S-5848d835f7a47085	G3C-001	211	11	11	2.64664212	4	0	Choline kinase alpha	doi:10.1016/j.ejmech.2020.112797	4CG8	1	1.75
+G3S-59125c7fdb97217d	G3C-001	211	30	18	3.27083521	3	0	Carbonic anhydrase 12	doi:10.1016/j.bmc.2013.01.008	5MSB	1	1.3
+G3S-5938ff8da5e084b3	G3C-001	211	11	8	6.7212464	5	4	B-cell lymphoma 6 protein	doi:10.1021/acs.jmedchem.7b00313	7GUD	1	1.8
+G3S-5dd0b4d457e8529a	G3C-001	211	9	9	4.40509374	8	1	Epidermal growth factor receptor	doi:10.1038/nbt1358	9OS6	1	2.75
+G3S-61544361ce31eac2	G3C-001	211	15	14	1.77815125	2	0	Sterol 14-alpha demethylase	doi:10.1016/j.chembiol.2007.10.011	2WX2	1	2.27
+G3S-641793e1a215b11a	G3C-001	211	10	8	1.60872974	1	0	Retinoic acid receptor RXR-beta	doi:10.1021/jm00016a018	1H9U	0.982142857	2.7
+G3S-6454ff7a6533168a	G3C-001	211	9	3	5.8573325	3	0	Transthyretin	doi:10.1021/jm0700159	4ABV	1	1.8
+G3S-69e1fcfda0e309e8	G3C-001	211	20	20	3.67063641	17	3	Ephrin type-A receptor 4	doi:10.1038/nbt.1990	2Y6O	0.996563574	1.543
+G3S-6e529abe43b8b245	G3C-001	211	36	36	4	24	5	Tyrosine-protein kinase ABL2	doi:10.1038/nbt.1990	4XLI	0.996268657	2.5
+G3S-6f45b1bb0dddfac7	G3C-001	211	12	9	2.29067768	1	0	Tyrosine-protein kinase JAK2	pmid:35586418	5USY	1	2
+G3S-6fbd681c38d3a2a2	G3C-001	211	22	12	2.56584782	2	0	Fascin	doi:10.1016/j.bmcl.2019.01.035	6I18	1	1.49
+G3S-70ec124b3b4163f0	G3C-001	211	20	9	1.72893323	1	0	Histone deacetylase 7	doi:10.1016/j.bmc.2011.11.041	3C0Z	1	2.1
+G3S-7258bf496c1f8d25	G3C-001	211	33	22	4.50664997	3	0	Poly [ADP-ribose] polymerase 2	doi:10.1021/acs.jmedchem.5b00680	4ZZY	1	2.2
+G3S-72740991b3279a1e	G3C-001	211	10	9	2.50537606	6	2	Nucleosome-remodeling factor subunit BPTF	doi:10.1021/acs.jmedchem.1c00721	8OU2	1	1.6
+G3S-743b25bd8ed06539	G3C-001	211	10	5	2.38550113	1	0	Bromodomain-containing protein 4	doi:10.1021/acs.jmedchem.1c01119	7AXR	0.992125984	1.5
+G3S-780095ecb7b0162a	G3C-001	211	18	18	2.9765189	16	1	Tyrosine-protein kinase SYK	doi:10.1038/nbt.1990	3FQS	1	2.1
+G3S-78b1342acf926183	G3C-001	211	11	5	2.33210395	2	0	Kelch-like ECH-associated protein 1	pmid:35549469	6V6Z	0.993079585	1.6
+G3S-7a52256b4ab19efa	G3C-001	211	22	22	3.23608919	20	2	Ephrin type-A receptor 2	doi:10.1038/nbt.1990	5I9Y	1	1.228
+G3S-7ad16b5be174b17e	G3C-001	211	9	3	1.36172784	2	0	Aurora kinase A	doi:10.1021/cb200508b	3UOD	0.996415771	2.5002
+G3S-7ad1fcb7cf793248	G3C-001	211	9	4	2.56427143	2	0	Macrophage migration inhibitory factor	doi:10.1021/acsmedchemlett.7b00384	4WR8	1	2.6
+G3S-7b63d80d43bd8871	G3C-001	211	16	9	2	2	0	UDP-3-O-acyl-N-acetylglucosamine deacetylase	doi:10.1021/acs.jmedchem.8b01287	6MAE	1	1.8
+G3S-7c62eb923238b778	G3C-001	211	10	9	2.58696218	1	0	Retinoic acid receptor RXR-alpha	doi:10.1021/jm00016a018	3H0A	1	2.1
+G3S-7c94d7d05a9d2f85	G3C-001	211	37	37	4.66005194	24	4	Proto-oncogene tyrosine-protein kinase Src	doi:10.1038/nbt.1990	4MXO	1	2.105
+G3S-7d63354277860a98	G3C-001	211	19	14	3.85387196	7	1	Heat shock protein HSP 90-alpha	doi:10.1016/j.bmcl.2011.08.001	3B28	1	1.35
+G3S-7f4093cbfc6a5ba7	G3C-001	211	21	11	4.50657623	2	0	Epidermal growth factor receptor	doi:10.1021/acs.jmedchem.9b00350	4WKQ	1	1.85
+G3S-82d2cb1cb942342d	G3C-001	211	37	10	2.48012676	1	0	Heat shock protein HSP 90-alpha	doi:10.1021/acs.jmedchem.6b00085	5VYY	1	1.792
+G3S-82da8121de6eeecd	G3C-001	211	9	6	5.98296666	6	2	Cyclin-G-associated kinase	pmid:33970631	5Y7Z	1	2.804
+G3S-8337edc867d47bcc	G3C-001	211	8	6	2.79908516	6	0	Peregrin	doi:10.1021/acs.jmedchem.6b00215	5D7X	1	1.35
+G3S-8379ede84125ecb5	G3C-001	211	27	15	2.88605665	5	0	Cyclin-G-associated kinase	doi:10.1021/jm501759m	5Y7Z	1	2.804
+G3S-83ba16a2ad335359	G3C-001	211	8	8	2.04139269	1	0	Lethal(3)malignant brain tumor-like protein 3	doi:10.1039/c3md00197k	4L59	1	2.29
+G3S-8447070a69d51ab5	G3C-001	211	9	9	1.58827171	8	1	Ephrin type-A receptor 2	doi:10.1038/nbt1358	5I9Y	1	1.228
+G3S-8468ef8a559bdade	G3C-001	211	42	5	2.74472749	3	0	Carbonic anhydrase 12	doi:10.3109/14756366.2012.757223	5LL5	1	1.42
+G3S-85936f03e9d82fdc	G3C-001	211	24	22	5.31887959	19	3	Glycogen synthase kinase-3 beta	pmid:36876904	7Z1G	1	2.85
+G3S-86c78a56d4596857	G3C-001	211	42	5	3.30103	3	0	Carbonic anhydrase 13	doi:10.3109/14756366.2012.757223	5LLA	1	1.5
+G3S-88577c122fa18c76	G3C-001	211	19	3	1.82390874	1	0	Endothelial PAS domain-containing protein 1	doi:10.1021/jm301847z	4GS9	0.991071429	1.72
+G3S-8908716879facb98	G3C-001	211	19	9	4.22184875	2	0	Cyclin-G-associated kinase	doi:10.1021/acs.jmedchem.9b00350	5Y7Z	1	2.804
+G3S-8afbd56096fe1b47	G3C-001	211	13	12	1.4000595	2	0	ATPase family AAA domain-containing protein 2	doi:10.1021/acs.jmedchem.9b00673	6S57	1	1.82
+G3S-8c3d32f3825ec8c3	G3C-001	211	18	7	1.42780508	1	0	WD repeat-containing protein 5	doi:10.1021/ml300467n	4IA9	1	1.66
+G3S-8f554307cbbdbf67	G3C-001	211	18	13	5.35410844	4	4	E3 ubiquitin-protein ligase Mdm2	pmid:39185935	5C5A	1	1.146
+G3S-8fb4021f4421ad5b	G3C-001	211	21	8	2.25655945	1	0	Histone deacetylase 6	doi:10.1021/acs.jmedchem.3c00314	8G44	1	1.55
+G3S-91dd2c635f86b568	G3C-001	211	20	7	3.69585677	1	0	Type 1 fimbrin D-mannose specific adhesin	pmid:38367495	5CGB	1	1.6
+G3S-9236ab9d73532a9d	G3C-001	211	25	12	1.2524796	5	3	Ubiquitin carboxyl-terminal hydrolase 5	doi:10.1021/acs.jmedchem.9b00988	6NFT	1	1.65
+G3S-929205c457d12bfd	G3C-001	211	19	3	3.74066864	2	0	Trp operon repressor	pmid:3549712	6F7G	1	1.656
+G3S-9589527ecb9747c1	G3C-001	211	21	10	2.22724378	1	0	Histone deacetylase-like amidohydrolase	doi:10.1016/j.bmc.2011.11.041	5G1A	0.997282609	1.42
+G3S-96b21ba0d0525be3	G3C-001	211	11	11	2.7424357	8	3	BDNF/NT-3 growth factors receptor	doi:10.1038/nbt1358	4AT5	1	1.71
+G3S-9838f6e0d45906f5	G3C-001	211	10	7	1.82865038	2	0	Bromodomain-containing protein 4	pmid:38295759	4QB3	0.992125984	0.94
+G3S-9d0d3bffdbe8c8bd	G3C-001	211	24	9	3.62324929	1	0	Galectin-8	doi:10.1016/j.ejmech.2021.113664	7AEN	1	1.6
+G3S-9d3d506752fabc29	G3C-001	211	14	9	3.70097072	2	1	Carbonic anhydrase 12	doi:10.1021/acs.jmedchem.5b01723	5LL5	1	1.42
+G3S-a0b462ec59730874	G3C-001	211	14	11	3.2364577	11	2	D-3-phosphoglycerate dehydrogenase	pmid:33756126	5NZO	1	1.29
+G3S-a0eeacac2c679281	G3C-001	211	12	9	2.62838893	2	1	PA-I galactophilic lectin	doi:10.1016/j.ejmech.2022.115025	7Z63	1	1.75
+G3S-a38e7f40310e2c16	G3C-001	211	10	7	2.03696338	2	0	Tyrosine-protein kinase JAK2	doi:10.1021/acs.jmedchem.0c00192	6OBL	0.989169675	2.061
+G3S-a5df04a0e400b0db	G3C-001	211	14	14	2.98703502	12	2	Tyrosine-protein kinase ABL2	doi:10.1038/nbt1358	4XLI	0.996268657	2.5
+G3S-a5f8f9b4623f1ec1	G3C-001	211	42	4	4.47755577	2	0	Carbonic anhydrase 7	doi:10.3109/14756366.2012.757223	3MDZ	1	2.32
+G3S-a607f21d0b792e74	G3C-001	211	24	24	3.91645395	20	3	Serine/threonine-protein kinase ULK3	doi:10.1038/nbt.1990	6FDY	1	1.7
+G3S-a620d876229e4fc4	G3C-001	211	13	2	1.48840227	1	0	Endothelial PAS domain-containing protein 1	doi:10.1021/acs.jmedchem.5b00529	4XT2	0.991071429	1.698
+G3S-a8d224cda1a84a3f	G3C-001	211	16	16	3.0772971	9	1	Receptor tyrosine-protein kinase erbB-3	doi:10.1038/nbt.1990	6OP9	1	2.501
+G3S-a96a5730efc90a42	G3C-001	211	27	27	5.18406019	23	2	Tyrosine-protein kinase JAK2	doi:10.1038/nbt.1990	6VNE	1	2.32
+G3S-aaae27c9c7a68a3a	G3C-001	211	10	7	3.69897	2	0	Carbonic anhydrase 13	doi:10.1016/j.bmc.2010.09.011	3CZV	1	2
+G3S-ab8ecdc323a69568	G3C-001	211	14	7	2.74527002	1	0	Casein kinase II subunit alpha	doi:10.1016/j.bmc.2017.02.055	3PE1	1	1.6
+G3S-ab9150ed0ce52416	G3C-001	211	37	22	4.13262557	8	1	Son of sevenless homolog 1	doi:10.1021/acs.jmedchem.0c00511	6V9N	1	1.648
+G3S-accf02b6dbaa6894	G3C-001	211	11	8	2.25251757	4	0	Mitogen-activated protein kinase 14	doi:10.1021/acs.jmedchem.7b00745	5MTX	1	1.8
+G3S-adf3d9017899d822	G3C-001	211	12	7	1.84032538	7	2	L-lactate dehydrogenase A chain	doi:10.1021/jm201734r	4AJJ	1	1.75
+G3S-b28f576038c6bba6	G3C-001	211	17	12	3.57625273	9	2	Kelch-like ECH-associated protein 1	pmid:32668381	4XMB	1	2.428
+G3S-b39cee93fb2ff4e0	G3C-001	211	21	5	2.5728716	2	0	Casein kinase II subunit alpha	pmid:40493957	6FVF	0.987804878	1.47
+G3S-b47e17893c82aca6	G3C-001	211	9	9	1.92038424	9	0	Metallo-beta-lactamase VIM-2	doi:10.1021/acs.jmedchem.5b01289	5ACX	1	1.8
+G3S-b4e4bb5af0b8b2c1	G3C-001	211	17	7	5.57403127	4	1	L-lactate dehydrogenase A chain	doi:10.1021/jm201734r	4AJJ	1	1.75
+G3S-b66b7652f5b1d01d	G3C-001	211	10	7	3.60205999	2	0	Carbonic anhydrase 1	doi:10.1016/j.bmc.2010.09.011	1AZM	1	2
+G3S-b6b157cccce7111a	G3C-001	211	8	8	1.25527251	3	0	Lysine-specific demethylase 5A	doi:10.1021/acs.jmedchem.8b00261	5V9T	1	3.05
+G3S-b96988cabeb69917	G3C-001	211	18	18	4.32905872	15	2	Mitogen-activated protein kinase 14	doi:10.1038/nbt.1990	3GCS	0.988857939	2.1
+G3S-ba437efd56c85d19	G3C-001	211	13	3	1.30845401	3	0	Cyclin-G-associated kinase	doi:10.1021/acs.jmedchem.8b01213	5Y7Z	1	2.804
+G3S-bd2cdfe90c8aa7fa	G3C-001	211	41	5	3.39794001	2	0	Carbonic anhydrase 7	doi:10.1016/j.bmc.2013.09.029	3MDZ	1	2.32
+G3S-bd97b6205fe27668	G3C-001	211	20	20	3.59362682	16	3	Serine/threonine-protein kinase N1	doi:10.1038/nbt.1990	4OTG	0.997058824	2.6
+G3S-be927832aa68b7af	G3C-001	211	44	4	2.22639638	1	0	2-amino-4-hydroxy-6-hydroxymethyldihydropteridine pyrophosphokinase	doi:10.1021/acs.jmedchem.6b00002	5ETP	1	1.05
+G3S-beb8359aa320987f	G3C-001	211	42	5	4.30103	2	0	Carbonic anhydrase 1	doi:10.1016/j.bmc.2013.09.029	1AZM	1	2
+G3S-bff054f5415e507d	G3C-001	211	14	9	2.31386722	1	0	Endoplasmic reticulum chaperone BiP	doi:10.1021/jm101625x	3LDP	1	2.2
+G3S-c1bf0bf4ec7b8cf8	G3C-001	211	19	11	5.54406804	2	0	Non-receptor tyrosine-protein kinase TYK2	pmid:37427891	8S98	1	1.87
+G3S-c3ad4039ad41a0e6	G3C-001	211	9	6	3.29350067	1	0	Casein kinase II subunit alpha	doi:10.1016/j.bmc.2017.04.037	5CU2	0.99695122	1.705
+G3S-c4c2e34a716f6ae6	G3C-001	211	16	7	4.31425826	1	0	Mitogen-activated protein kinase 14	doi:10.1016/s0960-894x(03)00656-5	3O8P	0.997222222	2.1
+G3S-c5d1969627a8c3f1	G3C-001	211	23	23	3.1401787	18	4	Dual specificity tyrosine-phosphorylation-regulated kinase 1A	doi:10.1038/nbt.1990	4NCT	1	2.597
+G3S-c6c69878bad91dca	G3C-001	211	18	18	4.71284146	16	1	Serine/threonine-protein kinase B-raf	doi:10.1038/nbt.1990	1UWH	0.996376812	2.95
+G3S-c8b189267b8c3242	G3C-001	211	9	8	2.0989253	8	1	Cytochrome P450 2A13	doi:10.1124/dmd.112.045161	3T3S	0.997854077	3
+G3S-c921d4d10853942c	G3C-001	211	12	11	1.51283681	1	0	Biotin--[biotin carboxyl-carrier protein] ligase	pmid:39823202	9DRN	1	2.98
+G3S-cac62a85af1d2834	G3C-001	211	28	28	4.14612804	23	3	ALK tyrosine kinase receptor	doi:10.1038/nbt.1990	2XB7	1	2.5
+G3S-cb1dbf771699bf3f	G3C-001	211	18	4	1.42117611	1	0	Carbonic anhydrase 2	doi:10.1016/j.ejmech.2012.02.050	3SAX	1	1.1
+G3S-ccdb4e9b6cf85e30	G3C-001	211	8	8	3.87242117	3	0	Non-receptor tyrosine-protein kinase TYK2	doi:10.1021/acs.jmedchem.3c00600	8S99	1	1.71
+G3S-cf9073a054dd1e8c	G3C-001	211	31	23	4.31386722	1	0	Nuclear receptor ROR-gamma	doi:10.1016/j.bmcl.2019.04.021	6NAD	1	2.90197077
+G3S-d0f17450d1ab6af6	G3C-001	211	17	2	1.48138954	1	0	Retinoic acid receptor RXR-alpha	doi:10.1021/jm00044a014	3H0A	1	2.1
+G3S-d15243e290ebeba6	G3C-001	211	29	18	4.65757732	3	0	Carbonic anhydrase 13	doi:10.1016/j.bmc.2013.01.008	4HU1	1	1.95
+G3S-d183c9dc36c1eaef	G3C-001	211	35	31	4.04575749	25	7	Dual specificity protein kinase CLK1	pmid:36876904	6KHD	0.997933884	2.7
+G3S-d1bbafed8d4f34cf	G3C-001	211	40	25	3.18285084	2	0	Poly [ADP-ribose] polymerase 1	doi:10.1021/acs.jmedchem.5b00680	7KK4	0.997159091	1.96
+G3S-d1de2bf2f08fcf46	G3C-001	211	17	17	2.08656918	15	1	Serine/threonine-protein kinase DCLK1	doi:10.1038/nbt.1990	5JZN	0.996428571	2.85
+G3S-d207c324846b2507	G3C-001	211	12	12	3.75696195	11	1	Cyclin-dependent kinase 8	doi:10.1038/nbt.1990	3RGF	1	2.2
+G3S-d25ad64514236b8b	G3C-001	211	13	8	2.04266815	2	0	Bromodomain-containing protein 4	doi:10.1021/acs.jmedchem.5b01511	5DX4	1	2.3
+G3S-d2858f5dc6d0d6d2	G3C-001	211	11	6	2.45974716	3	1	Carbonic anhydrase 2	doi:10.1021/acs.jmedchem.7b01408	6QL3	0.980769231	1.35
+G3S-d392e1d59c314666	G3C-001	211	14	9	3.28477925	3	2	Carbonic anhydrase 2	doi:10.1021/acs.jmedchem.5b01723	5LLC	1	1.1
+G3S-d3c114d403b4f6e6	G3C-001	211	27	10	1.2170299	1	0	Serine/threonine-protein kinase B-raf	doi:10.1016/j.bmcl.2011.07.019	1UWH	0.996376812	2.95
+G3S-d51a503970da5ba2	G3C-001	211	8	7	1.92634245	6	0	Heat shock protein HSP 90-alpha	pmid:39256986	5VYY	1	1.792
+G3S-d587ea9877aeacf1	G3C-001	211	40	40	3.52680904	33	4	Cyclin-G-associated kinase	doi:10.1038/nbt.1990	5Y7Z	1	2.804
+G3S-d5eff434a516ab97	G3C-001	211	26	26	2.9115781	21	3	BDNF/NT-3 growth factors receptor	doi:10.1038/nbt.1990	4AT5	1	1.71
+G3S-d5f2b3941320fd29	G3C-001	211	12	3	4	2	0	Lysosomal acid glucosylceramidase	pmid:38932616	9FA3	1	1.36
+G3S-d63ca398425bbdff	G3C-001	211	23	13	3.80163235	2	0	Focal adhesion kinase 1	doi:10.1021/jm3016014	4GU6	1	1.95
+G3S-d82e40f7bc270eb2	G3C-001	211	42	6	3.23240962	3	0	Carbonic anhydrase 13	doi:10.1016/j.bmc.2013.09.029	4QSJ	1	1.7
+G3S-da6a7a5b92d16f5d	G3C-001	211	24	3	3.88169184	2	0	Cyclin-G-associated kinase	doi:10.1016/j.bmcl.2019.05.025	5Y7Z	1	2.804
+G3S-da8fc773cdc768de	G3C-001	211	20	10	3.30103	5	4	Gamma-aminobutyric acid receptor subunit alpha-1	doi:10.1021/jm701433b	6HUP	1	3.58
+G3S-dc79a9836344f3ec	G3C-001	211	8	8	1.17107046	7	1	Ephrin type-A receptor 4	doi:10.1038/nbt1358	2Y6O	0.996563574	1.543
+G3S-dd8aacb779840031	G3C-001	211	26	25	2.1438743	21	4	Ephrin type-A receptor 2 [596-900]	doi:10.1021/acschembio.6b00709	5I9Y	1	1.228
+G3S-de0a2a7c1887af78	G3C-001	211	14	14	1.25527251	4	2	Peregrin	doi:10.1016/j.ejmech.2018.05.037	5MWH	1	1.65
+G3S-de2a24cde8ae391c	G3C-001	211	23	23	2.87506126	16	2	Ephrin type-B receptor 4	doi:10.1038/nbt.1990	6FNM	0.989830508	1.157
+G3S-df91bc0fd4e2076d	G3C-001	211	27	16	4.48170315	2	0	Carbonic anhydrase 7	doi:10.1016/j.bmc.2013.01.008	3MDZ	1	2.32
+G3S-dfc845f5fdda1698	G3C-001	211	10	5	1.21714049	2	1	Galectin-8	pmid:32809817	6W4Z	0.993464052	1.59
+G3S-e06c6b7aad2ea234	G3C-001	211	15	5	1.55716334	5	0	Endolysin [L99A]	doi:10.1021/jm0491187	7L3C	0.987804878	1.31
+G3S-e1d12f0e7fc3ce7f	G3C-001	211	8	7	2.07496476	1	0	Protein-tyrosine kinase 2-beta	pmid:33497606	8XOX	1	1.9
+G3S-e3b2a2841a5b18a5	G3C-001	211	18	18	3.32874082	17	1	Proto-oncogene tyrosine-protein kinase receptor Ret	doi:10.1038/nbt.1990	2IVU	1	2.5
+G3S-e710b4e67d7724f9	G3C-001	211	20	19	3.09017663	16	4	Cyclin-G-associated kinase	doi:10.1038/nbt1358	5Y7Z	1	2.804
+G3S-e7f816aed727534b	G3C-001	211	42	6	3.24565166	3	0	Carbonic anhydrase 2	doi:10.1016/j.bmc.2013.09.029	3SAX	1	1.1
+G3S-e9de90d69aed4dc3	G3C-001	211	15	6	2.67778071	1	0	Beta-secretase 1	doi:10.1021/jm200544q	3RU1	0.99513382	2.3
+G3S-eb73c8235716ab91	G3C-001	211	28	18	5.15472821	3	0	Carbonic anhydrase 1	doi:10.1016/j.bmc.2013.01.008	4WR7	1	1.5
+G3S-ee6c97e67f1fb0d7	G3C-001	211	14	9	3.35051536	2	2	Carbonic anhydrase 13	doi:10.1021/acs.jmedchem.7b01408	5LLA	1	1.5
+G3S-eea0596469e3b875	G3C-001	211	11	7	5.49664339	2	1	Carbonic anhydrase 1	doi:10.1021/acs.jmedchem.5b01723	4WR7	1	1.5
+G3S-f223745e3dee7f3b	G3C-001	211	10	7	5.39794001	3	3	Tumor necrosis factor	doi:10.1021/acs.jmedchem.0c01280	6X85	1	2.85
+G3S-f2318d3b76296c29	G3C-001	211	8	7	3.66275783	6	2	Epidermal growth factor receptor	doi:10.1038/nbt1068	4WKQ	1	1.85
+G3S-f27bb6dc0560b24d	G3C-001	211	20	12	1.72631961	1	0	Nuclear receptor ROR-gamma	pmid:37236000	8GXP	1	2.45
+G3S-f2ec313bd7b3ce78	G3C-001	211	18	7	1.63202321	1	0	Histone deacetylase 8	doi:10.1016/j.bmc.2011.11.041	4QA0	0.99734748	2.242
+G3S-f42b5d20c7dcac28	G3C-001	211	20	12	4.3783979	5	0	Retinal rod rhodopsin-sensitive cGMP 3',5'-cyclic phosphodiesterase subunit delta	pmid:38758695	5ML3	1	1.4
+G3S-f4966ebce19de7c0	G3C-001	211	15	15	2.88922606	13	2	Proto-oncogene tyrosine-protein kinase receptor Ret	doi:10.1038/nbt1358	2IVU	1	2.5
+G3S-f5c4fa2e79c47654	G3C-001	211	10	6	3.29320466	5	3	D(1A) dopamine receptor	doi:10.1021/jm950447w	7CKZ	1	3.1
+G3S-f9b101ab9b60896c	G3C-001	211	9	9	1.32509303	8	1	Tyrosine-protein kinase JAK2	pmid:38843875	6VNE	1	2.32
+G3S-fb6b9c4b9d6641a2	G3C-001	211	14	6	1.69897	1	0	Bromodomain-containing protein 4	doi:10.1021/acs.jmedchem.5b01267	5D3L	0.992125984	1.5
+G3S-fb6cb3a33814d85e	G3C-001	211	17	9	2.56066731	1	0	Receptor-interacting serine/threonine-protein kinase 2	pmid:36058467	6RN8	1	2.69
+G3S-fb7593ab116f7278	G3C-001	211	11	10	1.66005194	3	0	Complement factor D	doi:10.1021/acsmedchemlett.8b00104	6FTZ	1	1.67
+G3S-fc8dc45b48055767	G3C-001	211	23	23	5.07525095	16	4	Serine/threonine-protein kinase 10	doi:10.1038/nbt1358	5OWR	1	2.3
+G3S-fd168e6ca4c62f5c	G3C-001	211	8	6	2.30343607	1	0	Retinoic acid receptor RXR-alpha	doi:10.1021/acs.jmedchem.5b00829	3H0A	1	2.1
+G3S-fe0860941e1bd481	G3C-001	211	10	10	1.48811664	10	0	Gastrotropin	doi:10.1021/acs.jmedchem.6b00869	5L8N	1	2.12
+G3S-ff4e5bfc253b96ea	G3C-001	211	86	37	5.3399317	11	5	Sex hormone-binding globulin	doi:10.1021/jm7011485	1F5F	1	1.7
+G3S-ff7784d287172c20	G3C-001	211	16	15	1.75966784	2	0	Lanosterol 14-alpha-demethylase	doi:10.1016/j.chembiol.2007.10.011	2WV2	1	2.7
+G3S-fffc85fa1583cd07	G3C-001	211	17	11	3.0281942	5	1	PA-I galactophilic lectin	pmid:26804741	4A6S	1	2.15
+G3S-3a4ac119455247b0	G3C-002	2	8	4	2.37358066	2	0	Peptidyl-prolyl cis-trans isomerase A	doi:10.1021/acs.jmedchem.6b01329	5T9Z	1	1.4
+G3S-a496fe9cc69b5d9f	G3C-002	2	23	17	2.15358392	3	0	Peptidyl-prolyl cis-trans isomerase A	doi:10.1021/acs.jmedchem.8b00802	6X4O	1	1.5
+G3S-0adfbd2895adde2d	G3C-003	1	9	3	2.66118144	1	0	Alpha-tocopherol transfer protein	doi:10.1016/j.bmc.2009.10.046	1R5L	1	1.5
+G3S-1f6e9ae98fcbd583	G3C-004	1	22	22	4.1383027	1	0	Caspase-6	doi:10.1021/acs.jmedchem.3c00590	4NBL	0.996296296	1.756
+G3S-441b618a57261680	G3C-005	1	21	19	2.72153583	2	2	Nitric oxide synthase oxygenase	doi:10.1021/acs.biochem.5b00431	4UG7	0.991735537	1.76
+G3S-532f119ff68b2182	G3C-006	1	13	8	2.04575749	1	0	S-methyl-5'-thioadenosine phosphorylase	doi:10.1021/acs.jmedchem.8b01642	6DYZ	1	1.62
+G3S-5fea584126042c2e	G3C-007	1	11	3	4.46922412	1	0	Programmed cell death 1 ligand 1	pmid:35429911	5J89	1	2.2
+G3S-7441d96b81b94068	G3C-008	1	18	8	3.95424251	1	0	Transcription activator BRG1	doi:10.1021/acs.jmedchem.3c01149	7TAB	1	1.16
+G3S-7e32e8326784c5b1	G3C-009	1	9	4	2.13469857	1	0	E3 ubiquitin-protein ligase CBL-B	pmid:38894924	8VW5	0.990322581	1.76
+G3S-95eff58067253a12	G3C-010	1	9	6	2.86530143	2	1	Glucokinase regulatory protein	doi:10.1021/acs.jmedchem.5b01367	4PX3	1	2.43
+G3S-b9a14ea86c9556ea	G3C-011	1	8	7	1.462398	1	0	Peroxisome proliferator-activated receptor gamma	doi:10.1016/j.bmcl.2014.06.023	3VSP	1	2.4
+G3S-e2e78f6cb47c8e4c	G3C-012	1	14	9	4.2787536	3	0	Polycomb protein EED	doi:10.1021/acs.jmedchem.7b00576	5U69	1	1.28
+G3S-e36179cfc1b7610c	G3C-013	1	19	12	1.84677162	1	0	Tyrosine-protein phosphatase non-receptor type 11	pmid:39110625	8WX7	1	2.02

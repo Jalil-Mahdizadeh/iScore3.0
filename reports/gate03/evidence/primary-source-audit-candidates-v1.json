@@ -1,0 +1,20 @@
+{
+  "bindingdb": {
+    "path": "/workspace/data/raw/bindingdb/202608/BindingDB_All.tsv",
+    "sha256": "4e9ce5470c71a040ba2bb49f85abe49c58df71f7802164b4caa1ef5a2412b7b9"
+  },
+  "dataset": {
+    "path": "/workspace/data/processed/gate03/gate03-strict-kd-v2.tsv",
+    "sha256": "ff94eb508112a94355149b922dc9d5a4e560fb38234bce94efaf2c0b5d7dbe3f"
+  },
+  "raw_source_ids_complete": true,
+  "raw_source_rows": 25,
+  "schema_version": 1,
+  "selected_consensus_measurements": 24,
+  "selected_publications": 12,
+  "selection_config": {
+    "path": "/workspace/configs/gate03/manual-primary-source-audit-v1.yaml",
+    "sha256": "c5b5cb913f3faae55abe24b4fe3cbc1a420d824a9cdb07f8dba4a5d4ee21bed7"
+  },
+  "status": "candidate_rows_extracted_not_yet_primary_source_verified"
+}
