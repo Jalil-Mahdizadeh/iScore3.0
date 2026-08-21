@@ -11,6 +11,7 @@ import json
 import math
 from pathlib import Path
 import platform
+import subprocess
 from typing import Any, Mapping, Sequence
 
 import numpy as np
@@ -678,6 +679,8 @@ def _film_predict(
     import torch
     from sklearn.preprocessing import StandardScaler
 
+    torch.set_num_threads(1)
+    torch.use_deterministic_algorithms(True)
     ligand = dataset.features[plan.ligand_block]
     receptor = dataset.features[plan.receptor_block]
     sequence = dataset.features["esm2_proj"]
@@ -1366,6 +1369,11 @@ def run_experiment(
     metric_output: Path,
     manifest_output: Path,
 ) -> dict[str, Any]:
+    evaluator_commit = subprocess.check_output(
+        ["git", "rev-parse", "HEAD"], text=True
+    ).strip()
+    if subprocess.run(["git", "diff", "--quiet"], check=False).returncode != 0:
+        raise Gate3EvaluationError("Tracked worktree changes present at efficacy-run start")
     config = yaml.safe_load(config_path.read_text(encoding="utf-8"))
     amendment = yaml.safe_load(amendment_path.read_text(encoding="utf-8"))
     if config.get("status") != "frozen_before_first_gate03_efficacy_fit":
@@ -1436,6 +1444,7 @@ def run_experiment(
         "created_utc": utc_now(),
         "experiment_id": config["phase_id"],
         "git_prefit_contract_commit": "e919fe3ec348df406df925e5b86a225e36cf8bee",
+        "git_prefit_evaluator_commit": evaluator_commit,
         "inputs": [
             {"path": str(path), "sha256": sha256_file(path), "bytes": path.stat().st_size}
             for path in inputs
