@@ -21,7 +21,7 @@ from urllib.request import Request, urlopen
 
 import numpy as np
 
-from iscore3.data.rcsb_gate01 import (
+from iscore3.artifacts import (
     immutable_write,
     preserve_manifest_timestamp,
     sha256_file,
@@ -41,7 +41,7 @@ from iscore3.protein.pocket_features import (
 )
 
 
-USER_AGENT = "iScore3.0-gate02/1.0 (scientific provenance audit)"
+USER_AGENT = "iScore3.0-structure-views/1.0 (scientific provenance audit)"
 AA1_TO_3 = {
     value: key for key, value in AA3_TO_1.items() if key not in {"MSE", "SEC", "PYL"}
 }

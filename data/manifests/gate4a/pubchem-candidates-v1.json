@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "phase": "gate4a",
+  "role": "unaccepted external structure candidates for manual identity review",
+  "files": [
+    {
+      "source_id": "davis2011-pubchem-candidates-v1",
+      "path": "data/raw/gate4a/pubchem/davis-compound-candidates-v1.json",
+      "bytes": 104293,
+      "sha256": "185ecd06b4341b461bd1471c966134e93250d9791616c37dc76091486a36b404",
+      "provider": "NCBI PubChem PUG REST",
+      "acceptance_status": "not_accepted_for_modeling"
+    }
+  ]
+}

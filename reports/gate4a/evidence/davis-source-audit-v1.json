@@ -1,0 +1,25 @@
+{
+  "audit": {
+    "compound_count": 72,
+    "exact_count": 9424,
+    "exact_fraction": 0.2961287078934138,
+    "exact_kd_max_nm": 9900.0,
+    "exact_kd_min_nm": 0.016,
+    "exact_numeric_10000_count": 0,
+    "invalid_count": 0,
+    "missing_count": 0,
+    "pair_count": 31824,
+    "right_censored_count": 22400,
+    "right_censored_fraction": 0.7038712921065863,
+    "sheet_name": "Sheet1",
+    "source_sha256": "e47821b2e959ff22aa6d1613b236a63fb530f0da19cfa8d45408598cf27498d7",
+    "target_count": 442
+  },
+  "interpretation": {
+    "blank_cells": "right_censored_kd",
+    "censor_limit_nm": 10000.0,
+    "warning": "blank cells are not exact 10000 nM labels"
+  },
+  "phase": "gate4a",
+  "schema_version": 1
+}

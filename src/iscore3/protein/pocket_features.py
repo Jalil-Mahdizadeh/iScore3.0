@@ -1,4 +1,4 @@
-"""Deterministic receptor-only pocket extraction for the Gate-0/1 pilot.
+"""Deterministic receptor-only pocket extraction.
 
 A historical reference ligand may be read only by :func:`define_reference_site`.
 The query extractor has no ligand identifier argument and filters atoms solely by
@@ -20,7 +20,7 @@ from typing import Any, Iterable, Mapping, Sequence
 
 import numpy as np
 
-from iscore3.data.rcsb_gate01 import (
+from iscore3.artifacts import (
     immutable_write,
     preserve_manifest_timestamp,
     sha256_file,

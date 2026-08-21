@@ -1,4 +1,4 @@
-"""Frozen residue-level ESM-IF1 structure encoder for Gate-3 receptor views."""
+"""Frozen residue-level ESM-IF1 encoder for reusable receptor views."""
 
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ from typing import Any, Mapping, Sequence
 
 import numpy as np
 
-from iscore3.data.rcsb_gate01 import (
+from iscore3.artifacts import (
     immutable_write,
     preserve_manifest_timestamp,
     sha256_file,

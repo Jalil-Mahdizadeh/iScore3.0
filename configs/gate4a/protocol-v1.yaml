@@ -1,0 +1,80 @@
+phase: gate4a
+status: source_audit_and_representation_preregistration
+created_utc: "2026-08-21T14:47:07Z"
+terminal_history:
+  commit: 3b814c6
+  tag: gate3-terminal-2026-08-21
+  gate3_use: forbidden_for_selection
+
+sources:
+  development: davis2011
+  technical_replication: karaman2008
+  locked_confirmation: pending_committee_approval
+
+labels:
+  primary_scale: pkd
+  exact_unit: nM
+  censor_limit_nm: 10000.0
+  blank_matrix_cell: right_censored_kd
+  primary_loss: censor_aware_nll
+  exact_only_metrics: [mae, rmse]
+  classification_thresholds_nm: [100.0, 1000.0]
+
+conformers:
+  input: canonical_isomeric_smiles
+  generator: rdkit_etkdgv3
+  seed: 20260821
+  attempted_conformers: 32
+  prune_rms_angstrom: 0.5
+  force_field: MMFF94s
+  max_optimization_iterations: 500
+  require_converged: true
+  energy_window_kcal_mol: 10.0
+  boltzmann_temperature_kelvin: 298.15
+  num_threads: 1
+  learned_pooling: false
+
+ligand_3d_representations:
+  deterministic:
+    enabled: true
+    families: [shape, pharmacophore_pair_distances, conformer_energy, conformer_diversity]
+  pretrained:
+    family: Uni-Mol2
+    data_type: molecule
+    checkpoint_kind: pretraining_only
+    model_size: pending_freeze
+    checkpoint_sha256: pending_freeze
+    enabled: false
+
+model_registry:
+  additive_factorial: [M2D, M3D, M2D_P, MA]
+  interaction_primary:
+    reference: MI2_rank8
+    augmented: MI23_rank4_plus_rank4
+    total_rank_each: 8
+  interaction_nested_sensitivity:
+    reference: MI2_rank4
+    augmented: MI2_rank4_plus_I3_rank4
+
+estimands:
+  delta_3d_ligand: [M2D, M3D]
+  delta_pocket_additive: [M3D, MA]
+  delta_3d_x_pocket: [MI2_rank8, MI23_rank4_plus_rank4]
+
+evaluation:
+  primary_split: double_cold_scaffold_and_target_structure_component
+  random_pair_split: forbidden
+  primary_receptor_views: [apo, predicted_exact_construct]
+  holo_use: sensitivity_only
+  uncertainty: paired_multiway_scaffold_target_component_bootstrap
+  ranking_axes: [within_target_ligands, within_ligand_targets]
+
+forbidden:
+  - crystallographic_query_ligand_coordinates
+  - docked_or_generated_bound_poses
+  - ligand_pocket_correspondence
+  - complex_contact_or_distance_supervision
+  - docking_scores_or_teachers
+  - query_ligand_defined_pockets
+  - test_guided_conformer_or_checkpoint_selection
+  - trainable_e3_ligand_encoder_in_gate4a

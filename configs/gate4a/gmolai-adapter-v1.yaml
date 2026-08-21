@@ -1,0 +1,52 @@
+schema_version: 1
+source:
+  name: gMolAI-v2.0
+  url: https://github.com/Jalil-Mahdizadeh/gMolAI-v2.0
+  revision: 29ced8352886692c00a792d24a183f05e5de0059
+  local_default: third_party/source_cache/gmolai-v2.0
+  licence_status: developer_authorized_for_iscore3_project
+  authorization_basis: repository_owner_is_gmolai_developer
+  required_file_sha256:
+    src/gmolai_retrain/chem.py: 57fc506985b789b73f03d946e309d81dd83820afeb3fe5dfd695322e69269dd3
+    src/gmolai_retrain/schema.py: fae3d7027824fb11a41f3ead096fb31e5591bdcc36f8c5893eee626e0862b73e
+    src/gmolai_retrain/model.py: 32aaaee98da0af0de69abf35930dcff743924e0d78a59652955b466b93955f02
+    src/gmolai_retrain/fast_graph.py: 4a1878ffd1cb36454cdaaa324234e03013f0df77e5c1ca625f6cf08d743e399e
+    src/gmolai_retrain/fast_inference.py: 6375a7548877464e7006d7cfd357e4c1d81938a1697dedc649425801d7c28eba
+    src/gmolai_retrain/config.py: ddfd5da10a086a5046944e9ecf6af8155cf8c2ff581639965c9f712dce8aab10
+    src/gmolai_retrain/util.py: 1a1a87b55e8a6d4f03a253e833c4554e325f27a3f20f81da0b6e48dc049083a7
+    inference/generate_embeddings.py: c42d7eb519b35e2a0094bb3355c08ea57a4df8e9534ae611d13aeced77a62612
+artifacts:
+  directory: inference/models
+  sha256:
+    representation-best.pt: 02f49a2a94ddfc9dc780cc3d5f1a3df54306ae0fdc5d4b3767e3fd2e7f27b05e
+    representation-calibrator.pt: 5cbe3210b2fa6742b165c61e3562118553f567df13181d863776c9ca5527365b
+    representation_selection.json: 43f1f857576f10fd8aa7ed9276f9ce899ca90d011172225d04e8cff77a9333a1
+    resolved_config.json: 9ad8e4000b3dc0b7a2c3ef8631200fbfa301ef377fd7518293b8636964844628
+expected_contract:
+  feature_schema_version: 1
+  node_input_dimensions: 48
+  edge_dimensions: 15
+  node_z_dimensions: 128
+  graph_z_dimensions: 256
+  released_molecule_dimensions: 384
+  mean_node_weight: 3.0
+  checkpoint_global_step: 10000
+  training_implementation_version: "5"
+strict_input_policy:
+  reject_atom_maps: true
+  reject_isotopes: true
+  reject_input_conformers: true
+  reject_cxsmiles_extensions: true
+  rationale: >-
+    Atom maps, isotopes, and CXSMILES extensions are outside the declared ligand
+    feature contract. Accepted inputs are passed unchanged through the hash-pinned
+    upstream canonicalization and featurization functions.
+pretraining_exposure:
+  corpora: [ZINC, PubChem]
+  deduplicated_graphs: 223180699
+  exact_panel_identity_audit: unavailable_without_pretraining_identity_ledger
+  labelled_affinity_pretraining_detected: false
+  interpretation: >-
+    Exact entity exposure is unknown and likely for public drug-like compounds;
+    this is representation-pretraining exposure, not evidence of affinity-label
+    exposure. Results using gMolAI must be reported separately from ECFP controls.

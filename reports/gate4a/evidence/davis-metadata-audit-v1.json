@@ -1,0 +1,31 @@
+{
+  "audit": {
+    "compound_alternative_name_count": 26,
+    "compound_count": 72,
+    "compound_order_matches_affinity_matrix": false,
+    "compound_structure_identifiers_provided": false,
+    "construct_boundaries_provided": false,
+    "exact_construct_sequence_provided": false,
+    "maximum_rows_per_accession": 15,
+    "mutant_row_count": 54,
+    "nonphosphorylated_row_count": 6,
+    "phosphorylated_row_count": 9,
+    "structurally_ambiguous_compound_name_count": 1,
+    "table1_sha256": "69c2957c1fa1b5ba032721031af2fffe1eb896acd0723829e4500da8f75779c9",
+    "table3_sha256": "f8b01f6bfa47adb61b6c5a6de2ae81281990da89b703848efec4f2e37488fae8",
+    "table4_sha256": "e47821b2e959ff22aa6d1613b236a63fb530f0da19cfa8d45408598cf27498d7",
+    "target_row_count": 442,
+    "target_rows_match_affinity_matrix": true,
+    "unique_accession_count": 384,
+    "unique_assay_target_label_count": 442,
+    "unique_gene_count": 379,
+    "unique_kinase_group_count": 11
+  },
+  "interpretation": {
+    "compound_warning": "publication names are not accepted as structure mappings without independent identity verification",
+    "status": "external_identity_mapping_required",
+    "target_warning": "RefSeq accessions and assay labels do not establish exact recombinant construct boundaries or sequences"
+  },
+  "phase": "gate4a",
+  "schema_version": 1
+}

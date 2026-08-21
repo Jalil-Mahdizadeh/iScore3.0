@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "phase": "gate4a",
+  "container": {
+    "path": "containers/gmolai-pyg-25.09-arm64.sif",
+    "bytes": 11128963072,
+    "sha256": "69cfad3e38de6397a94184a132a84d44bea8d1f8f258a1b80ba6a5dca5c714e2"
+  },
+  "apptainer_version": "1.5.3-1.el9",
+  "runtime": {
+    "python": "3.12.3",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "pytest": "8.4.2",
+    "pyyaml": "6.0.2",
+    "rdkit": "2025.09.3",
+    "scikit_learn": "1.5.0",
+    "xlrd": "2.0.2"
+  },
+  "overlay": {
+    "path": "environments/local/gate4a/vendor",
+    "lock": "environments/gate4a-requirements.lock.txt",
+    "purpose": "read the publisher's legacy XLS workbooks"
+  }
+}

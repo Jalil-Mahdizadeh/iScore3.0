@@ -16,18 +16,20 @@ from urllib.request import Request, urlopen
 
 import numpy as np
 
-from iscore3.data.rcsb_gate01 import (
+from iscore3.artifacts import (
+    immutable_write,
+    preserve_manifest_timestamp,
+    sha256_file,
+    stable_json_bytes,
+    utc_now,
+)
+from iscore3.protein.rcsb_client import (
     COORDINATE_URL,
     DATA_URL,
     ENTRY_QUERY,
     SEARCH_URL,
     chunks,
-    immutable_write,
     post_json,
-    preserve_manifest_timestamp,
-    sha256_file,
-    stable_json_bytes,
-    utc_now,
 )
 from iscore3.protein.pocket_features import (
     FEATURE_NAMES,
@@ -41,7 +43,7 @@ from iscore3.protein.pocket_features import (
 from iscore3.protein.structure_views import AA1_TO_3, align_construct_to_prediction
 
 
-USER_AGENT = "iScore3.0-gate02-apo/1.0 (scientific provenance audit)"
+USER_AGENT = "iScore3.0-receptor-apo/1.0 (scientific provenance audit)"
 WATER_NAMES = {"HOH", "DOD", "WAT"}
 
 

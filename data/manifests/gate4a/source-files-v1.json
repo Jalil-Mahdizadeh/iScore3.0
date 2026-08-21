@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "phase": "gate4a",
+  "acquired_utc": "2026-08-21T14:47:07Z",
+  "files": [
+    {
+      "source_id": "davis2011-supplementary-text",
+      "path": "data/raw/gate4a/davis2011/supplementary_text_figures.pdf",
+      "official_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnbt.1990/MediaObjects/41587_2011_BFnbt1990_MOESM2_ESM.pdf",
+      "doi": "10.1038/nbt.1990",
+      "bytes": 2992846,
+      "sha256": "b90915deb6f5100dcdd2690fe6a6a16850ee698553d712d10669245eda6d9105",
+      "media_type": "application/pdf",
+      "role": "assay and compound supplementary context"
+    },
+    {
+      "source_id": "davis2011-table1",
+      "path": "data/raw/gate4a/davis2011/supplementary_table_1.xls",
+      "official_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnbt.1990/MediaObjects/41587_2011_BFnbt1990_MOESM3_ESM.xls",
+      "doi": "10.1038/nbt.1990",
+      "bytes": 94720,
+      "sha256": "69c2957c1fa1b5ba032721031af2fffe1eb896acd0723829e4500da8f75779c9",
+      "media_type": "application/vnd.ms-excel",
+      "role": "kinase target and group metadata"
+    },
+    {
+      "source_id": "davis2011-table3",
+      "path": "data/raw/gate4a/davis2011/supplementary_table_3.xls",
+      "official_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnbt.1990/MediaObjects/41587_2011_BFnbt1990_MOESM4_ESM.xls",
+      "doi": "10.1038/nbt.1990",
+      "bytes": 39936,
+      "sha256": "f8b01f6bfa47adb61b6c5a6de2ae81281990da89b703848efec4f2e37488fae8",
+      "media_type": "application/vnd.ms-excel",
+      "role": "compound names and primary-target comparison metadata"
+    },
+    {
+      "source_id": "davis2011-table4",
+      "path": "data/raw/gate4a/davis2011/supplementary_table_4.xls",
+      "official_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnbt.1990/MediaObjects/41587_2011_BFnbt1990_MOESM5_ESM.xls",
+      "doi": "10.1038/nbt.1990",
+      "bytes": 304640,
+      "sha256": "e47821b2e959ff22aa6d1613b236a63fb530f0da19cfa8d45408598cf27498d7",
+      "media_type": "application/vnd.ms-excel",
+      "role": "primary affinity matrix with blank-as-censored semantics"
+    },
+    {
+      "source_id": "karaman2008-supplement",
+      "path": "data/raw/gate4a/karaman2008/supplementary_tables_figures.pdf",
+      "official_url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fnbt1358/MediaObjects/41587_2008_BFnbt1358_MOESM2_ESM.pdf",
+      "doi": "10.1038/nbt1358",
+      "bytes": 2058235,
+      "sha256": "a6f57862f1cbb05183e899343c8a64f266f9e8a3426dce99869c33289064414e",
+      "media_type": "application/pdf",
+      "role": "technical-replication affinity matrix and censoring definition"
+    }
+  ],
+  "terms_note": "Publisher supplementary material; downstream redistribution and reuse terms must be verified before public data redistribution. Raw files remain Git-ignored.",
+  "acquisition_command": "curl --fail --location --output <path> <official_url>"
+}

@@ -1,0 +1,32 @@
+{
+  "candidate_acquisition": {
+    "bytes": 104293,
+    "path": "data/raw/gate4a/pubchem/davis-compound-candidates-v1.json",
+    "sha256": "185ecd06b4341b461bd1471c966134e93250d9791616c37dc76091486a36b404",
+    "source_id": "davis2011-pubchem-candidates-v1"
+  },
+  "candidate_structures_accepted_for_modeling": false,
+  "compound_name_mismatch_count": 1,
+  "compound_name_mismatches": [
+    {
+      "affinity_matrix_name": "INCB18424",
+      "compound_index_1_based": 39,
+      "compound_table_name": "INCB018424",
+      "source_row": 40
+    }
+  ],
+  "compound_name_order_exact_match": false,
+  "manual_identity_reviews_pending": 71,
+  "mapping_state_counts": {
+    "candidate_requires_manual_verification": 71,
+    "quarantined_ambiguous_source_identity": 1
+  },
+  "phase": "gate4a",
+  "record_count": 72,
+  "schema_version": 1,
+  "single_candidate_count": 71,
+  "stereo_marked_candidate_smiles_count": 21,
+  "unique_candidate_cid_count": 71,
+  "unique_candidate_inchikey_count": 71,
+  "warning": "name-resolution hits are hypotheses, not accepted compound mappings; each needs identity and stereochemistry verification against independent evidence"
+}

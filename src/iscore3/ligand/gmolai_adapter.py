@@ -44,7 +44,7 @@ class AtomMapping:
 
 @dataclass(frozen=True, slots=True)
 class GmolaiEncoding:
-    """One molecule encoded under the frozen Gate-0/1 contract."""
+    """One molecule encoded under the frozen gMolAI contract."""
 
     input_smiles: str
     canonical_smiles: str

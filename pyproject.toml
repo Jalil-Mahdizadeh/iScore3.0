@@ -4,8 +4,8 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "iscore3"
-version = "0.0.1"
-description = "Leakage-aware Gate-0/1 feasibility tooling for iScore3.0"
+version = "0.1.0"
+description = "Leakage-aware free-conformer interaction-identifiability tooling for iScore3.0"
 requires-python = ">=3.10"
 dependencies = [
   "numpy>=1.26,<3",
@@ -16,6 +16,7 @@ dependencies = [
 
 [project.optional-dependencies]
 chem = ["rdkit>=2024.3"]
+data = ["xlrd==2.0.2"]
 structure = ["biopython>=1.83", "gemmi>=0.6"]
 test = ["pytest>=8,<9"]
 

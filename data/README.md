@@ -1,36 +1,44 @@
-# Data contract
+# Gate-4A data contract
 
-Data are organized by lifecycle and are never copied into miscellaneous folders.
+Data are organized by lifecycle and never copied into miscellaneous folders.
 
-- `registry/`: source/version/licence records.
-- `manifests/`: immutable checksums, row provenance, exclusions, and schemas.
-- `raw/`: immutable downloads; ignored by Git.
-- `external/`: locked benchmarks; ignored by Git.
+- `raw/gate4a/`: immutable publisher or repository downloads; ignored by Git.
+- `manifests/gate4a/`: versioned URLs, terms, byte sizes, SHA-256 hashes, schemas,
+  and acquisition commands.
 - `interim/`: restartable normalized material; ignored by Git.
-- `processed/`: small permitted pilot tables and analysis-ready metadata.
-- `features/`: rebuildable arrays; ignored by Git.
-- `splits/`: immutable split assignments and leakage diagnostics.
+- `processed/gate4a/`: small, auditable normalized metadata only.
+- `features/gate4a/`: rebuildable conformer and encoder arrays; ignored by Git.
+- `splits/gate4a/`: immutable scaffold/target-component assignments and fold
+  ledgers created before fitting.
+- `external/`: locked confirmatory panels; ignored by Git and access-controlled.
 
-No acquisition command overwrites an existing raw snapshot. A source is usable only after its release identifier, official URL, licence/terms, byte size, SHA-256, acquisition time, and processing command have been recorded.
+No acquisition or processing command may overwrite an existing snapshot. A
+source is unusable until its official URL, release identifier, byte size,
+SHA-256, acquisition time, terms, and processing command have been recorded.
 
-The Gate-0/1 pilot admits only S0/S1 mappings. S0 means the activity and co-complex are the same curated record/construct. S1 means an exact assay construct/sequence and site are mapped to another structure with explicit evidence. UniProt or target-name agreement alone is insufficient.
+The current PubChem name-resolution snapshot is explicitly candidate-only. Its
+tracked review ledger is `processed/gate4a/davis-compound-mapping-review-v1.tsv`;
+blank review fields are intentional. A PubChem hit cannot enter a modeling
+manifest until publication-structure identity and stereochemistry have been
+independently verified. Multicomponent records are not silently desalted.
 
-The canonical bounded pilot is `processed/gate01/rcsb-kd-pilot-strict-v2.tsv`; its paired receptor features are `processed/gate01/rcsb-kd-pocket-views-strict-v2.tsv`. Use only with `manifests/gate01-pilot-strict-v2.json`. The earlier `*-v1` candidate tables are retained because BindingDB reconciliation discovered 12 censored values whose relations were not represented in the RCSB query result. They are non-canonical.
+## Affinity observations
 
-For the completed Gate-2 interaction-feasibility study, the canonical strict data
-are `processed/gate02/rcsb-kd-strict-v3.tsv` and
-`processed/gate02/rcsb-kd-pocket-views-strict-v3.tsv`, governed by
-`configs/gate02/feasibility-effective-v3.yaml`. S2 predicted and S3
-pocket-unoccupied experimental views are sensitivity subsets, not substitutes for
-the complete S1 primary view. `splits/gate02/prefit-union-components-v3.tsv` was
-created before outcome fitting and must be used for any comparison to the reported
-Gate-2 result. See `reports/gate02/reproducibility.md` for canonical hashes.
+Every pair must retain its source-cell semantics:
 
-The terminal Gate-3 cohort is `processed/gate03/gate03-strict-kd-v3.tsv`; its
-immutable component/scaffold assignments are
-`splits/gate03/gate03-component-scaffold-splits-v3.tsv`. The final evaluation
-fold ledger is `splits/gate03/gate03-evaluation-folds-v1.tsv`, governed by
-`configs/gate03/evaluation-effective-v1.yaml` and amendments 04--05. Final output
-hashes and the exact container command are in
-`reports/gate03/reproducibility.md`. These results are a terminal hypothesis
-no-go and must not be reused as a tuning set for the same architecture proposal.
+- `exact`: a positive numeric Kd with its original unit;
+- `right_censored_kd`: Kd is greater than a documented assay limit;
+- `missing`: not assayed or genuinely unavailable;
+- `invalid`: present but unparseable or contradictory.
+
+In Davis 2011 and Karaman 2008, a blank affinity cell means weak binding above
+10 micromolar or no detection in the 10 micromolar primary screen. It is
+therefore right-censored Kd, equivalently left-censored pKd at 5, and must never
+be stored as an exact 10,000 nM observation.
+
+## Governance
+
+Davis and Karaman are development/technical-replication resources. They cannot
+serve as the sole confirmatory test because of target, chemotype, and assay
+overlap. A distinct locked panel is required for a progression decision. The
+terminal Gate-3 cohort is quarantined by policy and absent from the active tree.

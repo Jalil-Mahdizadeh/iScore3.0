@@ -1,4 +1,4 @@
-"""Pinned ESM-2 construct encoder used only as a frozen Gate-2 baseline."""
+"""Pinned ESM-2 construct encoder for frozen protein-sequence controls."""
 
 from __future__ import annotations
 
@@ -14,7 +14,7 @@ from typing import Any, Mapping, Sequence
 
 import numpy as np
 
-from iscore3.data.rcsb_gate01 import (
+from iscore3.artifacts import (
     immutable_write,
     preserve_manifest_timestamp,
     sha256_file,

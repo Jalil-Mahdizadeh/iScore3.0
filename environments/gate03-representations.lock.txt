@@ -1,8 +1,0 @@
-# Gate-3 local additions to containers/gmolai-pyg-25.09-arm64.sif
-# Install into environments/local/gate03 (ignored):
-fair-esm==2.0.0
-biotite==0.39.0
-
-# ESM-IF1 is run with the repository's fail-closed native-Torch scatter
-# compatibility layer because no torch-scatter binary matches the container's
-# NVIDIA Torch 2.8 ARM64 build. No external torch-scatter package is installed.
