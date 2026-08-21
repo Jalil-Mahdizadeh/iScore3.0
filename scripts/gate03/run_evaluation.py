@@ -23,7 +23,7 @@ def main() -> None:
     parser.add_argument("--gmolai-root", type=Path, required=True)
     parser.add_argument("--structural-allpairs", type=Path, required=True)
     parser.add_argument("--config", type=Path, required=True)
-    parser.add_argument("--amendment", type=Path, required=True)
+    parser.add_argument("--amendment", action="append", type=Path, required=True)
     parser.add_argument("--required-audit", action="append", type=Path, required=True)
     parser.add_argument("--split-output", type=Path, required=True)
     parser.add_argument("--prediction-output", type=Path, required=True)
@@ -44,7 +44,7 @@ def main() -> None:
         gmolai_root=args.gmolai_root,
         structural_allpairs=args.structural_allpairs,
         config_path=args.config,
-        amendment_path=args.amendment,
+        amendment_paths=args.amendment,
         required_audits=args.required_audit,
         split_output=args.split_output,
         prediction_output=args.prediction_output,

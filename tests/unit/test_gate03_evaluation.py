@@ -7,6 +7,7 @@ from iscore3.gate03.evaluation import (
     _fixed_projection,
     _knn_observation,
     _predict_plan,
+    outer_folds,
     pairwise_concordance,
 )
 
@@ -73,3 +74,22 @@ def test_complete_case_scaffold_exclusion_returns_empty_evaluation_contract():
     )
     assert prediction.size == 0
     assert evaluation.size == 0
+
+
+def test_outer_scaffold_fold_requires_an_estimable_nested_fold():
+    dataset = Dataset(
+        rows=tuple({} for _ in range(8)),
+        ids=np.asarray([str(index) for index in range(8)]),
+        series=np.asarray(["series"] * 8),
+        components=np.asarray(["component"] * 8),
+        scaffolds=np.asarray(["cluster-a"] * 6 + ["cluster-b"] * 2),
+        scaffold_eligible=np.ones(8, dtype=bool),
+        y=np.arange(8, dtype=float),
+        features={},
+        available={"S3": np.ones(8, dtype=bool)},
+        similarities={},
+        series_order=np.asarray(["series"]),
+        series_similarities={},
+        derangements={},
+    )
+    assert not [fold for fold in outer_folds(dataset, "S3") if fold.evaluation == "scaffold"]

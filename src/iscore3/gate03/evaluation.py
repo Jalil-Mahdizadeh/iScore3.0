@@ -480,18 +480,18 @@ def outer_folds(dataset: Dataset, view: str, *, complete_case: str = "") -> list
         train = indices[~np.isin(indices, test)]
         if len(test) < 2 or int(np.sum(dataset.series[train] == heldout_series)) < 6:
             continue
-        folds.append(
-            Fold(
-                "scaffold",
-                f"scaffold-{scaffold}",
-                view,
-                train,
-                test,
-                heldout_series,
-                str(dataset.components[test[0]]),
-                str(scaffold),
-            )
+        candidate = Fold(
+            "scaffold",
+            f"scaffold-{scaffold}",
+            view,
+            train,
+            test,
+            heldout_series,
+            str(dataset.components[test[0]]),
+            str(scaffold),
         )
+        if _scaffold_inner_folds(dataset, candidate.train):
+            folds.append(candidate)
     return folds
 
 
@@ -511,6 +511,29 @@ def _centered_response(
     )
 
 
+def _scaffold_inner_folds(
+    dataset: Dataset, train: np.ndarray, maximum_scaffold_folds: int = 5
+) -> list[tuple[np.ndarray, np.ndarray]]:
+    candidates = []
+    for scaffold in sorted(
+        set(dataset.scaffolds[train][dataset.scaffold_eligible[train]])
+    ):
+        valid = train[
+            (dataset.scaffolds[train] == scaffold)
+            & dataset.scaffold_eligible[train]
+        ]
+        if len(valid) < 2:
+            continue
+        group = dataset.series[valid[0]]
+        fitting = train[~np.isin(train, valid)]
+        if int(np.sum(dataset.series[fitting] == group)) < 6:
+            continue
+        order = hashlib.sha256(f"20260821:{scaffold}".encode()).hexdigest()
+        candidates.append((order, fitting, valid))
+    candidates.sort(key=lambda value: value[0])
+    return [(fit, valid) for _, fit, valid in candidates[:maximum_scaffold_folds]]
+
+
 def _inner_folds(dataset: Dataset, fold: Fold, maximum_scaffold_folds: int = 5):
     if fold.evaluation == "absolute":
         from sklearn.model_selection import GroupKFold
@@ -521,24 +544,10 @@ def _inner_folds(dataset: Dataset, fold: Fold, maximum_scaffold_folds: int = 5):
             (fold.train[fit], fold.train[valid])
             for fit, valid in splitter.split(fold.train, groups=groups)
         ]
-    candidates = []
-    for scaffold in sorted(set(dataset.scaffolds[fold.train][dataset.scaffold_eligible[fold.train]])):
-        valid = fold.train[
-            (dataset.scaffolds[fold.train] == scaffold)
-            & dataset.scaffold_eligible[fold.train]
-        ]
-        if len(valid) < 2:
-            continue
-        group = dataset.series[valid[0]]
-        fitting = fold.train[~np.isin(fold.train, valid)]
-        if int(np.sum(dataset.series[fitting] == group)) < 6:
-            continue
-        order = hashlib.sha256(f"20260821:{scaffold}".encode()).hexdigest()
-        candidates.append((order, fitting, valid))
-    candidates.sort(key=lambda value: value[0])
+    candidates = _scaffold_inner_folds(dataset, fold.train, maximum_scaffold_folds)
     if not candidates:
         raise Gate3EvaluationError(f"No nested scaffold folds for {fold.fold_id}")
-    return [(fit, valid) for _, fit, valid in candidates[:maximum_scaffold_folds]]
+    return candidates
 
 
 def design_matrix(dataset: Dataset, plan: Plan) -> np.ndarray:
@@ -895,6 +904,10 @@ def _predict_plan(
             fold.heldout_component,
             fold.heldout_scaffold,
         )
+        if fold.evaluation == "scaffold" and not _scaffold_inner_folds(
+            dataset, fold.train
+        ):
+            return np.asarray([]), {}, train, np.asarray([], dtype=int), {}
     if fold.evaluation == "scaffold":
         y_train, y_test, means = _centered_response(dataset, train, test)
     else:
@@ -1360,7 +1373,7 @@ def run_experiment(
     gmolai_root: Path,
     structural_allpairs: Path,
     config_path: Path,
-    amendment_path: Path,
+    amendment_paths: Sequence[Path],
     required_audits: Sequence[Path],
     split_output: Path,
     prediction_output: Path,
@@ -1375,11 +1388,19 @@ def run_experiment(
     if subprocess.run(["git", "diff", "--quiet"], check=False).returncode != 0:
         raise Gate3EvaluationError("Tracked worktree changes present at efficacy-run start")
     config = yaml.safe_load(config_path.read_text(encoding="utf-8"))
-    amendment = yaml.safe_load(amendment_path.read_text(encoding="utf-8"))
+    amendments = [yaml.safe_load(path.read_text(encoding="utf-8")) for path in amendment_paths]
     if config.get("status") != "frozen_before_first_gate03_efficacy_fit":
         raise Gate3EvaluationError("Evaluation config is not pre-fit frozen")
-    if amendment.get("status") != "frozen_before_first_gate03_efficacy_fit":
-        raise Gate3EvaluationError("Nested-centering amendment is not pre-fit frozen")
+    allowed_amendment_states = {
+        "frozen_before_first_gate03_efficacy_fit",
+        "frozen_before_first_completed_gate03_efficacy_result",
+    }
+    if any(
+        amendment.get("status") not in allowed_amendment_states
+        or amendment.get("efficacy_model_outcomes_inspected") is not False
+        for amendment in amendments
+    ):
+        raise Gate3EvaluationError("A required outcome-blind amendment is not frozen")
     audit_values = [json.loads(path.read_text(encoding="utf-8")) for path in required_audits]
     statuses = [
         value.get("overall_status")
@@ -1436,7 +1457,7 @@ def run_experiment(
 
     inputs = [
         dataset_path, split_path, *pocket_paths, esm2_manifest, esm_if1_manifest,
-        gmolai_manifest, structural_allpairs, config_path, amendment_path, *required_audits,
+        gmolai_manifest, structural_allpairs, config_path, *amendment_paths, *required_audits,
     ]
     outputs = [split_output, prediction_output, hyperparameter_output, leakage_output, metric_output]
     manifest = {

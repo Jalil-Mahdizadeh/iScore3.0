@@ -1,0 +1,38 @@
+schema_version: 1
+amendment_id: gate03-protocol-amendment-05
+status: frozen_before_first_completed_gate03_efficacy_result
+frozen_utc: 2026-08-21T14:33:00Z
+efficacy_model_outcomes_inspected: false
+context:
+  aborted_attempts_wrote_result_artifacts: false
+  partial_fits_executed_during_aborted_runs: true
+  model_predictions_or_metrics_inspected: false
+problem: >-
+  After applying a receptor-view or ligand-encoder complete-case restriction,
+  an otherwise size-eligible outer scaffold fold can lack any remaining inner
+  eligible scaffold cluster. Hyperparameters then cannot be selected without
+  using outer-test labels or inventing an unregistered fallback.
+replacement:
+  rule: exclude_view_specific_outer_scaffold_fold_without_estimable_inner_fold
+  applied_before_model_fit_for_that_fold: true
+  uses_endpoint_values: false
+  inner_requirements:
+    validation_ligands_at_least: 2
+    same_series_fitting_ligands_at_least: 6
+    maximum_inner_folds: 5
+  applies_to:
+    - S1
+    - S2
+    - S3
+    - gmolai_complete_case_sensitivity
+  forbidden_fallbacks:
+    - select_hyperparameters_from_outer_test_labels
+    - borrow_hyperparameters_selected_on_a_different_receptor_view
+    - post_hoc_choose_a_default_from_observed_performance
+unchanged:
+  - response_definitions
+  - model_families
+  - hyperparameter_grids
+  - progression_criteria
+  - component_OOD_folds
+  - all_other_evaluation_effective_v1_and_amendment_04_fields
