@@ -1,4 +1,54 @@
-# Gate-4A admission reproducibility
+# Gate-4A reproducibility
+
+## Completed isolated Delta3D-ligand experiment
+
+The outcome-generating protocol and code were sealed in pre-outcome commit
+`55c176f`. Runtime provenance is in
+`reports/gate4a/evidence/environment-delta3d-v2.json`; the feature, raw-ensemble,
+OOF and result hashes are in the three tracked `delta3d-*-v1.json` evidence files.
+
+Use a disposable replay copy with ignored source/checkpoint/raw snapshots restored
+at their manifest hashes. Move the three tracked output evidence JSONs aside in
+that disposable copy before running: feature extraction, evaluation and validation
+intentionally refuse to overwrite them. Install the small Uni-Mol overlay and run:
+
+```bash
+apptainer exec containers/gmolai-pyg-25.09-arm64.sif \
+  python -m pip install --target environments/local/gate4a-delta3d/vendor \
+  -r environments/gate4a-delta3d-requirements.txt
+
+DELTA3D_PY=(apptainer exec --nv containers/gmolai-pyg-25.09-arm64.sif env \
+  PYTHONPATH=src:environments/local/gate4a/vendor:environments/local/gate4a-delta3d/vendor:third_party/source_cache/unimol_tools-v0.1.6 \
+  CUBLAS_WORKSPACE_CONFIG=:4096:8 python)
+
+"${DELTA3D_PY[@]}" scripts/gate4a/extract_delta3d_ligand_features.py --device cuda
+
+apptainer exec containers/gmolai-pyg-25.09-arm64.sif env \
+  PYTHONPATH=src:environments/local/gate4a/vendor \
+  OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 \
+  python scripts/gate4a/evaluate_delta3d_ligand.py
+
+apptainer exec containers/gmolai-pyg-25.09-arm64.sif env PYTHONPATH=src \
+  python scripts/gate4a/validate_delta3d_results.py
+```
+
+Feature extraction is label/receptor blind. Evaluation verifies the feature hash
+before reading Davis labels and never fits receptor or interaction models. Compare
+per-array feature hashes (the NPZ container timestamp itself need not be byte-
+identical), model metrics, component-bootstrap summaries and reconstructed
+likelihoods with the tracked evidence.
+
+The complete test suite is:
+
+```bash
+apptainer exec --nv containers/gmolai-pyg-25.09-arm64.sif env \
+  PYTHONPATH=src:environments/local/gate4a/vendor:environments/local/gate4a-delta3d/vendor:third_party/source_cache/unimol_tools-v0.1.6 \
+  ISCORE3_TEST_DEVICE=cuda pytest -q
+```
+
+It passed 50/50 tests on 2026-08-21.
+
+## Admission and provenance-closure history
 
 This phase performs data admission and label-blind input audits only. It trains no
 predictive model. The recorded environment is

@@ -98,9 +98,10 @@ Development and confirmation manifests remain separate. The outcome-blind OKL an
 KIRHub eligibility ledgers are frozen and currently release zero strict pairs.
 Confirmation access is
 one-shot after signed hashes for code, configuration, chemical/receptor ledgers,
-features, splits, checkpoints, and analysis plan are recorded. Gate-4A currently
-blocks `Delta3D-ligand` pending a named independent chemical-QA signature. It blocks
-all receptor/additive and `Delta3D x pocket` fitting because receptor closure is
-incomplete, the structural components are non-informative for a Davis double-cold
-test, strict external pairs are unavailable, and replicate-derived equivalence
-margins are unresolved.
+features, splits, checkpoints, and analysis plan are recorded. The prior named-
+reviewer requirement is superseded by the final owner-authorized 69-ligand ledger;
+no additional external/manual chemical sign-off is required. The isolated
+`Delta3D-ligand` analysis is complete with a no-go result. All receptor/additive and
+`Delta3D x pocket` fitting remains blocked because the structural components are
+non-informative for a Davis double-cold test, strict external pairs are unavailable,
+and replicate-derived equivalence margins are unresolved.

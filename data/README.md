@@ -17,13 +17,19 @@ source is unusable until its official URL, release identifier, byte size,
 SHA-256, acquisition time, terms, and processing command have been recorded.
 
 The PubChem name-resolution snapshot remains immutable candidate evidence. The
-final tracked disposition ledger is
-`processed/gate4a/davis-compound-adjudication-v1.tsv`: 69 parent structures are
-admitted and three records are quarantined. BMS-345541 and JNJ-28312141 follow the
-explicit publication-parent/counterion-removal rule; no other multicomponent record
-is silently desalted. A 69-row independent-review packet is frozen at
-`processed/gate4a/davis-ligand-secondary-qa-packet-v1.tsv`; its pending signature
-blocks label release and the final identity-ledger freeze.
+final tracked identity ledger is
+`processed/gate4a/davis-compound-identity-final-v2.tsv`: 69 parent structures are
+admitted after completed adjudication, technical validation and explicit project-
+owner authorization. BMS-345541 and JNJ-28312141 follow the explicit publication-
+parent/counterion-removal rule; no other multicomponent record is silently desalted.
+The earlier 69-row review packet remains immutable historical provenance but is
+superseded; no additional external/manual chemical signature is required.
+
+The completed isolated experiment's rebuildable arrays are
+`features/gate4a/delta3d-ligand-v1.npz`, raw free/control ensembles are
+`interim/gate4a/delta3d-free-ensembles-v1.jsonl.gz`, and OOF predictions are
+`interim/gate4a/delta3d-ligand-oof-v1.npz`. They remain Git-ignored; tracked
+manifests under `reports/gate4a/evidence/` record hashes, dimensions and provenance.
 
 Coordinate provenance is tracked in
 `processed/gate4a/alphafold-pocket-admission-v1.tsv` and the corresponding manifest.

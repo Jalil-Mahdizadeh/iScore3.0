@@ -1,14 +1,14 @@
 # iScore3.0
 
-iScore3.0 is now a bounded research programme testing whether independently
-generated free-ligand conformers add target-dependent affinity signal beyond a
-strong ligand-2D baseline. No query-ligand crystal coordinates, docked poses,
-protein-ligand contacts, docking teachers, or ligand-to-pocket correspondences
-are allowed.
+iScore3.0 Gate-4A is closed with a **no-go** decision. Under strict ligand-component
+OOD evaluation, independently generated free-ligand conformers did not add
+reproducible predictive information beyond frozen gMolAI 2D. No query-ligand
+crystal coordinates, docked poses, protein-ligand contacts, docking teachers, or
+ligand-to-pocket correspondences were used.
 
 ## Current phase
 
-Gate-4A is an interaction-identifiability gate, not a model-building campaign.
+Gate-4A was an interaction-identifiability gate, not a model-building campaign.
 It separates three predictive effects:
 
 1. `delta_3d_ligand`: free-ligand 3D beyond frozen gMolAI 2D;
@@ -16,15 +16,17 @@ It separates three predictive effects:
 3. `delta_3d_x_pocket`: free-ligand-3D-specific interaction beyond a
    capacity-matched 2D-by-pocket interaction control.
 
-The phase begins with source and censoring audits, deterministic invariant
-conformer descriptors, and one frozen pretraining-only ligand-3D representation.
-No trainable E(3) encoder is permitted unless Gate-4A passes its preregistered
-criteria.
+The isolated `delta_3d_ligand` experiment is complete and failed the joint
+preregistered progression rule. `delta_pocket_additive` and
+`delta_3d_x_pocket` were not trained and remain blocked on Davis. No trainable
+E(3), interaction, or cross-attention model is authorized.
 
 ## Start here
 
 - [`docs/gate4a/PROTOCOL.md`](docs/gate4a/PROTOCOL.md) — scientific design and
   progression/termination rules.
+- [`reports/gate4a/GATE4A_DELTA3D_LIGAND_REPORT.md`](reports/gate4a/GATE4A_DELTA3D_LIGAND_REPORT.md)
+  — final result, controls, limitations, and no-go recommendation.
 - [`docs/gate4a/DATA_GOVERNANCE.md`](docs/gate4a/DATA_GOVERNANCE.md) — fresh-data,
   censoring, split, and test-access policy.
 - [`configs/gate4a/protocol-v1.yaml`](configs/gate4a/protocol-v1.yaml) — machine-readable
@@ -32,7 +34,7 @@ criteria.
 - [`reports/gate4a/GATE4A_DATASET_ADMISSION_REPORT.md`](reports/gate4a/GATE4A_DATASET_ADMISSION_REPORT.md)
   — original dataset-admission decision.
 - [`reports/gate4a/GATE4A_PROVENANCE_CLOSURE_REPORT.md`](reports/gate4a/GATE4A_PROVENANCE_CLOSURE_REPORT.md)
-  — current committee-facing PASS/BLOCKED decision and evidence.
+  — historical pre-experiment provenance decision, now superseded where noted.
 - [`data/README.md`](data/README.md) — lifecycle and provenance contract.
 - [`reports/history/GATE3_CLOSURE.md`](reports/history/GATE3_CLOSURE.md) — why the
   former hypothesis was closed and how its full history can be recovered.
@@ -51,10 +53,10 @@ commands.
 
 ## Status
 
-The bounded provenance-closure phase is complete. A row-complete secondary-QA
-packet for the 69 provisionally admitted Davis parents is hash-frozen, but a named
-independent reviewer has not signed it. The chemical ledger and the isolated
-`delta_3d_ligand` experiment therefore remain blocked.
+The 69 Davis ligand identities are final based on the completed adjudication,
+technical validation, and explicit project-owner authorization. The historical
+secondary-QA packet is retained but superseded; no additional external/manual
+chemical sign-off is required.
 
 Canonical AlphaFold v6 pocket coordinates pass exact sequence/coordinate checks
 for 288/338 standardized receptor estimands. Fifty fail closed because an exact
@@ -67,5 +69,11 @@ Outcome-blind OKL/KIRHub eligibility ledgers are frozen but release zero strict
 confirmation pairs. Public repeat evidence still cannot support numeric metric-
 specific practical-equivalence margins.
 
-No predictive model, including the optional isolated ligand-3D model, was trained.
-`delta_pocket_additive` and `delta_3d_x_pocket` remain blocked.
+The isolated experiment evaluated 51 fully nested, censor-aware models across 66
+ligand leakage components and five independent conformer seeds. Deterministic 3D
+had pooled NLL gain -0.0026 versus gMolAI (95% component-bootstrap interval
+-0.0178 to 0.0136); frozen Uni-Mol v1 had -0.0136 (-0.0311 to 0.0041). Actual
+Uni-Mol coordinates were worse than destroyed-coordinate controls. The free-
+conformer pivot therefore terminates under the frozen rule. The separate future
+kinase-selectivity design is archived as design-only and is not authorization to
+train.

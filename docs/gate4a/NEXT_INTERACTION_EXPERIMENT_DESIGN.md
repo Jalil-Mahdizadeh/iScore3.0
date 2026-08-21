@@ -1,6 +1,9 @@
 # Design only: prospective kinase-selectivity interaction gate
 
-Status: `DESIGN_ONLY / NO TRAINING AUTHORIZED` (2026-08-21).
+Status: `ARCHIVED DESIGN ONLY / NO TRAINING AUTHORIZED` (2026-08-21). The
+preregistered isolated ligand-3D gate subsequently failed. Under the parent Gate-4A
+termination rule, this document is a contingency design, not a recommended next
+modeling step. Only a separately authorized, fresh-data project could reactivate it.
 
 ## Choice and rationale
 

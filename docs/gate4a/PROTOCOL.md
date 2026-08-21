@@ -1,5 +1,11 @@
 # Gate-4A protocol: free-conformer interaction identifiability
 
+**Final status (2026-08-21): terminated under the preregistered rule.** The 69
+ligands were finalized by explicit project-owner authorization and no further
+external/manual chemical sign-off is required. The isolated experiment found no
+reproducible `delta_3d_ligand`; see the final report. Receptor interaction models
+were not trained.
+
 ## Objective
 
 Determine whether independently generated free-ligand 3D information provides
@@ -41,8 +47,9 @@ an atomistic binding mechanism.
    map constructs and compounds, quantify matrix density and 3D informativeness.
 2. **4A-1 deterministic representations:** fixed conformer generator, invariant
    shape/pharmacophore-distance descriptors, geometry-destruction controls.
-3. **4A-2 frozen pretrained representation:** one pretraining-only Uni-Mol2
-   molecular checkpoint; no docking/PDBbind-fine-tuned weights.
+3. **4A-2 frozen pretrained representation:** the isolated protocol froze
+   Uni-Mol v1 molecule-all-H at source release v0.1.6 and exact checkpoint hash;
+   no docking/PDBbind-fine-tuned weights.
 4. **4A-3 low-capacity effects:** additive and low-rank bilinear/gated models only.
 5. **4A-4 locked replication:** one authorized evaluation on a distinct panel.
 
@@ -123,7 +130,9 @@ structures plus completed construct validation. Public data still do not contain
 representative same-estimand raw paired-Kd repeat panel, so numeric metric-specific
 equivalence regions remain blocked.
 
-`delta_3d_ligand` remains blocked until an external chemical reviewer signs the
-frozen packet. `delta_pocket_additive` and `delta_3d_x_pocket` remain blocked. The
-dominant structural component is now a design-level identifiability problem, not
-merely unfinished provenance.
+This section records the earlier provenance-closure state. It is superseded for
+ligand identity: the project owner accepted the technically validated 69-ligand
+ledger as final and removed additional sign-off. `delta_3d_ligand` was subsequently
+run and failed its progression criteria. `delta_pocket_additive` and
+`delta_3d_x_pocket` remain blocked. The dominant structural component is a
+design-level identifiability problem, not merely unfinished provenance.

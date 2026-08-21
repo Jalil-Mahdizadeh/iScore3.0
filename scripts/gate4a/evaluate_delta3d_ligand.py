@@ -178,7 +178,7 @@ def _metrics(
         mask = exact_mask[:, target]
         if int(mask.sum()) < 5:
             continue
-        correlation = spearmanr(prediction[mask], exact_pkd[mask]).statistic
+        correlation = spearmanr(prediction[mask], exact_pkd[mask, target]).statistic
         if math.isfinite(float(correlation)):
             spearman_values.append(float(correlation))
         ndcg_values.append(

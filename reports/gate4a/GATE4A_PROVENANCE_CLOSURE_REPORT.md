@@ -1,5 +1,10 @@
 # Gate-4A provenance-closure report
 
+> Historical report. Superseded on 2026-08-21 for ligand QA and the isolated
+> experiment: the project owner finalized all 69 admitted identities without
+> additional external/manual sign-off, and `delta_3d_ligand` subsequently produced
+> a no-go result. Receptor/additive and interaction blocks below remain in force.
+
 **Decision: `delta_3d_ligand` is `BLOCKED_PENDING_INDEPENDENT_QA`; both
 `delta_pocket_additive` and `delta_3d_x_pocket` are `BLOCKED`. No predictive model
 was trained.**
