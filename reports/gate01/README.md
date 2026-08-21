@@ -9,3 +9,7 @@ The Gate decision is **no-go for full architecture training at this stage**.
 - [evidence/README.md](evidence/README.md) — canonical/superseded evidence map
 
 Claims distinguish measured results from design proposals and explicitly label unavailable evidence. No full iScore3.0 model was trained.
+
+The authorized bounded follow-on is complete and remains no-go; see the
+[Gate-2 report](../gate02/GATE_2_REPORT.md). It expands the strict dataset and
+leakage controls, but still does not train a full iScore3.0 model.

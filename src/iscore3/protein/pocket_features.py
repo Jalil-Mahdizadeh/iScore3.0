@@ -42,6 +42,7 @@ ATOM_TAGS = (
     "Cartn_y",
     "Cartn_z",
     "occupancy",
+    "B_iso_or_equiv",
     "auth_asym_id",
     "auth_seq_id",
     "pdbx_PDB_model_num",
@@ -49,11 +50,29 @@ ATOM_TAGS = (
 
 AA_ORDER = tuple("ACDEFGHIKLMNPQRSTVWYX")
 AA3_TO_1 = {
-    "ALA": "A", "ARG": "R", "ASN": "N", "ASP": "D", "CYS": "C",
-    "GLN": "Q", "GLU": "E", "GLY": "G", "HIS": "H", "ILE": "I",
-    "LEU": "L", "LYS": "K", "MET": "M", "PHE": "F", "PRO": "P",
-    "SER": "S", "THR": "T", "TRP": "W", "TYR": "Y", "VAL": "V",
-    "MSE": "M", "SEC": "C", "PYL": "K",
+    "ALA": "A",
+    "ARG": "R",
+    "ASN": "N",
+    "ASP": "D",
+    "CYS": "C",
+    "GLN": "Q",
+    "GLU": "E",
+    "GLY": "G",
+    "HIS": "H",
+    "ILE": "I",
+    "LEU": "L",
+    "LYS": "K",
+    "MET": "M",
+    "PHE": "F",
+    "PRO": "P",
+    "SER": "S",
+    "THR": "T",
+    "TRP": "W",
+    "TYR": "Y",
+    "VAL": "V",
+    "MSE": "M",
+    "SEC": "C",
+    "PYL": "K",
 }
 ELEMENT_ORDER = ("C", "N", "O", "S", "P", "SE", "OTHER")
 PAIR_BINS = np.asarray([0.0, 4.0, 6.0, 8.0, 10.0, 12.0, 16.0, 20.0, 30.0, np.inf])
@@ -98,6 +117,7 @@ class AtomRecord:
     occupancy: float
     auth_asym_id: str
     auth_seq_id: str
+    b_factor: float = float("nan")
 
 
 @dataclass(frozen=True, slots=True)
@@ -152,7 +172,7 @@ def read_mmcif_atoms(path: Path) -> tuple[AtomRecord, ...]:
 
     chosen: dict[tuple[str, str, int | None, str], AtomRecord] = {}
     for row in table:
-        model = _clean_token(str(row[14])) or "1"
+        model = _clean_token(str(row[15])) or "1"
         if model != "1":
             continue
         try:
@@ -167,8 +187,9 @@ def read_mmcif_atoms(path: Path) -> tuple[AtomRecord, ...]:
                 seq_id=_optional_int(str(row[7])),
                 xyz=(float(row[8]), float(row[9]), float(row[10])),
                 occupancy=float(_clean_token(str(row[11])) or 1.0),
-                auth_asym_id=_clean_token(str(row[12])),
-                auth_seq_id=_clean_token(str(row[13])),
+                auth_asym_id=_clean_token(str(row[13])),
+                auth_seq_id=_clean_token(str(row[14])),
+                b_factor=float(_clean_token(str(row[12])) or "nan"),
             )
         except (TypeError, ValueError) as error:
             raise PocketError(f"Invalid atom_site numeric field in {path}") from error
@@ -178,7 +199,9 @@ def read_mmcif_atoms(path: Path) -> tuple[AtomRecord, ...]:
             chosen[key] = atom
     if not chosen:
         raise PocketError(f"No model-1 atoms in {path}")
-    return tuple(chosen[key] for key in sorted(chosen, key=lambda x: tuple(str(v) for v in x)))
+    return tuple(
+        chosen[key] for key in sorted(chosen, key=lambda x: tuple(str(v) for v in x))
+    )
 
 
 def split_ids(value: str) -> tuple[str, ...]:
@@ -192,7 +215,9 @@ def _heavy(atoms: Iterable[AtomRecord]) -> list[AtomRecord]:
     return [atom for atom in atoms if atom.element not in {"H", "D"}]
 
 
-def _distance_matrix(left: Sequence[AtomRecord], right: Sequence[AtomRecord]) -> np.ndarray:
+def _distance_matrix(
+    left: Sequence[AtomRecord], right: Sequence[AtomRecord]
+) -> np.ndarray:
     left_xyz = np.asarray([atom.xyz for atom in left], dtype=np.float64)
     right_xyz = np.asarray([atom.xyz for atom in right], dtype=np.float64)
     return np.sqrt(np.sum((left_xyz[:, None, :] - right_xyz[None, :, :]) ** 2, axis=2))
@@ -251,7 +276,13 @@ def define_reference_site(
                 continue
             distances = _distance_matrix(chain_atoms, copy_atoms)
             contact_indices = np.argwhere(distances <= cutoff_angstrom)
-            positions = sorted({chain_atoms[int(index)].seq_id for index in contact_indices[:, 0]}) if len(contact_indices) else []
+            positions = (
+                sorted(
+                    {chain_atoms[int(index)].seq_id for index in contact_indices[:, 0]}
+                )
+                if len(contact_indices)
+                else []
+            )
             candidates.append(
                 {
                     "protein_asym_id": protein_chain,
@@ -263,7 +294,9 @@ def define_reference_site(
                 }
             )
     if not candidates:
-        raise PocketError(f"No reference protein/ligand chain pairs for {reference['pdb_id']}")
+        raise PocketError(
+            f"No reference protein/ligand chain pairs for {reference['pdb_id']}"
+        )
     chosen = min(
         candidates,
         key=lambda row: (
@@ -281,7 +314,8 @@ def define_reference_site(
     selected_atoms = [
         atom
         for atom in protein_atoms
-        if atom.asym_id == chosen["protein_asym_id"] and atom.seq_id in chosen["positions"]
+        if atom.asym_id == chosen["protein_asym_id"]
+        and atom.seq_id in chosen["positions"]
     ]
     residue_names = _modal_residue_names(selected_atoms)
     return {
@@ -300,7 +334,9 @@ def define_reference_site(
         "label_used_for_site_definition": False,
         "reference_label_available_to_model": False,
         "positions_label_seq_id": chosen["positions"],
-        "residue_name_by_position": {str(k): residue_names[k] for k in chosen["positions"]},
+        "residue_name_by_position": {
+            str(k): residue_names[k] for k in chosen["positions"]
+        },
         "contact_atom_pairs": chosen["contact_atom_pairs"],
         "minimum_distance_angstrom": chosen["minimum_distance_angstrom"],
         "ligand_heavy_atom_count": chosen["ligand_heavy_atom_count"],
@@ -333,8 +369,13 @@ def extract_protein_pocket(
         and atom.asym_id in chains
         and atom.seq_id in expected_set
     )
-    by_chain = {chain: [atom for atom in protein_atoms if atom.asym_id == chain] for chain in chains}
-    candidates: list[tuple[tuple[Any, ...], str, list[AtomRecord], dict[int, str], list[int]]] = []
+    by_chain = {
+        chain: [atom for atom in protein_atoms if atom.asym_id == chain]
+        for chain in chains
+    }
+    candidates: list[
+        tuple[tuple[Any, ...], str, list[AtomRecord], dict[int, str], list[int]]
+    ] = []
     for chain, chain_atoms in by_chain.items():
         residue_names = _modal_residue_names(chain_atoms)
         present = sorted(residue_names)
@@ -348,7 +389,9 @@ def extract_protein_pocket(
         candidates.append((key, chain, chain_atoms, residue_names, mismatches))
     if not candidates:
         raise PocketError(f"No candidate protein chains for {pdb_id}")
-    _, chain, selected_atoms, residue_names, mismatches = min(candidates, key=lambda row: row[0])
+    _, chain, selected_atoms, residue_names, mismatches = min(
+        candidates, key=lambda row: row[0]
+    )
     present = tuple(sorted(residue_names))
     missing = tuple(position for position in expected if position not in residue_names)
     coverage = len(present) / len(expected)
@@ -357,7 +400,9 @@ def extract_protein_pocket(
             f"Pocket coverage {coverage:.3f} below {minimum_coverage:.3f} for {pdb_id} chain {chain}"
         )
     if mismatches:
-        raise PocketError(f"Pocket residue mismatch for {pdb_id} chain {chain}: {mismatches}")
+        raise PocketError(
+            f"Pocket residue mismatch for {pdb_id} chain {chain}: {mismatches}"
+        )
     return PocketInstance(
         pdb_id=pdb_id,
         structure_sha256=sha256_file(structure_path),
@@ -374,11 +419,15 @@ def extract_protein_pocket(
 def pocket_feature_dict(pocket: PocketInstance) -> dict[str, float]:
     """Compute transparent invariant residue-composition and 3D descriptors."""
 
-    residue_names = [pocket.residue_name_by_position[position] for position in pocket.present_positions]
+    residue_names = [
+        pocket.residue_name_by_position[position]
+        for position in pocket.present_positions
+    ]
     one_letter = [AA3_TO_1.get(name, "X") for name in residue_names]
     aa_counts = Counter(one_letter)
     element_counts = Counter(
-        atom.element if atom.element in ELEMENT_ORDER[:-1] else "OTHER" for atom in pocket.atoms
+        atom.element if atom.element in ELEMENT_ORDER[:-1] else "OTHER"
+        for atom in pocket.atoms
     )
     n_residues = len(residue_names)
     n_atoms = len(pocket.atoms)
@@ -392,13 +441,16 @@ def pocket_feature_dict(pocket: PocketInstance) -> dict[str, float]:
     centroids = []
     for position in pocket.present_positions:
         residue_xyz = np.asarray(
-            [atom.xyz for atom in pocket.atoms if atom.seq_id == position], dtype=np.float64
+            [atom.xyz for atom in pocket.atoms if atom.seq_id == position],
+            dtype=np.float64,
         )
         centroids.append(np.mean(residue_xyz, axis=0))
     centroid_array = np.asarray(centroids, dtype=np.float64)
     if n_residues >= 2:
         distances = np.sqrt(
-            np.sum((centroid_array[:, None, :] - centroid_array[None, :, :]) ** 2, axis=2)
+            np.sum(
+                (centroid_array[:, None, :] - centroid_array[None, :, :]) ** 2, axis=2
+            )
         )
         upper = distances[np.triu_indices(n_residues, k=1)]
         histogram = np.histogram(upper, bins=PAIR_BINS)[0].astype(np.float64)
@@ -419,7 +471,10 @@ def pocket_feature_dict(pocket: PocketInstance) -> dict[str, float]:
     }
     values.update({f"aa_fraction_{aa}": aa_counts[aa] / n_residues for aa in AA_ORDER})
     values.update(
-        {f"element_fraction_{element}": element_counts[element] / n_atoms for element in ELEMENT_ORDER}
+        {
+            f"element_fraction_{element}": element_counts[element] / n_atoms
+            for element in ELEMENT_ORDER
+        }
     )
     values.update(
         {
@@ -434,7 +489,10 @@ def pocket_feature_dict(pocket: PocketInstance) -> dict[str, float]:
         }
     )
     values.update(
-        {f"residue_pair_distance_bin_{index}": float(value) for index, value in enumerate(histogram)}
+        {
+            f"residue_pair_distance_bin_{index}": float(value)
+            for index, value in enumerate(histogram)
+        }
     )
     values.update(
         {
@@ -443,7 +501,9 @@ def pocket_feature_dict(pocket: PocketInstance) -> dict[str, float]:
             "residue_contact_degree_std_8A": float(np.std(degrees)),
         }
     )
-    if tuple(values) != FEATURE_NAMES or any(not math.isfinite(v) for v in values.values()):
+    if tuple(values) != FEATURE_NAMES or any(
+        not math.isfinite(v) for v in values.values()
+    ):
         raise PocketError("Pocket feature schema/order or finiteness invariant failed")
     return values
 
@@ -459,7 +519,9 @@ def tsv_bytes(rows: Sequence[Mapping[str, Any]]) -> bytes:
     if not rows:
         raise PocketError("Cannot serialize an empty table")
     buffer = StringIO(newline="")
-    writer = csv.DictWriter(buffer, fieldnames=list(rows[0]), delimiter="\t", lineterminator="\n")
+    writer = csv.DictWriter(
+        buffer, fieldnames=list(rows[0]), delimiter="\t", lineterminator="\n"
+    )
     writer.writeheader()
     writer.writerows(rows)
     return buffer.getvalue().encode("utf-8")
@@ -478,10 +540,16 @@ def build_pocket_views(
     """Build matched S0 query-holo and S1 fixed-reference pocket views."""
 
     rows = read_tsv(pilot_tsv)
-    references = {row["construct_group_id"]: row for row in rows if row["role"] == "site_reference_only"}
+    references = {
+        row["construct_group_id"]: row
+        for row in rows
+        if row["role"] == "site_reference_only"
+    }
     supervised = [row for row in rows if row["role"] == "supervised_s0"]
     if not references or not supervised:
-        raise PocketError("Pilot must contain quarantined references and supervised rows")
+        raise PocketError(
+            "Pilot must contain quarantined references and supervised rows"
+        )
     if any(row.get("pKd") or row.get("value_nm") for row in references.values()):
         raise PocketError("Reference-label quarantine failed")
 
@@ -504,7 +572,9 @@ def build_pocket_views(
         )
         site_definitions.append(definition)
         positions = definition["positions_label_seq_id"]
-        expected_names = {int(k): v for k, v in definition["residue_name_by_position"].items()}
+        expected_names = {
+            int(k): v for k, v in definition["residue_name_by_position"].items()
+        }
         reference_pockets[group_id] = extract_protein_pocket(
             atoms_for(reference["pdb_id"]),
             pdb_id=reference["pdb_id"],
@@ -523,7 +593,9 @@ def build_pocket_views(
         group_id = row["construct_group_id"]
         definition = definition_by_group[group_id]
         positions = definition["positions_label_seq_id"]
-        expected_names = {int(k): v for k, v in definition["residue_name_by_position"].items()}
+        expected_names = {
+            int(k): v for k, v in definition["residue_name_by_position"].items()
+        }
         query_path = coordinate_root / f"{row['pdb_id']}.cif.gz"
         try:
             query_pocket = extract_protein_pocket(
@@ -537,13 +609,20 @@ def build_pocket_views(
                 minimum_coverage=minimum_coverage,
             )
         except PocketError as error:
-            failures.append({"observation_id": row["observation_id"], "reason": str(error)})
+            failures.append(
+                {"observation_id": row["observation_id"], "reason": str(error)}
+            )
             continue
         if row["pdb_id"] == definition["reference_pdb_id"]:
             raise PocketError("A site-reference structure entered the supervised set")
         for tier, pocket, conformation, query_holo in (
             ("S0", query_pocket, "query_holo_receptor", True),
-            ("S1", reference_pockets[group_id], "fixed_historical_reference_receptor", False),
+            (
+                "S1",
+                reference_pockets[group_id],
+                "fixed_historical_reference_receptor",
+                False,
+            ),
         ):
             record: dict[str, Any] = {
                 "view_id": f"{row['observation_id']}:{tier}",
@@ -563,9 +642,15 @@ def build_pocket_views(
                 "feature_protein_asym_id": pocket.selected_asym_id,
                 "site_reference_pdb_id": definition["reference_pdb_id"],
                 "site_reference_ligand_comp_id": definition["reference_ligand_comp_id"],
-                "pocket_positions_label_seq_id": ";".join(map(str, pocket.expected_positions)),
-                "present_positions_label_seq_id": ";".join(map(str, pocket.present_positions)),
-                "missing_positions_label_seq_id": ";".join(map(str, pocket.missing_positions)),
+                "pocket_positions_label_seq_id": ";".join(
+                    map(str, pocket.expected_positions)
+                ),
+                "present_positions_label_seq_id": ";".join(
+                    map(str, pocket.present_positions)
+                ),
+                "missing_positions_label_seq_id": ";".join(
+                    map(str, pocket.missing_positions)
+                ),
                 "receptor_conformation_source": conformation,
                 "query_holo_receptor_privilege": query_holo,
                 "historical_reference_ligand_used_only_for_site": True,
@@ -574,10 +659,14 @@ def build_pocket_views(
             record.update(pocket_feature_dict(pocket))
             output_rows.append(record)
     if failures:
-        raise PocketError(f"{len(failures)} mapped pockets failed; first failures: {failures[:5]}")
+        raise PocketError(
+            f"{len(failures)} mapped pockets failed; first failures: {failures[:5]}"
+        )
     expected_rows = 2 * len(supervised)
     if len(output_rows) != expected_rows:
-        raise PocketError(f"Expected {expected_rows} pocket views, built {len(output_rows)}")
+        raise PocketError(
+            f"Expected {expected_rows} pocket views, built {len(output_rows)}"
+        )
 
     site_payload = stable_json_bytes(
         {
@@ -590,7 +679,9 @@ def build_pocket_views(
     table_payload = tsv_bytes(output_rows)
     immutable_write(site_manifest_path, site_payload)
     immutable_write(output_tsv, table_payload)
-    feature_schema_sha256 = hashlib.sha256("\n".join(FEATURE_NAMES).encode("utf-8")).hexdigest()
+    feature_schema_sha256 = hashlib.sha256(
+        "\n".join(FEATURE_NAMES).encode("utf-8")
+    ).hexdigest()
     manifest = {
         "schema_version": 1,
         "created_utc": utc_now(),

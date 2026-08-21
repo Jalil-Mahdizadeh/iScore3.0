@@ -1,0 +1,55 @@
+{
+  "counts": {
+    "S1_groups": 105,
+    "S2_groups": 101,
+    "jobs": 31530,
+    "positive_alignment_rows": 465,
+    "unique_structural_edges": 181
+  },
+  "created_utc": "2026-08-20T22:08:59.199225+00:00",
+  "outputs": {
+    "all_pairs": {
+      "bytes": 12704068,
+      "path": "/work/data/processed/gate02/structural-similarity-allpairs-v3.tsv",
+      "sha256": "51eef69ea60b4751747c79875f90d38c9bd211a9214c8ea5023ccc03cef58389"
+    },
+    "edges": {
+      "bytes": 27436,
+      "path": "/work/data/processed/gate02/structural-leakage-edges-v3.tsv",
+      "sha256": "9f4836a924951bf5331a0891341cf2e41570998dd8b58f6ad9e58c029098b0a0"
+    }
+  },
+  "schema_version": 1,
+  "status": "PASS",
+  "thresholds": {
+    "global": {
+      "aligned_fraction_of_shorter_at_least": 0.5,
+      "aligned_residues_at_least": 50,
+      "maximum_length_normalized_tm_score_at_least": 0.5,
+      "modes": [
+        "sequential"
+      ]
+    },
+    "pocket": {
+      "aligned_fraction_of_shorter_at_least": 0.6,
+      "aligned_residues_at_least": 8,
+      "maximum_length_normalized_tm_score_at_least": 0.5,
+      "modes": [
+        "sequential",
+        "fully_nonsequential"
+      ],
+      "rmsd_angstrom_at_most": 3.5
+    }
+  },
+  "tool": {
+    "binary_path": "/work/third_party/source_cache/usalign/USalign",
+    "binary_sha256": "b5b44c885e61bba1352a20fd8726a4d73f1bd9798e13dc926e315c72b550e4d3",
+    "name": "US-align",
+    "source_revision": "fa4376bd99fa17a123d05d7ea47cf6574c80d64f",
+    "version": 20260819
+  },
+  "view_manifest": {
+    "path": "/work/data/manifests/gate02-fixed-structure-views-v3.json",
+    "sha256": "6d51461b5378004ebaf5f449b68808c02767ba4c69c6d207ddcb7a57fc4d9d35"
+  }
+}

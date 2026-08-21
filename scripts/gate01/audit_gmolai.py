@@ -43,7 +43,9 @@ def read_pilot(path: Path) -> list[dict[str, str]]:
     with path.open("r", encoding="utf-8", newline="") as handle:
         rows = list(csv.DictReader(handle, delimiter="\t"))
     references = [row for row in rows if row["role"] == "site_reference_only"]
-    if not references or any(row.get("pKd") or row.get("value_nm") for row in references):
+    if not references or any(
+        row.get("pKd") or row.get("value_nm") for row in references
+    ):
         raise RuntimeError("Site-reference label quarantine is absent or invalid")
     supervised = [row for row in rows if row["role"] == "supervised_s0"]
     if len({row["observation_id"] for row in supervised}) != len(supervised):
@@ -52,7 +54,9 @@ def read_pilot(path: Path) -> list[dict[str, str]]:
 
 
 def exact_comparison(value: Mapping[str, Any]) -> bool:
-    return all(value[name]["exact"] for name in ("node_z", "graph_z", "released_molecule_z"))
+    return all(
+        value[name]["exact"] for name in ("node_z", "graph_z", "released_molecule_z")
+    )
 
 
 def within_cross_device_tolerance(value: Mapping[str, Any]) -> bool:
@@ -96,13 +100,17 @@ def encode_pilot(
                 "edge_features_sha256": array_sha256(encoding.edge_features),
                 "node_z_sha256": array_sha256(encoding.node_z),
                 "graph_z_sha256": array_sha256(encoding.graph_z),
-                "released_molecule_z_sha256": array_sha256(encoding.released_molecule_z),
+                "released_molecule_z_sha256": array_sha256(
+                    encoding.released_molecule_z
+                ),
             }
         )
 
     arrays = {
         "observation_ids.npy": np.asarray([row["observation_id"] for row in rows]),
-        "canonical_smiles.npy": np.asarray([encoding.canonical_smiles for encoding in encodings]),
+        "canonical_smiles.npy": np.asarray(
+            [encoding.canonical_smiles for encoding in encodings]
+        ),
         "node_offsets.npy": np.asarray(node_offsets, dtype=np.int64),
         "canonical_to_input_atom.npy": np.asarray(canonical_to_input, dtype=np.int64),
         "input_to_canonical_atom.npy": np.asarray(input_to_canonical, dtype=np.int64),
@@ -142,6 +150,7 @@ def main() -> None:
     parser.add_argument("--manifest", type=Path, required=True)
     parser.add_argument("--audit-report", type=Path, required=True)
     parser.add_argument("--device", default="cuda")
+    parser.add_argument("--expected-supervised-count", type=int, required=True)
     args = parser.parse_args()
 
     rows = read_pilot(args.pilot)
@@ -157,18 +166,26 @@ def main() -> None:
     first = gpu.encode_many(panel)
     repeated = gpu.encode_many(panel)
     reverse = list(reversed(gpu.encode_many(reversed(panel))))
-    exact_repeat = [compare_encodings(a, b) for a, b in zip(first, repeated, strict=True)]
-    order_invariance = [compare_encodings(a, b) for a, b in zip(first, reverse, strict=True)]
+    exact_repeat = [
+        compare_encodings(a, b) for a, b in zip(first, repeated, strict=True)
+    ]
+    order_invariance = [
+        compare_encodings(a, b) for a, b in zip(first, reverse, strict=True)
+    ]
     equivalent_first = gpu.encode("CCO")
     equivalent_second = gpu.encode("OCC")
     equivalent_smiles = compare_encodings(equivalent_first, equivalent_second)
 
     cpu = GmolaiAdapter(args.source_root, args.adapter_config, device="cpu")
     cpu_panel = cpu.encode_many(panel)
-    cross_device = [compare_encodings(a, b) for a, b in zip(first, cpu_panel, strict=True)]
+    cross_device = [
+        compare_encodings(a, b) for a, b in zip(first, cpu_panel, strict=True)
+    ]
 
     checks = {
-        "pilot_count_80": len(rows) == 80,
+        "supervised_count_matches_explicit_contract": (
+            len(rows) == args.expected_supervised_count
+        ),
         "all_dimensions": all(
             encoding.node_z.shape[1] == 128
             and encoding.graph_z.shape == (256,)
@@ -182,8 +199,12 @@ def main() -> None:
             for encoding in encodings
         ),
         "exact_repeat": all(exact_comparison(value) for value in exact_repeat),
-        "input_order_invariance": all(exact_comparison(value) for value in order_invariance),
-        "equivalent_smiles_same_canonical_node_states": exact_comparison(equivalent_smiles),
+        "input_order_invariance": all(
+            exact_comparison(value) for value in order_invariance
+        ),
+        "equivalent_smiles_same_canonical_node_states": exact_comparison(
+            equivalent_smiles
+        ),
         "cpu_gpu_within_frozen_tolerance": all(
             within_cross_device_tolerance(value) for value in cross_device
         ),
@@ -219,8 +240,11 @@ def main() -> None:
         },
         "counts": {
             "molecules": len(encodings),
+            "expected_supervised_count": args.expected_supervised_count,
             "total_atoms": int(sum(encoding.node_z.shape[0] for encoding in encodings)),
-            "unique_canonical_smiles": len({encoding.canonical_smiles for encoding in encodings}),
+            "unique_canonical_smiles": len(
+                {encoding.canonical_smiles for encoding in encodings}
+            ),
             "unique_inchikeys": len({row["inchikey"] for row in rows}),
         },
         "array_files": feature_files,
@@ -251,12 +275,19 @@ def main() -> None:
             "mapping": "validated bidirectional canonical-index to original-RDKit-index permutation",
             "pretraining_entity_exposure": "unknown and plausibly present for public pilot ligands",
             "affinity_label_exposure": "not detected in reviewed source/config; full corpus ledger unavailable",
-            "licence": "no repository licence file detected; adapter imports local source only",
+            "authority": (
+                "project PI explicitly identified himself as the gMolAI developer and authorized "
+                "this pinned local scientific use"
+            ),
         },
     }
     preserve_manifest_timestamp(args.audit_report, audit, "created_utc")
     immutable_write(args.audit_report, stable_json_bytes(audit))
-    print(json.dumps({"overall_status": audit["overall_status"], "checks": checks}, indent=2))
+    print(
+        json.dumps(
+            {"overall_status": audit["overall_status"], "checks": checks}, indent=2
+        )
+    )
     if audit["overall_status"] != "PASS":
         raise SystemExit(2)
 

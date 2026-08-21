@@ -2,13 +2,18 @@
 
 iScore3.0 is a research programme for predicting protein–small-molecule binding affinity from a receptor structure and a ligand SMILES string, without using or generating query-ligand 3D coordinates or a docking pose.
 
-The repository is currently restricted to the **Gate-0/1 scientific feasibility phase**. This phase audits prior art, verifies the gMolAI-v2.0 feature boundary, builds a small provenance-first S0/S1 pilot, and benchmarks diagnostic controls. It does not train the proposed full architecture.
+The repository contains completed **Gate-0/1 and bounded Gate-2 feasibility
+phases**. Gate-2 expanded the strict provenance-first dataset, added structural
+leakage edges and predicted/unoccupied receptor views, and tested a low-capacity
+ligand–pocket interaction control. It did not train the proposed full architecture.
 
 ## Start here
 
 - [`blueprint/`](blueprint/) — committee blueprint and literature/data/leakage evidence.
 - [`reports/gate01/`](reports/gate01/) — Gate-0/1 report and reproducibility record.
+- [`reports/gate02/`](reports/gate02/) — Gate-2 no-go decision, component/OOD results, and reproducibility record.
 - [`configs/gate01/`](configs/gate01/) — frozen pilot and baseline configurations.
+- [`configs/gate02/`](configs/gate02/) — frozen interaction-feasibility protocol and amendments.
 - [`src/iscore3/`](src/iscore3/) — tested implementation.
 - [`data/README.md`](data/README.md) — data contracts and local rebuild instructions.
 
@@ -24,4 +29,8 @@ Use [`reports/gate01/reproducibility.md`](reports/gate01/reproducibility.md). Th
 
 ## Status
 
-Gate-0/1 is complete. The committee recommendation is **no-go for full architecture training** until a bounded data/structure-baseline remediation phase passes. See the [`Gate-0/1 report`](reports/gate01/GATE_0_1_REPORT.md). No model is suitable for clinical, regulatory, or prospective drug-discovery decisions.
+Gate-0/1 and Gate-2 are complete. Gate-2 is **no-go for full architecture
+training**: the predeclared low-capacity interaction term did not add reproducible
+signal beyond matched additive fusion under strict component/OOD evaluation. See
+the [`Gate-2 report`](reports/gate02/GATE_2_REPORT.md). No model is suitable for
+clinical, regulatory, or prospective drug-discovery decisions.

@@ -1,0 +1,392 @@
+{
+  "checks": {
+    "all_dimensions": true,
+    "canonical_atom_rows_equal_node_rows": true,
+    "cpu_gpu_within_frozen_tolerance": true,
+    "equivalent_smiles_same_canonical_node_states": true,
+    "exact_repeat": true,
+    "input_order_invariance": true,
+    "no_reference_labels_encoded": true,
+    "supervised_count_matches_explicit_contract": true
+  },
+  "cpu_gpu_comparison": [
+    {
+      "canonical_smiles": "CCO",
+      "graph_z": {
+        "cosine": 0.9999999999999385,
+        "exact": false,
+        "first_sha256": "76e1bce2ca681117a5a59d23a904f3e3d087a8e0de058983a91df5a458ba4cd2",
+        "maximum_absolute_delta": 1.0728836059570312e-06,
+        "relative_l2": 3.528805522581755e-07,
+        "second_sha256": "4d2b8b8098b66c2d3fca28f0f2f64bd4956515cedfdfbfaf46dfdbe354b7ac0b"
+      },
+      "node_z": {
+        "cosine": 0.9999999999999127,
+        "exact": false,
+        "first_sha256": "875c73954421a32e9d93869f2853d4f7ecb536ceea2c95bfb4c3b1d8f0debb1c",
+        "maximum_absolute_delta": 2.9802322387695312e-06,
+        "relative_l2": 4.196253480646975e-07,
+        "second_sha256": "b0f30c09f99da4f2db48630f49a1ac167ed87367bf25223668ccbbcc5cb715bf"
+      },
+      "released_molecule_z": {
+        "cosine": 0.9999999999999378,
+        "exact": false,
+        "first_sha256": "bcf2fe19235d4ee2129aa27a0313f286555383119a7c9bafed020708cd41845b",
+        "maximum_absolute_delta": 9.5367431640625e-06,
+        "relative_l2": 3.570231088483705e-07,
+        "second_sha256": "7a1243f7c88a0fe44ce612651162cf178f48bb69aa28abf735b5fc0220ff4c36"
+      }
+    },
+    {
+      "canonical_smiles": "C[C@H](O)F",
+      "graph_z": {
+        "cosine": 0.9999999999999378,
+        "exact": false,
+        "first_sha256": "aae05f3fe2427fb934f519bf1abc6a121c7789a7f4885d15a9d658e011069f20",
+        "maximum_absolute_delta": 1.0132789611816406e-06,
+        "relative_l2": 3.554748040270626e-07,
+        "second_sha256": "fa7c4db1e18ee919cc16dee166d09fdc35673df89e71153da422b36fef86855e"
+      },
+      "node_z": {
+        "cosine": 0.9999999999999282,
+        "exact": false,
+        "first_sha256": "a1f9f3e642957d231d641cfdacf963c618c92a1c5a4722854e040bc22eb79936",
+        "maximum_absolute_delta": 2.1457672119140625e-06,
+        "relative_l2": 3.824845532689675e-07,
+        "second_sha256": "3f1beddefc8bdd9774c6187f2c5a8da6e38d6443c7bf4a38333a51b61b839dc0"
+      },
+      "released_molecule_z": {
+        "cosine": 0.9999999999999437,
+        "exact": false,
+        "first_sha256": "2792d4966ff1f0985ac54c20856c222363f4e12cf0bec605a34b1bba3c2f9ff1",
+        "maximum_absolute_delta": 7.62939453125e-06,
+        "relative_l2": 3.397978756609466e-07,
+        "second_sha256": "7d140bffcd19147260503e161f28ee612d46ea98f69623423b51033a78533475"
+      }
+    },
+    {
+      "canonical_smiles": "CNCCN(C)c1cncc(CCc2cc(C)cc(N)n2)c1",
+      "graph_z": {
+        "cosine": 0.9999999999997949,
+        "exact": false,
+        "first_sha256": "6baf2663b3fb8506ef671d4a3ce166119eaae0b606d8e1d4c66413f4d4bf3df5",
+        "maximum_absolute_delta": 2.3245811462402344e-06,
+        "relative_l2": 6.489372996049875e-07,
+        "second_sha256": "5413aad9b9f295ae943b4fd395f87d9f647b7e98e81e785970ff112dc4fa2ca8"
+      },
+      "node_z": {
+        "cosine": 0.9999999999999253,
+        "exact": false,
+        "first_sha256": "07e700a8a9ee9da3a896c0d20f98431e88c298e877b00dc78f468cc220311455",
+        "maximum_absolute_delta": 3.337860107421875e-06,
+        "relative_l2": 3.88634507838902e-07,
+        "second_sha256": "b71c68c1d2dbc1ef0295deae0fe290755840ff3a479518cd38da1e8d7e369996"
+      },
+      "released_molecule_z": {
+        "cosine": 0.9999999999998341,
+        "exact": false,
+        "first_sha256": "7426c0f1b34df5fa97e7072327c3f5827c3edb67e4c16249eb05f9ea31278c24",
+        "maximum_absolute_delta": 5.125999450683594e-06,
+        "relative_l2": 5.849619928013972e-07,
+        "second_sha256": "a691a88a98845f4888abafa1be84082bddfd03707cce5862acf9d7ff7d24b804"
+      }
+    },
+    {
+      "canonical_smiles": "CC(C)(C)OC(=O)N[C@H](CSCCC(=O)NCc1cccnc1)Cc1c[nH]c2ccccc12",
+      "graph_z": {
+        "cosine": 0.9999999999997985,
+        "exact": false,
+        "first_sha256": "5aa48b199c92059fbdaf6b3bc769cb85880531f14323e9404455205de14febcc",
+        "maximum_absolute_delta": 1.8477439880371094e-06,
+        "relative_l2": 6.354820683449325e-07,
+        "second_sha256": "5fbc4f4253822421b825fd548015862b86ae2907474f42bfa53804e29545b392"
+      },
+      "node_z": {
+        "cosine": 0.999999999999933,
+        "exact": false,
+        "first_sha256": "85a14ee87de2e805a5edbe065c63b4aff25b6f5642c19730e79bbc2a1d65ee45",
+        "maximum_absolute_delta": 2.384185791015625e-06,
+        "relative_l2": 3.6572564815232884e-07,
+        "second_sha256": "aab7b5645ebe344e0c29ee814995456c52d8abc7de37962ce252a8d92a5c9a4c"
+      },
+      "released_molecule_z": {
+        "cosine": 0.9999999999998387,
+        "exact": false,
+        "first_sha256": "decbbaf2f018ca62e9cfca2a61f86d976693f9b57cc89c7bd2797d151d20dfcc",
+        "maximum_absolute_delta": 3.0994415283203125e-06,
+        "relative_l2": 5.712816332698542e-07,
+        "second_sha256": "d5f2ff34dea73c62673178a12645c55e73436f23ab157081b9f187d55e1aab26"
+      }
+    }
+  ],
+  "created_utc": "2026-08-20T22:12:57.386118+00:00",
+  "equivalent_smiles": {
+    "canonical_smiles": "CCO",
+    "graph_z": {
+      "cosine": 1.0000000000000002,
+      "exact": true,
+      "first_sha256": "76e1bce2ca681117a5a59d23a904f3e3d087a8e0de058983a91df5a458ba4cd2",
+      "maximum_absolute_delta": 0.0,
+      "relative_l2": 0.0,
+      "second_sha256": "76e1bce2ca681117a5a59d23a904f3e3d087a8e0de058983a91df5a458ba4cd2"
+    },
+    "node_z": {
+      "cosine": 1.0000000000000002,
+      "exact": true,
+      "first_sha256": "875c73954421a32e9d93869f2853d4f7ecb536ceea2c95bfb4c3b1d8f0debb1c",
+      "maximum_absolute_delta": 0.0,
+      "relative_l2": 0.0,
+      "second_sha256": "875c73954421a32e9d93869f2853d4f7ecb536ceea2c95bfb4c3b1d8f0debb1c"
+    },
+    "released_molecule_z": {
+      "cosine": 1.0,
+      "exact": true,
+      "first_sha256": "bcf2fe19235d4ee2129aa27a0313f286555383119a7c9bafed020708cd41845b",
+      "maximum_absolute_delta": 0.0,
+      "relative_l2": 0.0,
+      "second_sha256": "bcf2fe19235d4ee2129aa27a0313f286555383119a7c9bafed020708cd41845b"
+    }
+  },
+  "exact_repeat": [
+    {
+      "canonical_smiles": "CCO",
+      "graph_z": {
+        "cosine": 1.0000000000000002,
+        "exact": true,
+        "first_sha256": "76e1bce2ca681117a5a59d23a904f3e3d087a8e0de058983a91df5a458ba4cd2",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "76e1bce2ca681117a5a59d23a904f3e3d087a8e0de058983a91df5a458ba4cd2"
+      },
+      "node_z": {
+        "cosine": 1.0000000000000002,
+        "exact": true,
+        "first_sha256": "875c73954421a32e9d93869f2853d4f7ecb536ceea2c95bfb4c3b1d8f0debb1c",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "875c73954421a32e9d93869f2853d4f7ecb536ceea2c95bfb4c3b1d8f0debb1c"
+      },
+      "released_molecule_z": {
+        "cosine": 1.0,
+        "exact": true,
+        "first_sha256": "bcf2fe19235d4ee2129aa27a0313f286555383119a7c9bafed020708cd41845b",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "bcf2fe19235d4ee2129aa27a0313f286555383119a7c9bafed020708cd41845b"
+      }
+    },
+    {
+      "canonical_smiles": "C[C@H](O)F",
+      "graph_z": {
+        "cosine": 1.0,
+        "exact": true,
+        "first_sha256": "aae05f3fe2427fb934f519bf1abc6a121c7789a7f4885d15a9d658e011069f20",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "aae05f3fe2427fb934f519bf1abc6a121c7789a7f4885d15a9d658e011069f20"
+      },
+      "node_z": {
+        "cosine": 1.0,
+        "exact": true,
+        "first_sha256": "a1f9f3e642957d231d641cfdacf963c618c92a1c5a4722854e040bc22eb79936",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "a1f9f3e642957d231d641cfdacf963c618c92a1c5a4722854e040bc22eb79936"
+      },
+      "released_molecule_z": {
+        "cosine": 1.0,
+        "exact": true,
+        "first_sha256": "2792d4966ff1f0985ac54c20856c222363f4e12cf0bec605a34b1bba3c2f9ff1",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "2792d4966ff1f0985ac54c20856c222363f4e12cf0bec605a34b1bba3c2f9ff1"
+      }
+    },
+    {
+      "canonical_smiles": "CNCCN(C)c1cncc(CCc2cc(C)cc(N)n2)c1",
+      "graph_z": {
+        "cosine": 1.0,
+        "exact": true,
+        "first_sha256": "6baf2663b3fb8506ef671d4a3ce166119eaae0b606d8e1d4c66413f4d4bf3df5",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "6baf2663b3fb8506ef671d4a3ce166119eaae0b606d8e1d4c66413f4d4bf3df5"
+      },
+      "node_z": {
+        "cosine": 1.0,
+        "exact": true,
+        "first_sha256": "07e700a8a9ee9da3a896c0d20f98431e88c298e877b00dc78f468cc220311455",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "07e700a8a9ee9da3a896c0d20f98431e88c298e877b00dc78f468cc220311455"
+      },
+      "released_molecule_z": {
+        "cosine": 0.9999999999999998,
+        "exact": true,
+        "first_sha256": "7426c0f1b34df5fa97e7072327c3f5827c3edb67e4c16249eb05f9ea31278c24",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "7426c0f1b34df5fa97e7072327c3f5827c3edb67e4c16249eb05f9ea31278c24"
+      }
+    },
+    {
+      "canonical_smiles": "CC(C)(C)OC(=O)N[C@H](CSCCC(=O)NCc1cccnc1)Cc1c[nH]c2ccccc12",
+      "graph_z": {
+        "cosine": 1.0,
+        "exact": true,
+        "first_sha256": "5aa48b199c92059fbdaf6b3bc769cb85880531f14323e9404455205de14febcc",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "5aa48b199c92059fbdaf6b3bc769cb85880531f14323e9404455205de14febcc"
+      },
+      "node_z": {
+        "cosine": 1.0,
+        "exact": true,
+        "first_sha256": "85a14ee87de2e805a5edbe065c63b4aff25b6f5642c19730e79bbc2a1d65ee45",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "85a14ee87de2e805a5edbe065c63b4aff25b6f5642c19730e79bbc2a1d65ee45"
+      },
+      "released_molecule_z": {
+        "cosine": 1.0,
+        "exact": true,
+        "first_sha256": "decbbaf2f018ca62e9cfca2a61f86d976693f9b57cc89c7bd2797d151d20dfcc",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "decbbaf2f018ca62e9cfca2a61f86d976693f9b57cc89c7bd2797d151d20dfcc"
+      }
+    }
+  ],
+  "input_order_invariance": [
+    {
+      "canonical_smiles": "CCO",
+      "graph_z": {
+        "cosine": 1.0000000000000002,
+        "exact": true,
+        "first_sha256": "76e1bce2ca681117a5a59d23a904f3e3d087a8e0de058983a91df5a458ba4cd2",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "76e1bce2ca681117a5a59d23a904f3e3d087a8e0de058983a91df5a458ba4cd2"
+      },
+      "node_z": {
+        "cosine": 1.0000000000000002,
+        "exact": true,
+        "first_sha256": "875c73954421a32e9d93869f2853d4f7ecb536ceea2c95bfb4c3b1d8f0debb1c",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "875c73954421a32e9d93869f2853d4f7ecb536ceea2c95bfb4c3b1d8f0debb1c"
+      },
+      "released_molecule_z": {
+        "cosine": 1.0,
+        "exact": true,
+        "first_sha256": "bcf2fe19235d4ee2129aa27a0313f286555383119a7c9bafed020708cd41845b",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "bcf2fe19235d4ee2129aa27a0313f286555383119a7c9bafed020708cd41845b"
+      }
+    },
+    {
+      "canonical_smiles": "C[C@H](O)F",
+      "graph_z": {
+        "cosine": 1.0,
+        "exact": true,
+        "first_sha256": "aae05f3fe2427fb934f519bf1abc6a121c7789a7f4885d15a9d658e011069f20",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "aae05f3fe2427fb934f519bf1abc6a121c7789a7f4885d15a9d658e011069f20"
+      },
+      "node_z": {
+        "cosine": 1.0,
+        "exact": true,
+        "first_sha256": "a1f9f3e642957d231d641cfdacf963c618c92a1c5a4722854e040bc22eb79936",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "a1f9f3e642957d231d641cfdacf963c618c92a1c5a4722854e040bc22eb79936"
+      },
+      "released_molecule_z": {
+        "cosine": 1.0,
+        "exact": true,
+        "first_sha256": "2792d4966ff1f0985ac54c20856c222363f4e12cf0bec605a34b1bba3c2f9ff1",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "2792d4966ff1f0985ac54c20856c222363f4e12cf0bec605a34b1bba3c2f9ff1"
+      }
+    },
+    {
+      "canonical_smiles": "CNCCN(C)c1cncc(CCc2cc(C)cc(N)n2)c1",
+      "graph_z": {
+        "cosine": 1.0,
+        "exact": true,
+        "first_sha256": "6baf2663b3fb8506ef671d4a3ce166119eaae0b606d8e1d4c66413f4d4bf3df5",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "6baf2663b3fb8506ef671d4a3ce166119eaae0b606d8e1d4c66413f4d4bf3df5"
+      },
+      "node_z": {
+        "cosine": 1.0,
+        "exact": true,
+        "first_sha256": "07e700a8a9ee9da3a896c0d20f98431e88c298e877b00dc78f468cc220311455",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "07e700a8a9ee9da3a896c0d20f98431e88c298e877b00dc78f468cc220311455"
+      },
+      "released_molecule_z": {
+        "cosine": 0.9999999999999998,
+        "exact": true,
+        "first_sha256": "7426c0f1b34df5fa97e7072327c3f5827c3edb67e4c16249eb05f9ea31278c24",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "7426c0f1b34df5fa97e7072327c3f5827c3edb67e4c16249eb05f9ea31278c24"
+      }
+    },
+    {
+      "canonical_smiles": "CC(C)(C)OC(=O)N[C@H](CSCCC(=O)NCc1cccnc1)Cc1c[nH]c2ccccc12",
+      "graph_z": {
+        "cosine": 1.0,
+        "exact": true,
+        "first_sha256": "5aa48b199c92059fbdaf6b3bc769cb85880531f14323e9404455205de14febcc",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "5aa48b199c92059fbdaf6b3bc769cb85880531f14323e9404455205de14febcc"
+      },
+      "node_z": {
+        "cosine": 1.0,
+        "exact": true,
+        "first_sha256": "85a14ee87de2e805a5edbe065c63b4aff25b6f5642c19730e79bbc2a1d65ee45",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "85a14ee87de2e805a5edbe065c63b4aff25b6f5642c19730e79bbc2a1d65ee45"
+      },
+      "released_molecule_z": {
+        "cosine": 1.0,
+        "exact": true,
+        "first_sha256": "decbbaf2f018ca62e9cfca2a61f86d976693f9b57cc89c7bd2797d151d20dfcc",
+        "maximum_absolute_delta": 0.0,
+        "relative_l2": 0.0,
+        "second_sha256": "decbbaf2f018ca62e9cfca2a61f86d976693f9b57cc89c7bd2797d151d20dfcc"
+      }
+    }
+  ],
+  "interpretation": {
+    "affinity_label_exposure": "not detected in reviewed source/config; full corpus ledger unavailable",
+    "authority": "project PI explicitly identified himself as the gMolAI developer and authorized this pinned local scientific use",
+    "mapping": "validated bidirectional canonical-index to original-RDKit-index permutation",
+    "node_z": "raw clean-view atom states ordered by canonical RDKit atom index",
+    "pretraining_entity_exposure": "unknown and plausibly present for public pilot ligands"
+  },
+  "manifest_sha256": "1a9a962d5ae3a278981cbe8abf37a8ce1dfc074e9a92f5f878d3da3c27db9aab",
+  "overall_status": "PASS",
+  "panel_smiles": [
+    "OCC",
+    "F[C@@H](O)C",
+    "CNCCN(C)c1cncc(CCc2cc(C)cc(N)n2)c1",
+    "CC(C)(C)OC(=O)N[C@H](CSCCC(=O)NCc1cccnc1)Cc1c[nH]c2ccccc12"
+  ],
+  "schema_version": 1,
+  "tolerances": {
+    "cross_device_maximum_absolute_delta": 0.0002,
+    "cross_device_minimum_cosine": 0.999999,
+    "cross_device_relative_l2": 2e-05,
+    "same_device_repeat": "bitwise_exact"
+  }
+}

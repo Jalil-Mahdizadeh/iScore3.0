@@ -1,0 +1,110 @@
+{
+  "created_utc": "2026-08-20T21:18:40.799209+00:00",
+  "interpretation": "A pass proves record-level agreement between the RCSB pilot annotation and the pinned BindingDB release on PDB identifier, ligand identity, target accession, publication, and exact Kd. It does not independently validate the experimental measurement reported by the source article. Reference-only labels remain quarantined.",
+  "output": {
+    "bytes": 48860,
+    "path": "data/processed/gate02/bindingdb-202608-provenance-v1.tsv",
+    "sha256": "7d075bcf0ddbba0439e4b0fb5de40094ba64a2f9f477a2e6604249dca7d4ffa0"
+  },
+  "pilot": {
+    "path": "data/processed/gate02/rcsb-kd-candidate-v1.tsv",
+    "sha256": "d34fddb2d14c4d76bc5ae1c64040a0c10cab83412292a010971c47278aa74673"
+  },
+  "reconciliation": {
+    "ambiguous_top_score_rows": 26,
+    "curation_data_sources": {
+      "ChEMBL": 216,
+      "Curated from the literature by BindingDB": 50,
+      "US Patent": 6
+    },
+    "pilot_rows": 281,
+    "reference_label_quarantine_preserved": 46,
+    "reference_only_rows": 46,
+    "same_structure_measurement_publication": 184,
+    "supervised_exact_kd": 195,
+    "supervised_high_confidence": 189,
+    "supervised_ligand_identity": 228,
+    "supervised_measurement_publication_present": 224,
+    "supervised_rows": 235,
+    "supervised_uniprot": 219
+  },
+  "scan": {
+    "archive_entry": "BindingDB_All.tsv",
+    "archive_entry_crc32": "e5e562dc",
+    "archive_entry_uncompressed_bytes": 8978755790,
+    "retained_candidate_rows": 3220,
+    "scanned_data_rows": 3234499
+  },
+  "schema_version": 1,
+  "source": {
+    "archive_bytes": 592986963,
+    "archive_path": "data/raw/bindingdb/202608/BindingDB_All_202608_tsv.zip",
+    "archive_sha256": "8dc30541d668e5e403ba1fe9a682b76c42a50e1711aac44329c62ba24ccd57db",
+    "name": "BindingDB",
+    "release": "202608",
+    "url": "https://www.bindingdb.org/rwd/bind/downloads/BindingDB_All_202608_tsv.zip"
+  },
+  "status": "FAIL",
+  "strict_dataset": {
+    "dropped_low_count_groups": {
+      "construct-025-8861b7ad0d67": 1,
+      "construct-029-13705e998f4e": 1,
+      "construct-041-af8addec2ede": 2
+    },
+    "minimum_supervised_per_construct": 3,
+    "pilot_output": {
+      "bytes": 224111,
+      "path": "data/processed/gate02/rcsb-kd-strict-v1.tsv",
+      "sha256": "661dc07ca261193bbf4c304b0c75219ce79c3a39ed38333099a96093e235d3fc"
+    },
+    "pocket_output": {
+      "bytes": 434104,
+      "path": "data/processed/gate02/rcsb-kd-pocket-views-strict-v1.tsv",
+      "sha256": "9536cc80747f36691f1a8df84189ac814aa1d4827b5ea4fde396cb58a72253d4"
+    },
+    "pre_group_filter_high_confidence": 189,
+    "removed_provenance_failures": 46,
+    "retained_construct_groups": 36,
+    "retained_group_counts": {
+      "construct-001-c5158f5b655d": 19,
+      "construct-002-cb5cf2af5e4a": 10,
+      "construct-003-fbf3f5c695a3": 15,
+      "construct-004-a02c0b37ee39": 9,
+      "construct-005-6f4aa0a92e90": 8,
+      "construct-006-4c5802bc11cc": 7,
+      "construct-007-c863deb44383": 7,
+      "construct-008-60863bf56b3f": 6,
+      "construct-009-2b786a6db716": 4,
+      "construct-010-2fedea507c74": 5,
+      "construct-011-4f6fb808c4a8": 5,
+      "construct-012-90b947063061": 4,
+      "construct-013-989a0da4f5c7": 5,
+      "construct-014-d42e073edd05": 5,
+      "construct-015-e6a24c903c1e": 4,
+      "construct-016-fad0d613c720": 5,
+      "construct-017-11db684aee95": 4,
+      "construct-018-17684ef8ed95": 4,
+      "construct-019-1be38543a2db": 3,
+      "construct-020-2acb35da5928": 4,
+      "construct-022-46b8fca0fc9d": 4,
+      "construct-023-68918bffe9f0": 4,
+      "construct-026-997c3e281e6e": 4,
+      "construct-027-baf0440a45db": 3,
+      "construct-028-c2d68d73bda9": 4,
+      "construct-030-2c56ee04d79a": 3,
+      "construct-031-37b3e0822467": 3,
+      "construct-033-4212e6c5e472": 3,
+      "construct-034-4b9e20d92aa0": 3,
+      "construct-035-4f0c729feeb4": 3,
+      "construct-037-682d0d6b3d7a": 3,
+      "construct-039-90fec4b83698": 3,
+      "construct-040-ac2363267f3b": 3,
+      "construct-042-b818769d59cf": 3,
+      "construct-043-bfab01cca0a7": 3,
+      "construct-046-e314686107a8": 3
+    },
+    "retained_reference_only": 36,
+    "retained_supervised": 185,
+    "status": "PASS"
+  }
+}

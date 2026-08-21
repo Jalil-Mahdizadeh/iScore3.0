@@ -16,3 +16,12 @@ No acquisition command overwrites an existing raw snapshot. A source is usable o
 The Gate-0/1 pilot admits only S0/S1 mappings. S0 means the activity and co-complex are the same curated record/construct. S1 means an exact assay construct/sequence and site are mapped to another structure with explicit evidence. UniProt or target-name agreement alone is insufficient.
 
 The canonical bounded pilot is `processed/gate01/rcsb-kd-pilot-strict-v2.tsv`; its paired receptor features are `processed/gate01/rcsb-kd-pocket-views-strict-v2.tsv`. Use only with `manifests/gate01-pilot-strict-v2.json`. The earlier `*-v1` candidate tables are retained because BindingDB reconciliation discovered 12 censored values whose relations were not represented in the RCSB query result. They are non-canonical.
+
+For the completed Gate-2 interaction-feasibility study, the canonical strict data
+are `processed/gate02/rcsb-kd-strict-v3.tsv` and
+`processed/gate02/rcsb-kd-pocket-views-strict-v3.tsv`, governed by
+`configs/gate02/feasibility-effective-v3.yaml`. S2 predicted and S3
+pocket-unoccupied experimental views are sensitivity subsets, not substitutes for
+the complete S1 primary view. `splits/gate02/prefit-union-components-v3.tsv` was
+created before outcome fitting and must be used for any comparison to the reported
+Gate-2 result. See `reports/gate02/reproducibility.md` for canonical hashes.

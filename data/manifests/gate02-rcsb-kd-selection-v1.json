@@ -1,0 +1,470 @@
+{
+  "counts": {
+    "api_entries": 2040,
+    "deduplicated_candidates": 843,
+    "eligible_construct_groups": 46,
+    "selected_construct_groups": 46,
+    "site_reference_only": 46,
+    "strict_candidates_before_deduplication": 894,
+    "supervised_s0": 235,
+    "unique_supervised_ligands": 233
+  },
+  "created_utc": "2026-08-20T21:15:46.968567+00:00",
+  "filters": {
+    "allowed_elements": [
+      "B",
+      "Br",
+      "C",
+      "Cl",
+      "F",
+      "H",
+      "I",
+      "N",
+      "O",
+      "P",
+      "S",
+      "Si"
+    ],
+    "endpoint": "Kd",
+    "exactly_one_affinity_annotation": true,
+    "exactly_one_protein_entity": true,
+    "exactly_one_uniprot_accession": true,
+    "experimental_method": "X-RAY DIFFRACTION",
+    "ligand_formula_weight": [
+      80,
+      900
+    ],
+    "ligand_heavy_atoms": [
+      6,
+      60
+    ],
+    "max_constructs": 50,
+    "max_supervised_per_construct": 20,
+    "maximum_resolution_angstrom": 2.8,
+    "min_supervised_per_construct": 3,
+    "replicate_tolerance_pKd": 0.3,
+    "selection_seed": 20260820,
+    "unit": "nM"
+  },
+  "output": {
+    "bytes": 251537,
+    "path": "/work/data/processed/gate02/rcsb-kd-candidate-v1.tsv",
+    "sha256": "d34fddb2d14c4d76bc5ae1c64040a0c10cab83412292a010971c47278aa74673"
+  },
+  "rejections": {
+    "affinity_ligand_entity_not_unique": 31,
+    "concordant_replicate_rows_collapsed": 51,
+    "ligand_heavy_atom_range": 4,
+    "missing_primary_citation_identifier": 80,
+    "nonpositive_or_nonfinite_kd": 38,
+    "not_exactly_one_kd_annotation": 740,
+    "not_exactly_one_protein_entity": 99,
+    "not_exactly_one_uniprot_accession": 7,
+    "not_xray_only": 67,
+    "resolution_above_2p8": 80
+  },
+  "replicate_audit": {
+    "02852c250924a3332a69bb7b8acf298e0e089e0610d2772eb4cf01b43935f83c:DLGBEGBHXSAQOC-UHFFFAOYSA-N": {
+      "pKd_values": [
+        4.236572006437063,
+        4.236572006437063
+      ],
+      "pdb_ids": [
+        "5CU0",
+        "5CU2"
+      ],
+      "range_pKd": 0.0
+    },
+    "1691b1a477ec27fb090599d14ca6598f15e298bb9decc0ce9f7bc28d1b365c8d:LDXDSDSWWMTDPA-UHFFFAOYSA-N": {
+      "pKd_values": [
+        3.9788107009300617,
+        3.9788107009300617
+      ],
+      "pdb_ids": [
+        "4D6Z",
+        "4D75"
+      ],
+      "range_pKd": 0.0
+    },
+    "17684ef8ed9582b1aad81bb33a2cecbe3d21031365dc007726680ba05869a483:ABKHTUJKHPJZLS-UHFFFAOYSA-N": {
+      "pKd_values": [
+        4.2076083105017466,
+        4.2076083105017466
+      ],
+      "pdb_ids": [
+        "6PDH",
+        "6PIQ"
+      ],
+      "range_pKd": 0.0
+    },
+    "17684ef8ed9582b1aad81bb33a2cecbe3d21031365dc007726680ba05869a483:QOJWBEUMAJACBY-UHFFFAOYSA-N": {
+      "pKd_values": [
+        3.4377071355435254,
+        3.4377071355435254
+      ],
+      "pdb_ids": [
+        "6PBI",
+        "6PG2"
+      ],
+      "range_pKd": 0.0
+    },
+    "17684ef8ed9582b1aad81bb33a2cecbe3d21031365dc007726680ba05869a483:WFOOODRZHBDNTB-UHFFFAOYSA-N": {
+      "pKd_values": [
+        3.3187587626244124,
+        3.3187587626244124
+      ],
+      "pdb_ids": [
+        "6PC9",
+        "6PG1"
+      ],
+      "range_pKd": 0.0
+    },
+    "1cc8ce95bee616a957f7f03926a39d8d8b92e53a87565df673d26c54dbb11bd4:ANJRGTMSMVLPLB-UHFFFAOYSA-N": {
+      "pKd_values": [
+        8.0,
+        8.0
+      ],
+      "pdb_ids": [
+        "5EIE",
+        "5EIH"
+      ],
+      "range_pKd": 0.0
+    },
+    "27409f179f54750d7eeed1249ff00e0449a329cf79b68d9e1b4d3f211f6d7ef2:OUKYUETWWIPKQR-UHFFFAOYSA-N": {
+      "pKd_values": [
+        5.5502131530142265,
+        5.5502131530142265
+      ],
+      "pdb_ids": [
+        "5VCX",
+        "5VD3"
+      ],
+      "range_pKd": 0.0
+    },
+    "32e392306ff8e566ab5263fe45d4a7c04f3bec8683f05db42a8f6558f757ef1f:GJXWDTUCERCKIX-UHFFFAOYSA-N": {
+      "pKd_values": [
+        7.3979400086720375,
+        7.3979400086720375
+      ],
+      "pdb_ids": [
+        "2JCV",
+        "4AIC"
+      ],
+      "range_pKd": 0.0
+    },
+    "39cac212f3d5c6e31049ad6265071ffaf37b2da4ee132867819f7ecdef76dcc8:OFFSPAZVIVZPHU-UHFFFAOYSA-N": {
+      "pKd_values": [
+        3.0,
+        3.0
+      ],
+      "pdb_ids": [
+        "3IME",
+        "3IMG"
+      ],
+      "range_pKd": 0.0
+    },
+    "3b4f8582cf136c24f270943721b57f2c5fe01b4dea0751928280a97377158e5a:NVQFDGYHTTZFJR-UHFFFAOYSA-N": {
+      "pKd_values": [
+        6.958607314841775,
+        6.958607314841775
+      ],
+      "pdb_ids": [
+        "6UF0",
+        "6V6Z"
+      ],
+      "range_pKd": 0.0
+    },
+    "3c8b9430fb1c11122bb966c192a70628917f61c8acf4949811db819eb4e7c07a:FSBFERQGFVBNEJ-NOYKIMNZSA-N": {
+      "pKd_values": [
+        5.275724130399211,
+        5.275724130399211
+      ],
+      "pdb_ids": [
+        "7RGY",
+        "7RH3"
+      ],
+      "range_pKd": 0.0
+    },
+    "3c8b9430fb1c11122bb966c192a70628917f61c8acf4949811db819eb4e7c07a:UAZQKBXLYFSZPW-NOYKIMNZSA-N": {
+      "pKd_values": [
+        5.0915149811213505,
+        5.0915149811213505
+      ],
+      "pdb_ids": [
+        "7RGZ",
+        "7RH4"
+      ],
+      "range_pKd": 0.0
+    },
+    "682d0d6b3d7a36c275c378e2b34b8cd03010dd5cb336209dd74416dfab467698:AWPYWZMMJZGPOX-NRFANRHFSA-N": {
+      "pKd_values": [
+        7.221848749616356,
+        7.221848749616356
+      ],
+      "pdb_ids": [
+        "6BGV",
+        "6BH1"
+      ],
+      "range_pKd": 0.0
+    },
+    "71376b3a50a1cc063e09d51d93e09c4aacc3b77edd60a922db188157a62b0de4:KHLQRJYGXHCNMH-UHFFFAOYSA-N": {
+      "pKd_values": [
+        3.575118363368933,
+        3.575118363368933
+      ],
+      "pdb_ids": [
+        "6GJJ",
+        "6GJM"
+      ],
+      "range_pKd": 0.0
+    },
+    "7191bff08206b2cf078dfa482ee8266b7f413b1b24a25027fee8c9bfa93cad17:OUQVKRKGTAUJQA-UHFFFAOYSA-N": {
+      "pKd_values": [
+        7.096910013008056,
+        7.096910013008056,
+        7.096910013008056
+      ],
+      "pdb_ids": [
+        "2Y33",
+        "2Y34",
+        "4BQX"
+      ],
+      "range_pKd": 0.0
+    },
+    "71fe53434608c797188de1e90271e95c8ab9115286d2bd76d21274d82f971abc:YUCYMQBDBXVNCE-UHFFFAOYSA-N": {
+      "pKd_values": [
+        6.443697499232712,
+        6.443697499232712
+      ],
+      "pdb_ids": [
+        "3F9M",
+        "3ID8"
+      ],
+      "range_pKd": 0.0
+    },
+    "7b887d9d6a12eb1dbfdc0536396425e2532dd9f7530ef6929ecd7e7e22a635e8:NWGVSSQLYKZANM-UHFFFAOYSA-N": {
+      "pKd_values": [
+        8.128427061113996,
+        8.128427061113996
+      ],
+      "pdb_ids": [
+        "4POP",
+        "4POV"
+      ],
+      "range_pKd": 0.0
+    },
+    "7d9c0a15ad4e51cc87779410b135f7cba7271593f3e14e496f045e015bb9c4f3:GVJHHUAWPYXKBD-IEOSBIPESA-N": {
+      "pKd_values": [
+        5.616184634019569,
+        5.616184634019569
+      ],
+      "pdb_ids": [
+        "3W67",
+        "3W68"
+      ],
+      "range_pKd": 0.0
+    },
+    "92087d2435e9ebbd3fcb6bc2377eaa52c2281a3887c3c573777e6dac017b242a:SZRPDCCEHVWOJX-UHFFFAOYSA-N": {
+      "pKd_values": [
+        7.721246399047171,
+        7.721246399047171,
+        7.721246399047171
+      ],
+      "pdb_ids": [
+        "6KB2",
+        "6KB7",
+        "6KBA"
+      ],
+      "range_pKd": 0.0
+    },
+    "9a0a0b93162a5c53d9b4f6c45b03d1771ce3a8e2b20b1f246cc58e61d0a8d7c5:BLWQIEISIMYCHD-UHFFFAOYSA-N": {
+      "pKd_values": [
+        7.180456064458131,
+        7.180456064458131
+      ],
+      "pdb_ids": [
+        "7UDP",
+        "7UDQ"
+      ],
+      "range_pKd": 0.0
+    },
+    "a28c3cc5f24ab26bed9d3b2a89b187a510f0f4af9a27a25c101310d44b4d7583:KDKUVYLMPJIGKA-UHFFFAOYSA-N": {
+      "pKd_values": [
+        6.6020599913279625,
+        6.6020599913279625,
+        6.6020599913279625,
+        6.6020599913279625
+      ],
+      "pdb_ids": [
+        "5DPV",
+        "5DR6",
+        "5DR9",
+        "5DT0"
+      ],
+      "range_pKd": 0.0
+    },
+    "a3292b50ab57c6980399c6ca1234f0613801dc11aa0436ab0113c2cc678c70b1:IAJKFHSLWUNBII-HUBLWGQQSA-N": {
+      "pKd_values": [
+        6.8124792791635365,
+        6.8124792791635365
+      ],
+      "pdb_ids": [
+        "3WZQ",
+        "3X00"
+      ],
+      "range_pKd": 0.0
+    },
+    "a35bb68136a5125af3a3f3c491520a248e39ed972d4c377c5b823a5f41dab387:HBOMLICNUCNMMY-XLPZGREQSA-N": {
+      "pKd_values": [
+        4.356547323513812,
+        4.356547323513812
+      ],
+      "pdb_ids": [
+        "3B9L",
+        "3B9M"
+      ],
+      "range_pKd": 0.0
+    },
+    "a9cfcbb15218576c98bd34480f1439448862495115fb00ea874eb88d702e6757:SGIWFELWJPNFDH-UHFFFAOYSA-N": {
+      "pKd_values": [
+        6.987162775294828,
+        6.987162775294828
+      ],
+      "pdb_ids": [
+        "1UPV",
+        "1UPW"
+      ],
+      "range_pKd": 0.0
+    },
+    "ac2363267f3bff112da89037b97f9c4d544249427c1030054021fb3dfd307f2a:WQZGKKKJIJFFOK-FPRJBGLDSA-N": {
+      "pKd_values": [
+        4.057991946977687,
+        4.057991946977687
+      ],
+      "pdb_ids": [
+        "4LK7",
+        "4YW7"
+      ],
+      "range_pKd": 0.0
+    },
+    "aff022f2c38a02716a91eb334507f2afefeb03a911a9a4c808450318dc594785:GLDVWHQVGHPIFH-UHFFFAOYSA-N": {
+      "pKd_values": [
+        3.3010299956639813,
+        3.3010299956639813,
+        3.3010299956639813
+      ],
+      "pdb_ids": [
+        "4JWL",
+        "4JXH",
+        "4L5M"
+      ],
+      "range_pKd": 0.0
+    },
+    "c3c6e08da94789d6997f93669331cea703c47ca5d83dba77eb267a251bc18b3d:NVKAWKQGWWIWPM-ABEVXSGRSA-N": {
+      "pKd_values": [
+        9.739928620833222,
+        9.739928620833222
+      ],
+      "pdb_ids": [
+        "1KDK",
+        "1KDM"
+      ],
+      "range_pKd": 0.0
+    },
+    "c6da8c6a97ca9e0c4e9875ecdb3d34bfb86385a852e0859f2cd77c61172b1b87:KRKNYBCHXYNGOX-UHFFFAOYSA-N": {
+      "pKd_values": [
+        5.6020599913279625,
+        5.6020599913279625
+      ],
+      "pdb_ids": [
+        "2C4V",
+        "2XB9"
+      ],
+      "range_pKd": 0.0
+    },
+    "cf8ed0c919125310d5939061f84e5ddb5709f7c6ad5468f44f72e21181a70098:VABIMMIJVWNHFI-UHFFFAOYSA-N": {
+      "pKd_values": [
+        7.853871964321762,
+        7.853871964321762
+      ],
+      "pdb_ids": [
+        "3M64",
+        "3MC5"
+      ],
+      "range_pKd": 0.0
+    },
+    "d1c2c0eadbdb4be4175a6e703c51bac4794cfca9f0d55b5fa055c25df9687261:FWEOQOXTVHGIFQ-UHFFFAOYSA-N": {
+      "pKd_values": [
+        4.431798275933005,
+        4.431798275933005,
+        4.431798275933005,
+        4.431798275933005,
+        4.431798275933005
+      ],
+      "pdb_ids": [
+        "3PXF",
+        "3PXQ",
+        "3PXZ",
+        "3PY1",
+        "4EZ7"
+      ],
+      "range_pKd": 0.0
+    },
+    "dd618db585d6f9a4b324988cd68dcb55644fe78d43cb1ea0905c21517a306261:NVKAWKQGWWIWPM-ABEVXSGRSA-N": {
+      "pKd_values": [
+        9.602059991327963,
+        9.602059991327963,
+        9.602059991327963,
+        9.602059991327963,
+        9.602059991327963,
+        9.602059991327963,
+        9.602059991327963,
+        9.602059991327963,
+        9.602059991327963
+      ],
+      "pdb_ids": [
+        "2PIO",
+        "2PIP",
+        "2PIQ",
+        "2PIR",
+        "2PIT",
+        "2PIU",
+        "2PIV",
+        "2PIW",
+        "2PIX"
+      ],
+      "range_pKd": 0.0
+    },
+    "f13083f21202454f6b8ede862b2dfc083eef96009f0bf8b4e20d6e909a20cd16:MUMGGOZAMZWBJJ-DYKIIFRCSA-N": {
+      "pKd_values": [
+        9.397940002200546,
+        9.397940002200546,
+        9.397940002200546,
+        9.397940002200546,
+        9.397940002200546
+      ],
+      "pdb_ids": [
+        "2YLO",
+        "2YLP",
+        "2YLQ",
+        "3ZQT",
+        "4HLW"
+      ],
+      "range_pKd": 0.0
+    },
+    "fbf3f5c695a3b8c47960f7f87595ade0ba42d8f497f2c0c835fe377069f49978:JOOXLOJCABQBSG-UHFFFAOYSA-N": {
+      "pKd_values": [
+        6.785156151952302,
+        6.785156151952302
+      ],
+      "pdb_ids": [
+        "4OGJ",
+        "4PS5"
+      ],
+      "range_pKd": 0.0
+    }
+  },
+  "schema_version": 1,
+  "selection_stage": "before_model_fitting",
+  "source_snapshot_root": "/work/data/raw/rcsb/2026-08-20"
+}

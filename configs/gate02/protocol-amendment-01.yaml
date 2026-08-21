@@ -1,0 +1,48 @@
+schema_version: 1
+amendment_id: gate02-amendment-01-expand-before-fit
+status: frozen_before_reselection_and_any_model_fit
+frozen_utc: 2026-08-20T21:38:30Z
+parent_config:
+  path: configs/gate02/feasibility.yaml
+  sha256: 4e86fea4d72aed72af77979244897e6224444fedc56e73a2620808577824b556
+triggering_prefit_diagnostic:
+  strict_observations: 185
+  exact_construct_groups: 36
+  sequence_only_components: 28
+  union_components_after_frozen_structural_edges: 13
+  largest_union_component_observations: 107
+  largest_union_component_constructs: 21
+  structural_similarity_audit: reports/gate02/evidence/structural-similarity-audit-v1.json
+  structural_similarity_allpairs_sha256: d7fc30e547b55a34b8af5ecf9a8433396cb2e6796dd4380ae4e2cd24b4d9fd6e
+  structural_edges_sha256: cddb7627070c64970a9c07752d65201dfa0c794d7fcd62b9a520b070d2f2678d
+  fitted_models_or_outcomes_inspected: false
+rationale: >-
+  The predeclared minimum of 20 final union components failed before any Gate-2 model fit.
+  Structural, sequence, site, ligand, scaffold, and publication thresholds are deliberately
+  retained rather than weakened after inspection. The same frozen RCSB and BindingDB snapshots
+  contain additional exact-provenance constructs with two supervised measurements plus an
+  independently label-quarantined site-reference structure. These add target diversity without
+  relaxing any record-level mapping, coordinate, affinity, or publication requirement.
+changes:
+  candidate_minimum_supervised_per_construct:
+    from: 3
+    to: 2
+  strict_minimum_exact_measurements_per_construct:
+    from: 3
+    to: 2
+  maximum_constructs:
+    from: 50
+    to: 80
+unchanged:
+  - all information-boundary rules
+  - BindingDB exact-provenance predicate
+  - all ligand, sequence, site, publication, and structural union thresholds
+  - all S1/S2 mapping and confidence thresholds
+  - sequence and ligand encoders
+  - interaction model and additive controls
+  - nested OOD evaluation and uncertainty procedure
+  - minimum required final union components of 20
+  - all go/no-go effect-size and negative-control criteria
+reporting_constraint: >-
+  Targets with fewer than three measurements are excluded from target-level rank correlations but
+  remain valid independent units for pooled component-OOD error and component bootstrap.
