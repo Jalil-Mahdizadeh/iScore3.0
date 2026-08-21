@@ -1,0 +1,208 @@
+schema_version: 1
+phase_id: gate03-bounded-interaction-identifiability-v1
+status: frozen_before_first_gate03_fit
+frozen_utc: 2026-08-21T08:30:05Z
+model_outcomes_inspected_before_freeze: false
+
+scope:
+  full_iscore3_architecture_allowed: false
+  cross_attention_allowed: false
+  ligand_coordinates_allowed: false
+  endpoint: exact_uncensored_pKd
+  objective: identify_incremental_no_pose_ligand_pocket_interaction_signal
+
+source_data:
+  bindingdb_release: 202608
+  bindingdb_tsv_path: data/raw/bindingdb/202608/BindingDB_All.tsv
+  bindingdb_tsv_sha256: 4e9ce5470c71a040ba2bb49f85abe49c58df71f7802164b4caa1ef5a2412b7b9
+  bindingdb_zip_path: data/raw/bindingdb/202608/BindingDB_All_202608_tsv.zip
+  bindingdb_zip_sha256: 8dc30541d668e5e403ba1fe9a682b76c42a50e1711aac44329c62ba24ccd57db
+  rcsb_snapshot_policy: immutable_date_stamped_downloads_with_sha256
+  predicted_structure_policy: immutable_alphafold_db_downloads_with_sha256
+
+assay_series:
+  required:
+    - exact_numeric_uncensored_Kd_nM
+    - canonicalizable_2D_SMILES_without_coordinates
+    - one_target_chain
+    - nonempty_bindingdb_target_sequence
+    - stable_primary_publication_DOI_or_PMID
+    - unique_ligand_identity
+  key_fields:
+    - exact_target_chain_sequence_sha256
+    - normalized_publication_DOI_else_PMID
+    - normalized_pH_including_explicit_missing
+    - normalized_temperature_including_explicit_missing
+  replicate_policy:
+    unit: exact_series_and_standard_inchikey
+    consensus: median_pKd
+    preserve_all_source_row_ids: true
+    maximum_within_unit_range_pKd: 0.50
+    larger_disagreement_action: quarantine_entire_ligand_unit
+  publication_missing_action: exclude
+  censored_or_ambiguous_action: exclude
+  mixed_affinity_types_action: never_convert_to_Kd
+
+dataset_gate:
+  desired_final_union_components: [30, 50]
+  minimum_final_union_components: 30
+  minimum_exact_Kd_ligands_per_selected_series: 8
+  desired_exact_Kd_ligands_per_selected_series: [10, 15]
+  minimum_series_with_at_least_10_ligands: 24
+  minimum_series_with_multiple_nonempty_murcko_scaffolds: 24
+  minimum_series_with_pKd_range_at_least_1: 24
+  minimum_observations_total: 300
+  maximum_largest_component_observation_fraction: 0.20
+  mapping_quality_overrides_size: true
+  on_failure: DATA-NO-GO_without_model_efficacy_fit
+
+structure_mapping:
+  historical_holo_reference_required: true
+  reference_affinity_visible_to_model: false
+  small_molecule_reference_site_required: true
+  target_sequence_to_pdb_entity:
+    minimum_aligned_identity: 0.98
+    minimum_pdb_entity_coverage: 0.90
+    minimum_aligned_residues: 70
+  site_definition:
+    protein_heavy_atom_radius_from_reference_ligand_A: 6.0
+    minimum_residues: 8
+    minimum_query_view_site_coverage: 0.80
+  views:
+    S0: query_holo_sensitivity_only
+    S1: one_historical_holo_receptor_and_site_frozen_per_series
+    S2: alphafold_db_receptor_with_sequence_transferred_site
+    S3: pocket_unoccupied_experimental_receptor_if_strictly_mappable
+  non_holo_replication_required: S2
+  S2_minimum_site_mean_plddt: 70.0
+  S2_minimum_series_coverage_fraction: 0.80
+  S3_is_sensitivity_only: true
+
+manual_primary_source_audit:
+  minimum_publications: 12
+  minimum_measurements: 24
+  selection: deterministic_stratified_by_target_class_affinity_range_and_publication_year
+  verify:
+    - target_identity_and_construct_or_domain
+    - exact_Kd_value_and_units
+    - assay_method_and_conditions_when_reported
+    - ligand_identity_or_table_identifier
+    - relationship_of_reference_structure_to_assay_series
+  inaccessible_or_unresolved_action: exclude_from_verified_stratum_and_replace_before_fit
+  minimum_verified_fraction: 0.90
+
+representations:
+  ligand:
+    primary: ECFP4_2048
+    corroborating: gMolAI_v2_384d
+    fold_local_scaling_and_reduction: true
+  receptor_interpretable:
+    name: pocket_descriptor_v2
+    requirements:
+      - rigid_motion_invariant_geometry
+      - amino_acid_and_atom_chemistry
+      - radial_shell_composition
+      - residue_contact_topology
+      - exposure_and_shape_proxies
+      - missingness_and_quality_indicators
+    fold_local_scaling: true
+  receptor_pretrained:
+    family: frozen_residue_level_structure_encoder
+    selected_model_must_have_official_source_and_checkpoint: true
+    pooling: frozen_site_residue_mean_and_standard_deviation
+    fine_tuning_allowed: false
+    label_conditioned_pretraining_allowed: false
+  sequence_control:
+    model: facebook/esm2_t30_150M_UR50D
+    fine_tuning_allowed: false
+
+leakage_graph:
+  freeze_before_first_fit: true
+  union_relations:
+    - exact_target_sequence
+    - full_sequence_global_identity_at_least_0.30
+    - local_site_sequence_identity_at_least_0.50
+    - validated_global_structure_similarity
+    - validated_local_pocket_structure_similarity
+    - exact_ligand
+    - exact_nonempty_murcko_scaffold
+    - ECFP4_tanimoto_at_least_0.35
+    - shared_measurement_publication
+    - shared_reference_structure_publication
+  structural_rules: inherit_gate02_USalign_rules
+  all_pair_scores_and_threshold_edges_required: true
+  split_overlap_diagnostics_required: true
+
+evaluation:
+  random_pair_split_headline_allowed: false
+  absolute_component_OOD:
+    split: leave_one_frozen_union_component_out
+    metrics: [RMSE, MAE, Pearson, component_macro_RMSE]
+  within_target_scaffold_OOD:
+    split: leave_one_scaffold_cluster_out_within_series
+    minimum_training_ligands: 6
+    minimum_test_ligands: 2
+    scaffold_cluster_rule: murcko_then_ECFP4_tanimoto_0.35_connected_components
+    centre_labels_using_training_series_mean_only: true
+    metrics: [centred_RMSE, centred_MAE, Spearman, Kendall_tau, pairwise_concordance]
+    aggregation: target_macro
+  transformations_fit_on_training_fold_only: true
+  nested_hyperparameter_selection: true
+  fixed_seed: 20260821
+
+models:
+  capacity_budget:
+    maximum_trainable_interaction_parameters: 50000
+    early_stopping_required_for_gradient_models: true
+  required_controls:
+    - global_mean
+    - target_training_mean_when_target_seen
+    - ligand_only
+    - pocket_only
+    - sequence_only
+    - pretrained_structure_only
+    - ECFP_KNN
+    - sequence_KNN
+    - global_structure_KNN
+    - pocket_structure_KNN
+    - matched_additive_fusion
+    - deterministic_pocket_permutation
+  interaction_candidates:
+    - regularized_bilinear
+    - FiLM_or_gated_fusion
+  matched_feature_blocks_and_hyperparameter_budget_required: true
+
+uncertainty:
+  confidence_level: 0.95
+  bootstrap_replicates: 10000
+  absolute_unit: frozen_union_component
+  within_target_unit: assay_series
+  paired_predictions_required: true
+  report_point_estimate_interval_and_probability_of_improvement: true
+
+progression_criteria:
+  hierarchy:
+    - all_dataset_mapping_provenance_and_leakage_gates_pass
+    - interaction_beats_matched_additive_with_statistical_support
+    - gain_is_practically_meaningful_across_absolute_and_ranking_endpoints
+    - direction_replicates_for_both_receptor_encoding_families
+    - direction_replicates_in_S2_non_holo_view
+    - real_pairing_beats_pocket_permutation
+  statistical_support:
+    within_target_ranking_95pct_interval_excludes_no_improvement: true
+    at_least_one_of_absolute_RMSE_or_MAE_95pct_interval_excludes_no_improvement: true
+    remaining_headline_metrics_must_not_show_supported_harm: true
+  practical_joint_effect:
+    minimum_relative_RMSE_or_MAE_reduction: 0.03
+    minimum_target_macro_Spearman_gain: 0.03
+    minimum_pairwise_concordance_gain: 0.02
+    satisfy_absolute_and_at_least_one_ranking_threshold: true
+    no_single_absolute_pKd_threshold_is_sufficient: true
+  replication:
+    supported_primary_gain_required_for_both_receptor_encodings: true
+    S2_directional_gain_required_for_both_receptor_encodings: true
+    corroborating_ligand_encoding_must_not_reverse_primary_direction: true
+  decision:
+    all_hierarchy_items_required_for_GO: true
+    fitted_but_failed_action: HYPOTHESIS-NO-GO_terminate_current_no_pose_interaction_hypothesis
+    complexity_escalation_after_failure_allowed: false
