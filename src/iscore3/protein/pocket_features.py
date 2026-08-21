@@ -452,6 +452,11 @@ def pocket_feature_dict(pocket: PocketInstance) -> dict[str, float]:
                 (centroid_array[:, None, :] - centroid_array[None, :, :]) ** 2, axis=2
             )
         )
+        # Coordinates translated far from the origin can differ at the final
+        # floating-point bit after subtraction.  Stabilise exact distance-bin
+        # and contact-cutoff membership without affecting crystallographic
+        # precision (mmCIF coordinates are reported to far fewer decimals).
+        distances = np.round(distances, decimals=8)
         upper = distances[np.triu_indices(n_residues, k=1)]
         histogram = np.histogram(upper, bins=PAIR_BINS)[0].astype(np.float64)
         histogram /= len(upper)

@@ -54,18 +54,25 @@ def _array_sha256(value: np.ndarray) -> str:
 def load_constructs(pilot: Path) -> tuple[list[ConstructSequence], int]:
     with pilot.open("r", encoding="utf-8", newline="") as handle:
         rows = list(csv.DictReader(handle, delimiter="\t"))
-    references = [row for row in rows if row["role"] == "site_reference_only"]
-    if not references or any(
-        row.get("pKd") or row.get("value_nm") for row in references
-    ):
-        raise Esm2Error("Historical reference label quarantine is absent or invalid")
-    supervised = [row for row in rows if row["role"] == "supervised_s0"]
+    if rows and "role" in rows[0]:
+        references = [row for row in rows if row["role"] == "site_reference_only"]
+        if not references or any(
+            row.get("pKd") or row.get("value_nm") for row in references
+        ):
+            raise Esm2Error("Historical reference label quarantine is absent or invalid")
+        supervised = [row for row in rows if row["role"] == "supervised_s0"]
+        fields = ("construct_group_id", "construct_sha256", "construct_sequence")
+    elif rows and {"series_id", "target_sequence_sha256", "target_sequence"}.issubset(rows[0]):
+        supervised = rows
+        fields = ("series_id", "target_sequence_sha256", "target_sequence")
+    else:
+        raise Esm2Error("Unsupported construct table schema")
     by_group: dict[str, ConstructSequence] = {}
     for row in supervised:
         record = ConstructSequence(
-            group_id=row["construct_group_id"],
-            construct_sha256=row["construct_sha256"],
-            sequence=row["construct_sequence"],
+            group_id=row[fields[0]],
+            construct_sha256=row[fields[1]],
+            sequence=row[fields[2]],
         )
         previous = by_group.setdefault(record.group_id, record)
         if previous != record:

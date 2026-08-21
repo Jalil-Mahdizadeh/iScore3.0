@@ -1,0 +1,27 @@
+schema_version: 1
+amendment_id: gate03-protocol-amendment-03
+status: frozen_before_first_gate03_efficacy_fit
+frozen_utc: 2026-08-21T11:20:00Z
+reason: >-
+  The hash-pinned gMolAI adapter rejects disconnected SMILES by design. Four of
+  661 frozen observations (0.61%), all in one series, are explicit ion pairs.
+  Removing counterions would change molecular identity and was not preregistered.
+decision:
+  primary_ECFP_cohort: all_661_observations
+  gmolai_role: corroborating_complete_case_sensitivity
+  gmolai_accepted_observations: 657
+  gmolai_rejected_observations: 4
+  minimum_required_gmolai_coverage_fraction: 0.99
+  observed_gmolai_coverage_fraction: 0.9939485627836612
+  rejected_input_preprocessing_allowed: false
+  rejected_rows_removed_from_primary_analysis: false
+  report_coverage_and_series_concentration: true
+rejected_observation_ids:
+  - G3S-237de531113c65a9-L0002
+  - G3S-237de531113c65a9-L0003
+  - G3S-237de531113c65a9-L0006
+  - G3S-237de531113c65a9-L0011
+scientific_interpretation: >-
+  gMolAI results cannot change the primary ECFP decision and are interpreted
+  only as a high-coverage corroboration. No salt stripping, largest-fragment
+  selection, imputation, or label-based exclusion is permitted.

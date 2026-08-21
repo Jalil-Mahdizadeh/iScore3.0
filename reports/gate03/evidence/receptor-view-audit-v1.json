@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "S2_series_coverage_at_least_0p80": true,
+    "all_feature_rows_label_free": true,
+    "all_feature_rows_ligand_coordinate_free": true,
+    "all_series_have_S1": true,
+    "feature_schema_exact": true
+  },
+  "counts": {
+    "S1_eligible": 34,
+    "S2_coverage_fraction": 0.9411764705882353,
+    "S2_eligible": 32,
+    "series": 34
+  },
+  "created_utc": "2026-08-21T10:54:51.030257+00:00",
+  "feature_output_sha256": "0c6607c86cc0424f69ecd6360b2d15b418d756f5fc3540a74958624dd4e68470",
+  "schema_version": 1,
+  "status": "PASS",
+  "view_manifest_sha256": "3b202b7a482f42fd4592c7f9f48c515085cf4b82b2dc11fe6e007a5e9c804db0"
+}

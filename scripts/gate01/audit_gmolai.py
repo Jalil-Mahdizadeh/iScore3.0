@@ -22,6 +22,7 @@ from iscore3.data.rcsb_gate01 import (
     stable_json_bytes,
 )
 from iscore3.ligand.gmolai_adapter import (
+    AdapterContractError,
     GmolaiAdapter,
     GmolaiEncoding,
     array_sha256,
@@ -42,12 +43,17 @@ def npy_bytes(value: np.ndarray) -> bytes:
 def read_pilot(path: Path) -> list[dict[str, str]]:
     with path.open("r", encoding="utf-8", newline="") as handle:
         rows = list(csv.DictReader(handle, delimiter="\t"))
-    references = [row for row in rows if row["role"] == "site_reference_only"]
-    if not references or any(
-        row.get("pKd") or row.get("value_nm") for row in references
-    ):
-        raise RuntimeError("Site-reference label quarantine is absent or invalid")
-    supervised = [row for row in rows if row["role"] == "supervised_s0"]
+    if rows and "role" in rows[0]:
+        references = [row for row in rows if row["role"] == "site_reference_only"]
+        if not references or any(
+            row.get("pKd") or row.get("value_nm") for row in references
+        ):
+            raise RuntimeError("Site-reference label quarantine is absent or invalid")
+        supervised = [row for row in rows if row["role"] == "supervised_s0"]
+    elif rows and {"series_id", "ligand_id", "canonical_smiles"}.issubset(rows[0]):
+        supervised = rows
+    else:
+        raise RuntimeError("Unsupported ligand table schema")
     if len({row["observation_id"] for row in supervised}) != len(supervised):
         raise RuntimeError("Supervised observation IDs are not unique")
     return supervised
@@ -72,14 +78,38 @@ def encode_pilot(
     adapter: GmolaiAdapter,
     rows: Sequence[Mapping[str, str]],
     feature_root: Path,
-) -> tuple[list[GmolaiEncoding], list[dict[str, Any]], list[dict[str, Any]]]:
-    encodings = adapter.encode_many(row["canonical_smiles"] for row in rows)
+) -> tuple[
+    list[GmolaiEncoding],
+    list[dict[str, str]],
+    list[dict[str, Any]],
+    list[dict[str, Any]],
+    list[dict[str, Any]],
+]:
+    encodings = []
+    accepted_rows = []
+    rejected = []
+    for row in rows:
+        try:
+            encoding = adapter.encode(row["canonical_smiles"])
+        except AdapterContractError as error:
+            rejected.append(
+                {
+                    "observation_id": row["observation_id"],
+                    "ligand_id": row.get("inchikey") or row.get("ligand_id", ""),
+                    "input_smiles": row["canonical_smiles"],
+                    "reason": str(error),
+                    "identity_preprocessing_applied": False,
+                }
+            )
+            continue
+        encodings.append(encoding)
+        accepted_rows.append(dict(row))
     node_offsets = [0]
     node_rows: list[np.ndarray] = []
     canonical_to_input: list[int] = []
     input_to_canonical: list[int] = []
     ledger: list[dict[str, Any]] = []
-    for row, encoding in zip(rows, encodings, strict=True):
+    for row, encoding in zip(accepted_rows, encodings, strict=True):
         node_rows.append(encoding.node_z.astype(np.float32, copy=False))
         canonical_to_input.extend(encoding.mapping.canonical_to_input)
         input_to_canonical.extend(encoding.mapping.input_to_canonical)
@@ -87,7 +117,7 @@ def encode_pilot(
         ledger.append(
             {
                 "observation_id": row["observation_id"],
-                "inchikey": row["inchikey"],
+                "inchikey": row.get("inchikey") or row["ligand_id"],
                 "input_smiles": row["canonical_smiles"],
                 "canonical_smiles": encoding.canonical_smiles,
                 "molecule_hash": encoding.molecule_hash,
@@ -107,7 +137,9 @@ def encode_pilot(
         )
 
     arrays = {
-        "observation_ids.npy": np.asarray([row["observation_id"] for row in rows]),
+        "observation_ids.npy": np.asarray(
+            [row["observation_id"] for row in accepted_rows]
+        ),
         "canonical_smiles.npy": np.asarray(
             [encoding.canonical_smiles for encoding in encodings]
         ),
@@ -137,7 +169,7 @@ def encode_pilot(
                 "shape": list(value.shape),
             }
         )
-    return encodings, ledger, files
+    return encodings, accepted_rows, ledger, files, rejected
 
 
 def main() -> None:
@@ -151,17 +183,20 @@ def main() -> None:
     parser.add_argument("--audit-report", type=Path, required=True)
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--expected-supervised-count", type=int, required=True)
+    parser.add_argument("--maximum-rejected-count", type=int, default=0)
     args = parser.parse_args()
 
     rows = read_pilot(args.pilot)
     gpu = GmolaiAdapter(args.source_root, args.adapter_config, device=args.device)
-    encodings, ledger, feature_files = encode_pilot(gpu, rows, args.feature_root)
+    encodings, accepted_rows, ledger, feature_files, rejected = encode_pilot(
+        gpu, rows, args.feature_root
+    )
 
     panel = [
         "OCC",
         "F[C@@H](O)C",
-        rows[0]["canonical_smiles"],
-        rows[len(rows) // 2]["canonical_smiles"],
+        accepted_rows[0]["canonical_smiles"],
+        accepted_rows[len(accepted_rows) // 2]["canonical_smiles"],
     ]
     first = gpu.encode_many(panel)
     repeated = gpu.encode_many(panel)
@@ -186,6 +221,12 @@ def main() -> None:
         "supervised_count_matches_explicit_contract": (
             len(rows) == args.expected_supervised_count
         ),
+        "rejection_count_within_explicit_contract": (
+            len(rejected) <= args.maximum_rejected_count
+        ),
+        "rejected_inputs_not_preprocessed": all(
+            row["identity_preprocessing_applied"] is False for row in rejected
+        ),
         "all_dimensions": all(
             encoding.node_z.shape[1] == 128
             and encoding.graph_z.shape == (256,)
@@ -208,7 +249,7 @@ def main() -> None:
         "cpu_gpu_within_frozen_tolerance": all(
             within_cross_device_tolerance(value) for value in cross_device
         ),
-        "no_reference_labels_encoded": len(rows) == len(encodings),
+        "all_rows_accounted_for": len(rows) == len(encodings) + len(rejected),
     }
 
     import rdkit
@@ -240,15 +281,23 @@ def main() -> None:
         },
         "counts": {
             "molecules": len(encodings),
+            "rejected_molecules": len(rejected),
+            "coverage_fraction": len(encodings) / len(rows),
             "expected_supervised_count": args.expected_supervised_count,
             "total_atoms": int(sum(encoding.node_z.shape[0] for encoding in encodings)),
             "unique_canonical_smiles": len(
                 {encoding.canonical_smiles for encoding in encodings}
             ),
-            "unique_inchikeys": len({row["inchikey"] for row in rows}),
+            "unique_inchikeys": len(
+                {
+                    row.get("inchikey") or row["ligand_id"]
+                    for row in accepted_rows
+                }
+            ),
         },
         "array_files": feature_files,
         "molecule_ledger": ledger,
+        "rejection_ledger": rejected,
     }
     preserve_manifest_timestamp(args.manifest, manifest, "created_utc")
     immutable_write(args.manifest, stable_json_bytes(manifest))
