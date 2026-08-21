@@ -1,5 +1,9 @@
 # Gate-4A dataset-admission report
 
+> Historical dataset-admission snapshot. The current decision and completed
+> provenance audit are in
+> [GATE4A_PROVENANCE_CLOSURE_REPORT.md](GATE4A_PROVENANCE_CLOSURE_REPORT.md).
+
 **Decision: `Δ3D-ligand` is conditionally admissible for a later ligand-only
 experiment; `Δ3D×pocket` remains `BLOCKED`. No predictive model was trained.**
 

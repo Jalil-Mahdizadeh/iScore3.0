@@ -30,7 +30,9 @@ criteria.
 - [`configs/gate4a/protocol-v1.yaml`](configs/gate4a/protocol-v1.yaml) — machine-readable
   frozen settings.
 - [`reports/gate4a/GATE4A_DATASET_ADMISSION_REPORT.md`](reports/gate4a/GATE4A_DATASET_ADMISSION_REPORT.md)
-  — committee-facing PASS/BLOCKED decision and evidence.
+  — original dataset-admission decision.
+- [`reports/gate4a/GATE4A_PROVENANCE_CLOSURE_REPORT.md`](reports/gate4a/GATE4A_PROVENANCE_CLOSURE_REPORT.md)
+  — current committee-facing PASS/BLOCKED decision and evidence.
 - [`data/README.md`](data/README.md) — lifecycle and provenance contract.
 - [`reports/history/GATE3_CLOSURE.md`](reports/history/GATE3_CLOSURE.md) — why the
   former hypothesis was closed and how its full history can be recovered.
@@ -49,19 +51,21 @@ commands.
 
 ## Status
 
-The bounded dataset-admission phase is complete. All 72 Davis compounds have an
-explicit disposition: 69 standardized parents are admitted, two unresolved-stereo
-records and one unnamed derivative are quarantined. The standardized wild-type
-reference-domain estimand admits 338/442 assay rows and retains 6,581 exact plus
-16,741 right-censored observations across 69 ligands.
+The bounded provenance-closure phase is complete. A row-complete secondary-QA
+packet for the 69 provisionally admitted Davis parents is hash-frozen, but a named
+independent reviewer has not signed it. The chemical ledger and the isolated
+`delta_3d_ligand` experiment therefore remain blocked.
 
-Free-ligand 3D is non-degenerate and may proceed to a later ligand-only experiment
-after committee chemical QA. Receptor interaction fitting remains blocked: exact
-Davis assay constructs are unavailable, predicted/apo pocket coordinates and
-structure-leakage edges are not qualified, external eligible-pair ledgers are not
-custodian-locked, and public repeat data cannot support a numeric practical-
-equivalence region. OKL 2026 and KIRHub 2026 are conditional complementary
-confirmation candidates, not development data.
+Canonical AlphaFold v6 pocket coordinates pass exact sequence/coordinate checks
+for 288/338 standardized receptor estimands. Fifty fail closed because an exact
+KLIFS-to-canonical mapping was not established. Thirty-four structures pass the
+strict global-zero-nonpolymer apo definition and 39 pass the audited binding-site-
+unoccupied tier. The predeclared structural-leakage union produces only 10 target
+components and places 323/338 targets in one component; this makes a credible
+double-cold Davis interaction experiment non-identifiable under the frozen rule.
+Outcome-blind OKL/KIRHub eligibility ledgers are frozen but release zero strict
+confirmation pairs. Public repeat evidence still cannot support numeric metric-
+specific practical-equivalence margins.
 
-No predictive model was trained. There are no Gate-4A performance results and no
-model suitable for prospective, clinical, or regulatory use.
+No predictive model, including the optional isolated ligand-3D model, was trained.
+`delta_pocket_additive` and `delta_3d_x_pocket` remain blocked.

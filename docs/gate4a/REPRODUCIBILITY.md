@@ -48,3 +48,67 @@ refuse to overwrite immutable raw evidence. Their tracked manifests cover Davis,
 PubChem, ChEMBL, KLIFS/UniProt/AlphaFold, RCSB, OKL, and KIRHub sources. A replay
 must first verify those hashes; a changed upstream response is a new source
 version, never an in-place update.
+
+## Provenance-closure replay
+
+The closure added Biopython 1.85 and Gemmi 0.7.3 to the hash-locked overlay. Install
+the lock with `--require-hashes`; do not use an unpinned host parser. Raw structure,
+KLIFS, RCSB and IDG-DREAM payloads are immutable and ignored by Git. Verify them
+against the tracked coordinate/candidate/noise manifests before processing.
+
+The label-blind processing commands are:
+
+```bash
+"${GATE4A_PY[@]}" scripts/gate4a/freeze_ligand_identity_qa.py \
+  --qa-packet /tmp/iscore3-g4a-ligand-qa-replay.tsv \
+  --freeze /tmp/iscore3-g4a-ligand-freeze-replay.json
+"${GATE4A_PY[@]}" scripts/gate4a/close_alphafold_receptors.py \
+  --derived-root /tmp/iscore3-g4a-af-pockets-replay \
+  --ledger /tmp/iscore3-g4a-af-ledger-replay.tsv \
+  --manifest /tmp/iscore3-g4a-af-manifest-replay.json \
+  --audit /tmp/iscore3-g4a-af-audit-replay.json
+"${GATE4A_PY[@]}" scripts/gate4a/qualify_apo_tiers.py \
+  --ledger /tmp/iscore3-g4a-apo-ledger-replay.tsv \
+  --manifest /tmp/iscore3-g4a-apo-manifest-replay.json \
+  --audit /tmp/iscore3-g4a-apo-audit-replay.json
+"${GATE4A_PY[@]}" scripts/gate4a/freeze_confirmation_ledgers.py \
+  --output-dir /tmp/iscore3-g4a-confirmation-replay \
+  --audit /tmp/iscore3-g4a-confirmation-audit-replay.json
+"${GATE4A_PY[@]}" scripts/gate4a/audit_practical_equivalence_evidence.py \
+  --output /tmp/iscore3-g4a-equivalence-replay.json
+```
+
+The 41,328-pair US-align replay is deterministic but computationally longer. Run it
+only after the coordinate ledger replay passes:
+
+```bash
+"${GATE4A_PY[@]}" scripts/gate4a/finalize_structural_leakage.py \
+  --coordinates /tmp/iscore3-g4a-af-ledger-replay.tsv \
+  --all-pairs /tmp/iscore3-g4a-structure-pairs-replay.tsv \
+  --edges /tmp/iscore3-g4a-structure-edges-replay.tsv \
+  --components /tmp/iscore3-g4a-components-final-replay.tsv \
+  --audit /tmp/iscore3-g4a-structure-audit-replay.json
+```
+
+US-align is pinned as version 20260819 with binary SHA-256
+`b5b44c885e61bba1352a20fd8726a4d73f1bd9798e13dc926e315c72b550e4d3`.
+Tracked output hashes are recorded in each evidence JSON and collectively in
+`reports/gate4a/evidence/provenance-closure-reproducibility-v1.json`.
+
+The clean replay reproduced all parsed US-align metrics and both the edge and
+component ledgers byte-for-byte. The per-row `stdout_sha256` alone is mount-path
+dependent because US-align prints its absolute input filenames (`/workspace` in the
+SIF versus the host path). It is raw-execution provenance, not a scientific field.
+This expected distinction and every other replay comparison are frozen in
+`reports/gate4a/evidence/provenance-closure-replay-v1.json`.
+
+Network acquisition is intentionally separate:
+
+```bash
+"${GATE4A_PY[@]}" scripts/gate4a/acquire_site_unoccupied_candidates.py
+"${GATE4A_PY[@]}" scripts/gate4a/acquire_idg_dream_noise_evidence.py
+```
+
+These commands refuse to overwrite the existing snapshot. Reacquisition belongs in
+a new versioned raw root/manifest. No command above trains or evaluates a predictive
+model.

@@ -15,11 +15,13 @@
     "pyyaml": "6.0.2",
     "rdkit": "2025.09.3",
     "scikit_learn": "1.5.0",
-    "xlrd": "2.0.2"
+    "xlrd": "2.0.2",
+    "biopython": "1.85",
+    "gemmi": "0.7.3"
   },
   "overlay": {
     "path": "environments/local/gate4a/vendor",
     "lock": "environments/gate4a-requirements.lock.txt",
-    "purpose": "read the publisher's legacy XLS workbooks"
+    "purpose": "read legacy XLS workbooks; exact sequence alignment; PDBx/mmCIF parsing"
   }
 }

@@ -1,3 +1,8 @@
-# Installed on top of the hash-pinned SIF for legacy publisher XLS ingestion.
+# Installed on top of the hash-pinned SIF. Wheels and the target Python 3.12
+# ABI were frozen on 2026-08-21.
 xlrd==2.0.2 \
     --hash=sha256:ea762c3d29f4cca48d82df517b6d89fbce4db3107f9d78713e48cd321d5c9aa9
+biopython==1.85 \
+    --hash=sha256:e54e495239e623660ad367498c2f7a1a294b1997ba603f2ceafb36fd18f0eba6
+gemmi==0.7.3 \
+    --hash=sha256:5ea52ad093cb3058d3ece1351a6fd3748879b1b00bdbd74316abc6829bfe85de

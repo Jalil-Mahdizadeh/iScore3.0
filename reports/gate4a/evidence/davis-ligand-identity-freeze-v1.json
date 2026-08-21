@@ -1,0 +1,27 @@
+{
+  "admitted_parent_rows": 69,
+  "final_chemical_identity_ledger_decision": "BLOCKED",
+  "independent_secondary_qa_decision": "BLOCKED_PENDING_NAMED_EXTERNAL_REVIEWER_SIGNATURE",
+  "information_boundary": {
+    "affinity_labels_accessed": false,
+    "crystallographic_ligand_coordinates_accessed": false,
+    "receptor_data_accessed": false
+  },
+  "phase": "gate4a_provenance_closure",
+  "quarantined_rows": 3,
+  "rationale": "The same research agent that produced the first adjudication cannot truthfully certify its own second pass as independent. The immutable ledger hash and a row-complete review packet are frozen for a committee chemist or otherwise independent reviewer.",
+  "release_rule": "All four secondary decision columns must be PASS for all 69 rows, reviewer name/date must be non-PENDING, and the signed packet hash must be added in a new immutable manifest before ligand labels or Delta3D-ligand fitting are released.",
+  "schema_version": 1,
+  "secondary_qa_packet": {
+    "path": "data/processed/gate4a/davis-ligand-secondary-qa-packet-v1.tsv",
+    "rows": 69,
+    "sha256": "77bef1365eddf215f65d76e887ed48d2cdbaae6898494cba0cb94b5e64ae63b9"
+  },
+  "source_disposition_rows": 72,
+  "source_ledger": {
+    "path": "data/processed/gate4a/davis-compound-adjudication-v1.tsv",
+    "sha256": "e924f7f3fc95c25685857cbcc1bbdb8674cef40dce74ddf4ab82710c134c76f2"
+  },
+  "technical_failures": [],
+  "technical_integrity_decision": "PASS"
+}

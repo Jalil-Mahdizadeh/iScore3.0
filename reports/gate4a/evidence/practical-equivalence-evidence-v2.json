@@ -1,0 +1,89 @@
+{
+  "compatibility_failures": [
+    "Fabian- versus Davis-study constructs are not resolved to the exact standardized Gate-4A receptor estimands",
+    "pKd=5 values include lower-bound/nonbinder handling rather than ordinary exact measurements",
+    "the released data are cross-study values, not raw independent repeat preparations of the same Davis assay rows",
+    "RMSE/Spearman between assay studies do not directly give the null distribution of paired model-metric differences",
+    "no representative paired repeats support MAE, censor-aware NLL, AUROC, AUPRC, Brier, within-target NDCG, or within-ligand ranking margins"
+  ],
+  "contextual_values_for_reporting_not_thresholding": {
+    "paired_mae_pkd": 0.32582551960929285,
+    "paired_rmse_pkd": 0.5166250924103533,
+    "paired_spearman": 0.8395900067402514,
+    "round_1_bootstrap_median_rmse_pkd": 0.5261293099082278,
+    "round_1_bootstrap_median_spearman": 0.8408688332010611,
+    "round_2_bootstrap_median_rmse_pkd": 0.5135406652397287,
+    "round_2_bootstrap_median_spearman": 0.8423291288012277
+  },
+  "forbidden_inference": "Do not use 0.5166 pKd RMSE, the vendor's less-than-four-fold example, or correlation coefficients as universal model-gain thresholds.",
+  "new_evidence": {
+    "archive_url": "https://doi.org/10.5281/zenodo.4648011",
+    "interpretation": "The two-screen empirical error is directly relevant contextual evidence and supplies metric-specific assay ceilings, not an equivalence region for a paired model contrast.",
+    "publication_url": "https://doi.org/10.1038/s41467-021-23165-1",
+    "released_bootstrap_distributions": {
+      "Round 1": {
+        "rmse_replicates_pkd": {
+          "count": 10000,
+          "maximum": 0.6964604873745004,
+          "median": 0.5261293099082278,
+          "minimum": 0.4098289934382094,
+          "q025": 0.4589694258350099,
+          "q05": 0.468258745659747,
+          "q95": 0.5863489846170322,
+          "q975": 0.5985015976196213
+        },
+        "spearman_replicates": {
+          "count": 10000,
+          "maximum": 0.9052619132111444,
+          "median": 0.8408688332010611,
+          "minimum": 0.7562031631208257,
+          "q025": 0.794959656166697,
+          "q05": 0.8023585775159764,
+          "q95": 0.8743405534155559,
+          "q975": 0.8797250820418784
+        }
+      },
+      "Round 2": {
+        "rmse_replicates_pkd": {
+          "count": 10000,
+          "maximum": 0.6507784402600154,
+          "median": 0.5135406652397287,
+          "minimum": 0.38216926182942834,
+          "q025": 0.44589793636355063,
+          "q05": 0.45634308623336045,
+          "q95": 0.574258660956778,
+          "q975": 0.5856063821898851
+        },
+        "spearman_replicates": {
+          "count": 10000,
+          "maximum": 0.9103177421739952,
+          "median": 0.8423291288012277,
+          "minimum": 0.7084129389484028,
+          "q025": 0.795125315522698,
+          "q05": 0.8034158708911604,
+          "q95": 0.876138292455527,
+          "q975": 0.8815454995543501
+        }
+      }
+    },
+    "released_pair_summary": {
+      "both_pkd_5_count": 103,
+      "either_pkd_5_count": 178,
+      "mae_pkd": 0.32582551960929285,
+      "mean_bias_fabian_minus_davis_pkd": -0.14882687392975136,
+      "pair_count": 416,
+      "rmse_pkd": 0.5166250924103533,
+      "spearman": 0.8395900067402514
+    },
+    "source": "Cichonska et al. 2021 IDG-DREAM; Zenodo 4648011"
+  },
+  "numeric_practical_equivalence_regions": null,
+  "phase": "gate4a_provenance_closure",
+  "provenance": {
+    "manifest_path": "data/manifests/gate4a/idg-dream-noise-evidence-v1.json",
+    "manifest_sha256": "af7be7cfc58f91dd609bdcea969fc8e2bd77cb54f5f13e8f0f899d6561f84e45"
+  },
+  "required_resolution": "Acquire raw, unaveraged paired repeats for the same standardized ligand parent and assay construct, then apply the preregistered replicate-label-swap multiway bootstrap separately for every evaluation metric before model outcomes are inspected.",
+  "schema_version": 2,
+  "status": "NUMERIC_PRACTICAL_EQUIVALENCE_MARGINS_REMAIN_BLOCKED"
+}

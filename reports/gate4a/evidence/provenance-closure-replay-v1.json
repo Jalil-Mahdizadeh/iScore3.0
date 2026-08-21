@@ -1,0 +1,60 @@
+{
+  "schema_version": 1,
+  "phase": "gate4a_provenance_closure",
+  "replayed_utc_date": "2026-08-21",
+  "environment": "reports/gate4a/evidence/environment-v1.json",
+  "model_training_performed": false,
+  "tests": {
+    "full_suite_passed": 41,
+    "failed": 0
+  },
+  "coordinate_byte_integrity": {
+    "alphafold_source_files": 338,
+    "derived_pocket_files": 288,
+    "selected_apo_files": 39,
+    "total_sha256_checks": 665,
+    "failures": 0
+  },
+  "ligand_identity_replay": {
+    "qa_packet_rows": 69,
+    "qa_packet_byte_identical": true,
+    "audit_scientific_content_identical": true,
+    "audit_byte_identical": false,
+    "expected_difference": "secondary_qa_packet.path points to the temporary replay output"
+  },
+  "alphafold_receptor_replay": {
+    "accepted": 288,
+    "failed": 50,
+    "direct_exact": 211,
+    "reciprocal_exact_homology_transfer": 77,
+    "fail_klifs_api": 41,
+    "fail_no_exact_transfer": 9,
+    "counts_identical": true
+  },
+  "apo_replay": {
+    "ledger_byte_identical": true,
+    "strict_global_zero_pass": 34,
+    "binding_site_unoccupied_pass": 39,
+    "incremental_remote_nonpolymer_views": 5,
+    "search_truncated": 42
+  },
+  "confirmation_replay": {
+    "all_four_ledgers_byte_identical": true,
+    "outcomes_read": false,
+    "okl_strict_pairs": 0,
+    "kirhub_eligible_pairs": 0
+  },
+  "noise_replay": {
+    "evidence_json_byte_identical": true,
+    "numeric_practical_equivalence_regions": null
+  },
+  "structural_similarity_replay": {
+    "pair_rows": 41328,
+    "all_scientific_fields_identical": true,
+    "edge_ledger_byte_identical": true,
+    "component_ledger_byte_identical": true,
+    "raw_stdout_sha256_identical": false,
+    "raw_stdout_sha256_difference_count": 41328,
+    "expected_difference": "US-align tabular stdout embeds absolute input paths, which differ between the host and /workspace SIF mount; parsed metrics and every downstream result are identical."
+  }
+}

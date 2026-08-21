@@ -1,0 +1,39 @@
+{
+  "accepted_reference_estimands": 338,
+  "alignment_mode": "sequential, appropriate to fixed homologous KLIFS column order",
+  "all_pair_comparisons": 41328,
+  "coordinate_qualified_estimands": 288,
+  "decision": "PASS_FOR_COORDINATE_QUALIFIED_SUBSET_BLOCKED_FOR_FULL_338",
+  "final_component_count": 10,
+  "information_boundary": {
+    "affinity_labels_accessed": false,
+    "ligands_accessed": false
+  },
+  "largest_component_size": 323,
+  "outputs": {
+    "all_pairs": {
+      "path": "data/processed/gate4a/alphafold-pocket-structural-similarity-v1.tsv",
+      "sha256": "07c6977850713ab8d2ff295e29ad5c83864e824a57bff9a4e58259d74c4b2584"
+    },
+    "components": {
+      "path": "data/splits/gate4a/davis-receptor-components-final-v1.tsv",
+      "sha256": "9c6ecd9aba6eecce850e0ee78603715d34249713e808f3aa5c74ad030e92ad95"
+    },
+    "structural_edges": {
+      "path": "data/splits/gate4a/receptor-structural-leakage-edges-v1.tsv",
+      "sha256": "6ce6244830c318712e10bee79c346669684ab67bb3bb1f168c61f5f78814c1cb"
+    }
+  },
+  "phase": "gate4a_provenance_closure",
+  "schema_version": 1,
+  "structural_edge_count": 40852,
+  "threshold": {
+    "maximum_length_normalized_pocket_tm_score_at_least": 0.75
+  },
+  "threshold_provenance": "predeclared pocket-provenance-contract-v1; labels not accessed",
+  "usalign": {
+    "binary_path": "third_party/source_cache/usalign/USalign",
+    "binary_sha256": "b5b44c885e61bba1352a20fd8726a4d73f1bd9798e13dc926e315c72b550e4d3",
+    "version_output": "********************************************************************\n * US-align (Version 20260819)                                      *\n * Universal Structure Alignment of Proteins and Nucleic Acids      *\n * Reference: C Zhang, L Freddolino, Y Zhang. (2026) Nat Protoc     *\n *            C Zhang, M Shine, AM Pyle, Y Zhang. (2022) Nat Methods*\n *            C Zhang, AM Pyle (2022) iScience.                     *\n * Please email comments and suggestions to zhang@zhanggroup.org    *\n ********************************************************************"
+  }
+}

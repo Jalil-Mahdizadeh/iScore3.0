@@ -1,5 +1,5 @@
 phase: gate4a
-status: dataset_admission_complete_interaction_blocked
+status: provenance_closure_complete_interaction_blocked
 created_utc: "2026-08-21T14:47:07Z"
 terminal_history:
   commit: 3b814c6
@@ -108,10 +108,14 @@ forbidden:
   - trainable_e3_ligand_encoder_in_gate4a
 
 admission:
-  delta_3d_ligand: PASS_FOR_FUTURE_FITTING_AFTER_COMMITTEE_COMPOUND_REVIEW
+  delta_3d_ligand: BLOCKED_PENDING_INDEPENDENT_LIGAND_QA_SIGNATURE
+  delta_pocket_additive: BLOCKED
   delta_3d_x_pocket: BLOCKED
+  coordinate_qualified_primary_subset: 288_of_338
+  non_holo_replication_subset: 39_of_288
   blockers:
-    - coordinate_qualified_predicted_and_apo_pockets_not_materialized
-    - structural_similarity_edges_not_frozen
-    - external_eligible_pair_ledgers_not_adjudicated_or_custodian_locked
+    - independent_ligand_secondary_qa_requires_named_external_reviewer_signature
+    - 50_reference_estimands_lack_exact_klifs_to_canonical_coordinate_mapping
+    - predeclared_structure_edges_collapse_323_of_338_estimands_into_one_component
+    - frozen_okl_and_kirhub_ledgers_release_zero_strictly_eligible_pairs
     - numeric_practical_equivalence_region_lacks_raw_repeat_data

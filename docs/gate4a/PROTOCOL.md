@@ -100,22 +100,30 @@ If the available data lack assay semantics, crossed coverage, conformational
 diversity, or statistical power, stop as non-identifiable rather than increasing
 model capacity or shopping for favourable datasets.
 
-## Dataset-admission result
+## Provenance-closure result
 
-The admission phase does not authorize interaction fitting. Davis admits 69 parent
-ligands and 338 standardized wild-type reference-domain receptor rows, but exact
-KINOMEscan constructs remain unavailable. Fixed KLIFS positions 1–85 define the
-site without a ligand; predicted and apo coordinates still require a unique
-residue-level mapping and coordinate hashes. Current KLIFS family/sequence leakage
-components are provisional until coordinate structure edges are unioned.
+The closure phase does not authorize fitting. Davis still has 69 provisionally
+admitted parents and 338 standardized wild-type reference-domain receptor rows,
+while exact KINOMEscan constructs remain unavailable. The 69-row secondary chemical
+review packet is technically complete but lacks a named independent signature.
 
-OKL 2026 is the conditional affinity-like external panel and KIRHub 2026 the
-conditional orthogonal ranking/classification panel. Their eligible pair ledgers
-must be chemically/receptor adjudicated, made disjoint from development leakage
-components, and held by a custodian. Public data do not contain representative raw
-paired Kd repeats, so the frozen metric-specific equivalence procedure exists but
-numeric regions remain blocked.
+Fixed KLIFS columns 1–85 define the site without a ligand. Canonical AlphaFold v6
+coordinates pass exact mapping and coordinate checks for 288/338 estimands; 50 fail
+closed. The corrected contract explicitly represents alignment-gap columns rather
+than requiring 85 physical residues. A strict global-zero-nonpolymer apo view passes
+for 34 targets, and the audited binding-site-unoccupied tier passes for 39. The
+predeclared structural-edge union is now frozen, yielding only 10 components and a
+dominant component of 323/338 estimands. The threshold will not be loosened after
+observing this collapse.
 
-`delta_3d_ligand` may proceed separately after committee compound QA.
-`delta_pocket_additive` and `delta_3d_x_pocket` remain blocked until the coordinate,
-structural-edge, external-ledger, and noise requirements pass.
+OKL 2026 and KIRHub 2026 outcome-blind eligibility ledgers are frozen without using
+outcomes for tuning. Both release zero strict pairs: OKL lacks double-cold receptor
+support under the frozen components and KIRHub lacks machine-readable compound
+structures plus completed construct validation. Public data still do not contain a
+representative same-estimand raw paired-Kd repeat panel, so numeric metric-specific
+equivalence regions remain blocked.
+
+`delta_3d_ligand` remains blocked until an external chemical reviewer signs the
+frozen packet. `delta_pocket_additive` and `delta_3d_x_pocket` remain blocked. The
+dominant structural component is now a design-level identifiability problem, not
+merely unfinished provenance.

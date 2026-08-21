@@ -21,7 +21,18 @@ final tracked disposition ledger is
 `processed/gate4a/davis-compound-adjudication-v1.tsv`: 69 parent structures are
 admitted and three records are quarantined. BMS-345541 and JNJ-28312141 follow the
 explicit publication-parent/counterion-removal rule; no other multicomponent record
-is silently desalted. Committee secondary review is required before label release.
+is silently desalted. A 69-row independent-review packet is frozen at
+`processed/gate4a/davis-ligand-secondary-qa-packet-v1.tsv`; its pending signature
+blocks label release and the final identity-ledger freeze.
+
+Coordinate provenance is tracked in
+`processed/gate4a/alphafold-pocket-admission-v1.tsv` and the corresponding manifest.
+The 85 KLIFS columns include explicit alignment gaps: 288 estimands have exact
+coordinates for every non-gap column, while 50 fail closed. Apo/non-holo decisions
+are in `processed/gate4a/apo-view-admission-v1.tsv`. Pairwise structural similarities,
+frozen structural edges, and their transitive receptor components live in
+`processed/gate4a/alphafold-pocket-structural-similarity-v1.tsv` and
+`splits/gate4a/`.
 
 ## Affinity observations
 
@@ -45,4 +56,5 @@ overlap. A distinct locked panel is required for a progression decision. The
 terminal Gate-3 cohort is quarantined by policy and absent from the active tree.
 The OKL and KIRHub raw workbooks are confirmation-candidate evidence only;
 aggregate audits are tracked, but no external cell-level label is copied into Git
-or released to a modeling process.
+or released to a modeling process. Outcome-blind eligibility ledgers under
+`processed/gate4a/confirmation/` are frozen and currently release zero strict pairs.

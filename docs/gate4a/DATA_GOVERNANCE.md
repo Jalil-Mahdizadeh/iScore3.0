@@ -42,7 +42,9 @@ alias inconsistency is explicitly resolved, never silently normalized.
 
 The review was label-blind and checked publication drawings, PubChem records,
 ChEMBL exact-synonym evidence, and an independent NCATS record where needed.
-Committee secondary review is required before any label-bearing fit.
+The automated integrity pass is complete, but self-review is not independent.
+Committee or other named external secondary review of the frozen 69-row packet is
+required before any label-bearing fit.
 
 ## Standardized receptor estimand
 
@@ -59,22 +61,29 @@ assay-construct analysis.
 
 ## Ligand-independent structure boundary
 
-The pocket is the ordered set of KLIFS positions 1--85. Selection may not use a
+The pocket is the ordered set of KLIFS alignment columns 1--85. A column may be an
+explicit reference-alignment gap and then has no physical residue or coordinate.
+Selection may not use a
 query ligand, affinity label, ligand contact, holo template, pharmacophore, or
 complex-derived exclusion volume. The canonical predicted view is primary; a
-strict apo X-ray view is replication. Holo structures are sensitivity-only and
-cannot define a pocket.
+strict apo X-ray view and a separately labelled binding-site-unoccupied X-ray tier
+are replication views. Holo structures are sensitivity-only and cannot define a
+pocket.
 
 Metadata coverage alone does not admit coordinates. Each predicted or apo view
-must have a unique KLIFS-to-UniProt-to-coordinate residue mapping, complete
-required coordinates, exact sequence agreement at the 85 positions, structure
-file hash, and chain/model provenance. Strict apo candidates additionally require
-zero non-polymer entities and preregistered resolution/completeness checks.
+must have a unique KLIFS-to-UniProt-to-coordinate residue mapping, complete required
+coordinates, exact sequence agreement at every non-gap column, structure-file
+hash, and chain/model provenance. The strict apo tier additionally requires zero
+non-polymer entities. The binding-site-unoccupied tier may contain remote
+nonpolymers but requires no non-water foreign heavy atom within 8 Å of the pocket,
+exact WT pocket sequence, full C-alpha coverage, at least 90% side-chain-heavy-atom
+completeness, and X-ray resolution at most 3 Å.
 
 Leakage components are the union of ligand scaffold/similarity edges and receptor
-family, pocket-sequence, and pocket-structure edges. Once coordinate edges are
-added, components may merge but never split. Interaction testing is blocked until
-all eligible receptor views and structure edges are frozen.
+family, pocket-sequence, and pocket-structure edges. Coordinate edges are frozen at
+maximum length-normalized pocket US-align TM-score at least 0.75. The resulting
+union has 10 receptor components and a 323-target dominant component; it may not be
+repartitioned after label or model inspection.
 
 ## Noise, equivalence, and access control
 
@@ -85,10 +94,13 @@ swap replicate A/B assignments, rerun the final multiway component bootstrap,
 and set the half-width to the 95th percentile of the absolute metric contrast
 caused by replicate choice. A universal pKd threshold is forbidden.
 
-Development and confirmation manifests remain separate. Confirmation access is
+Development and confirmation manifests remain separate. The outcome-blind OKL and
+KIRHub eligibility ledgers are frozen and currently release zero strict pairs.
+Confirmation access is
 one-shot after signed hashes for code, configuration, chemical/receptor ledgers,
 features, splits, checkpoints, and analysis plan are recorded. Gate-4A currently
-permits a later `Delta3D-ligand` experiment after committee chemical QA. It blocks
-all `Delta3D x pocket` fitting until coordinate admission, structural leakage
-closure, external eligible-pair adjudication/custody, and replicate-derived
-equivalence all pass.
+blocks `Delta3D-ligand` pending a named independent chemical-QA signature. It blocks
+all receptor/additive and `Delta3D x pocket` fitting because receptor closure is
+incomplete, the structural components are non-informative for a Davis double-cold
+test, strict external pairs are unavailable, and replicate-derived equivalence
+margins are unresolved.

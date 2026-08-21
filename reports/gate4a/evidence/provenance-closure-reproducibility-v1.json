@@ -1,0 +1,189 @@
+{
+  "artifacts": [
+    {
+      "bytes": 3785,
+      "path": "configs/gate4a/protocol-v1.yaml",
+      "sha256": "6459de5c0b030fd14fef620f22d54c6352346d9ebf1257ac6da8bc3a83e4fb04"
+    },
+    {
+      "bytes": 11538052,
+      "path": "data/manifests/gate4a/alphafold-pocket-coordinates-v1.json",
+      "sha256": "b657f7f60a2ae698dfbf7b5e688f6550636a1c79688af9afbf88a3095617f4d9"
+    },
+    {
+      "bytes": 2390001,
+      "path": "data/manifests/gate4a/apo-view-coordinates-v1.json",
+      "sha256": "a03bae7856ae55ecc5ea91c3199ea4406c4904b92814b22775edda19eb0faa25"
+    },
+    {
+      "bytes": 2275,
+      "path": "data/manifests/gate4a/idg-dream-noise-evidence-v1.json",
+      "sha256": "af7be7cfc58f91dd609bdcea969fc8e2bd77cb54f5f13e8f0f899d6561f84e45"
+    },
+    {
+      "bytes": 614,
+      "path": "data/manifests/gate4a/site-unoccupied-candidates-v1.json",
+      "sha256": "6491b15836618f89f91633c291d90380c00196aea5a0ceb29dbe4c93350c67ef"
+    },
+    {
+      "bytes": 260257,
+      "path": "data/processed/gate4a/alphafold-pocket-admission-v1.tsv",
+      "sha256": "a09ca4b540a107edf135801147b4a4daad10ff7800e31d908d5fe75877b833fa"
+    },
+    {
+      "bytes": 9484729,
+      "path": "data/processed/gate4a/alphafold-pocket-structural-similarity-v1.tsv",
+      "sha256": "07c6977850713ab8d2ff295e29ad5c83864e824a57bff9a4e58259d74c4b2584"
+    },
+    {
+      "bytes": 38157,
+      "path": "data/processed/gate4a/apo-view-admission-v1.tsv",
+      "sha256": "0382b0c8254f09a582c9c4e00684877d4e827d3765c47621a9fb39fb79a4781a"
+    },
+    {
+      "bytes": 7394,
+      "path": "data/processed/gate4a/confirmation/kirhub-compound-eligibility-v1.tsv",
+      "sha256": "b3d557c0fd58b2e777e5582b7204150b6e18e661e85a4473828090daa4fd5710"
+    },
+    {
+      "bytes": 49361,
+      "path": "data/processed/gate4a/confirmation/kirhub-target-eligibility-v1.tsv",
+      "sha256": "5d686ce9ed5120a3b0cecac37d95ca7b961e5db8bdba7daae380e09dc854a005"
+    },
+    {
+      "bytes": 40087,
+      "path": "data/processed/gate4a/confirmation/okl-compound-eligibility-v1.tsv",
+      "sha256": "99b5a5ed774e86d5f880facb2f349af968b1b56b4e799e58ec9b47406d03acde"
+    },
+    {
+      "bytes": 50500,
+      "path": "data/processed/gate4a/confirmation/okl-target-eligibility-v1.tsv",
+      "sha256": "95d60ca217fa215b3b58ca18ef0e4a7aa3b9cdffb565aa2d2c309155051ddebc"
+    },
+    {
+      "bytes": 30752,
+      "path": "data/processed/gate4a/davis-ligand-secondary-qa-packet-v1.tsv",
+      "sha256": "77bef1365eddf215f65d76e887ed48d2cdbaae6898494cba0cb94b5e64ae63b9"
+    },
+    {
+      "bytes": 64307,
+      "path": "data/splits/gate4a/davis-receptor-components-final-v1.tsv",
+      "sha256": "9c6ecd9aba6eecce850e0ee78603715d34249713e808f3aa5c74ad030e92ad95"
+    },
+    {
+      "bytes": 7508818,
+      "path": "data/splits/gate4a/receptor-structural-leakage-edges-v1.tsv",
+      "sha256": "6ce6244830c318712e10bee79c346669684ab67bb3bb1f168c61f5f78814c1cb"
+    },
+    {
+      "bytes": 406,
+      "path": "environments/gate4a-requirements.lock.txt",
+      "sha256": "521e3d8fe31392d793276d890a1991e594ff95e8f8302c32b01266fe13ceec55"
+    },
+    {
+      "bytes": 7788,
+      "path": "reports/gate4a/GATE4A_PROVENANCE_CLOSURE_REPORT.md",
+      "sha256": "bdf02e941c0d8b7ce3b655ec24647ca2141cb2d21b5b692950cae2fee7a14b41"
+    },
+    {
+      "bytes": 1089,
+      "path": "reports/gate4a/evidence/alphafold-pocket-admission-v1.json",
+      "sha256": "cf029a8284390cc6e96a7418b6636facb39627744e0b663a7ba2bf453615f755"
+    },
+    {
+      "bytes": 911,
+      "path": "reports/gate4a/evidence/apo-view-admission-v1.json",
+      "sha256": "39ad1d5317c7547a4949afd84025be5269124d79a6b88fe179f9d197c1240327"
+    },
+    {
+      "bytes": 2246,
+      "path": "reports/gate4a/evidence/confirmation-ledger-freeze-v1.json",
+      "sha256": "875724656b37e408a34b05b9c6b5c2204fdc60f966c1d2d6cde9bfe027216e5a"
+    },
+    {
+      "bytes": 1451,
+      "path": "reports/gate4a/evidence/davis-ligand-identity-freeze-v1.json",
+      "sha256": "9850e18fc1eaf8ae0f559f3ddb3afcd1aec459d0d5eb720157531bd59b8c56d4"
+    },
+    {
+      "bytes": 3243,
+      "path": "reports/gate4a/evidence/pocket-provenance-contract-v2.json",
+      "sha256": "c493e6d689af31a47b1d1c691c7518f61884909e9633e890fa69ad6cb5f83218"
+    },
+    {
+      "bytes": 4059,
+      "path": "reports/gate4a/evidence/practical-equivalence-evidence-v2.json",
+      "sha256": "59c725d396c599f3b5ce9834b412c946f21d62fdf5dc28cd53ae5223345e9ad6"
+    },
+    {
+      "bytes": 1931,
+      "path": "reports/gate4a/evidence/provenance-closure-replay-v1.json",
+      "sha256": "8fbfb59749f2fe3642b1361fba10f6151340dff944aac1338520e88c13ffa9dd"
+    },
+    {
+      "bytes": 2070,
+      "path": "reports/gate4a/evidence/receptor-structural-leakage-v1.json",
+      "sha256": "6c804c885d256800552e2f4301174910652301ec10a8057929dc72f4d36f6839"
+    },
+    {
+      "bytes": 3452,
+      "path": "scripts/gate4a/acquire_idg_dream_noise_evidence.py",
+      "sha256": "d6aafb75489bae9a7e38aa5e39598c28d96c6b824b830350f03c3eb830955478"
+    },
+    {
+      "bytes": 5100,
+      "path": "scripts/gate4a/acquire_site_unoccupied_candidates.py",
+      "sha256": "8de07c7bb28fc8145553741cd8b5cb81fdbfe0de0d1cf55b1dd1b7cb887d9c5f"
+    },
+    {
+      "bytes": 6316,
+      "path": "scripts/gate4a/audit_practical_equivalence_evidence.py",
+      "sha256": "1e30f7c19573911f5edc09fd897b3f8317ea9d9d0013a4b27eead0f9111ceebc"
+    },
+    {
+      "bytes": 22658,
+      "path": "scripts/gate4a/close_alphafold_receptors.py",
+      "sha256": "2df08afddd8f10aee5015d6ec239c65bc33209d6609a325a5c92e5c93d4567af"
+    },
+    {
+      "bytes": 8232,
+      "path": "scripts/gate4a/finalize_structural_leakage.py",
+      "sha256": "3cdf887e1ccc61999272d3977e17172a8a981fd3a0c1b571af753d4b241ba6aa"
+    },
+    {
+      "bytes": 10529,
+      "path": "scripts/gate4a/freeze_confirmation_ledgers.py",
+      "sha256": "f5333af1ad9b114191a85a881e075ff1c51ea198de002e1f5109aa5cf3e8e291"
+    },
+    {
+      "bytes": 5794,
+      "path": "scripts/gate4a/freeze_ligand_identity_qa.py",
+      "sha256": "132207e55302492cd35accd5fca04ad7f6823b0d9d94de99fdd26fc3319e8804"
+    },
+    {
+      "bytes": 3708,
+      "path": "scripts/gate4a/freeze_provenance_closure_manifest.py",
+      "sha256": "6b1ef100a3fcb9bacdf48f17174ca07d5451d73e8bd2202b33d40748164c0d8c"
+    },
+    {
+      "bytes": 17302,
+      "path": "scripts/gate4a/qualify_apo_tiers.py",
+      "sha256": "55b36caa9afc35eabdd01dfed4b215adf7c1993e0eb14c160130d01ccea20e67"
+    },
+    {
+      "bytes": 9397,
+      "path": "src/iscore3/gate4a/receptor_closure.py",
+      "sha256": "04de2384335cf4155d5f4130bcdf23d6f6b10d1f7563c0f5500c2175f6640ca0"
+    },
+    {
+      "bytes": 3498,
+      "path": "tests/unit/gate4a/test_receptor_closure.py",
+      "sha256": "e4ee3be8c50e7f3aa19c7a835af84e4713b276cfee59cd5525b07b5f6b9c6984"
+    }
+  ],
+  "environment": "reports/gate4a/evidence/environment-v1.json",
+  "model_training_performed": false,
+  "phase": "gate4a_provenance_closure",
+  "schema_version": 1,
+  "snapshot_date": "2026-08-21"
+}
