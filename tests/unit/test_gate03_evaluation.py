@@ -1,8 +1,12 @@
 import numpy as np
 
 from iscore3.gate03.evaluation import (
+    Dataset,
+    Fold,
+    Plan,
     _fixed_projection,
     _knn_observation,
+    _predict_plan,
     pairwise_concordance,
 )
 
@@ -33,3 +37,39 @@ def test_observation_knn_maps_fold_local_responses_to_global_rows():
         1,
     )
     assert prediction.tolist() == [30.0]
+
+
+def test_complete_case_scaffold_exclusion_returns_empty_evaluation_contract():
+    dataset = Dataset(
+        rows=tuple({} for _ in range(8)),
+        ids=np.asarray([str(index) for index in range(8)]),
+        series=np.asarray(["series"] * 8),
+        components=np.asarray(["component"] * 8),
+        scaffolds=np.asarray(["train"] * 7 + ["test"]),
+        scaffold_eligible=np.ones(8, dtype=bool),
+        y=np.arange(8, dtype=float),
+        features={},
+        available={"gmolai": np.ones(8, dtype=bool)},
+        similarities={},
+        series_order=np.asarray(["series"]),
+        series_similarities={},
+        derangements={},
+    )
+    fold = Fold(
+        "scaffold",
+        "one-row-test",
+        "S1",
+        np.arange(7),
+        np.asarray([7]),
+        "series",
+        "component",
+        "test",
+    )
+    prediction, _, _, evaluation, _ = _predict_plan(
+        dataset,
+        Plan("complete-case", "ridge", ("gmolai",), complete_case="gmolai"),
+        fold,
+        {},
+    )
+    assert prediction.size == 0
+    assert evaluation.size == 0

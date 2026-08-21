@@ -884,7 +884,7 @@ def _predict_plan(
         if not len(test) or (
             fold.evaluation == "scaffold" and (len(test) < 2 or heldout_training < 6)
         ):
-            return np.asarray([]), {}, train, test, {}
+            return np.asarray([]), {}, train, np.asarray([], dtype=int), {}
         fold = Fold(
             fold.evaluation,
             fold.fold_id,
