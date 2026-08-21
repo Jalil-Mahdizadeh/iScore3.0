@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "model": "Uni-Mol v1 molecule all-H",
+  "software": {
+    "canonical_url": "https://github.com/deepmodeling/unimol_tools",
+    "release": "v0.1.6",
+    "commit": "4596596aa8f73eb462d5cc5a921d79966d0465da",
+    "licence": "MIT",
+    "licence_sha256": "86df9d01a4cde3773da9a8c895e5b1699aa19ff899e130a7d2421e25770a350c"
+  },
+  "artifacts": [
+    {
+      "path": "artifacts/checkpoints/unimol-v1-allh-v0.1.6/mol_pre_all_h_220816.pt",
+      "source_repo": "dptech/Uni-Mol-Models",
+      "bytes": 190540187,
+      "sha256": "7f5f14bb28bf479a0b8f38ebab4bb9d7ae867383f14c4d694d056500fa3446a7"
+    },
+    {
+      "path": "artifacts/checkpoints/unimol-v1-allh-v0.1.6/mol.dict.txt",
+      "source_repo": "dptech/Uni-Mol-Models",
+      "bytes": 91,
+      "sha256": "94135cb9a9198f988de684cb61e2c372882a3bd59b8320effbae704c38057127"
+    }
+  ],
+  "frozen_use": {
+    "input": "explicit atoms and free-conformer coordinates generated from final SMILES",
+    "remove_hs": false,
+    "output": "CLS representation",
+    "supervised_finetuning": false,
+    "bound_ligand_coordinates": false
+  }
+}

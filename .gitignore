@@ -35,6 +35,7 @@ artifacts/logs/**
 !artifacts/logs/.gitkeep
 cluster/logs/**
 !cluster/logs/.gitkeep
+/logs/
 
 # Local secrets and editor/OS state
 .env

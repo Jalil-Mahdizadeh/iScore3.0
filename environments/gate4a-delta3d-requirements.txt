@@ -1,0 +1,8 @@
+# Repository-local overlay used with containers/gmolai-pyg-25.09-arm64.sif.
+# Scientific stack (Torch/RDKit/NumPy/SciPy/scikit-learn) comes from the SIF.
+addict==2.4.0
+antlr4-python3-runtime==4.9.3
+hydra-core==1.3.2
+lmdb==1.7.3
+omegaconf==2.3.0
+packaging==25.0
