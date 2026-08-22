@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "iscore3"
 version = "0.1.0"
-description = "Leakage-aware free-conformer interaction-identifiability tooling for iScore3.0"
+description = "Leakage-aware research tooling for iScore3.0"
 requires-python = ">=3.10"
 dependencies = [
   "numpy>=1.26,<3",

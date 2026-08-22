@@ -10,8 +10,8 @@ configs, and source code, is recoverable at:
 - Git commit: `3b814c6`
 - Git tag: `gate3-terminal-2026-08-21`
 
-Those outcomes informed the Gate-4A hypothesis. Consequently, Gate-3 data are
-spent for architecture selection and must not be used for Gate-4A fitting,
-hyperparameter tuning, conformer choices, stopping decisions, or progression.
-After a full Gate-4A freeze, the committee may authorize one separately labelled
-historical sensitivity analysis; it cannot rescue a failed fresh-data test.
+Those outcomes informed the now-terminated Gate-4A hypothesis. Consequently,
+Gate-3 data are spent for architecture selection and must not be used for a
+successor project's fitting, tuning, stopping, or progression decisions. A
+future committee-authorized historical sensitivity analysis must be separately
+labelled and cannot drive model selection.

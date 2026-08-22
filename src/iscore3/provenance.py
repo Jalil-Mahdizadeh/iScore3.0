@@ -1,4 +1,4 @@
-"""Small, strict provenance primitives shared by Gate-4A workflows."""
+"""Small, strict provenance primitives shared by iScore3.0 workflows."""
 
 from __future__ import annotations
 
